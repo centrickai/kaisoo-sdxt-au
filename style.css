@@ -780,7 +780,7 @@ body {
 .ln .wrap{gap:5px!important}
 .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){padding:9px 13px!important;border-radius:19px!important;font-size:16px!important;line-height:1.35!important;position:relative}
 .th .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){background:#e5e5ea!important;color:#111!important}
-.me .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){background:#4b9af3!important;color:#fff!important}
+.me .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){background:#0078FE!important;color:#fff!important}
 /* iMessage-style bubble tail only at the end of a consecutive run */
 .ln.th:has(+ .ln.me) .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud),
 .ln.th:last-child .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){border-bottom-left-radius:5px!important}
