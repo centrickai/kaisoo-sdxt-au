@@ -481,15 +481,8 @@ const VIEWS={};
    SCHOOL PORTAL — fictional school bulletin + parent comments
    and direct school mailbox. Edit the data arrays below.
    ============================================================ */
-const SP_POSTS = [
- {id:1,author:'Little Steps Academy',role:'School Administration',initials:'LS',date:'Today · 8:15 AM',tag:'Announcement',title:'Family Day is coming! 🌼',body:'Hello, parents! Our Family Day celebration is coming up soon. We’re preparing games, snacks, and activities for our little learners. Please check your child’s take-home folder for the permission slip. We can’t wait to see you!',comments:[{name:'Maria Santos',text:'Thank you for organizing this! ❤️',time:'8:32 AM'},{name:'Kyungsoo',text:'Sookyung has been talking about this all week 😊',time:'9:04 AM'}]},
- {id:2,author:'Teacher Nini',role:'Class Teacher',initials:'TN',date:'Yesterday · 4:30 PM',tag:'Class Update',title:'A little peek at our week 🎨',body:'Our class explored colors, painted their favorite animals, and practiced sharing with friends. The kids were so proud of their artwork! Please ask them what they made today.',comments:[{name:'Ana Reyes',text:'Awww, they must have had so much fun!',time:'5:12 PM'},{name:'Kyungsoo',text:'Sookyung insisted on showing me her painting as soon as we got home. Thank you, Teacher!',time:'6:08 PM'},{name:'Teacher Nini',text:'She worked very hard on it! 🥹',time:'6:21 PM'}]},
- {id:3,author:'Little Steps Academy',role:'School Administration',initials:'LS',date:'Oct 22 · 10:00 AM',tag:'Reminder',title:'Please label your child’s belongings',body:'A gentle reminder to write your child’s name on water bottles, lunch boxes, and extra clothes. This helps us return everything to the right family. Thank you!',comments:[{name:'Carla Mendoza',text:'Noted, thank you!',time:'10:18 AM'}]}
-];
-const SP_THREADS = [
- {id:1,name:'Teacher Nini',role:'Sookyung’s Class Teacher',initials:'TN',messages:[{from:'them',text:'Good afternoon, Mr. Do! Just wanted to let you know that Sookyung did really well during our reading activity today. 😊',time:'Yesterday · 3:12 PM'},{from:'me',text:'That’s wonderful to hear. Thank you for letting me know, Teacher!',time:'Yesterday · 3:18 PM'},{from:'them',text:'Of course! She was very excited to tell everyone about the book you read together.',time:'Yesterday · 3:20 PM'}]},
- {id:2,name:'School Administration',role:'Little Steps Academy',initials:'LS',messages:[{from:'them',text:'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.',time:'Oct 23 · 9:30 AM'},{from:'me',text:'Thank you! I’ll send it with her tomorrow.',time:'Oct 23 · 9:45 AM'}]}
-];
+const SP_POSTS = typeof STORY_SP_POSTS !== 'undefined' ? structuredClone(STORY_SP_POSTS) : [];
+const SP_THREADS = typeof STORY_SP_THREADS !== 'undefined' ? structuredClone(STORY_SP_THREADS) : [];
 let spTab='bulletin',spPostId=null,spThreadId=null;
 const spEsc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // Direction-aware page transitions within the School Portal.
@@ -546,17 +539,7 @@ VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c
    Approximate speaking rate: 145 words/minute, minimum 3 seconds.
    The simulator does not synthesize or play recorded audio. */
 const VM_WORDS_PER_MINUTE = 145;
-const VM_RECORDINGS = [
-  {title:'Cebu Business Park',date:'Mar 11, 2026',transcript:`[Replace this with your complete transcript for Cebu Business Park.]`},
-  {title:'6001 9',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 9.]`},
-  {title:'6001 7',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 7.]`},
-  {title:'6001 8',date:'Mar 17, 2025',transcript:`[Replace this with the full transcript for recording 6001 8.]`},
-  {title:'6001 6',date:'Aug 10, 2024',transcript:`[Replace this with the full transcript for recording 6001 6.]`},
-  {title:'6001 5',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 5.]`},
-  {title:'6001 4',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 4.]`},
-  {title:'6001 3',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 3.]`},
-  {title:'6001 2',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 2.]`}
-];
+const VM_RECORDINGS = typeof STORY_VM_RECORDINGS !== 'undefined' ? structuredClone(STORY_VM_RECORDINGS) : [];
 const vmSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const vmWords=s=>String(s).trim().match(/\S+/gu)||[];
 const vmDuration=r=>Math.max(3,Math.ceil(vmWords(r.transcript).length/VM_WORDS_PER_MINUTE*60));
@@ -1871,24 +1854,8 @@ window.addEventListener('focus', resumeCallUI);
 
 
 /* ===== Kyungsoo AU — interactive, read-only X ===== */
-const XPEOPLE={
- sooberry:{name:'soo ☁️',avatar:'☁️',bio:'papa to my favorite little person ☁️🤍 | coffee, quiet mornings & little victories',location:'Manila, Philippines',joined:'Joined March 2021',following:'128',followers:'2,416',banner:'sky',photo:'',coverUrl:''},
- parkchanyeol:{name:'channie 🦒',avatar:'🦒',bio:'music, late-night gigs, and being the favorite tito 🎸',location:'Manila, Philippines',joined:'Joined June 2019',following:'341',followers:'8,902',banner:'sunset',photo:'',coverUrl:''},
- niniloveskids:{name:'nini 🐻',avatar:'🐻',bio:'kindergarten teacher 🌻 | little humans, big feelings | dance after class',location:'Manila, Philippines',joined:'Joined April 2022',following:'203',followers:'1,284',banner:'green',photo:'',coverUrl:''},
- ohsehun:{name:'sehun 🐣',avatar:'🐣',bio:'just here to observe the chaos',location:'Manila, Philippines',joined:'Joined January 2020',following:'98',followers:'3,125',banner:'slate',photo:'',coverUrl:''},
- ningyizhuo:{name:'ningning 🦋',avatar:'🦋',bio:'hana’s mom 💗 | kindergarten parent life | oversharing enthusiast',location:'Manila, Philippines',joined:'Joined May 2021',following:'486',followers:'5,241',banner:'pink',photo:'',coverUrl:''},
- junmyeon:{name:'junmyeon 🐰',avatar:'🐰',bio:'dad to Minjun | lists, schedules & community events 🐰',location:'Manila, Philippines',joined:'Joined February 2019',following:'201',followers:'1,876',banner:'blue',photo:'',coverUrl:''}
-};
-const XPOSTS=[
- {id:1,handle:'sooberry',when:'2h',body:'reminder to bring an extra umbrella sa car because apparently one umbrella is not enough when you have a very talkative five-year-old and an unexpected passenger 😭☔',likes:128,replies:12,reposts:9,views:'4,203',thread:[{handle:'parkchanyeol',body:'unexpected passenger daw oh'},{handle:'sooberry',body:'chan 😭'}]},
- {id:2,handle:'parkchanyeol',when:'3h',body:'some people need to realize na hindi lahat ng carpool ay carpool lang 🤭',likes:92,replies:7,reposts:3,views:'2,804',thread:[{handle:'sooberry',body:'DELETE THIS 😭'}]},
- {id:3,handle:'sooberry',when:'1d',body:'first PTA meeting done 🥹 proud of my little girl and so thankful sa mga teachers na patient and kind sa kids 🤍',likes:214,replies:18,reposts:14,views:'6,192',thread:[{handle:'ningyizhuo',body:'Sookyung and Hana playdate soon!!! 🥹'}]},
- {id:4,handle:'ningyizhuo',when:'1d',body:'PTA meeting survival club 🤝 ang cute ng kinder A babies pls 😭',likes:78,replies:5,reposts:2,views:'1,209',thread:[]},
- {id:5,handle:'junmyeon',when:'2d',body:'Thank you, Kinder A parents, for volunteering for Family Day! Will share the finalized schedule soon.',likes:45,replies:4,reposts:6,views:'942',thread:[]},
- {id:6,handle:'sooberry',when:'4d',body:'my daughter told me today that her teacher deserves a gold star because he always listens to her 🥹',likes:391,replies:24,reposts:31,views:'9,142',thread:[]},
- {id:7,handle:'niniloveskids',when:'5h',body:'sometimes the smallest kindness can make a rainy day feel warm ☔',likes:246,replies:19,reposts:17,views:'5,027',thread:[{handle:'ohsehun',body:'sure. the weather.'}]},
- {id:8,handle:'ohsehun',when:'6h',body:'my friend is acting suspiciously happy about the rain. interesting.',likes:71,replies:8,reposts:2,views:'1,604',thread:[]}
-];
+const XPEOPLE = typeof STORY_XPEOPLE !== 'undefined' ? structuredClone(STORY_XPEOPLE) : {};
+const XPOSTS = typeof STORY_XPOSTS !== 'undefined' ? structuredClone(STORY_XPOSTS) : [];
 let xTab='for-you',xQuery='',xSelected=1,xPerson='sooberry',xProfileTab='Posts';
 function xWho(handle){return XPEOPLE[handle]||{name:handle,avatar:'👤',bio:'',following:'0',followers:'0',joined:'Joined 2022',banner:'sky',photo:'',coverUrl:''}}
 function xAvatar(handle,large=false){const u=xWho(handle);return `<span class="x-avatar${large?' big':''}" onclick="event.stopPropagation();xOpenProfile('${esc(handle)}')">${u.photo?`<img src="${esc(u.photo)}" alt="${esc(u.name)} profile photo" loading="lazy">`:esc(u.avatar)}</span>`}
