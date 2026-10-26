@@ -535,13 +535,23 @@ VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c
 
 
 /* VOICE MEMOS — iOS-style transcript playback.
-   Edit transcript text below; duration automatically follows word count.
+   Edit transcripts in data.en.js; duration automatically follows word count.
    Approximate speaking rate: 145 words/minute, minimum 3 seconds.
    The simulator does not synthesize or play recorded audio. */
-const VM_WORDS_PER_MINUTE = 180;
+const VM_WORDS_PER_MINUTE = 200;
 const VM_RECORDINGS = typeof STORY_VM_RECORDINGS !== 'undefined' ? structuredClone(STORY_VM_RECORDINGS) : [];
 const vmSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const vmWords=s=>String(s).trim().match(/\S+/gu)||[];
+const vmWords=s=>String(s).replace(/<\/?i>/gi,'').trim().match(/\S+/gu)||[];
+function vmFormattedWords(s){
+ let italic=false,index=0;
+ return (String(s).match(/<\/?i>|\s+|[^\s<>]+/giu)||[]).map(token=>{
+  if(/^<i>$/i.test(token)){italic=true;return '';}
+  if(/^<\/i>$/i.test(token)){italic=false;return '';}
+  if(/^\s+$/u.test(token))return token;
+  return `<span data-vm-word="${index++}"${italic?' style="font-style:italic !important;font-weight:700 !important"':''}>${vmSafe(token)}</span>`;
+  //return `<span data-vm-word="${index++}"${italic?' style="font-style:italicized;font-weight:700"':''}>${vmSafe(token)}</span>`;
+ }).join('');
+}
 const vmDuration=r=>Math.max(3,Math.ceil(vmWords(r.transcript).length/VM_WORDS_PER_MINUTE*60));
 const vmTime=s=>`${Math.floor(Math.max(0,s)/60)}:${String(Math.floor(Math.max(0,s)%60)).padStart(2,'0')}`;
 const vmClock=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(Math.floor(s%60)).padStart(2,'0')}.${String(Math.floor((s%1)*100)).padStart(2,'0')}`;
@@ -578,7 +588,7 @@ function vmBackToRecordings(){
 }
 function vmOpenTranscript(){
  const pg=APP.querySelector('[data-view="voicememos"]');if(!pg)return;
- const r=VM_RECORDINGS[vmActive],words=vmWords(r.transcript);
+ const r=VM_RECORDINGS[vmActive];
  const panel=pg.querySelector('.vm-full');if(!panel)return;
  panel.hidden=false;
  panel.getAnimations().forEach(a=>a.cancel());
@@ -588,7 +598,7 @@ function vmOpenTranscript(){
  pg.querySelector('.vm-top').style.visibility='hidden';
  panel.innerHTML=`<div class="vm-full-top"><button type="button" class="vm-fake-dots vm-dots-back" onclick="vmBackToRecordings()" aria-label="Back to all recordings">‹</button><span class="vm-fake-check">✓</span></div>
   <div class="vm-full-title">${vmSafe(r.title)}</div><div class="vm-full-date">${vmSafe(r.date)}&nbsp; ${vmTime(vmDuration(r))}</div>
-  <div class="vm-transcript-viewport"><div class="vm-transcript-words">${words.map((w,j)=>`<span data-vm-word="${j}">${vmSafe(w)}</span>`).join(' ')}</div></div>
+  <div class="vm-transcript-viewport"><div class="vm-transcript-words">${vmFormattedWords(r.transcript)}</div></div>
   <div class="vm-full-bottom"><div class="vm-big-clock">00:00.00</div>
    <div class="vm-full-controls"><span class="vm-fake-skip">↶<small>15</small></span><button class="vm-main-play" onclick="vmToggle(${vmActive})" aria-label="Pause">❚❚</button><span class="vm-fake-skip">↷<small>15</small></span></div>
    <div class="vm-full-actions"><span class="vm-fake-caption">▤</span><span class="vm-fake-replace">REPLACE</span><span class="vm-fake-sliders">☷</span></div></div>`;
@@ -631,7 +641,29 @@ VIEWS.notes=()=>({cls:'grouped notes-pg',html:navHTML({title:t('app_notes'),back
  <div class="gh" style="margin-top:8px">📌 ${t('pinned')}</div><div class="group note-l">${notes.slice(0,4).map((n,i)=>noteRow(n,i)).join('')}</div>
  <div class="gh">${t('notesSec')}</div><div class="group note-l">${notes.slice(4).map((n,i)=>noteRow(n,i+4)).join('')}</div></div>
  <div class="toolbar"><span style="width:24px"></span><span style="color:#000;align-self:center;font-size:11px">${t('nNotes',notes.length)}</span>${G.compose}</div>`});
-VIEWS.note=()=>{const n=notes[noteId];return{cls:'notes-pg',html:navHTML({title:'',back:t('app_notes'),right:G.share+G.dots,solid:false})+`<div class="scroll"><div class="note-v"><div class="nd">${noteDate(n[3],true)}</div><h2>${esc(n[0])}</h2>${esc(n[2])}</div></div><div class="toolbar">${G.check}${G.camera}${G.pen}${G.compose}</div>`}};
+/* Checklist items are declared in data.en.js using lines starting with [ ] or [x].
+   Checked states persist in localStorage without changing the source notes. */
+const NOTE_CHECK_STORAGE = 'kaisoo_note_checkmarks_v1';
+let noteCheckStates = {};
+try { noteCheckStates = JSON.parse(localStorage.getItem(NOTE_CHECK_STORAGE) || '{}') || {}; } catch (_) { noteCheckStates = {}; }
+function noteChecklistToggle(noteIndex, lineIndex, checked) {
+  const key = `${noteIndex}:${lineIndex}`;
+  noteCheckStates[key] = checked;
+  try { localStorage.setItem(NOTE_CHECK_STORAGE, JSON.stringify(noteCheckStates)); } catch (_) {}
+  const row = document.querySelector(`[data-note-check="${key}"]`);
+  if (row) row.classList.toggle('checked', checked);
+}
+function noteBodyHTML(noteIndex, body) {
+  return String(body).split('\n').map((line, lineIndex) => {
+    const match = line.match(/^\s*\[([ xX])\]\s*(.*)$/);
+    if (!match) return `<div class="note-text-line">${esc(line) || '&nbsp;'}</div>`;
+    const key = `${noteIndex}:${lineIndex}`;
+    const checked = Object.prototype.hasOwnProperty.call(noteCheckStates, key)
+      ? !!noteCheckStates[key] : match[1].toLowerCase() === 'x';
+    return `<label class="note-check-row${checked ? ' checked' : ''}" data-note-check="${key}"><input type="checkbox" ${checked ? 'checked' : ''} onchange="noteChecklistToggle(${noteIndex},${lineIndex},this.checked)"><span>${esc(match[2])}</span></label>`;
+  }).join('');
+}
+VIEWS.note=()=>{const n=notes[noteId];return{cls:'notes-pg',html:navHTML({title:'',back:t('app_notes'),right:G.share+G.dots,solid:false})+`<div class="scroll"><div class="note-v"><div class="nd">${noteDate(n[3],true)}</div><h2>${esc(n[0])}</h2>${noteBodyHTML(noteId,n[2])}</div></div><div class="toolbar">${G.check}${G.camera}${G.pen}${G.compose}</div>`}};
 
 
 /* --- CALENDAR --- */

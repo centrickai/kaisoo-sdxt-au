@@ -1354,10 +1354,10 @@ const chatNames=[
 ];
 const notes = [
   [
-    "Things hyung likes",
-    "good food / quiet places / little things",
-    "things kyungsoo hyung likes\n\ngood food\nquiet restaurants\nwatching movies at home\ncooking\nwalking around without a plan\nwhen i actually listen to him (ㅋㅋ)\n\nhe says he doesn't need presents\nbut he always keeps the little things i give him\n\nremember that.",
-    "2026-10-23"
+    "Sooky's School Checklist",
+    "Sooky's First Day",
+    "Sooky's First Day\n[x] Iron school uniform\n[x] Prepare pink backpack\n[x] Pack crayons and pencils\n[x] Extra clothes\n[x] Water bottle\n[x] Lunchbox: chicken sandwich, strawberries\n[ ] Take first day picture\n[ ] Drop off by 7:45 AM\n[ ] Pick up at 12:00 PM\nReminder: Check communication notebook. Buy strawberry milk on the way home.",
+    "2026-10-05"
   ],
   [
     "Birthday plan 🎂",
@@ -2568,61 +2568,139 @@ const STORY_SP_THREADS = [
 
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
-  {title:'01',date:'Mar 11, 2026',transcript:`Okay. For the revised campaign deck, kailangan i-adjust yung messaging sa third slide. Client wants something more family-oriented, so maybe we can—
-
-Papa Soo?
+{title:'01: breakfast negotiations with sooky my love',date:'Oct 05, 2026',transcript:`Papa?
 
 Hmm, baby?
+  
+<i>Can Mr. Bubbles go to school with me po?</i>
+  
+Your teddy bear?
+  
+<i>Opo.</i>
+  
+Baby, remember what we talked about? Toys stay at home unless Teacher says you can bring them.
+  
+<i>But Mr. Bubbles will be lonely.</i>
+  
+He has all your other teddy bears here.
+  
+<i>But they're not his best friends.</i>
+  
+Oh? Who's his best friend, then?
+  
+<i>Me po.</i>
+  
+Of course.
+  
+<i>What if he misses me?</i>
+  
+Then I'll keep him company while you're at school.
+  
+<i>Promise po?</i>
+  
+Promise, sweetheart.
+  
+<i>You have to give him a hug, Papa. He likes hugs.</i>
+  
+Okay. I'll give him a hug.
+  
+<i>And kisses po.</i>
+  
+Kisses too?
+  
+<i>Opo. On his forehead.</i>
+  
+Yes, ma'am.
+  
+<i>Thank you, Papa! I love you!</i>
+  
+Love you more, baby.`},
+  
+{title:'01: sooky\'s first day',date:'Oct 5, 2026',transcript:  `Okay, baby. Tell Papa about your first day.
 
-Are you working po?
+<i>Papa! We made a sunshine po!</i>
 
-Just recording something, sweetheart. What is it?
+You did? Can I see?
 
-Can you make two sandwiches po?
+<i>It's in my bag! But don't look yet, okay?</i>
 
-Dalawa? Why, love?
+Why not?
 
-One for me. One for Teacher Nini.
+<i>Because it's a surprise po.</i>
 
-Oh. Okay, baby. We can make an extra one.
+(Laughs softly) Okay. I won't look.
 
-Heart shape po, ha?
+<i>And I made a new friend!</i>
 
-...Heart?
+Really? What's her name?
 
-Opo! Para alam niya na love natin siya!
+<i>Yuna! She has a pink water bottle like mine.</i>
 
-Baby, hindi naman natin—
+That's nice, sweetheart.
 
-Please, Papa?
+<i>But hers has a bunny. Mine has a bear.</i>
 
-Sookyung baby, you can't just say that to your teacher.
+Of course. You love bears.
 
-Why po?
+<i>Just like Teacher Nini!</i>
 
-Because... basta, baby. We don't even know him that well.
+Oh?
 
-But you know him, Papa.
+<i>Teacher Nini likes bears too!</i>
 
-...
+That's nice, baby.
 
-You said he's nice.
+<i>Papa, did you know Teacher Nini is very strong?</i>
 
-He is nice.
+...Strong?
 
-And handsome!
+<i>Opo! He carried the big box of toys all by himself!</i>
 
-Sookyung!
+Oh. Good for him.
 
-You said that too!
+<i>And he has big arms!</i>
 
-Okay, okay. Heart-shaped sandwich. Now go get your water bottle, please.
+(Clears throat) Baby, let's put your seat belt on properly.
 
-Yay! Thank you, Papa! Love you!
+<i>Papa?</i>
 
-Love you too, baby. Oh, shoot. Naka-record pa pala.`},
-  {title:'6001 9',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 9.]`},
-  {title:'6001 7',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 7.]`},
+Hmm?
+
+<i>Why were you so quiet when Teacher Nini talked to you?</i>
+
+What do you mean?
+
+<i>You just smiled po.</i>
+
+I was listening, sweetheart.
+
+<i>But you always talk a lot when it's my teachers.</i>
+
+(Laughs nervously) Do I?
+
+<i>Opo. You ask many questions.</i>
+
+Well, I didn't have any questions today.
+
+<i>Oh.</i>
+
+<i>Papa?</i>
+
+Yes, baby?
+
+<i>Are you shy?</i>
+
+...No, sweetheart.
+
+<i>It's okay po. Teacher Nini is nice.</i>
+
+(Laughs softly) I know, baby.
+
+<i>You can be friends with him!</i>
+
+We'll see, sweetheart.
+
+<i>Okay po!</i>`},
   {title:'6001 8',date:'Mar 17, 2025',transcript:`[Replace this with the full transcript for recording 6001 8.]`},
   {title:'6001 6',date:'Aug 10, 2024',transcript:`[Replace this with the full transcript for recording 6001 6.]`},
   {title:'6001 5',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 5.]`},
