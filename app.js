@@ -149,7 +149,7 @@ const CUSTOM_APP_ICONS = {
 };
 
 
-const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악',voicememos:'Voice Memos'};
+const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악',voicememos:'Voice Memos',schoolportal:'School Portal'};
 function appIcon(id){
     // Use a real image when a custom icon is available
   if (CUSTOM_APP_ICONS[id]) {
@@ -166,7 +166,8 @@ function appIcon(id){
  const W=(defs,body)=>`<svg viewBox="0 0 60 60"><defs>${defs}</defs>${body}</svg>`;
  switch(id){
  case'instagram':return W(`<linearGradient id="gi" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ffc35c"/><stop offset=".5" stop-color="#ff3d6e"/><stop offset="1" stop-color="#7c3bf0"/></linearGradient>`,`<rect width="60" height="60" fill="url(#gi)"/><rect x="17" y="12.5" width="26" height="34" rx="4.5" fill="none" stroke="#fff" stroke-width="3.2"/><rect x="21.6" y="17" width="16.8" height="17" rx="2" fill="#fff"/>`);
-   case'voicememos':return W('',`<rect width="60" height="60" rx="12" fill="#fff"/><g stroke="#fa354b" stroke-width="2.8" stroke-linecap="round"><path d="M11 24v12M16 19v22M21 13v34M26 23v14M31 9v42M36 18v24M41 13v34M46 21v18M51 26v8"/></g>`);
+   case'schoolportal':return W('',`<rect width="60" height="60" rx="12" fill="#196a68"/><path d="M11 23 30 13l19 10v24H11Z" fill="#fff"/><path d="M7 25 30 12l23 13" stroke="#b8eee2" stroke-width="4" fill="none" stroke-linejoin="round"/><rect x="26" y="31" width="9" height="16" rx="1" fill="#196a68"/><rect x="15" y="30" width="7" height="8" rx="1" fill="#78c6bc"/><rect x="39" y="30" width="7" height="8" rx="1" fill="#78c6bc"/>`);
+ case'voicememos':return W('',`<rect width="60" height="60" rx="12" fill="#fff"/><g stroke="#fa354b" stroke-width="2.8" stroke-linecap="round"><path d="M11 24v12M16 19v22M21 13v34M26 23v14M31 9v42M36 18v24M41 13v34M46 21v18M51 26v8"/></g>`);
 case'twitter':return W('',`<rect width="60" height="60" rx="12" fill="#050505"/><text x="30" y="44" fill="white" font-size="42" font-family="Arial,sans-serif" text-anchor="middle">𝕏</text>`);
  case'photos':{let p='';for(let i=0;i<10;i++)p+=`<ellipse cx="30" cy="18.2" rx="4.4" ry="10.5" fill="#fff" transform="rotate(${i*36} 30 30)"/>`;return W(L('gp','#9bdcff','#d8f1ff'),`<rect width="60" height="60" fill="url(#gp)"/>${p}<circle cx="30" cy="30" r="7.2" fill="#ffc83d"/><circle cx="30" cy="30" r="7.2" fill="none" stroke="#f0a500" stroke-width="1"/>`)}
  case'mail':return W(L('gm','#3fb0ff','#0a6cf5'),`<rect width="60" height="60" fill="url(#gm)"/><rect x="11.5" y="18" width="37" height="25" rx="3.5" fill="#fff"/><path d="M12.5 20 30 32.5 47.5 20" fill="none" stroke="#1676f3" stroke-width="2.4" stroke-linejoin="round"/>`);
@@ -395,12 +396,12 @@ function lockIphone() {
    HOME SCREEN
    ============================================================ */
 function badgeOf(id){if(id==='phone')return 3+declined;if(id==='mail')return[0,1].filter(i=>!readMail.has(i)).length;if(id==='kakao')return Object.values(unread).reduce((a,b)=>a+b,0)+ksooUnread;return 0}
-function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='voicememos'?'Voice Memos':id==='twitter'?'X':t('app_'+id)}</span></button>`}
+function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='schoolportal'?'School Portal':id==='voicememos'?'Voice Memos':id==='twitter'?'X':t('app_'+id)}</span></button>`}
 function renderHome(){
  HOME.innerHTML=`<div class="hgrid">
   <button class="widget wcal" data-app="calendar" onclick="openApp('calendar',this)"><div class="wd">${wdLong(new Date().getFullYear(),new Date().getMonth()+1,new Date().getDate())}</div><div class="wn">${new Date().getDate()}</div>${(events[17]||[]).map(x=>`<div class="we">${esc(x)}<small>${t('allDay')}</small></div>`).join('')}</button>
   ${manilaWxWidgetMarkup()}
-  ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps','voicememos'].map(appBtn).join('')}
+  ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps','voicememos','schoolportal'].map(appBtn).join('')}
  </div><button class="spot" onclick="this.animate([{transform:'translateX(-50%) scale(1)'},{transform:'translateX(-50%) scale(1.08)'},{transform:'translateX(-50%) scale(1)'}],300)">${G.search.replace('<svg','<svg width="13" height="13"')}${t('search')}</button>
  <div class="dock">${['phone','safari','kakao','music'].map(appBtn).join('')}</div>`}
 // INSERT HERE
@@ -475,6 +476,45 @@ const sw=(on,fn)=>`<button class="sw ${on?'on':''}" onclick="this.classList.togg
    APP SCREENS
    ============================================================ */
 const VIEWS={};
+
+/* ============================================================
+   SCHOOL PORTAL — fictional school bulletin + parent comments
+   and direct school mailbox. Edit the data arrays below.
+   ============================================================ */
+const SP_POSTS = [
+ {id:1,author:'Little Steps Academy',role:'School Administration',initials:'LS',date:'Today · 8:15 AM',tag:'Announcement',title:'Family Day is coming! 🌼',body:'Hello, parents! Our Family Day celebration is coming up soon. We’re preparing games, snacks, and activities for our little learners. Please check your child’s take-home folder for the permission slip. We can’t wait to see you!',comments:[{name:'Maria Santos',text:'Thank you for organizing this! ❤️',time:'8:32 AM'},{name:'Kyungsoo',text:'Sookyung has been talking about this all week 😊',time:'9:04 AM'}]},
+ {id:2,author:'Teacher Nini',role:'Class Teacher',initials:'TN',date:'Yesterday · 4:30 PM',tag:'Class Update',title:'A little peek at our week 🎨',body:'Our class explored colors, painted their favorite animals, and practiced sharing with friends. The kids were so proud of their artwork! Please ask them what they made today.',comments:[{name:'Ana Reyes',text:'Awww, they must have had so much fun!',time:'5:12 PM'},{name:'Kyungsoo',text:'Sookyung insisted on showing me her painting as soon as we got home. Thank you, Teacher!',time:'6:08 PM'},{name:'Teacher Nini',text:'She worked very hard on it! 🥹',time:'6:21 PM'}]},
+ {id:3,author:'Little Steps Academy',role:'School Administration',initials:'LS',date:'Oct 22 · 10:00 AM',tag:'Reminder',title:'Please label your child’s belongings',body:'A gentle reminder to write your child’s name on water bottles, lunch boxes, and extra clothes. This helps us return everything to the right family. Thank you!',comments:[{name:'Carla Mendoza',text:'Noted, thank you!',time:'10:18 AM'}]}
+];
+const SP_THREADS = [
+ {id:1,name:'Teacher Nini',role:'Sookyung’s Class Teacher',initials:'TN',messages:[{from:'them',text:'Good afternoon, Mr. Do! Just wanted to let you know that Sookyung did really well during our reading activity today. 😊',time:'Yesterday · 3:12 PM'},{from:'me',text:'That’s wonderful to hear. Thank you for letting me know, Teacher!',time:'Yesterday · 3:18 PM'},{from:'them',text:'Of course! She was very excited to tell everyone about the book you read together.',time:'Yesterday · 3:20 PM'}]},
+ {id:2,name:'School Administration',role:'Little Steps Academy',initials:'LS',messages:[{from:'them',text:'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.',time:'Oct 23 · 9:30 AM'},{from:'me',text:'Thank you! I’ll send it with her tomorrow.',time:'Oct 23 · 9:45 AM'}]}
+];
+let spTab='bulletin',spPostId=null,spThreadId=null;
+const spEsc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function spRefresh(){if(view==='schoolportal')show('schoolportal','none')}
+function spSwitch(tab){spTab=tab;spPostId=null;spThreadId=null;spRefresh()}
+function spOpenPost(id){spPostId=id;spRefresh()}
+function spOpenThread(id){spThreadId=id;spRefresh()}
+function spBack(){if(spPostId!==null)spPostId=null;else if(spThreadId!==null)spThreadId=null;else {closeApp();return;}spRefresh()}
+function spAddComment(id){const el=document.querySelector('#sp-comment-input');const val=el?.value.trim();if(!val)return;const post=SP_POSTS.find(p=>p.id===id);if(!post)return;post.comments.push({name:'Kyungsoo',text:val,time:'Just now'});spRefresh();}
+function spSendMessage(id){const el=document.querySelector('#sp-message-input');const val=el?.value.trim();if(!val)return;const thread=SP_THREADS.find(t=>t.id===id);if(!thread)return;thread.messages.push({from:'me',text:val,time:'Just now'});spRefresh();const scroll=document.querySelector('.sp-conversation');if(scroll)scroll.scrollTop=scroll.scrollHeight;}
+function spAvatar(initials){return `<span class="sp-avatar">${spEsc(initials)}</span>`}
+function spComment(c){return `<div class="sp-comment">${spAvatar(c.name==='Kyungsoo'?'KD':c.name==='Teacher Nini'?'TN':c.name.split(' ').map(x=>x[0]).join('').slice(0,2))}<div class="sp-comment-text"><b>${spEsc(c.name)}</b><p>${spEsc(c.text)}</p><small>${spEsc(c.time)}</small></div></div>`}
+function spPost(p,full){return `<article class="sp-post"> <div class="sp-author">${spAvatar(p.initials)}<div><b>${spEsc(p.author)}</b><small>${spEsc(p.role)} · ${spEsc(p.date)}</small></div></div><span class="sp-tag">${spEsc(p.tag)}</span><h3>${spEsc(p.title)}</h3><p class="sp-post-body">${spEsc(p.body)}</p><div class="sp-post-footer"><span>💬 ${p.comments.length} ${p.comments.length===1?'comment':'comments'}</span>${full?'':`<button onclick="spOpenPost(${p.id})">Read & comment ›</button>`}</div>${full?`<div class="sp-comments"><h4>Parent comments</h4>${p.comments.map(spComment).join('')}</div><div class="sp-compose"><input id="sp-comment-input" placeholder="Write a comment…" maxlength="1000" onkeydown="if(event.key==='Enter')spAddComment(${p.id})"><button onclick="spAddComment(${p.id})" aria-label="Post comment">↑</button></div>`:''}</article>`}
+function spPage(){
+ const detailPost=SP_POSTS.find(p=>p.id===spPostId);
+ const detailThread=SP_THREADS.find(t=>t.id===spThreadId);
+ let content='';
+ if(detailPost){content=`<div class="sp-topline"><button onclick="spBack()">‹ Bulletin</button><b>Post</b><span></span></div><div class="sp-scroll">${spPost(detailPost,true)}</div>`;}
+ else if(detailThread){content=`<div class="sp-topline"><button onclick="spBack()">‹ Mailbox</button><b>${spEsc(detailThread.name)}</b><span></span></div><div class="sp-conversation">${detailThread.messages.map(m=>`<div class="sp-bubble-wrap ${m.from==='me'?'mine':''}"><div class="sp-bubble">${spEsc(m.text)}</div><small>${spEsc(m.time)}</small></div>`).join('')}</div><div class="sp-msg-compose"><input id="sp-message-input" placeholder="Message ${spEsc(detailThread.name)}…" maxlength="2000" onkeydown="if(event.key==='Enter')spSendMessage(${detailThread.id})"><button onclick="spSendMessage(${detailThread.id})" aria-label="Send message">↑</button></div>`;}
+ else if(spTab==='bulletin'){content=`<div class="sp-main-head"><span class="sp-eyebrow">LITTLE STEPS ACADEMY</span><h1>Bulletin Board</h1><p>Updates from Sookyung’s school</p></div><div class="sp-scroll">${SP_POSTS.map(p=>spPost(p,false)).join('')}</div>`;}
+ else {content=`<div class="sp-main-head"><span class="sp-eyebrow">LITTLE STEPS ACADEMY</span><h1>Mailbox</h1><p>Messages from teachers & school staff</p></div><div class="sp-scroll sp-inbox">${SP_THREADS.map(t=>{const last=t.messages[t.messages.length-1];return `<button class="sp-thread" onclick="spOpenThread(${t.id})">${spAvatar(t.initials)}<span class="sp-thread-text"><b>${spEsc(t.name)}</b><small>${spEsc(t.role)}</small><span>${spEsc(last.text)}</span></span><span class="sp-thread-chevron">›</span></button>`}).join('')}</div>`;}
+ return `<div class="sp-app"><div class="sp-safe"></div>${content}${!detailPost&&!detailThread?`<div class="sp-tabs"><button class="${spTab==='bulletin'?'active':''}" onclick="spSwitch('bulletin')"><span>▤</span>Bulletin</button><button class="${spTab==='mailbox'?'active':''}" onclick="spSwitch('mailbox')"><span>✉</span>Mailbox</button></div>`:''}</div>`;
+}
+VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c=pg.querySelector('.sp-conversation');if(c)c.scrollTop=c.scrollHeight;}});
+
+
 
 /* VOICE MEMOS — iOS-style transcript playback.
    Edit transcript text below; duration automatically follows word count.
