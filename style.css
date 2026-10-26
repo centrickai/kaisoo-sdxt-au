@@ -759,3 +759,100 @@ body {
 }
 .pg.x-sim .x-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
 .pg.x-sim .x-profile-top .x-viewonly{position:relative;z-index:1}
+
+
+/* ===== iMessage chatroom reference: photo header, tails, input bar ===== */
+.chat{background:#fff!important;min-height:0}
+.chat-h{height:148px!important;min-height:148px;padding:48px 14px 8px!important;display:grid!important;grid-template-columns:56px 1fr 56px!important;align-items:start!important;background:linear-gradient(125deg,#fbf9fa,#eff8ff)!important;border-bottom:1px solid #d5d5d9!important;z-index:3}
+.chat-h .bk{height:36px!important;align-self:start!important;justify-self:start!important;padding:0 2px!important}
+.chat-h .bk svg{width:20px!important;height:27px!important;stroke:#2588f4!important}
+.chat-h .nm{display:flex!important;flex-direction:column!important;align-items:center!important;gap:4px!important;justify-self:center!important;min-width:0!important;font-size:15px!important;font-weight:400!important;text-align:center!important}
+.im-contact-photo{width:49px;height:49px;border-radius:50%;background:#e8eaed;display:grid;place-items:center;overflow:hidden}
+.im-contact-photo img{width:100%;height:100%;object-fit:cover}
+.im-contact-photo svg{width:35px;height:35px}
+.im-contact-name{white-space:nowrap;max-width:225px;overflow:hidden;text-overflow:ellipsis;font-size:15px;line-height:19px}
+.im-contact-chevron{font-size:21px;color:#8e8e93;vertical-align:-1px;padding-left:3px}
+.chat-h .rt{display:none!important}
+.msgs{min-height:0!important;padding:10px 14px 16px!important;background:#fff!important}
+.ln{margin-top:3px!important}
+.ln.first{margin-top:10px!important}
+.ln .col{max-width:84%!important}
+.ln .wrap{gap:5px!important}
+.bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){padding:9px 13px!important;border-radius:19px!important;font-size:16px!important;line-height:1.35!important;position:relative}
+.th .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){background:#e5e5ea!important;color:#111!important}
+.me .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){background:#4b9af3!important;color:#fff!important}
+/* iMessage-style bubble tail only at the end of a consecutive run */
+.ln.th:has(+ .ln.me) .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud),
+.ln.th:last-child .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){border-bottom-left-radius:5px!important}
+.ln.me:has(+ .ln.th) .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud),
+.ln.me:last-child .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){border-bottom-right-radius:5px!important}
+.tm{font-size:9px!important;opacity:.72}
+.cin{display:flex!important;gap:11px!important;align-items:center!important;min-height:64px!important;padding:7px 13px 9px!important;background:#fff!important;border-top:1px solid #ededf0!important}
+.cin.safe{padding-bottom:12px!important}
+.im-camera{display:grid;place-items:center;flex:none;color:#98989d;width:32px;height:34px}
+.im-camera svg{width:30px!important;height:30px!important;stroke:none!important;fill:currentColor!important}
+.im-entry{flex:1;min-width:0;border:1px solid #c8c8cd;border-radius:22px;display:flex;align-items:center;min-height:39px;padding:2px 3px 2px 0;background:#fff}
+.cin .im-entry .fld{border:0!important;background:transparent!important;min-height:32px!important;padding:6px 12px!important;flex:1!important;min-width:0!important}
+.cin .im-entry .fld.ph{color:#b0b0b5!important}
+.cin .im-entry .snd{width:30px!important;height:30px!important;border-radius:50%!important;flex:none!important;background:#3488f5!important;transform:scale(1)!important;opacity:.95!important}
+.cin .im-entry .snd svg{width:19px!important;height:19px!important;stroke:#fff!important}
+/* Respect the phone's system home-indicator area without adding a large blank gap. */
+.chat .kbd:not(.open){display:none}
+
+
+/* ===== iMessage group conversations: group avatars + sender labels ===== */
+.chat.im-group-chat .chat-h .nm{gap:3px!important}
+.chat.im-group-chat .chat-h{height:158px!important;min-height:158px!important}
+.chat.im-group-chat .im-group-photos{height:56px;display:flex;justify-content:center;align-items:center;padding:0 8px}
+.chat.im-group-chat .im-group-photo{width:52px;height:52px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#e8eaef;overflow:hidden;border:2px solid #fff;margin-left:-11px;flex-shrink:0}
+.chat.im-group-chat .im-group-photo:first-child{margin-left:0}
+.chat.im-group-chat .im-group-photo img{width:100%;height:100%;object-fit:cover}
+.chat.im-group-chat .im-group-photo svg{width:31px;height:31px}
+.chat.im-group-chat .im-contact-name{max-width:240px;font-size:15px}
+.chat.im-group-chat .chat-h .nm>small{display:none!important}
+.chat.im-group-chat .ln.th{padding-left:44px!important}
+.chat.im-group-chat .ln.th.first{padding-left:0!important}
+.chat.im-group-chat .ln .sav{width:35px!important;height:35px!important;border-radius:50%!important;background:#e9ebef!important}
+.chat.im-group-chat .ln .sav img{width:100%;height:100%;object-fit:cover}
+.chat.im-group-chat .ln .who{font-size:12px!important;color:#85858b!important;font-weight:400!important;margin:1px 0 5px 3px!important}
+.chat.im-group-chat .ln .col{max-width:82%!important}
+.chat.im-group-chat .ln.me .col{max-width:84%!important}
+.chat.im-group-chat .ln.th.first{margin-top:17px!important}
+.chat.im-group-chat .ln .wrap{gap:4px!important}
+.chat.im-group-chat .bb:not(.img):not(.exp):not(.file):not(.gift):not(.aud){font-size:16px!important;line-height:1.35!important}
+
+/* Group chat: show a circular sender photo AND sender name beside every incoming message. */
+.chat.im-group-chat .ln.th,
+.chat.im-group-chat .ln.th.first{
+  padding-left:0!important;align-items:flex-end!important;gap:7px!important;
+}
+.chat.im-group-chat .ln.th .sav{
+  display:grid!important;place-items:center!important;align-self:flex-end!important;
+  flex:0 0 34px!important;width:34px!important;height:34px!important;
+  border-radius:50%!important;overflow:hidden!important;margin:0 0 2px!important;
+}
+.chat.im-group-chat .ln.th .sav img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:50%!important}
+.chat.im-group-chat .ln.th .col{min-width:0!important;max-width:calc(100% - 44px)!important}
+.chat.im-group-chat .ln.th .who{display:block!important;font-size:12px!important;color:#888b92!important;line-height:1.25!important;margin:0 0 5px 7px!important}
+.chat.im-group-chat .ln.me .sav,.chat.im-group-chat .ln.me .who{display:none!important}
+
+
+/* iMessage group stacks: sender name once at top, avatar once beside last bubble. */
+.chat.im-group-chat .ln.th{display:flex!important;align-items:flex-end!important;gap:7px!important;padding-left:0!important}
+.chat.im-group-chat .ln.th .im-avatar-slot{width:34px!important;flex:0 0 34px!important;align-self:flex-end!important;display:flex;align-items:flex-end}
+.chat.im-group-chat .ln.th .im-avatar-slot:empty{visibility:hidden}
+.chat.im-group-chat .ln.th .im-avatar-slot .sav{width:34px!important;height:34px!important;margin:0 0 2px!important;display:grid!important;place-items:center!important;overflow:hidden!important;border-radius:50%!important}
+.chat.im-group-chat .ln.th .im-avatar-slot .sav img{width:100%!important;height:100%!important;object-fit:cover!important}
+.chat.im-group-chat .ln.th .col{max-width:calc(100% - 44px)!important;min-width:0!important}
+.chat.im-group-chat .ln.th .who{display:block!important;margin:0 0 5px 7px!important}
+.chat.im-group-chat .ln.th:not(.first) .who{display:none!important}
+.chat.im-group-chat .ln.th.im-stack-continued{margin-top:2px!important}
+.chat.im-group-chat .ln.th.im-stack-last:not(.first){margin-top:2px!important}
+.chat.im-group-chat .ln.th.first{margin-top:16px!important}
+.chat.im-group-chat .ln.th.im-stack-continued .bb{border-bottom-left-radius:7px!important}
+.chat.im-group-chat .ln.th:not(.first) .bb{border-top-left-radius:7px!important}
+
+/* Hide language switch button on lock screen */
+.lk-langw {
+  display: none !important;
+}

@@ -19,7 +19,7 @@ let callState='',phoneDone=false,declined=0,callStart=0,callPrev='',nextCallAt=0
 let askedCall=false,callName='Kyungsoo my love 💞',callTimers=[],busySent=false,declineSent=false,rbIv=null;
 let callReplySent=false;
 //let lockNotes=[{title:t('bdayTitle'),body:fmtMD(11,21)+' · '+t('inDays',35),app:'rem',time:t('now')}];
-const birthdayDate = new Date(2027, 0, 12);
+const birthdayDate = new Date(2027, 0, 13);
 const todayDate = new Date();
 todayDate.setHours(0, 0, 0, 0);
 
@@ -28,8 +28,8 @@ const daysUntilBirthday = Math.ceil(
 );
 
 let lockNotes = [{
-  title: t('bdayTitle'),
-  body: fmtMD(1, 12) + ' · ' + t('inDays', daysUntilBirthday),
+  title: "ny baby sooky's birthday 🍰",
+  body: fmtMD(1, 13) + ' · ' + daysUntilBirthday + ' days left',
   app: 'rem',
   time: t('now')
 }];
@@ -398,11 +398,20 @@ function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${
 function renderHome(){
  HOME.innerHTML=`<div class="hgrid">
   <button class="widget wcal" data-app="calendar" onclick="openApp('calendar',this)"><div class="wd">${wdLong(new Date().getFullYear(),new Date().getMonth()+1,new Date().getDate())}</div><div class="wn">${new Date().getDate()}</div>${(events[17]||[]).map(x=>`<div class="we">${esc(x)}<small>${t('allDay')}</small></div>`).join('')}</button>
-  <button class="widget wwx" data-app="weather" onclick="openApp('weather',this)"><div class="c">${t('seoul')} ➚</div><div class="tp">18°</div><span style="position:absolute;top:14px;right:14px">${G.sun}</span><div class="ds">${t('mostlySunny')}<small>${t('hiLo')}</small></div></button>
+  ${manilaWxWidgetMarkup()}
   ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps'].map(appBtn).join('')}
  </div><button class="spot" onclick="this.animate([{transform:'translateX(-50%) scale(1)'},{transform:'translateX(-50%) scale(1.08)'},{transform:'translateX(-50%) scale(1)'}],300)">${G.search.replace('<svg','<svg width="13" height="13"')}${t('search')}</button>
  <div class="dock">${['phone','safari','kakao','music'].map(appBtn).join('')}</div>`}
+// INSERT HERE
+const renderHomeWithoutWeatherRefresh = renderHome;
 
+renderHome = function (...args) {
+  const result = renderHomeWithoutWeatherRefresh.apply(this, args);
+  manilaWxEnsureWidgetFresh();
+  return result;
+};
+
+// The next existing function or section
 /* ============================================================
    Screen Transition Engine
    ============================================================ */
@@ -478,10 +487,10 @@ VIEWS.note=()=>{const n=notes[noteId];return{cls:'notes-pg',html:navHTML({title:
 
 /* --- CALENDAR --- */
 
-// Kyungsoo's birthday: January 12, 2027
+// sookyung's's birthday: January 13, 2027
 const BDAY_YEAR = 2027;
 const BDAY_MONTH = 1;
-const BDAY_DAY = 12;
+const BDAY_DAY = 13;
 
 // Calendar events
 function calEvents() {
@@ -506,7 +515,7 @@ function calEvents() {
 
   if (isBirthday) {
     return [
-      "🎂 Kyungsoo's Birthday 💞",
+      "🎂 my baby sooky's birthday 💞",
       ...dayEvents.filter(x => !x.includes("KYUNGSOO'S BIRTHDAY"))
     ];
   }
@@ -618,7 +627,10 @@ VIEWS.phone=()=>{const all=[...extraCalls,...calls].filter(c=>!missOnly||c[2]===
  ${tabbar([['star',t('favorites')],['clock',t('recents')],['contacts',t('contacts')],['keypad',t('keypad')],['voicemail',t('voicemail')]],1)}`}};
 
 /* --- KKT --- */
-const isGroup=n=>/EXO 🪐|엑소 🪐|우리 셋 🐻|SM 러닝크루 🏃🔥/.test(n);
+const IM_EXTRA_GROUPS = [
+  // Add the exact chatroom title here, e.g. 'Kinder A Parents 🧸'
+];
+const isGroup=n=>/EXO 🪐|엑소 🪐|우리 셋 🐻|SM 러닝크루 🏃🔥/.test(n)||IM_EXTRA_GROUPS.includes(n)||Boolean(MEMBERS[n]);
 const MEMBERS={'우리 셋 🐻':3,'엑소 🪐': 6,'SM 러닝크루 🏃🔥':9};
 function lastDate(n){const d=((chatData[n]||[]).filter(x=>x[1]==='date').slice(-1)[0]||[''])[0];return d==='10월 16일'?'어제':d}
 function dateKey(n){if(n==='Kyungsoo my love 💞')return 9999;const l=lastDate(n);if(l==='어제')return 1016;const m=l.match(/(\d+)월 (\d+)일/);return m?+m[1]*100+ +m[2]:0}
@@ -680,14 +692,49 @@ function chatItems(id) {
   const TT=CHAT_TIMES[id]||[];arr.forEach((m,i)=>{if(m[1]==='date'){items.push({date:m[0]});return}
   let text=m[0],sender=id==='Kyungsoo my love 💞'?'Kyungsoo my love 💞':id;if(grp&&m[1]==='them'){const mm=text.match(/^([^:：]+)[:：]\s*([\s\S]*)$/);if(mm){sender=mm[1];text=mm[2]}}
   if(TT[i]!=null)tm=TT[i];else tm+=1;items.push({who:m[1],text,sender,time:m[2]||ampm(tm),rd:m[3]==='rd'})});return items}
+/* Group-chat contact pictures: edit these paths when you add your own photos. */
+const IM_GROUP_PHOTOS = {
+  // 'Your group name': ['images/person1.jpg', 'images/person2.jpg']
+};
+const IM_SENDER_PHOTOS = {
+  // 'Chanyeol': 'images/chanyeol.jpg',
+  // 'Jongin': 'images/jongin.jpg',
+};
+function imGroupMembers(id){
+  const configured=IM_GROUP_PHOTOS[id];
+  if(configured&&configured.length)return configured;
+  const names=[];
+  (chatData[id]||[]).forEach(m=>{
+    if(m[1]!=='them')return;
+    const match=String(m[0]).match(/^([^:：]+)[:：]\s*/);
+    if(match&&!names.includes(match[1]))names.push(match[1]);
+  });
+  return names.slice(0,3).map(n=>IM_SENDER_PHOTOS[n]||'');
+}
+function imGroupHeader(id){
+  const pics=imGroupMembers(id);
+  const fallback='<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="#a5a9b2"/><path d="M4 21c0-5 3-8 8-8s8 3 8 8" fill="#a5a9b2"/></svg>';
+  return '<div class="im-group-photos">'+(pics.length?pics:['','','']).slice(0,3).map(src=>'<span class="im-group-photo">'+(src?'<img src="'+esc(src)+'" alt="">':fallback)+'</span>').join('')+'</div>';
+}
+function imSenderAvatar(sender){const src=IM_SENDER_PHOTOS[sender];return src?'<img src="'+esc(src)+'" alt="">':avatarFor(sender,false)}
 function chatMsgs(id){const it=chatItems(id),grp=isGroup(id);let o='';
  it.forEach((x,i)=>{if(x.date){o+=`<div class="dpill"><span>${G.calSm.replace('<svg','<svg width="12" height="12"')}${fullDate(x.date)}</span></div>`;return}
-  const p=it[i-1],n=it[i+1];const first=!p||p.date||p.who!==x.who||p.sender!==x.sender;const last=!n||n.date||n.who!==x.who||n.sender!==x.sender||n.time!==x.time;const me=x.who==='me';
+  const p=it[i-1],n=it[i+1];
+  const first=!p||p.date||p.who!==x.who||p.sender!==x.sender;
+  // For group chats, consecutive messages from one sender form one visual stack.
+  const lastInRun=!n||n.date||n.who!==x.who||n.sender!==x.sender;
+  const last=!n||n.date||n.who!==x.who||n.sender!==x.sender||n.time!==x.time;
+  const me=x.who==='me';
   const tm=last?`<div class="tm">${x.rd?'<span class="rd">1</span>':''}<span>${x.time}</span></div>`:(x.rd?'<div class="tm"><span class="rd">1</span></div>':'');
-  o+=`<div class="ln ${me?'me':'th'} ${first?'first':''}">${!me&&first?`<div class="sav">${avatarFor(x.sender)}</div>`:''}<div class="col" style="${me?'align-items:flex-end':''}">${!me&&first?`<div class="who">${esc(dn(x.sender))}</div>`:''}<div class="wrap">${me?tm+bubble(x.text):bubble(x.text)+tm}</div></div></div>`});return o}
-VIEWS.chat=()=>({cls:'chat',html:`<div class="chat-h"><button class="bk" onclick="back()">${G.chevL}<span>${otherUnread()||''}</span></button><div class="nm">${esc(dn(chatId))}${MEMBERS[chatId]?`<small>${MEMBERS[chatId]}</small>`:''}</div><div class="rt">${G.search}${G.menu}</div></div>
+  const showAvatar=!me&&(!grp?first:lastInRun);
+  const showName=!me&&first;
+  const avatarSlot=grp&&!me?`<div class="im-avatar-slot">${showAvatar?`<div class="sav">${imSenderAvatar(x.sender)}</div>`:''}</div>`:(showAvatar?`<div class="sav">${avatarFor(x.sender)}</div>`:'');
+  o+=`<div class="ln ${grp?'im-group-line':''} ${me?'me':'th'} ${first?'first':''} ${grp&&!me&&!lastInRun?'im-stack-continued':''} ${grp&&!me&&lastInRun?'im-stack-last':''}">${avatarSlot}<div class="col" style="${me?'align-items:flex-end':''}">${showName?`<div class="who">${esc(dn(x.sender))}</div>`:''}<div class="wrap">${me?tm+bubble(x.text):bubble(x.text)+tm}</div></div></div>`;
+ });return o}
+
+VIEWS.chat=()=>({cls:isGroup(chatId)?'chat im-group-chat':'chat',html:`<div class="chat-h"><button class="bk" onclick="back()">${G.chevL}<span>${otherUnread()||''}</span></button><div class="nm">${isGroup(chatId)?imGroupHeader(chatId):`<div class="im-contact-photo">${avatarFor(chatId,false)}</div>`}<div class="im-contact-name">${esc(dn(chatId))}<span class="im-contact-chevron">›</span></div>${MEMBERS[chatId]?`<small>${MEMBERS[chatId]}</small>`:''}</div><div class="rt"></div></div>
  <div class="msgs" id="msgs" onclick="closeKbd()">${chatMsgs(chatId)}</div>
- <div class="cin safe" id="cin">${G.plusSq}<div class="fld ph" id="fld" onclick="event.stopPropagation();tapInput()">${t('msgInput')}</div>${G.smile}<button class="snd" id="snd" onclick="sendLine()">${G.arrowUp}</button></div><div class="kbd" id="kbd">${kbdHTML()}</div>`,
+ <div class="cin safe" id="cin"><span class="im-camera" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 3.5h8l2 2.5h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3l2-2.5zM12 8a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></span><div class="im-entry"><div class="fld ph" id="fld" onclick="event.stopPropagation();tapInput()">${t('msgInput')}</div><button class="snd" id="snd" onclick="sendLine()">${G.arrowUp}</button></div></div><div class="kbd" id="kbd">${kbdHTML()}</div>`,
  init:()=>{if(chatId==='Kyungsoo my love 💞')ksooUnread=0;else unread[chatId]=0;typing=false;pendingText='';scrollChat()}});
 function scrollChat(smooth){const b=$('#msgs');if(!b)return;if(smooth)b.scrollTo({top:b.scrollHeight,behavior:'smooth'});else b.scrollTop=b.scrollHeight}
 function refreshChat(pop){const b=$('#msgs');if(!b||view!=='chat')return;b.innerHTML=chatMsgs(chatId);scrollChat();if(pop){const l=b.lastElementChild&&b.lastElementChild.querySelector('.bb');if(l)l.classList.add('pop')}}
@@ -877,8 +924,18 @@ function mailDate(s){const m=s.match(/^(\d+)\/(\d+)$/);if(m)return fmtNum(2026,+
 VIEWS.mail=()=>({html:navHTML({title:t('inbox'),back:t('mailboxes'),backFn:'closeApp()',right:t('edit')})+`<div class="scroll"><h1 class="lt">${t('inbox')}</h1><div class="srch">${G.search}${t('search')}</div>
  ${emails.map((e,i)=>`<button class="mrw" onclick="mailId=${i};readMail.add(${i});push('maild')"><span class="dot ${i<2&&!readMail.has(i)?'':'r'}"></span><div class="bd"><div class="l1"><b>${esc(e[0])}</b><span>${mailDate(e[3])}${G.chevR}</span></div><div class="sj">${esc(e[1])}</div><div class="pv">${esc(e[2])}</div></div></button>`).join('')}</div>
  <div class="toolbar">${G.filter}<span style="color:#000;font-size:11px;text-align:center;align-self:center">${t('updatedNow')}</span>${G.compose}</div>`});
-VIEWS.maild=()=>{const e=emails[mailId],school=![2,4].includes(mailId);const body=school?t('mailSchool',e[0],e[2]):t('mailShop',e[2]);
- return{html:navHTML({title:'',back:t('inbox'),right:'',solid:false})+`<div class="scroll"><div class="mail-d"><div class="hd"><span class="ini">${esc(e[0][0])}</span><div style="flex:1"><b>${esc(e[0])}</b><small>${t('toMe')}</small></div><small class="muted">${mailDate(e[3])}</small></div><h2>${esc(e[1])}</h2><div class="bd">${esc(body)}</div></div></div><div class="toolbar">${G.trash}${G.bookmark}${G.share.replace('M12 3v12M8 7l4-4 4 4','M9 15 4 10l5-5M4 10h10a6 6 0 0 1 6 6v3')}${G.compose}</div>`}};
+function mailSignoff(sender){
+ const name=String(sender).trim();
+ if(/shopee/i.test(name))return 'Thank you,\nShopee Team';
+ if(/lazada/i.test(name))return 'Thank you,\nLazada Team';
+ if(/montessori|school/i.test(name))return 'Thank you,\nSchool Administration';
+ if(/apple/i.test(name))return 'Thank you,\nApple Support';
+ if(/spotify/i.test(name))return 'Thank you,\nSpotify Team';
+ if(/chanyeol|chan\b/i.test(name))return 'Thanks,\nChanyeol';
+ return 'Thank you,\n'+name;
+}
+VIEWS.maild=()=>{const e=emails[mailId];const body=e[2]+'\n\n'+mailSignoff(e[0]);
+ return{html:navHTML({title:'',back:t('inbox'),right:'',solid:false})+`<div class="scroll"><div class="mail-d"><div class="hd"><span class="ini">${esc(e[0][0])}</span><div style="flex:1"><b>${esc(e[0])}</b><small>${t('toMe')}</small></div><small class="muted">${mailDate(e[3])}</small></div><h2>${esc(e[1])}</h2><div class="bd" style="white-space:pre-line">${esc(body)}</div></div></div><div class="toolbar">${G.trash}${G.bookmark}${G.share.replace('M12 3v12M8 7l4-4 4 4','M9 15 4 10l5-5M4 10h10a6 6 0 0 1 6 6v3')}${G.compose}</div>`}};
 
 /* --- 사진 --- */
 const allPhotos=[];photoSections.forEach(s=>s[1].forEach(n=>allPhotos.push({src:'gallery/'+n,sec:s[0],sub:s[2]})));
@@ -1012,9 +1069,9 @@ function mapSVG(){return `<svg width="900" height="1200" viewBox="0 0 900 1200" 
  <path d="M0 605H900" stroke="#ffe08a" stroke-width="20"/>
  <g stroke="#fff" stroke-width="5" fill="none" stroke-dasharray="2 9"><path d="M120 340H560M340 120V560"/></g>
  <g font-family="-apple-system,Pretendard,sans-serif" fill="#8a8578" font-size="13" font-weight="600" text-anchor="middle">
-  <text x="340" y="152" font-size="16" fill="#7d6b55">${t('m_univ')}</text><text x="190" y="760" fill="#5f8f4e">${t('m_park')}</text>
-  <text x="450" y="598" fill="#9a7d2c">${t('m_road')}</text><text x="604" y="250" transform="rotate(90 604 250)">${t('m_back')}</text><text x="830" y="752">${t('m_alley')}</text><text x="700" y="442">${t('m_cafe')}</text>
-  <text x="335" y="425" font-size="11">${t('m_union')}</text><text x="200" y="450" font-size="11">${t('m_lib')}</text><text x="340" y="582" font-size="11">${t('m_gate')}</text><text x="560" y="1110" fill="#5b8fbf">${t('m_stream')}</text>
+  <text x="340" y="152" font-size="16" fill="#7d6b55">University Belt</text><text x="190" y="760" fill="#5f8f4e">Rizal Park</text>
+  <text x="450" y="598" fill="#9a7d2c">Taft Avenue</text><text x="604" y="250" transform="rotate(90 604 250)">España Boulevard</text><text x="830" y="752">P. Noval Street</text><text x="700" y="442">Café District</text>
+  <text x="335" y="425" font-size="11">Sampaloc</text><text x="200" y="450" font-size="11">National Library</text><text x="340" y="582" font-size="11">Manila City</text><text x="560" y="1110" fill="#5b8fbf">Pasig River</text>
  </g></svg>`}
 const MG={home:'<path d="M4 11 12 4l8 7v9h-5v-6H9v6H4Z"/>',cup:'<path d="M5 8h11v6a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 3v2M11 3v2"/>',pin:'<circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/>',bag:'<path d="M5 8h14l-1 12H6Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>',game:'<rect x="3" y="8" width="18" height="10" rx="5"/><path d="M8 11v4M6 13h4"/><circle cx="15.5" cy="12" r=".6"/><circle cx="17" cy="14.5" r=".6"/>',mic:'<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/>',bowl:'<path d="M3.5 11h17a8.5 8.5 0 0 1-17 0Z"/><path d="M9 7c0-2 2-2 2-4M13 7c0-2 2-2 2-4"/>',bus:'<rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 11h14M8 18v2.5M16 18v2.5"/><circle cx="8.5" cy="14.5" r=".7"/><circle cx="15.5" cy="14.5" r=".7"/>'};
 const mg=k=>`<svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${MG[k]}</svg>`;
@@ -1041,14 +1098,189 @@ VIEWS.maps=()=>({cls:'mapv',html:`<div class="mapwrap" id="mapwrap"><div class="
   w.addEventListener('pointermove',e=>{if(x0===null)return;const dx=(e.clientX-x0)/SC,dy=(e.clientY-y0)/SC;if(Math.hypot(dx,dy)>4)mv=true;if(mv){w.style.cursor='grabbing';setMapPos(sx+dx,sy+dy)}});
   w.addEventListener('pointerup',()=>{x0=null;w.style.cursor=''})}});
 
-/* --- WEATHER --- */
-VIEWS.weather=()=>{const h=new Date().getHours();const hrs=[];for(let i=0;i<12;i++){const hh=(h+i)%24,night=hh>=19||hh<6;const tp=Math.round(15+5*Math.sin((hh-9)/24*2*Math.PI));hrs.push(`<div><span>${i?fmtHour(hh):t('now')}</span>${night?G.moon:(hh%5===0?G.pcloud:G.sun)}<span>${i?tp:18}°</span></div>`)}
- const days=[[G.sun,12,21],[G.pcloud,11,20],[G.cloud,10,18],[G.sun,9,19],[G.sun,10,20],[G.pcloud,11,19],[G.cloud,8,15],[G.sun,7,16],[G.sun,8,17],[G.pcloud,9,18]].map((d,i)=>[i?wdShort(2026,10,17+i):t('today'),...d]);
- return{cls:'wx',dark:true,html:`<div class="scroll"><div class="top"><div class="lc">${t('myLoc')}</div><div class="ct">${t('seoul')}</div><div class="tp">18°</div><div class="ds">${t('mostlySunny')}</div><div style="font-size:18px;font-weight:500">${t('hiLo')}</div></div>
- <div class="wcard"><div class="wh" style="border:0;padding-bottom:6px;opacity:1;font-size:14px;font-weight:500">${t('wxSummary')}</div><div style="border-top:.5px solid rgba(255,255,255,.25);padding-top:12px" class="hrs">${hrs.join('')}</div></div>
- <div class="wcard"><div class="wh">${G.calSm.replace('<svg','<svg width="14" height="14"')}${t('tenDay')}</div>${days.map(d=>`<div class="d10"><span>${d[0]}</span>${d[1]}<span class="lo">${d[2]}°</span><span class="rng"><i style="left:${(d[2]-7)/15*100}%;right:${(22-d[3])/15*100}%"></i></span><span>${d[3]}°</span></div>`).join('')}</div>
- <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 16px"><div class="wcard" style="margin:0"><div class="wh">${t('uv')}</div><b style="font-size:30px">3</b><div>${t('moderate')}</div></div><div class="wcard" style="margin:0"><div class="wh">${t('sunset')}</div><b style="font-size:26px">${fmtTime(17*60+56)}</b><div style="font-size:14px">${t('sunrise')}: ${fmtTime(6*60+39)}</div></div></div></div>
- <div class="tabbar" style="background:rgba(40,90,170,.5);box-shadow:none"><button style="color:#fff">🗺</button><button style="color:#fff;flex:2;flex-direction:row;justify-content:center;gap:6px"><i style="width:7px;height:7px;border-radius:50%;background:#fff;display:block"></i></button><button style="color:#fff">${G.list}</button></div>`}};
+/* --- WEATHER: Manila, Philippines (Open-Meteo live forecast) --- */
+/* Replace your existing VIEWS.weather block with this entire block. */
+const MANILA_WX = {
+  lat: 14.5995, lon: 120.9842, zone: 'Asia/Manila',
+  data: null, fetchedAt: 0, pending: null, error: false
+};
+
+function manilaWxCode(code, isDay = true) {
+  if (code === 0) return { icon: isDay ? G.sun : G.moon, label: 'Clear' };
+  if ([1, 2].includes(code)) return { icon: G.pcloud, label: 'Partly Cloudy' };
+  if (code === 3) return { icon: G.cloud, label: 'Cloudy' };
+  if ([45, 48].includes(code)) return { icon: G.cloud, label: 'Foggy' };
+  if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(code)) return { icon: G.cloud, label: 'Rain' };
+  if ([95, 96, 99].includes(code)) return { icon: G.cloud, label: 'Thunderstorms' };
+  return { icon: G.pcloud, label: 'Mostly Cloudy' };
+}
+
+/* MANILA WEATHER HOME WIDGET — add this after your MANILA_WX / manilaWxCode functions and before renderHome(). */
+function manilaWxWidgetMarkup() {
+  const data = MANILA_WX.data;
+  const current = data?.current;
+  const temp = Number.isFinite(current?.temperature_2m)
+    ? `${Math.round(current.temperature_2m)}°` : '--°';
+  const weather = current
+    ? manilaWxCode(current.weather_code, Boolean(current.is_day))
+    : { icon: G.cloud, label: 'Weather unavailable' };
+  const today = manilaWxNow().slice(0, 10);
+  const idx = data?.daily?.time?.indexOf(today) ?? -1;
+  const hi = idx >= 0 ? data.daily.temperature_2m_max?.[idx] : null;
+  const lo = idx >= 0 ? data.daily.temperature_2m_min?.[idx] : null;
+  const hilo = Number.isFinite(hi) && Number.isFinite(lo)
+    ? `H:${Math.round(hi)}° L:${Math.round(lo)}°` : 'Live forecast unavailable';
+  const stale = !data || Date.now() - MANILA_WX.fetchedAt > 15 * 60 * 1000;
+  return `<button class="widget wwx" data-app="weather" onclick="openApp('weather',this)">
+    <div class="c">Manila ➚</div>
+    <div class="tp">${temp}</div>
+    <span style="position:absolute;top:14px;right:14px">${weather.icon}</span>
+    <div class="ds">${weather.label}<small>${hilo}${stale && data ? ' · Cached' : ''}</small></div>
+  </button>`;
+}
+
+function manilaWxRefreshWidget() {
+  const old = document.querySelector('#homeL .widget.wwx');
+  if (!old) return;
+  const holder = document.createElement('div');
+  holder.innerHTML = manilaWxWidgetMarkup().trim();
+  old.replaceWith(holder.firstElementChild);
+}
+
+function manilaWxEnsureWidgetFresh() {
+  if (MANILA_WX.pending || (MANILA_WX.data && Date.now() - MANILA_WX.fetchedAt < 15 * 60 * 1000)) return;
+  manilaWxFetch().then(() => {
+    // Update only the widget, never navigate away from the active app.
+    manilaWxRefreshWidget();
+  });
+}
+
+
+function manilaWxTime(iso) {
+  if (!iso) return '--';
+  const part = iso.split('T')[1] || '';
+  const m = /^([0-9]{2}):([0-9]{2})/.exec(part);
+  if (!m) return '--';
+  const hh = Number(m[1]);
+  return `${hh % 12 || 12}:${m[2]} ${hh >= 12 ? 'PM' : 'AM'}`;
+}
+
+function manilaWxHour(iso) {
+  const hh = Number((iso.split('T')[1] || '00').slice(0, 2));
+  return `${hh % 12 || 12} ${hh >= 12 ? 'PM' : 'AM'}`;
+}
+
+function manilaWxDay(date, today) {
+  if (date === today) return 'Today';
+  return new Intl.DateTimeFormat('en-PH', { weekday: 'short', timeZone: 'UTC' }).format(new Date(`${date}T12:00:00Z`));
+}
+
+function manilaWxNow() {
+  // An ISO-like local timestamp for the Philippines, without UTC conversion ambiguity.
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: MANILA_WX.zone, year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', hourCycle: 'h23'
+  }).formatToParts(new Date());
+  const get = type => parts.find(p => p.type === type)?.value || '00';
+  return `${get('year')}-${get('month')}-${get('day')}T${get('hour')}:00`;
+}
+
+async function manilaWxFetch() {
+  if (MANILA_WX.pending) return MANILA_WX.pending;
+  if (MANILA_WX.data && Date.now() - MANILA_WX.fetchedAt < 15 * 60 * 1000) return MANILA_WX.data;
+  const url = 'https://api.open-meteo.com/v1/forecast?' + new URLSearchParams({
+    latitude: String(MANILA_WX.lat), longitude: String(MANILA_WX.lon),
+    timezone: MANILA_WX.zone, forecast_days: '10',
+    current: 'temperature_2m,relative_humidity_2m,apparent_temperature,is_day,weather_code',
+    hourly: 'temperature_2m,weather_code,is_day',
+    daily: 'weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max'
+  });
+  MANILA_WX.pending = fetch(url).then(r => {
+    if (!r.ok) throw new Error(`Weather service: ${r.status}`);
+    return r.json();
+  }).then(data => {
+    if (!data.current || !data.hourly || !data.daily) throw new Error('Incomplete weather response');
+    MANILA_WX.data = data;
+    MANILA_WX.fetchedAt = Date.now();
+    MANILA_WX.error = false;
+    return data;
+  }).catch(err => {
+    console.warn('Manila weather unavailable:', err);
+    MANILA_WX.error = true;
+    return MANILA_WX.data;
+  }).finally(() => { MANILA_WX.pending = null; });
+  return MANILA_WX.pending;
+}
+
+function manilaWxMarkup() {
+  const data = MANILA_WX.data;
+  const now = manilaWxNow();
+  const today = now.slice(0, 10);
+  // Fallback is intentionally labeled, not passed off as current weather.
+  const current = data?.current;
+  const currentTemp = current ? `${Math.round(current.temperature_2m)}°` : '--°';
+  const condition = current ? manilaWxCode(current.weather_code, !!current.is_day).label : 'Weather unavailable';
+  const daily = data?.daily;
+  const dayIndex = Math.max(0, daily?.time?.indexOf(today) ?? 0);
+  const hi = daily?.temperature_2m_max?.[dayIndex];
+  const lo = daily?.temperature_2m_min?.[dayIndex];
+  const hilo = Number.isFinite(hi) && Number.isFinite(lo) ? `H:${Math.round(hi)}°  L:${Math.round(lo)}°` : 'Live forecast unavailable';
+
+  const hourly = data?.hourly;
+  const hourStart = hourly?.time?.findIndex(t => t >= now) ?? -1;
+  const hrs = hourStart >= 0 ? hourly.time.slice(hourStart, hourStart + 12).map((time, i) => {
+    const j = hourStart + i;
+    const weather = manilaWxCode(hourly.weather_code[j], !!hourly.is_day[j]);
+    return `<div><span>${i ? manilaWxHour(time) : 'Now'}</span>${weather.icon}<span>${Math.round(hourly.temperature_2m[j])}°</span></div>`;
+  }).join('') : '<div>Forecast unavailable</div>';
+
+  const lows = daily?.temperature_2m_min || [];
+  const highs = daily?.temperature_2m_max || [];
+  const rangeLow = lows.length ? Math.floor(Math.min(...lows)) : 0;
+  const rangeHigh = highs.length ? Math.ceil(Math.max(...highs)) : 1;
+  const span = Math.max(1, rangeHigh - rangeLow);
+  const days = daily?.time?.map((date, i) => {
+    const low = lows[i], high = highs[i];
+    const left = Math.max(0, (low - rangeLow) / span * 100);
+    const right = Math.max(0, (rangeHigh - high) / span * 100);
+    const icon = manilaWxCode(daily.weather_code[i]).icon;
+    return `<div class="d10"><span>${manilaWxDay(date, today)}</span>${icon}<span class="lo">${Math.round(low)}°</span><span class="rng"><i style="left:${left}%;right:${right}%"></i></span><span>${Math.round(high)}°</span></div>`;
+  }).join('') || '<div style="padding:14px">Forecast unavailable</div>';
+
+  const uv = daily?.uv_index_max?.[dayIndex];
+  const uvLabel = uv == null ? 'Unavailable' : uv < 3 ? 'Low' : uv < 6 ? 'Moderate' : uv < 8 ? 'High' : uv < 11 ? 'Very High' : 'Extreme';
+  const sunrise = manilaWxTime(daily?.sunrise?.[dayIndex]);
+  const sunset = manilaWxTime(daily?.sunset?.[dayIndex]);
+  const summary = data
+    ? `Current conditions in Manila. Updated ${manilaWxTime(current.time)} (PHT).`
+    : 'Live Manila weather is temporarily unavailable. Connect to the internet to refresh.';
+
+  return `<div class="scroll"><div class="top">
+    <div class="lc">Manila, Philippines</div><div class="ct">Manila</div>
+    <div class="tp">${currentTemp}</div><div class="ds">${condition}</div>
+    <div style="font-size:18px;font-weight:500">${hilo}</div>
+  </div>
+  <div class="wcard"><div class="wh" style="border:0;padding-bottom:6px;opacity:1;font-size:14px;font-weight:500">${summary}</div>
+    <div style="border-top:.5px solid rgba(255,255,255,.25);padding-top:12px" class="hrs">${hrs}</div></div>
+  <div class="wcard"><div class="wh">${G.calSm.replace('<svg','<svg width="14" height="14"')}10-DAY FORECAST</div>${days}</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 16px 20px">
+    <div class="wcard" style="margin:0"><div class="wh">UV INDEX</div><b style="font-size:30px">${uv == null ? '--' : Math.round(uv)}</b><div>${uvLabel}</div></div>
+    <div class="wcard" style="margin:0"><div class="wh">SUNSET</div><b style="font-size:26px">${sunset}</b><div style="font-size:14px">Sunrise: ${sunrise}</div></div>
+  </div></div>
+  <div class="tabbar" style="background:rgba(40,90,170,.5);box-shadow:none"><button style="color:#fff">🗺</button><button style="color:#fff;flex:2;flex-direction:row;justify-content:center;gap:6px"><i style="width:7px;height:7px;border-radius:50%;background:#fff;display:block"></i></button><button style="color:#fff">${G.list}</button></div>`;
+}
+
+VIEWS.weather = () => ({
+  cls: 'wx', dark: true,
+  html: manilaWxMarkup(),
+  init: () => {
+    if (MANILA_WX.pending || (MANILA_WX.data && Date.now() - MANILA_WX.fetchedAt < 15 * 60 * 1000)) return;
+    manilaWxFetch().then(() => {
+      // Refresh the current Weather screen only; don't change navigation state.
+      if (typeof view !== 'undefined' && view === 'weather' && typeof render === 'function') render();
+    });
+  }
+});
 
 /* --- SETTINGS --- */
 const sIc=(c,i)=>`<span class="st-ic" style="background:${c}">${(G[i]||i).replace('<svg','<svg style="color:#fff" width="18" height="18"')}</span>`;

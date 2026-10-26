@@ -1,4 +1,4 @@
-// ===== Game Data (en) — automatically generated: tr/build.js (based on the original Korean file data.ko.js) =====
+// ===== Game Data (en) - automatically generated: tr/build.js (based on the original Korean file data.ko.js) =====
 // Names, dates, and chat room keys remain unchanged in Korean (the code reads them)
 const chatData={
  "Kyungsoo my love 💞": [
@@ -468,7 +468,7 @@ const chatData={
 
   ["call me baby", "me"],
 
-  ["[KakaoTalk Voice Call — 38 minutes]", "date"],
+  ["[KakaoTalk Voice Call - 38 minutes]", "date"],
 
   ["you hung up", "them"],
 
@@ -578,7 +578,7 @@ const chatData={
 
   ["deal", "them"],
 
-  ["[KakaoTalk Voice Call — 1 hour, 12 minutes]", "date"],
+  ["[KakaoTalk Voice Call - 1 hour, 12 minutes]", "date"],
 
   ["hyung", "me"],
   ["that was not thirty minutes", "me"],
@@ -3565,7 +3565,7 @@ const chatData={
   ["yes baby", "them"],
   ["[ssk]", "them"],
 
-  ["[KakaoTalk VoiceTalk — 14 minutes]", "date"],
+  ["[KakaoTalk VoiceTalk - 14 minutes]", "date"],
 
   ["hyung", "me"],
 
@@ -8217,538 +8217,294 @@ const notes = [
     "2026-09-01"
   ]
 ];
+/* ===== OCTOBER 2026 · KYUNGSOO'S CALENDAR ===== */
 const events = {
-  "1": [
-    "Gym · 10 AM",
-    "Dance practice at SM · 2 PM"
-  ],
-  "2": [
-    "Recording session · 1 PM",
-    "Dinner with Kyungsoo 💞 · 7 PM"
-  ],
-  "3": [
-    "Visit KAMONG Café · 2 PM",
-    "Call Mom · 8 PM"
-  ],
-  "4": [
-    "Rest day",
-    "Movie night with hyung 🍿 · 8 PM"
-  ],
-  "5": [
-    "EXO practice at SM · 11 AM",
-    "Choreography review · 4 PM"
-  ],
-  "6": [
-    "Gym · 10 AM",
-    "Recording studio · 3 PM"
-  ],
-  "7": [
-  "🎂 YIXING HYUNG'S BIRTHDAY 🐑",
-  "Send birthday message to Yixing hyung 💌 · 9 AM",
-  "Video call Yixing hyung if he's free 📱",
-  "Meeting at SM · 1 PM",
-  "Dinner with Chanyeol hyung · 7 PM"
-],
-  "8": [
-    "Dance practice · 11 AM",
-    "Call Kyungsoo 💞 · 9 PM"
-  ],
-  "9": [
-    "Gym · 10 AM",
-    "Choreography filming · 2 PM"
-  ],
-  "10": [
-    "Visit noona and the kids · 1 PM",
-    "Bring presents for Raeon & Rahee 🎁"
-  ],
-  "11": [
-    "Rest day",
-    "Walk with the dogs 🐶 · 4 PM"
-  ],
-  "12": [
-    "EXO practice at SM · 10 AM",
-    "Recording session · 3 PM"
-  ],
-  "13": [
-    "Dentist · 3:30 PM",
-    "Dinner with Kyungsoo 💞 · 7 PM"
-  ],
-  "14": [
-    "Gym · 9 AM",
-    "Dance practice · 1 PM"
-  ],
-  "15": [
-    "Meeting with management · 11 AM",
-    "EXO rehearsal · 3 PM"
-  ],
-  "16": [
-    "Recording session · 2 PM",
-    "Date night with hyung 💞 · 7 PM"
-  ],
-  "17": [
-    "Groceries · 11 AM",
-    "Walk the dogs 🐶 · 5 PM",
-    "Laundry"
-  ],
-  "18": [
-    "Brunch with Kyungsoo · 11 AM",
-    "Movie night at home 🍿 · 8 PM"
-  ],
-  "19": [
-    "Gym · 10 AM",
-    "Dance practice at SM · 2 PM"
-  ],
-  "20": [
-    "EXO practice · 11 AM",
-    "Choreography review · 4 PM"
-  ],
-  "21": [
-    "Recording studio · 1 PM",
-    "Visit KAMONG Café · 5 PM"
-  ],
-  "22": [
-    "Meeting at SM · 11 AM",
-    "EXO group dinner 🍽️ · 7 PM"
-  ],
-  "23": [
-    "Gym · 10 AM",
-    "Dinner with Kyungsoo 💞 · 7 PM",
-    "Call CK about birthday plans"
-  ],
-  "24": [
-    "Rest day",
-    "Buy dog treats 🐶",
-    "Organize photos for hyung's gift"
-  ],
-  "25": [
-    "Lunch with Mom · 12 PM",
-    "Apartment maintenance fee due"
-  ],
-  "26": [
-    "EXO practice at SM · 11 AM",
-    "Recording session · 4 PM"
-  ],
-  "27": [
-    "Gym · 10 AM",
-    "Dance practice · 2 PM",
-    "Call Junmyeon hyung"
-  ],
-  "28": [
-    "Management meeting · 11 AM",
-    "Choreography filming · 3 PM"
-  ],
-  "29": [
-    "EXO rehearsal · 1 PM",
-    "Dinner with Kyungsoo 💞 · 7 PM"
-  ],
-  "30": [
-    "Recording session · 11 AM",
-    "Dance practice · 3 PM",
-    "Check November schedules"
-  ],
-  "31": [
-    "Halloween 🎃",
-    "Dinner with friends · 7 PM",
-    "Movie night with hyung · 10 PM"
-  ]
+  "1": ["Drop off Sookyung at Montessori · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
+  "2": ["Montessori drop-off · 8 AM", "Submit work report · 11 AM", "Grocery shopping · 5 PM"],
+  "3": ["Laundry 🧺 · 9 AM", "Library visit with Sookyung 📚 · 2 PM"],
+  "4": ["Sunday breakfast with Sookyung 🥞 · 9 AM", "Meal prep for the week · 4 PM"],
+  "5": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Check Sooky's school bag 🎒 · 8 PM"],
+  "6": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Read bedtime stories 📖 · 8 PM"],
+  "7": ["Pack Sooky's lunch 🍓 · 7 AM", "Work deadline · 2 PM", "Call Mom · 8 PM"],
+  "8": ["Montessori drop-off · 8 AM", "Pay utility bills", "Pick up Sookyung · 3 PM"],
+  "9": ["Montessori drop-off · 8 AM", "Weekly work check-in · 10 AM", "Buy fruit and milk 🥛 · 5 PM"],
+  "10": ["Pancakes with Sookyung 🥞 · 9 AM", "Playground 🛝 · 3 PM"],
+  "11": ["Clean apartment · 10 AM", "Movie night with Sookyung 🍿 · 7 PM"],
+  "12": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Wash Sooky's uniforms · 7 PM"],
+  "13": ["Pack Sooky's lunch 🍱 · 7 AM", "Work meeting · 11 AM", "Pick up Sookyung · 3 PM"],
+  "14": ["Montessori drop-off · 8 AM", "Check school announcements 📋", "Grocery run · 5 PM"],
+  "15": ["Montessori drop-off · 8 AM", "Submit work files · 4 PM", "Storytime with Sookyung 📚 · 8 PM"],
+  "16": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Dinner with Chanyeol 🦒 · 6 PM"],
+  "17": ["Groceries 🛒 · 11 AM", "Laundry", "Bake cookies with Sookyung 🍪 · 3 PM"],
+  "18": ["Slow Sunday ☀️", "Visit the park with Sookyung · 4 PM", "Prepare Monday lunchbox · 7 PM"],
+  "19": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
+  "20": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy school supplies ✏️ · 5 PM"],
+  "21": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Call Mom · 8 PM"],
+  "22": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Fold laundry · 8 PM"],
+  "23": ["Montessori drop-off · 8 AM", "Work check-in · 11 AM", "Family movie night 🍿 · 7 PM"],
+  "24": ["Breakfast with Sookyung 🍓 · 9 AM", "Playground with Sookyung 🛝 · 3 PM", "Pick up groceries · 5 PM"],
+  "25": ["Sunday cleaning · 10 AM", "Apartment maintenance fee due", "Prep Sooky's uniforms · 6 PM"],
+  "26": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
+  "27": ["Pack lunchbox 🍱 · 7 AM", "Work meeting · 10 AM", "Read with Sookyung · 8 PM"],
+  "28": ["Montessori drop-off · 8 AM", "Buy Halloween treats 🎃 · 5 PM", "Check school bag · 8 PM"],
+  "29": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Prepare Sooky's costume 🎃 · 7 PM"],
+  "30": ["Halloween activity at Montessori 🎃 · 9 AM", "Pick up Sookyung · 3 PM", "Sort Halloween photos 📸 · 8 PM"],
+  "31": ["Halloween 🎃", "Costume photos with Sookyung 📸 · 11 AM", "Halloween movie night 🍿 · 7 PM"]
 };
 
 /* ===== NOVEMBER 2026 ===== */
 const novemberEvents = {
-  "1": ["Rest day", "Walk the dogs 🐶 · 4 PM"],
-  "2": ["EXO practice at SM · 11 AM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "3": ["Recording session · 1 PM", "Choreography review · 5 PM"],
-  "4": ["Gym · 10 AM", "Visit KAMONG Café · 3 PM"],
-  "5": ["Management meeting · 11 AM", "Dinner with Junmyeon hyung · 7 PM"],
-  "6": ["Dance practice · 12 PM", "Call Kyungsoo 💞 · 9 PM"],
-  "7": ["Brunch with hyung · 11 AM", "Grocery shopping 🛒"],
-  "8": ["Rest day", "Movie marathon with Kyungsoo 🍿 · 8 PM"],
-  "9": ["EXO rehearsal · 11 AM", "Recording session · 4 PM"],
-  "10": ["Dance practice · 1 PM", "Dinner with Chanyeol hyung · 7 PM"],
-  "11": ["Gym · 10 AM", "Call Mom · 7 PM"],
-  "12": ["Studio recording · 2 PM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "13": ["EXO practice · 11 AM", "Choreography review · 4 PM"],
-  "14": ["Visit noona and the kids · 1 PM", "Bring snacks for Raeon & Rahee 🍪"],
-  "15": ["Rest day", "Walk the dogs 🐶 · 4 PM"],
-  "16": ["Management meeting · 10 AM", "Dance practice · 2 PM"],
-  "17": ["Recording session · 1 PM", "Dinner with hyung · 7 PM"],
-  "18": ["EXO practice at SM · 11 AM", "Call Sehun · 8 PM"],
-  "19": ["Gym · 10 AM", "Choreography filming · 3 PM"],
-  "20": ["Management meeting · 1 PM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "21": ["Coffee with CK · 2 PM", "Browse Christmas gifts 🎁"],
-  "22": ["Rest day", "Cook dinner with Kyungsoo 🍳 · 6 PM"],
-  "23": ["EXO rehearsal · 11 AM", "Recording session · 3 PM"],
-  "24": ["Dance practice · 1 PM", "Check December schedule"],
-  "25": ["Lunch with Mom · 12 PM", "Apartment maintenance fee due"],
-  "26": ["Studio recording · 2 PM", "Date night with hyung 💞 · 7 PM"],
-  "27": [
-  "🎂 CHANYEOL HYUNG'S BIRTHDAY 🎉",
-  "Send birthday wishes in EXO group chat 📱",
-  "EXO practice · 11 AM",
-  "Birthday dinner with the members 🎂 · 7 PM",
-  "Take birthday pictures with Chanyeol hyung 📸"
-],
-  "28": ["Visit KAMONG Café · 2 PM", "Play with the dogs 🐶"],
-  "29": ["Rest day", "Movie night with Kyungsoo 🍿 · 8 PM"],
-  "30": ["Management meeting · 11 AM", "Finalize December plans"]
+  "1": ["All Saints' Day 🕯️", "Family time", "Prepare school things · 7 PM"],
+  "2": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
+  "3": ["Pack Sooky's lunch 🍱 · 7 AM", "Work meeting · 11 AM", "Groceries · 5 PM"],
+  "4": ["Montessori drop-off · 8 AM", "Submit work report · 3 PM", "Storytime 📚 · 8 PM"],
+  "5": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check school announcements"],
+  "6": ["Montessori drop-off · 8 AM", "Weekly work review · 11 AM", "Family pizza night 🍕 · 7 PM"],
+  "7": ["Breakfast with Sookyung 🥞 · 9 AM", "Visit the playground 🛝 · 3 PM"],
+  "8": ["Laundry and cleaning 🧺", "Bake with Sookyung 🍪 · 3 PM", "Prep Monday lunchbox"],
+  "9": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
+  "10": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy milk and fruit 🍓 · 5 PM"],
+  "11": ["Montessori drop-off · 8 AM", "Check Sooky's reading folder 📚", "Call Mom · 8 PM"],
+  "12": ["Montessori drop-off · 8 AM", "Work deadline · 4 PM", "Bedtime stories · 8 PM"],
+  "13": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Dinner with Chanyeol 🦒 · 6 PM"],
+  "14": ["Grocery shopping 🛒 · 10 AM", "Arts and crafts with Sookyung 🎨 · 2 PM"],
+  "15": ["Slow Sunday ☀️", "Movie afternoon with Sookyung 🍿 · 3 PM", "Prepare uniforms"],
+  "16": ["Montessori drop-off · 8 AM", "Work meeting · 11 AM", "Pick up Sookyung · 3 PM"],
+  "17": ["Montessori drop-off · 8 AM", "Submit work files · 2 PM", "Laundry · 7 PM"],
+  "18": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check school notices 📋"],
+  "19": ["Montessori drop-off · 8 AM", "Work check-in · 10 AM", "Cook Sooky's favorite dinner 🍝 · 6 PM"],
+  "20": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Family game night 🎲 · 7 PM"],
+  "21": ["Library trip with Sookyung 📚 · 11 AM", "Grocery run · 4 PM"],
+  "22": ["Clean apartment · 10 AM", "Make cookies with Sookyung 🍪 · 3 PM"],
+  "23": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
+  "24": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy school supplies ✏️ · 5 PM"],
+  "25": ["Montessori drop-off · 8 AM", "Apartment maintenance fee due", "Call Mom · 8 PM"],
+  "26": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Read with Sookyung 📖 · 8 PM"],
+  "27": ["🎂 CHANYEOL'S BIRTHDAY 🦒🎉", "Send birthday wishes · 9 AM", "Birthday dinner with Chanyeol · 7 PM"],
+  "28": ["Weekend groceries 🛒 · 10 AM", "Park with Sookyung 🛝 · 3 PM"],
+  "29": ["Laundry 🧺", "Prepare December calendar · 4 PM", "Family movie night 🍿 · 7 PM"],
+  "30": ["Montessori drop-off · 8 AM", "Work month-end review · 2 PM", "Check December school schedule 📋"]
 };
 
 /* ===== DECEMBER 2026 ===== */
 const decemberEvents = {
-  "1": ["EXO rehearsal · 11 AM", "Start Christmas shopping 🎄"],
-  "2": ["Recording session · 1 PM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "3": ["Dance practice · 11 AM", "Visit KAMONG Café · 4 PM"],
-  "4": ["Gym · 10 AM", "Christmas gift ideas for hyung 🎁"],
-  "5": ["EXO practice · 12 PM", "Dinner with Chanyeol hyung · 7 PM"],
-  "6": ["Rest day", "Decorate apartment with Kyungsoo 🎄"],
-  "7": ["Recording studio · 1 PM", "Choreography review · 5 PM"],
-  "8": ["Management meeting · 11 AM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "9": ["EXO rehearsal · 10 AM", "Call Mom · 8 PM"],
-  "10": ["Dance practice · 12 PM", "Order Christmas presents 🎁"],
-  "11": ["Recording session · 2 PM", "Movie night with hyung 🍿 · 8 PM"],
-  "12": ["Visit noona and the kids · 1 PM", "Christmas gifts for Raeon & Rahee 🎁"],
-  "13": ["Rest day", "Walk the dogs 🐶 · 4 PM"],
-  "14": ["EXO practice at SM · 11 AM", "Choreography review · 4 PM"],
-  "15": ["Recording session · 1 PM", "Dinner with Junmyeon hyung · 7 PM"],
-  "16": ["Gym · 10 AM", "Dance practice · 2 PM"],
-  "17": ["Management meeting · 11 AM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "18": ["EXO rehearsal · 11 AM", "Christmas dinner planning"],
-  "19": ["Christmas shopping with Kyungsoo 🎄 · 2 PM", "Hot chocolate date ☕"],
-  "20": ["Rest day", "Wrap presents 🎁", "Christmas movies with hyung"],
-  "21": ["Recording studio · 1 PM", "EXO group dinner · 7 PM"],
-  "22": ["Dance practice · 11 AM", "Buy groceries for Christmas"],
-  "23": ["Visit KAMONG Café · 2 PM", "Deliver presents to noona's family 🎁"],
-  "24": ["Christmas Eve 🎄", "Dinner with Kyungsoo · 7 PM", "Exchange gifts at midnight 💞"],
-  "25": ["Merry Christmas! 🎄", "Christmas lunch with family · 12 PM", "Movie night with hyung 🍿"],
-  "26": ["Rest day", "Walk Monggu, Jjanggu & Jjangah 🐶"],
-  "27": ["Coffee with CK · 2 PM", "Start planning Kyungsoo's birthday 🎂"],
-  "28": ["EXO rehearsal · 11 AM", "Recording session · 3 PM"],
-  "29": ["Dinner with Kyungsoo 💞 · 7 PM", "Review year-end photos"],
-  "30": ["Visit Mom · 1 PM", "Prepare New Year's plans"],
-  "31": ["New Year's Eve 🎆", "Year-end dinner with Kyungsoo · 7 PM", "Midnight countdown together 💞"]
+  "1": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Start Christmas gift list 🎁"],
+  "2": ["Montessori drop-off · 8 AM", "Work meeting · 11 AM", "Christmas craft with Sookyung 🎄 · 7 PM"],
+  "3": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy wrapping paper 🎁 · 5 PM"],
+  "4": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Family movie night 🍿 · 7 PM"],
+  "5": ["Christmas shopping 🎁 · 11 AM", "Hot chocolate with Sookyung ☕ · 4 PM"],
+  "6": ["Decorate Christmas tree with Sookyung 🎄 · 10 AM", "Bake cookies 🍪 · 3 PM"],
+  "7": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
+  "8": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check Montessori holiday notices 📋"],
+  "9": ["Montessori drop-off · 8 AM", "Submit work report · 2 PM", "Call Mom · 8 PM"],
+  "10": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Prepare Sooky's holiday outfit 🎀"],
+  "11": ["Montessori drop-off · 8 AM", "Work check-in · 11 AM", "Christmas movie night 🎄 · 7 PM"],
+  "12": ["Buy gifts for family 🎁 · 11 AM", "Wrap presents while Sookyung naps"],
+  "13": ["Laundry and cleaning 🧺", "Gingerbread decorating with Sookyung 🍪 · 3 PM"],
+  "14": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Review holiday school schedule"],
+  "15": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Pick up Sookyung · 3 PM"],
+  "16": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Prepare holiday cards 💌 · 7 PM"],
+  "17": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check gifts for Sooky's classmates 🎁"],
+  "18": ["Montessori holiday celebration 🎄 · 10 AM", "Take photos of Sookyung 📸", "Dinner at home · 6 PM"],
+  "19": ["Christmas shopping with Sookyung 🎄 · 11 AM", "Hot chocolate break ☕ · 3 PM"],
+  "20": ["Rest day", "Wrap presents 🎁", "Christmas movies with Sookyung 🍿"],
+  "21": ["Work year-end check-in · 10 AM", "Grocery shopping · 5 PM", "Read Christmas stories 📖 · 8 PM"],
+  "22": ["Finish work tasks · 11 AM", "Buy ingredients for Christmas dinner 🛒"],
+  "23": ["Clean apartment · 10 AM", "Prepare Christmas dessert 🍰 · 3 PM", "Call family · 8 PM"],
+  "24": ["Christmas Eve 🎄", "Bake with Sookyung 🍪 · 2 PM", "Christmas Eve dinner · 7 PM"],
+  "25": ["Merry Christmas! 🎄", "Open presents with Sookyung 🎁 · 8 AM", "Christmas lunch with family · 12 PM", "Christmas movie night 🍿 · 7 PM"],
+  "26": ["Rest day", "Organize Sooky's new toys 🧸", "Walk at the park · 4 PM"],
+  "27": ["Breakfast with Sookyung 🥞 · 9 AM", "Visit Chanyeol 🦒 · 3 PM"],
+  "28": ["Work year-end paperwork · 11 AM", "Grocery shopping · 5 PM"],
+  "29": ["Sort family photos 📸 · 11 AM", "Cook dinner with Sookyung 🍳 · 6 PM"],
+  "30": ["Prepare New Year's groceries 🛒", "Clean apartment · 3 PM", "Call Mom · 8 PM"],
+  "31": ["New Year's Eve 🎆", "Family dinner · 7 PM", "Watch countdown with Sookyung ✨"]
 };
 
 /* ===== JANUARY 2027 ===== */
 const januaryEvents = {
-  "1": ["Happy New Year! 🎆", "New Year's brunch with Kyungsoo · 11 AM", "Call family"],
-  "2": ["Rest day", "Walk the dogs 🐶 · 4 PM"],
-  "3": ["Visit KAMONG Café · 2 PM", "Birthday gift ideas for Kyungsoo 🎁"],
-  "4": ["EXO practice at SM · 11 AM", "Recording session · 3 PM"],
-  "5": ["Dance practice · 12 PM", "Call CK about birthday surprise 🤫"],
-  "6": ["Management meeting · 11 AM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "7": ["Recording studio · 1 PM", "Order Kyungsoo's birthday cake 🎂"],
-  "8": ["EXO rehearsal · 11 AM", "Pick up birthday gift for hyung 🎁"],
-  "9": ["Visit noona and the kids · 1 PM", "Ask Raeon & Rahee to make birthday cards"],
-  "10": ["Rest day", "Finalize birthday surprise for Kyungsoo 💞"],
-  "11": ["EXO practice · 11 AM", "Pick up birthday cake 🎂", "Prepare surprise for hyung 🤫"],
-  "12": ["🎂 KYUNGSOO'S BIRTHDAY 💞", "Birthday breakfast · 9 AM", "Birthday date · 2 PM", "Special dinner · 7 PM", "Give hyung his present 🎁"],
-  "13": ["Rest day", "Breakfast with Kyungsoo · 10 AM", "Organize birthday photos 📸"],
-  "14": [
-  "🎂 MY BIRTHDAY 🐻🎉",
-  "Birthday breakfast with Kyungsoo 💞 · 9 AM",
-  "Birthday messages from EXO members 📱",
-  "Birthday lunch with Mom and noona's family · 12 PM",
-  "Surprise birthday date planned by hyung 🎁 · 4 PM",
-  "Birthday dinner with Kyungsoo 💞 · 7 PM",
-  "Make a birthday wish together 🎂 · 10 PM"
-],
-  "15": ["Management meeting · 11 AM", "Dinner with Chanyeol hyung · 7 PM"],
-  "16": ["Visit KAMONG Café · 2 PM", "Walk the dogs 🐶 · 5 PM"],
-  "17": ["Rest day", "Movie night with Kyungsoo 🍿 · 8 PM"],
-  "18": ["EXO practice at SM · 11 AM", "Choreography review · 4 PM"],
-  "19": ["Recording session · 1 PM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "20": ["Gym · 10 AM", "Dance practice · 2 PM"],
-  "21": ["EXO rehearsal · 11 AM", "Call Sehun · 8 PM"],
-  "22": ["Management meeting · 11 AM", "Date night with hyung 💞 · 7 PM"],
-  "23": ["Brunch with Kyungsoo · 11 AM", "Grocery shopping together 🛒"],
-  "24": ["Rest day", "Walk Monggu, Jjanggu & Jjangah 🐶"],
-  "25": ["Lunch with Mom · 12 PM", "Apartment maintenance fee due"],
-  "26": ["Recording studio · 1 PM", "EXO practice · 4 PM"],
-  "27": ["Dance practice · 11 AM", "Dinner with Kyungsoo 💞 · 7 PM"],
-  "28": ["Management meeting · 11 AM", "Choreography filming · 3 PM"],
-  "29": ["EXO rehearsal · 1 PM", "Dinner with the members · 7 PM"],
-  "30": ["Recording session · 11 AM", "Check February schedules"],
-  "31": ["Rest day", "Cook dinner with Kyungsoo 🍳 · 6 PM"]
+  "1": ["Happy New Year! 🎆", "New Year's breakfast with Sookyung 🥞 · 9 AM", "Call family"],
+  "2": ["Rest day", "Playground with Sookyung 🛝 · 3 PM"],
+  "3": ["Organize school supplies ✏️ · 11 AM", "Prepare Sooky's uniforms · 6 PM"],
+  "4": ["Check Montessori reopening schedule 📋", "Work · 9 AM", "Buy lunchbox snacks 🍓 · 5 PM"],
+  "5": ["Work meeting · 10 AM", "Prepare school bag 🎒 · 7 PM"],
+  "6": ["Work · 9 AM", "Grocery shopping 🛒 · 5 PM", "Storytime 📚 · 8 PM"],
+  "7": ["Check Montessori school notices", "Work deadline · 2 PM", "Call Mom · 8 PM"],
+  "8": ["Work · 9 AM", "Family pizza night 🍕 · 7 PM"],
+  "9": ["Library visit with Sookyung 📚 · 11 AM", "Bake cookies 🍪 · 3 PM"],
+  "10": ["Laundry and cleaning 🧺", "Prepare weekly lunchboxes 🍱"],
+  "11": ["Work meeting · 10 AM", "Buy groceries · 5 PM", "Prepare birthday dinner ingredients 🎂"],
+  "12": ["🎂 MY BIRTHDAY 🎉", "Birthday breakfast with Sookyung 🍓 · 8 AM", "Birthday dinner with family · 7 PM", "Take birthday photos 📸"],
+  "13": ["Work · 9 AM", "Pick up Sookyung · 3 PM", "Organize birthday photos 📸"],
+  "14": ["Work meeting · 11 AM", "Grocery run · 5 PM", "Bedtime stories 📖 · 8 PM"],
+  "15": ["Work deadline · 2 PM", "Dinner with Chanyeol 🦒 · 7 PM"],
+  "16": ["Breakfast with Sookyung 🥞 · 9 AM", "Park visit 🛝 · 3 PM"],
+  "17": ["Rest day", "Movie afternoon with Sookyung 🍿 · 3 PM", "Prepare uniforms"],
+  "18": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
+  "19": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check reading folder 📚"],
+  "20": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy fruit and milk 🥛 · 5 PM"],
+  "21": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Call Mom · 8 PM"],
+  "22": ["Montessori drop-off · 8 AM", "Weekly work review · 11 AM", "Family game night 🎲 · 7 PM"],
+  "23": ["Groceries 🛒 · 10 AM", "Arts and crafts with Sookyung 🎨 · 2 PM"],
+  "24": ["Laundry 🧺", "Cook Sooky's favorite pasta 🍝 · 6 PM"],
+  "25": ["Montessori drop-off · 8 AM", "Apartment maintenance fee due", "Pick up Sookyung · 3 PM"],
+  "26": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Read with Sookyung 📖 · 8 PM"],
+  "27": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy school supplies ✏️ · 5 PM"],
+  "28": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Family dinner · 6 PM"],
+  "29": ["Montessori drop-off · 8 AM", "Month-end work review · 11 AM", "Movie night 🍿 · 7 PM"],
+  "30": ["Breakfast with Sookyung 🥞 · 9 AM", "Playground 🛝 · 3 PM"],
+  "31": ["Rest day", "Prepare February calendar 📅 · 4 PM", "Pack Monday lunchbox 🍱 · 7 PM"]
 };
 
 
+
 const searches = [
-  "how to surprise boyfriend without him finding out",
-  "birthday gift ideas for boyfriend who says he wants nothing",
-  "how to make a photo album for boyfriend",
-  "best places for birthday dinner in seoul private room",
-  "flower meanings romantic",
-  "how to write a handwritten birthday letter",
-  "is buying too many gifts bad",
-  "how to hide surprise birthday plans from boyfriend",
-  "couple photo album ideas pinterest",
-  "EXO choreography practice videos",
-  "how to improve dance stamina",
-  "dance warm up routine before rehearsal",
-  "best stretching routine for dancers",
-  "why do my legs hurt after dance practice",
-  "how to remove sweat smell from workout clothes",
-  "nike sneaker sizing korea",
-  "adidas track pants black",
-  "musinsa oversized hoodie",
-  "best winter jackets for men korea",
-  "how to style all black outfit",
-  "men's perfume recommendations",
-  "matching couple bracelets subtle",
-  "restaurants in seoul for quiet date night",
-  "best cheesecake in seoul",
-  "how to make cheesecake at home easy",
-  "how long does cheesecake last in fridge",
-  "best coffee beans for home",
-  "how to make iced americano less bitter",
-  "dog friendly cafes in seoul",
-  "dog treats safe ingredients",
-  "why do dogs sleep in weird positions",
-  "how to take better pictures of dogs",
-  "dog grooming near me",
-  "seoul forest walking trails",
-  "han river park night view",
-  "best places for evening walks in seoul",
-  "how to take good night photos iphone",
-  "how to organize 10000 photos iphone",
-  "how to recover deleted photos iphone",
-  "how to save kakaotalk voice messages iphone",
-  "how to pin someone on kakaotalk",
-  "why does my boyfriend say go to sleep so much",
-  "is it normal to miss your boyfriend after seeing him",
-  "how to stop smiling when thinking about someone",
-  "cute goodnight messages for boyfriend",
-  "how to say i miss you without sounding clingy",
-  "can you fall in love with the same person again",
-  "how to make boyfriend laugh when he's tired",
-  "best food for sore throat",
-  "citron tea benefits for throat",
-  "how to make honey citron tea",
-  "what to cook for someone who is sick",
-  "easy korean dinner recipes",
-  "how to make fluffy omelette",
-  "how to cut onions without crying",
-  "how long to boil eggs",
-  "why does my boyfriend cook better than me",
-  "EXO funny moments compilation",
-  "EXO concert fancams",
-  "KAI rover dance challenge",
-  "KAI peaches choreography",
-  "KAI mmmh live performance",
-  "D.O. singing live compilation",
-  "Kyungsoo cooking videos",
-  "Do Kyungsoo smile compilation",
-  "how to stop watching the same video over and over",
-  "choi minho running marathon",
-  "is running actually necessary for fitness",
-  "can dancing replace running cardio",
-  "how to politely decline a running invitation",
-  "how to mute group chat notifications kakaotalk",
-  "how to apologize for replying late to group chat",
-  "birthday gifts for nephew who likes soccer",
-  "pink gifts for little girls",
-  "what to buy for baby niece",
-  "how to be a fun uncle",
-  "family restaurants in seoul with kids",
-  "best movies to watch with boyfriend",
-  "romantic movies not too cheesy",
-  "how to stay awake during movie night",
-  "how to stop falling asleep while cuddling",
-  "is it normal to sleep better next to someone"
+  "how to get a 5 year old to sleep before 9pm",
+  "bakit ayaw matulog ng anak ko kahit pagod na",
+  "montessori school calendar october 2026",
+  "montessori practical life activities at home age 5",
+  "easy montessori activities for kindergarten at home",
+  "how to label kids school supplies without stickers falling off",
+  "cute lunchbox ideas for picky eaters",
+  "baon ideas for 5 year old na ayaw ng gulay",
+  "how to keep rice warm in kids lunchbox",
+  "best insulated lunch bag for kindergarten",
+  "how to remove strawberry stains from white uniform",
+  "paano tanggalin ang crayon sa sofa",
+  "why does my daughter ask why 100 times a day",
+  "normal ba na sobrang daldal ng 5 year old",
+  "how to explain different kinds of families to children",
+  "how to explain single parent family to preschooler",
+  "how to answer where is my other dad questions age 5",
+  "gentle parenting when you're exhausted",
+  "how to apologize to your child after getting impatient",
+  "how to raise a confident daughter as a single dad",
+  "how to braid little girls hair easy tutorial",
+  "easy hairstyles for little girls short hair",
+  "bakit ang hirap magtali ng buhok ng bata",
+  "cute hair clips for girls korea",
+  "strawberry themed birthday party ideas for kids",
+  "strawberry milk recipe for kids",
+  "is strawberry milk okay for kids everyday",
+  "how much sugar can a five year old have",
+  "how to make fluffy pancakes without burning them",
+  "easy breakfast recipes for kids before school",
+  "korean egg roll lunchbox recipe",
+  "how to make mini rice balls for kids",
+  "vegetables hidden in pasta sauce recipe",
+  "how to make homemade chicken nuggets crispy",
+  "why is my kid only eating the side dishes",
+  "how to meal prep for one adult and one child",
+  "weekly grocery list single parent",
+  "how long can cooked rice stay in fridge",
+  "safe way to reheat leftover pasta",
+  "best way to clean lunchbox silicone seals",
+  "how to get glitter out of carpet",
+  "how to wash stuffed animals without ruining them",
+  "how to repair teddy bear loose stitching",
+  "what to do when child loses favorite stuffed toy",
+  "where to buy strawberry plushie seoul",
+  "how to make paper crowns for kids",
+  "easy rainy day activities for five year olds",
+  "indoor playground seoul for kindergarten kids",
+  "best parks for kids in seoul",
+  "family friendly cafes seoul play area",
+  "children's library seoul weekend hours",
+  "aquarium tickets seoul children",
+  "kid friendly museums seoul",
+  "how to make weekends special on a budget with kids",
+  "how to manage full time work and school pickup",
+  "how to make shared calendar for school events",
+  "how to stop forgetting parent teacher meeting",
+  "how to write polite message to school teacher",
+  "school pickup authorization letter template",
+  "how to ask friend to babysit without feeling guilty",
+  "thank you gift ideas for friend who babysits",
+  "easy dinner recipes after long work day",
+  "how to stop overcooking salmon",
+  "korean beef radish soup recipe",
+  "simple doenjang jjigae recipe",
+  "how to make kimchi fried rice less spicy for kids",
+  "how to cook broccoli so kids actually eat it",
+  "bakit mas masarap pagkain kapag may nagluto para sayo",
+  "how to remove garlic smell from hands",
+  "why do onions make you cry even with glasses",
+  "how to keep kitchen clean while cooking",
+  "best compact air fryer for apartment",
+  "how to organize tiny apartment with kids toys",
+  "toy storage ideas small living room",
+  "how to declutter kids artwork without throwing it away",
+  "how to preserve children's drawings",
+  "best photo album for childhood memories",
+  "how to back up iphone photos to icloud",
+  "why is iphone storage full after deleting photos",
+  "how to recover accidentally deleted notes iphone",
+  "how to make emergency contact list for babysitter",
+  "how to mute work group chat after office hours",
+  "how to write a professional follow up email",
+  "excel formula count days until deadline",
+  "how to focus at work when sleep deprived",
+  "why does coffee make me sleepy sometimes",
+  "iced americano near me",
+  "best coffee beans for iced americano",
+  "how to make iced americano at home",
+  "how to get coffee stain out of blue sweater",
+  "best comfortable shoes for parents walking all day",
+  "how to remove ink stain from office shirt",
+  "how to fold fitted sheet properly",
+  "why do fitted sheets never fold properly",
+  "how often should you wash kids bedding",
+  "how to stop a child from stealing all the blanket",
+  "normal ba na anak ko buong kama ang sakop",
+  "bedtime stories for five year olds about kindness",
+  "children's books about family and belonging",
+  "how to explain friendship to a five year old",
+  "what to say when kid asks if papa is lonely",
+  "why do kids say the most embarrassing things in public",
+  "how to keep a straight face when your child is funny",
+  "is it normal to miss your child when they're at school",
+  "how to stop checking school pickup time every hour",
+  "how to be a good dad when you're doing it alone"
 ];
 const emails = [
-  [
-    "SM Entertainment",
-    "October 2026 Schedule Update",
-    "Please review the updated rehearsal, recording, and meeting schedule for the remainder of October.",
-    "오늘"
-  ],
-  [
-    "SM Artist Management",
-    "EXO Group Rehearsal Schedule",
-    "The updated rehearsal schedule and practice room arrangements have been shared. Please review before the next session.",
-    "어제"
-  ],
-  [
-    "CENTRICKAI",
-    "Kyungsoo's Birthday — Ideas 🎂",
-    "I found a few decoration ideas. Please don't buy the entire store before we decide on anything.",
-    "어제"
-  ],
-  [
-    "Naver Pay",
-    "Your payment has been completed",
-    "Your payment for an online purchase was processed successfully.",
-    "10/22"
-  ],
-  [
-    "KakaoTalk",
-    "Your Kakao Account Security Notice",
-    "A new sign-in to your Kakao Account was detected. Please review your account activity.",
-    "10/21"
-  ],
-  [
-    "SM Entertainment",
-    "Studio Reservation Confirmation",
-    "Your requested practice studio reservation has been confirmed. Please check the assigned room and time.",
-    "10/20"
-  ],
-  [
-    "MUSINSA",
-    "Your order is on its way",
-    "Good news! Your order has been shipped. Track your package using the link provided.",
-    "10/19"
-  ],
-  [
-    "Nike",
-    "Your Order Confirmation",
-    "Thanks for shopping with Nike. Your order has been confirmed and is being prepared for shipment.",
-    "10/18"
-  ],
-  [
-    "SM Artist Management",
-    "Recording Session — Schedule Confirmation",
-    "Please confirm your availability for the upcoming recording session and review the studio details.",
-    "10/17"
-  ],
-  [
-    "Restaurant Reservations",
-    "Your Dinner Reservation Is Confirmed",
-    "Your table for two has been reserved. We look forward to welcoming you.",
-    "10/16"
-  ],
-  [
-    "Korean Air",
-    "Your Flight Itinerary",
-    "Your upcoming flight itinerary is available. Please review your departure time and baggage information.",
-    "10/15"
-  ],
-  [
-    "Naver Pay",
-    "Your order has shipped",
-    "Your order is on its way. Delivery tracking information is now available.",
-    "10/15"
-  ],
-  [
-    "SM Entertainment",
-    "Artist Schedule Coordination",
-    "Please review the proposed dates for upcoming artist activities and confirm any scheduling conflicts.",
-    "10/14"
-  ],
-  [
-    "Apple",
-    "Your iCloud Storage Is Almost Full",
-    "Your iCloud storage is running low. Manage your photos and backups to continue syncing your devices.",
-    "10/13"
-  ],
-  [
-    "CENTRICKAI",
-    "Re: Photo Album Ideas",
-    "Here are some layouts you can use. And yes, you should absolutely include the handwritten letter.",
-    "10/12"
-  ],
-  [
-    "Seoul Veterinary Clinic",
-    "Grooming Appointment Reminder",
-    "This is a reminder regarding your upcoming pet grooming appointment.",
-    "10/11"
-  ],
-  [
-    "MUSINSA",
-    "Please check your order details",
-    "Your order has been received successfully. You can review your purchase details in your account.",
-    "10/10"
-  ],
-  [
-    "SM Entertainment",
-    "EXO Practice Room Booking",
-    "The practice room has been reserved for the upcoming EXO rehearsal. Please refer to the shared schedule.",
-    "10/09"
-  ],
-  [
-    "Spotify",
-    "Your September Listening Summary",
-    "Your monthly listening highlights are ready. Take a look at the music you've been enjoying.",
-    "10/08"
-  ],
-  [
-    "Korean Air",
-    "Thank You for Flying With Us",
-    "Thank you for choosing Korean Air. We hope you enjoyed your recent journey.",
-    "10/07"
-  ],
-  [
-    "SM Artist Management",
-    "Wardrobe Fitting Appointment",
-    "Please review the wardrobe fitting schedule and confirm your availability with the styling team.",
-    "10/06"
-  ],
-  [
-    "YouTube",
-    "Your Video Upload Has Been Processed",
-    "Your uploaded video has finished processing and is ready for review.",
-    "10/05"
-  ],
-  [
-    "SM Entertainment",
-    "October Artist Activities — Initial Schedule",
-    "The preliminary October schedule has been shared with the relevant teams. Please review the attached information.",
-    "10/02"
-  ],
-  [
-    "Apple",
-    "Your Receipt From Apple",
-    "Thank you for your purchase. Your receipt is available for your records.",
-    "09/28"
-  ],
-  [
-    "MUSINSA",
-    "Your Return Request Has Been Received",
-    "We have received your return request. Please review the instructions for returning your item.",
-    "09/24"
-  ],
-  [
-    "SM Entertainment",
-    "Recording Studio Access Information",
-    "Please review the studio access guidelines and equipment information before your scheduled session.",
-    "09/20"
-  ],
-  [
-    "KAMONG Café",
-    "Photos From the Café",
-    "Sharing the photos from your recent visit. Thank you for stopping by!",
-    "09/15"
-  ],
-  [
-    "SM Artist Management",
-    "Overseas Schedule — Travel Documents",
-    "Please review the travel arrangements and ensure all required documents are prepared before departure.",
-    "09/10"
-  ],
-  [
-    "Nike",
-    "Your Order Has Been Delivered",
-    "Your package has been delivered successfully. We hope you enjoy your new items.",
-    "09/04"
-  ],
-  [
-    "SM Entertainment",
-    "Artist Profile Information Review",
-    "Please review your profile information and notify the management team of any necessary updates.",
-    "08/27"
-  ],
-  [
-    "KakaoTalk",
-    "Kakao Account Password Updated",
-    "Your Kakao Account password was changed successfully. If this wasn't you, please secure your account.",
-    "08/19"
-  ],
-  [
-    "Apple",
-    "Your iCloud+ Subscription",
-    "Your iCloud+ subscription has been renewed. Thank you for using iCloud.",
-    "08/12"
-  ]
+  ["Little Steps Montessori School", "October Parent Bulletin 🎒", "Good morning, parents! Please check the updated October classroom activities, school reminders, and materials to bring this week.", "오늘"],
+  ["Shopee", "Your parcel is out for delivery! 📦", "Your order containing Sookyung's watercolor paints and animal stickers is out for delivery today. Please keep your phone available.", "오늘"],
+  ["Work - Project Team", "Re: Friday Deliverables", "Hi Kyungsoo, thanks for sending the revisions. Please review the remaining comments before our Friday check-in.", "어제"],
+  ["Little Steps Montessori School", "Reminder: Bring an Extra Set of Clothes", "Dear parents, please make sure your child has a labeled spare shirt, pants, and socks in their school bag.", "어제"],
+  ["Lazada", "Order Confirmed: Lunch Box & Water Bottle", "Thanks for shopping with Lazada! Your order for a leakproof lunch box and insulated water bottle has been placed successfully.", "10/22"],
+  ["Shopee", "Delivered: Children's Storybooks 📚", "Your package was delivered successfully. We hope Sookyung enjoys her new bedtime stories!", "10/21"],
+  ["Little Steps Montessori School", "Parent-Teacher Conference Sign-Up", "Conference slots are now open. Please select your preferred time to discuss your child's progress and classroom experience.", "10/20"],
+  ["Chanyeol", "Re: Saturday", "Soo, okay lang sa akin. Send mo na lang kung anong oras mo siya ihahatid. May snacks naman dito haha.", "10/19"],
+  ["Shopee", "Flash Sale: Kids' Art Supplies 🎨", "Your saved art kits, washable markers, and coloring books are included in today's deals.", "10/18"],
+  ["Lazada", "Your Order Has Shipped 🚚", "Your order for a children's raincoat and foldable umbrella is on the way. Track the delivery in your Lazada account.", "10/17"],
+  ["Little Steps Montessori School", "Show & Tell - My Favorite Thing", "Next week's Show & Tell theme is My Favorite Thing. Children may bring one small, safe item from home.", "10/16"],
+  ["Work - HR", "October Payslip Available", "Your electronic payslip is now available through the employee portal.", "10/15"],
+  ["Shopee", "Payment Successful", "Your payment for the star-shaped sandwich cutters and silicone food containers has been confirmed.", "10/14"],
+  ["Apple", "Your iCloud Storage Is Almost Full", "Your iCloud storage is running low. Manage photos and backups to keep your devices syncing.", "10/13"],
+  ["Little Steps Montessori School", "Autumn Nature Walk - Parent Notice 🍂", "Our class will have a supervised nature walk. Please send comfortable shoes, a hat, and a labeled water bottle.", "10/12"],
+  ["Lazada", "Your Package Has Been Delivered", "Your order for a bedside night-light and children's bedding set has been delivered.", "10/11"],
+  ["Seoul Children's Clinic", "Appointment Reminder - Sookyung", "This is a reminder of Sookyung's upcoming routine pediatric appointment. Please bring any relevant records.", "10/10"],
+  ["Shopee", "Order Confirmed: Hair Clips & Socks 🎀", "Your order is being prepared. Items include colorful hair clips, patterned socks, and a small accessory organizer.", "10/09"],
+  ["Little Steps Montessori School", "October Tuition Payment Receipt", "Thank you. Your tuition payment for October has been recorded. Keep this receipt for your reference.", "10/08"],
+  ["Lazada", "Rate Your Recent Purchase ⭐", "How was your experience with the children's bookshelf and storage baskets? Leave a review to help other shoppers.", "10/07"],
+  ["Building Management", "October Maintenance Fee Notice", "Dear resident, your monthly building maintenance statement is available. Please review the payment due date.", "10/06"],
+  ["Little Steps Montessori School", "Classroom Snack Guidelines", "Please avoid nuts and strongly scented foods. Pack easy-to-open containers and label all lunch items.", "10/05"],
+  ["Shopee", "Your Return/Refund Has Been Approved", "Your refund request for the incorrect-size children's shoes has been approved. The amount will be returned to your original payment method.", "10/04"],
+  ["Work - Project Team", "Monday Meeting Notes", "Hi everyone, attached are the action items and updated deadlines from today's team meeting.", "10/02"],
+  ["Little Steps Montessori School", "Welcome to October! 🌼", "This month we'll explore practical life skills, colors, nature, and collaborative play. Thank you for supporting learning at home.", "10/01"],
+  ["Shopee", "Delivered: Dinosaur Pajamas 🦕", "Your order was delivered. Thank you for shopping with Shopee!", "09/29"],
+  ["Lazada", "Order Confirmed: Kitchen Storage Containers", "Your order has been confirmed. We'll notify you when the seller ships your items.", "09/27"],
+  ["Little Steps Montessori School", "September Learning Highlights", "Please find the September classroom newsletter, including activities in sensorial learning, language, and practical life.", "09/25"],
+  ["Seoul Children's Clinic", "Routine Checkup Summary", "A summary of Sookyung's recent visit is available in the patient portal.", "09/23"],
+  ["Shopee", "Your Cart Is Waiting 🛒", "The children's craft paper, stickers, and mini storage drawers you saved are still in your cart.", "09/21"],
+  ["Lazada", "Your Order Has Been Delivered", "Your household cleaning supplies and laundry essentials were delivered successfully.", "09/18"],
+  ["Little Steps Montessori School", "Emergency Contact Information Review", "Please review and update your child's authorized pickup contacts and emergency information if needed.", "09/15"],
+  ["Apple", "Your Receipt From Apple", "Thank you for your purchase. Your receipt is available for your records.", "09/12"],
+  ["Shopee", "Order Confirmed: Birthday Party Decorations 🎈", "Your order for pastel balloons, paper plates, and a birthday banner has been placed successfully.", "09/08"],
+  ["Spotify", "Your August Listening Summary", "Your monthly listening highlights are ready. See which songs you've played the most.", "09/05"],
+  ["Little Steps Montessori School", "School Year Welcome Packet", "Welcome, families! Please review the school calendar, daily routine, classroom expectations, and supply checklist.", "08/28"],
+  ["Lazada", "Payment Confirmation", "Your payment for a compact vacuum cleaner has been processed successfully.", "08/20"],
+  ["Apple", "Your iCloud+ Subscription", "Your iCloud+ subscription has renewed successfully. Thank you for using iCloud.", "08/12"]
 ];
 const calls=[
  [
@@ -9764,7 +9520,7 @@ const KYUNGSOO_AFTER=[
   ["Kyungsoo", "Yes."],
   ["Jongin", "Did you drink water?"],
   ["Kyungsoo", "Yes, Jongin."],
-  ["Jongin", "Did you—"],
+  ["Jongin", "Did you-"],
   ["Kyungsoo", "Are you checking on me or looking for reasons to keep talking?"],
   ["Jongin", "...Both."],
   ["Kyungsoo", "(Chuckles) I thought so."],
@@ -9820,191 +9576,180 @@ const KYUNGSOO_AFTER=[
 ];
 
 const MAP_PLACES = [
-  {
+    {
     id: "home",
-    name: "Home",
+    name: "Home 🏡",
     sub: "Apartment · Current Location",
-    x: 700,
-    y: 880,
-    color: "#5e5ce6",
-    glyph: "home",
-    fav: true,
+    x: 700, y: 880,
+    color: "#5e5ce6", glyph: "home", fav: true,
     info: [
-      ["Location", "Seoul, South Korea"],
-      ["Saved", "2026. 2. 27."],
-      ["Note", "Home sweet home.\nDon't forget the dogs' treats."]
+      ["Location", "Metro Manila, Philippines"],
+      ["Note", "Home with Sookyung. 🤍\nCheck her school bag before bedtime.\nDon't forget Mr. Berries."]
     ]
   },
   {
-    id: "kyungsoo",
-    name: "Kyungsoo's Place 💞",
-    sub: "Home · Favorite",
-    x: 772,
-    y: 792,
-    color: "#ff375f",
-    glyph: "home",
-    fav: true,
+    id: "montessori",
+    name: "Little Steps Montessori School 🎒",
+    sub: "Montessori Preschool · Sookyung's School",
+    x: 620, y: 570,
+    color: "#34c759", glyph: "pin", fav: true,
     info: [
-      ["Location", "Seoul, South Korea"],
-      ["Saved", "2026. 2. 24."],
-      ["Note", "My favorite place to be.\nRemember to bring something to eat for hyung."]
+      ["Location", "Metro Manila, Philippines · Eme lang na school"],
+      ["Class", "Kindergarten · Teacher Jongin 🐻"],
+      ["Note", "Sookyung's drop-off and pickup.\nBring her water bottle and extra clothes.\nCheck her artwork folder every Friday.\nDon't be late, Soo 😭"]
     ]
   },
   {
-    id: "sm",
-    name: "SM Entertainment",
-    sub: "Entertainment Agency · Practice Studios",
-    x: 455,
-    y: 250,
-    color: "#8e8e93",
-    glyph: "pin",
-    fav: true,
+    id: "work",
+    name: "Office",
+    sub: "Work · Weekdays",
+    x: 340, y: 280,
+    color: "#8e8e93", glyph: "pin", fav: true,
     info: [
-      ["Address", "83-21 Wangsimni-ro, Seongdong-gu, Seoul"],
-      ["Includes", "SM Practice Rooms · EXO Practice Room · Recording Studios"],
-      ["Note", "Dance practice, recording, meetings and rehearsals.\nBring water and an extra shirt."]
+      ["Location", "Metro Manila, Philippines"],
+      ["Note", "Meetings, deadlines, overtime.\nLeave on time for Sookyung's pickup whenever possible.\nCheck with Chan if meetings run late."]
     ]
   },
   {
-    id: "kamong",
-    name: "KAMONG Café",
-    sub: "Café · Family",
-    x: 650,
-    y: 430,
-    color: "#ff9f0a",
-    glyph: "cup",
-    fav: true,
+    id: "chanyeol",
+    name: "Chan's Place",
+    sub: "Best Friend · Sookyung's Tito",
+    x: 790, y: 730,
+    color: "#ff9f0a", glyph: "home", fav: true,
     info: [
-      ["Address", "17 Seocho-daero 42-gil, Seocho-gu, Seoul"],
-      ["Note", "Noona's café ☕\nDrop by when there's time.\nBring Kyungsoo hyung next time."]
+      ["Note", "Emergency babysitter (when walang gig 😭).\nSookyung loves hanging out with Tito Chan.\nRemind him: ONE ice cream only."]
+    ]
+  },
+  /*{
+    id: "jongin",
+    name: "Jongin's Place 🐻",
+    sub: "Home · Saved Place",
+    x: 790, y: 430,
+    color: "#ff375f", glyph: "home", fav: true,
+    info: [
+      ["Note", "Nini's place. 🤍\nHe helped look after Sookyung here.\nAsk before dropping by.\nMaybe bring homemade food next time hehe."]
     ]
   },
   {
-    id: "gym",
-    name: "Gym",
-    sub: "Fitness Center",
-    x: 520,
-    y: 335,
-    color: "#ff6b35",
-    glyph: "pin",
-    fav: true,
+    id: "littlefern",
+    name: "Little Fern Coffee ☕",
+    sub: "Café · First Coffee Date",
+    x: 440, y: 490,
+    color: "#ff9f0a", glyph: "cup", fav: true,
     info: [
-      ["Saved", "2026. 3. 5."],
-      ["Note", "Strength training and conditioning.\nDon't skip stretching."]
+      ["Note", "Coffee with Jongin. 🤍\nHe remembered my iced americano order.\nApparently, coffee lang wasn't just coffee.\nWould love to come back."]
     ]
   },
   {
-    id: "seoulforest",
-    name: "Seoul Forest",
-    sub: "Park · Walking",
-    x: 245,
-    y: 315,
-    color: "#34c759",
-    glyph: "pin",
-    fav: true,
+    id: "park",
+    name: "The Park 🌿",
+    sub: "Park · Walking · Favorite",
+    x: 260, y: 460,
+    color: "#34c759", glyph: "pin", fav: true,
     info: [
-      ["Address", "273 Ttukseom-ro, Seongdong-gu, Seoul"],
-      ["Note", "Fresh air, long walks and quiet afternoons.\nGood place to clear my head."]
+      ["Note", "A quiet walk after coffee.\nHeld hands with Jongin here.\nAnd... we kissed. 🤍\nPlease don't let Chan read this."]
+    ]
+  },*/
+  {
+    id: "playground",
+    name: "Sookyung's Playground",
+    sub: "Playground · Family",
+    x: 490, y: 690,
+    color: "#34c759", glyph: "pin", fav: true,
+    info: [
+      ["Note", "Her favorite slides and swings.\nBring wipes, water, and a spare shirt.\nShe always says five more minutes 😭"]
     ]
   },
   {
-    id: "hangang",
-    name: "Han River Park",
-    sub: "Park · Riverside",
-    x: 170,
-    y: 520,
-    color: "#30b0c7",
-    glyph: "pin",
-    fav: true,
+    id: "pediatrician",
+    name: "Sookyung's Pediatrician 🩺",
+    sub: "Children's Clinic · Health",
+    x: 580, y: 300,
+    color: "#30b0c7", glyph: "pin", fav: true,
     info: [
-      ["Location", "Seoul, South Korea"],
-      ["Note", "Evening walks with hyung.\nBring a jacket if it's cold.\nConvenience store ramen tastes better here."]
+      ["Note", "Routine checkups and vaccinations.\nBring her health records and a little snack.\nPromise strawberry milk after if she's brave."]
     ]
   },
   {
-    id: "dogcafe",
-    name: "Paw & Coffee",
-    sub: "Café · Pet Friendly",
-    x: 835,
-    y: 668,
-    color: "#ff9f0a",
-    glyph: "cup",
-    fav: false,
+    id: "grocery",
+    name: "The Marketplace",
+    sub: "Supermarket · Essentials",
+    x: 750, y: 620,
+    color: "#ff9f0a", glyph: "bag", fav: true,
     info: [
-      ["Saved", "2026. 4. 12."],
-      ["Note", "Dog-friendly café.\nRemember water, treats and poop bags."]
+      ["Note", "Milk, eggs, fruit, vegetables, pasta.\nSookyung's strawberries!!! 🍓\nDon't let her sneak three packs of cookies into the cart."]
+    ]
+  },
+  {
+    id: "bakery",
+    name: "Breadtalk",
+    sub: "Bakery · Breakfast",
+    x: 610, y: 780,
+    color: "#ff9f0a", glyph: "bag", fav: false,
+    info: [
+      ["Note", "Fresh bread for weekend breakfast.\nSookyung likes the little cheese rolls.\nMaybe get something for Nini too."]
+    ]
+  },
+  {
+    id: "pharmacy",
+    name: "Rose Pharmacy",
+    sub: "Pharmacy · Essentials",
+    x: 850, y: 830,
+    color: "#30b0c7", glyph: "bag", fav: false,
+    info: [
+      ["Note", "First-aid supplies, vitamins, and toiletries.\nCheck the medicine cabinet before buying more."]
     ]
   },
   {
     id: "restaurant",
-    name: "Our Dinner Spot",
-    sub: "Korean Restaurant · Favorite",
-    x: 505,
-    y: 660,
-    color: "#ff6b35",
-    glyph: "bowl",
-    fav: true,
+    name: "CIBO",
+    sub: "Italian Restaurant · Favorite",
+    x: 330, y: 660,
+    color: "#ff6b35", glyph: "bowl", fav: true,
     info: [
-      ["Saved", "2026. 3. 18."],
-      ["Note", "Hyung likes the food here.\nQuiet corner table if available.\nAsk if they have his favorite side dishes."]
+      ["Note", "Sookyung's favorite pasta place.\nAsk for a table away from the speakers.\nMaybe invite Jongin next time? 🤍"]
     ]
   },
   {
     id: "flowers",
-    name: "Blooming Day",
-    sub: "Florist · Flowers",
-    x: 690,
-    y: 700,
-    color: "#ff375f",
-    glyph: "bag",
-    fav: true,
+    name: "Petal & Paper",
+    sub: "Florist · Gifts",
+    x: 530, y: 820,
+    color: "#ff375f", glyph: "bag", fav: false,
     info: [
-      ["Saved", "2026. 6. 15."],
-      ["Note", "Flowers for hyung.\nAsk for something simple and pretty.\nDon't tell him beforehand."]
-    ]
-  },
-  {
-    id: "store",
-    name: "Convenience Store",
-    sub: "Convenience Store",
-    x: 742,
-    y: 815,
-    color: "#30b0c7",
-    glyph: "bag",
-    fav: false,
-    info: [
-      ["Note", "Late-night snacks, water and ice cream.\nGet something for hyung too."]
+      ["Note", "Flowers for special occasions.\nSookyung loves picking the pink ones.\nMaybe a small bouquet for someone someday."]
     ]
   },
   {
     id: "airport",
-    name: "Incheon International Airport",
+    name: "Ninoy Aquino International Airport",
     sub: "Airport · Travel",
-    x: 95,
-    y: 170,
-    color: "#5856d6",
-    glyph: "pin",
-    fav: false,
+    x: 95, y: 170,
+    color: "#5856d6", glyph: "pin", fav: false,
     info: [
-      ["Location", "Incheon, South Korea"],
-      ["Note", "Overseas schedules and flights.\nPassport. Phone. Earphones.\nText hyung before boarding."]
+      ["Location", "Pasay / Parañaque, Metro Manila"],
+      ["Note", "Family trips and work travel.\nSookyung's passport, snacks, headphones, and Mr. Berries.\nDouble-check everything before leaving."]
     ]
   }
 ];
 
 const MAP_RECENTS = [
-  ["Kyungsoo's Place 💞", "Directions · Oct 23"],
-  ["SM Entertainment", "Practice · Oct 22"],
-  ["KAMONG Café", "Café · Oct 20"],
-  ["Gym", "Fitness Center · Oct 19"],
-  ["Our Dinner Spot", "Restaurant · Oct 18"],
-  ["Seoul Forest", "Park · Oct 17"],
-  ["Kyungsoo's Place 💞", "Directions · Oct 16"],
-  ["Convenience Store", "Oct 15"],
-  ["Han River Park", "Park · Oct 13"],
-  ["Blooming Day", "Florist · Oct 12"],
-  ["Paw & Coffee", "Pet-Friendly Café · Oct 10"],
-  ["Incheon International Airport", "Airport · Oct 7"]
+  //["The Park 🌿", "Walk with Jongin · Oct 24"],
+  //["Little Fern Coffee ☕", "Coffee date · Oct 24"],
+  ["Home 🏡", "Directions · Oct 24"],
+  ["Little Steps Montessori School 🎒", "Sookyung's school · Oct 23"],
+  ["Office", "Work · Oct 23"],
+  ["Chan's Place", "Directions · Oct 22"],
+  ["The Marketplace", "Groceries · Oct 21"],
+  ["Little Steps Montessori School 🎒", "School pickup · Oct 20"],
+  ["Breadtalk", "Bakery · Oct 19"],
+  ["Sookyung's Playground", "Playground · Oct 18"],
+  //["Jongin's Place 🐻", "Directions · Oct 17"],
+  ["CIBO", "Restaurant · Oct 16"],
+  ["Sookyung's Pediatrician 🩺", "Clinic · Oct 14"],
+  ["Rose Pharmacy", "Pharmacy · Oct 13"],
+  ["Petal & Paper", "Florist · Oct 12"],
+  ["Ninoy Aquino International Airport", "Airport · Oct 7"]
 ];
 
 const INCOMING=[
