@@ -538,7 +538,7 @@ VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c
    Edit transcript text below; duration automatically follows word count.
    Approximate speaking rate: 145 words/minute, minimum 3 seconds.
    The simulator does not synthesize or play recorded audio. */
-const VM_WORDS_PER_MINUTE = 145;
+const VM_WORDS_PER_MINUTE = 200;
 const VM_RECORDINGS = typeof STORY_VM_RECORDINGS !== 'undefined' ? structuredClone(STORY_VM_RECORDINGS) : [];
 const vmSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const vmWords=s=>String(s).trim().match(/\S+/gu)||[];

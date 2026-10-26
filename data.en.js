@@ -4483,7 +4483,59 @@ const STORY_SP_THREADS = [
 
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
-  {title:'Cebu Business Park',date:'Mar 11, 2026',transcript:`[Replace this with your complete transcript for Cebu Business Park.]`},
+  {title:'01',date:'Mar 11, 2026',transcript:`Okay. For the revised campaign deck, kailangan i-adjust yung messaging sa third slide. Client wants something more family-oriented, so maybe we can—
+
+Papa Soo?
+
+Hmm, baby?
+
+Are you working po?
+
+Just recording something, sweetheart. What is it?
+
+Can you make two sandwiches po?
+
+Dalawa? Why, love?
+
+One for me. One for Teacher Nini.
+
+Oh. Okay, baby. We can make an extra one.
+
+Heart shape po, ha?
+
+...Heart?
+
+Opo! Para alam niya na love natin siya!
+
+Baby, hindi naman natin—
+
+Please, Papa?
+
+Sookyung baby, you can't just say that to your teacher.
+
+Why po?
+
+Because... basta, baby. We don't even know him that well.
+
+But you know him, Papa.
+
+...
+
+You said he's nice.
+
+He is nice.
+
+And handsome!
+
+Sookyung!
+
+You said that too!
+
+Okay, okay. Heart-shaped sandwich. Now go get your water bottle, please.
+
+Yay! Thank you, Papa! Love you!
+
+Love you too, baby. Oh, shoot. Naka-record pa pala.`},
   {title:'6001 9',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 9.]`},
   {title:'6001 7',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 7.]`},
   {title:'6001 8',date:'Mar 17, 2025',transcript:`[Replace this with the full transcript for recording 6001 8.]`},
