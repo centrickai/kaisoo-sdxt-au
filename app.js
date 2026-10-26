@@ -492,11 +492,36 @@ const SP_THREADS = [
 ];
 let spTab='bulletin',spPostId=null,spThreadId=null;
 const spEsc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function spRefresh(){if(view==='schoolportal')show('schoolportal','none')}
-function spSwitch(tab){spTab=tab;spPostId=null;spThreadId=null;spRefresh()}
-function spOpenPost(id){spPostId=id;spRefresh()}
-function spOpenThread(id){spThreadId=id;spRefresh()}
-function spBack(){if(spPostId!==null)spPostId=null;else if(spThreadId!==null)spThreadId=null;else {closeApp();return;}spRefresh()}
+// Direction-aware page transitions within the School Portal.
+let spTransition='none';
+function spRefresh(){
+ if(view!=='schoolportal')return;
+ const pg=APP.querySelector('[data-view="schoolportal"]');
+ const oldSurface=pg?.querySelector('.sp-app');
+ if(!oldSurface){show('schoolportal','none');return;}
+ const wrapper=document.createElement('div');
+ wrapper.innerHTML=spPage();
+ const nextSurface=wrapper.firstElementChild;
+ const direction=spTransition;
+ spTransition='none';
+ // Replace the entire flex layout synchronously: scroll and bottom tabs
+ // must remain in the normal document flow, not an absolute overlay.
+ oldSurface.replaceWith(nextSurface);
+ const conversation=nextSurface.querySelector('.sp-conversation');
+ if(conversation)conversation.scrollTop=conversation.scrollHeight;
+ if(direction!=='none' && typeof nextSurface.animate==='function'){
+  const x=direction==='back'?-24:direction==='tab'?0:24;
+  nextSurface.animate(
+   [{transform:`translateX(${x}px)`,opacity:direction==='tab'?0.65:0.85},
+    {transform:'translateX(0)',opacity:1}],
+   {duration:direction==='tab'?180:250,easing:'cubic-bezier(.22,.75,.25,1)'}
+  );
+ }
+}
+function spSwitch(tab){if(spTab===tab&&spPostId===null&&spThreadId===null)return;spTab=tab;spPostId=null;spThreadId=null;spTransition='tab';spRefresh()}
+function spOpenPost(id){spPostId=id;spTransition='forward';spRefresh()}
+function spOpenThread(id){spThreadId=id;spTransition='forward';spRefresh()}
+function spBack(){if(spPostId!==null)spPostId=null;else if(spThreadId!==null)spThreadId=null;else {closeApp();return;}spTransition='back';spRefresh()}
 function spAddComment(id){const el=document.querySelector('#sp-comment-input');const val=el?.value.trim();if(!val)return;const post=SP_POSTS.find(p=>p.id===id);if(!post)return;post.comments.push({name:'Kyungsoo',text:val,time:'Just now'});spRefresh();}
 function spSendMessage(id){const el=document.querySelector('#sp-message-input');const val=el?.value.trim();if(!val)return;const thread=SP_THREADS.find(t=>t.id===id);if(!thread)return;thread.messages.push({from:'me',text:val,time:'Just now'});spRefresh();const scroll=document.querySelector('.sp-conversation');if(scroll)scroll.scrollTop=scroll.scrollHeight;}
 function spAvatar(initials){return `<span class="sp-avatar">${spEsc(initials)}</span>`}
@@ -556,10 +581,16 @@ function vmBackToRecordings(){
  const pg=APP.querySelector('[data-view="voicememos"]');
  if(!pg)return;
  const panel=pg.querySelector('.vm-full');
- if(panel){panel.hidden=true;panel.innerHTML='';}
- for(const selector of ['.vm-list','.vm-heading','.vm-top']){
-  const el=pg.querySelector(selector);if(el)el.style.visibility='';
+ if(panel){
+  panel.animate([{opacity:1,transform:'translateX(0)'},{opacity:0,transform:'translateX(38px)'}],{duration:270,easing:'ease-in',fill:'forwards'});
+  setTimeout(()=>{if(panel.isConnected){panel.hidden=true;panel.innerHTML='';panel.getAnimations().forEach(a=>a.cancel());}},275);
  }
+ setTimeout(()=>{
+  if(!pg.isConnected)return;
+  for(const selector of ['.vm-list','.vm-heading','.vm-top']){
+   const el=pg.querySelector(selector);if(el)el.style.visibility='';
+  }
+ },160);
  vmActive=-1;vmSeconds=0;vmLastWord=-1;
 }
 function vmOpenTranscript(){
@@ -567,6 +598,8 @@ function vmOpenTranscript(){
  const r=VM_RECORDINGS[vmActive],words=vmWords(r.transcript);
  const panel=pg.querySelector('.vm-full');if(!panel)return;
  panel.hidden=false;
+ panel.getAnimations().forEach(a=>a.cancel());
+ panel.animate([{opacity:0,transform:'translateX(40px)'},{opacity:1,transform:'translateX(0)'}],{duration:330,easing:'cubic-bezier(.22,.75,.25,1)'});
  pg.querySelector('.vm-list').style.visibility='hidden';
  pg.querySelector('.vm-heading').style.visibility='hidden';
  pg.querySelector('.vm-top').style.visibility='hidden';
