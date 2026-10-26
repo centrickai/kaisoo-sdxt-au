@@ -149,7 +149,7 @@ const CUSTOM_APP_ICONS = {
 };
 
 
-const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악'};
+const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악',voicememos:'Voice Memos'};
 function appIcon(id){
     // Use a real image when a custom icon is available
   if (CUSTOM_APP_ICONS[id]) {
@@ -166,7 +166,8 @@ function appIcon(id){
  const W=(defs,body)=>`<svg viewBox="0 0 60 60"><defs>${defs}</defs>${body}</svg>`;
  switch(id){
  case'instagram':return W(`<linearGradient id="gi" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ffc35c"/><stop offset=".5" stop-color="#ff3d6e"/><stop offset="1" stop-color="#7c3bf0"/></linearGradient>`,`<rect width="60" height="60" fill="url(#gi)"/><rect x="17" y="12.5" width="26" height="34" rx="4.5" fill="none" stroke="#fff" stroke-width="3.2"/><rect x="21.6" y="17" width="16.8" height="17" rx="2" fill="#fff"/>`);
- case'twitter':return W('',`<rect width="60" height="60" rx="12" fill="#050505"/><text x="30" y="44" fill="white" font-size="42" font-family="Arial,sans-serif" text-anchor="middle">𝕏</text>`);
+   case'voicememos':return W('',`<rect width="60" height="60" rx="12" fill="#fff"/><g stroke="#fa354b" stroke-width="2.8" stroke-linecap="round"><path d="M11 24v12M16 19v22M21 13v34M26 23v14M31 9v42M36 18v24M41 13v34M46 21v18M51 26v8"/></g>`);
+case'twitter':return W('',`<rect width="60" height="60" rx="12" fill="#050505"/><text x="30" y="44" fill="white" font-size="42" font-family="Arial,sans-serif" text-anchor="middle">𝕏</text>`);
  case'photos':{let p='';for(let i=0;i<10;i++)p+=`<ellipse cx="30" cy="18.2" rx="4.4" ry="10.5" fill="#fff" transform="rotate(${i*36} 30 30)"/>`;return W(L('gp','#9bdcff','#d8f1ff'),`<rect width="60" height="60" fill="url(#gp)"/>${p}<circle cx="30" cy="30" r="7.2" fill="#ffc83d"/><circle cx="30" cy="30" r="7.2" fill="none" stroke="#f0a500" stroke-width="1"/>`)}
  case'mail':return W(L('gm','#3fb0ff','#0a6cf5'),`<rect width="60" height="60" fill="url(#gm)"/><rect x="11.5" y="18" width="37" height="25" rx="3.5" fill="#fff"/><path d="M12.5 20 30 32.5 47.5 20" fill="none" stroke="#1676f3" stroke-width="2.4" stroke-linejoin="round"/>`);
  case 'calendar': {
@@ -394,12 +395,12 @@ function lockIphone() {
    HOME SCREEN
    ============================================================ */
 function badgeOf(id){if(id==='phone')return 3+declined;if(id==='mail')return[0,1].filter(i=>!readMail.has(i)).length;if(id==='kakao')return Object.values(unread).reduce((a,b)=>a+b,0)+ksooUnread;return 0}
-function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='twitter'?'X':t('app_'+id)}</span></button>`}
+function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='voicememos'?'Voice Memos':id==='twitter'?'X':t('app_'+id)}</span></button>`}
 function renderHome(){
  HOME.innerHTML=`<div class="hgrid">
   <button class="widget wcal" data-app="calendar" onclick="openApp('calendar',this)"><div class="wd">${wdLong(new Date().getFullYear(),new Date().getMonth()+1,new Date().getDate())}</div><div class="wn">${new Date().getDate()}</div>${(events[17]||[]).map(x=>`<div class="we">${esc(x)}<small>${t('allDay')}</small></div>`).join('')}</button>
   ${manilaWxWidgetMarkup()}
-  ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps'].map(appBtn).join('')}
+  ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps','voicememos'].map(appBtn).join('')}
  </div><button class="spot" onclick="this.animate([{transform:'translateX(-50%) scale(1)'},{transform:'translateX(-50%) scale(1.08)'},{transform:'translateX(-50%) scale(1)'}],300)">${G.search.replace('<svg','<svg width="13" height="13"')}${t('search')}</button>
  <div class="dock">${['phone','safari','kakao','music'].map(appBtn).join('')}</div>`}
 // INSERT HERE
@@ -474,6 +475,98 @@ const sw=(on,fn)=>`<button class="sw ${on?'on':''}" onclick="this.classList.togg
    APP SCREENS
    ============================================================ */
 const VIEWS={};
+
+/* VOICE MEMOS — iOS-style transcript playback.
+   Edit transcript text below; duration automatically follows word count.
+   Approximate speaking rate: 145 words/minute, minimum 3 seconds.
+   The simulator does not synthesize or play recorded audio. */
+const VM_WORDS_PER_MINUTE = 145;
+const VM_RECORDINGS = [
+  {title:'Cebu Business Park',date:'Mar 11, 2026',transcript:`[Replace this with your complete transcript for Cebu Business Park.]`},
+  {title:'6001 9',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 9.]`},
+  {title:'6001 7',date:'Oct 15, 2025',transcript:`[Replace this with the full transcript for recording 6001 7.]`},
+  {title:'6001 8',date:'Mar 17, 2025',transcript:`[Replace this with the full transcript for recording 6001 8.]`},
+  {title:'6001 6',date:'Aug 10, 2024',transcript:`[Replace this with the full transcript for recording 6001 6.]`},
+  {title:'6001 5',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 5.]`},
+  {title:'6001 4',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 4.]`},
+  {title:'6001 3',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 3.]`},
+  {title:'6001 2',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 2.]`}
+];
+const vmSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const vmWords=s=>String(s).trim().match(/\S+/gu)||[];
+const vmDuration=r=>Math.max(3,Math.ceil(vmWords(r.transcript).length/VM_WORDS_PER_MINUTE*60));
+const vmTime=s=>`${Math.floor(Math.max(0,s)/60)}:${String(Math.floor(Math.max(0,s)%60)).padStart(2,'0')}`;
+const vmClock=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(Math.floor(s%60)).padStart(2,'0')}.${String(Math.floor((s%1)*100)).padStart(2,'0')}`;
+let vmActive=-1,vmPlaying=false,vmSeconds=0,vmTimer=null,vmStarted=0,vmLastWord=-1;
+function vmStop(){if(vmTimer){clearInterval(vmTimer);vmTimer=null;}vmPlaying=false;}
+function vmToggle(i){
+ if(vmActive!==i){vmStop();vmActive=i;vmSeconds=0;vmLastWord=-1;vmOpenTranscript();}
+ else if(vmPlaying){vmSeconds=Math.min(vmDuration(VM_RECORDINGS[i]),(performance.now()-vmStarted)/1000);vmStop();vmUpdate();return;}
+ if(vmSeconds>=vmDuration(VM_RECORDINGS[i])){vmSeconds=0;vmLastWord=-1;}
+ vmPlaying=true;vmStarted=performance.now()-vmSeconds*1000;vmUpdate();
+ vmTimer=setInterval(()=>{
+  if(view!=='voicememos'){vmStop();return;}
+  vmSeconds=Math.min(vmDuration(VM_RECORDINGS[i]),(performance.now()-vmStarted)/1000);
+  if(vmSeconds>=vmDuration(VM_RECORDINGS[i]))vmStop();
+  vmUpdate();
+ },80);
+}
+function vmBackToRecordings(){
+ vmStop();
+ const pg=APP.querySelector('[data-view="voicememos"]');
+ if(!pg)return;
+ const panel=pg.querySelector('.vm-full');
+ if(panel){panel.hidden=true;panel.innerHTML='';}
+ for(const selector of ['.vm-list','.vm-heading','.vm-top']){
+  const el=pg.querySelector(selector);if(el)el.style.visibility='';
+ }
+ vmActive=-1;vmSeconds=0;vmLastWord=-1;
+}
+function vmOpenTranscript(){
+ const pg=APP.querySelector('[data-view="voicememos"]');if(!pg)return;
+ const r=VM_RECORDINGS[vmActive],words=vmWords(r.transcript);
+ const panel=pg.querySelector('.vm-full');if(!panel)return;
+ panel.hidden=false;
+ pg.querySelector('.vm-list').style.visibility='hidden';
+ pg.querySelector('.vm-heading').style.visibility='hidden';
+ pg.querySelector('.vm-top').style.visibility='hidden';
+ panel.innerHTML=`<div class="vm-full-top"><button type="button" class="vm-fake-dots vm-dots-back" onclick="vmBackToRecordings()" aria-label="Back to all recordings">‹</button><span class="vm-fake-check">✓</span></div>
+  <div class="vm-full-title">${vmSafe(r.title)}</div><div class="vm-full-date">${vmSafe(r.date)}&nbsp; ${vmTime(vmDuration(r))}</div>
+  <div class="vm-transcript-viewport"><div class="vm-transcript-words">${words.map((w,j)=>`<span data-vm-word="${j}">${vmSafe(w)}</span>`).join(' ')}</div></div>
+  <div class="vm-full-bottom"><div class="vm-big-clock">00:00.00</div>
+   <div class="vm-full-controls"><span class="vm-fake-skip">↶<small>15</small></span><button class="vm-main-play" onclick="vmToggle(${vmActive})" aria-label="Pause">❚❚</button><span class="vm-fake-skip">↷<small>15</small></span></div>
+   <div class="vm-full-actions"><span class="vm-fake-caption">▤</span><span class="vm-fake-replace">REPLACE</span><span class="vm-fake-sliders">☷</span></div></div>`;
+}
+function vmUpdate(){
+ const pg=APP.querySelector('[data-view="voicememos"]');if(!pg||vmActive<0)return;
+ const panel=pg.querySelector('.vm-full');if(!panel||panel.hidden)return;
+ const r=VM_RECORDINGS[vmActive],duration=vmDuration(r),words=vmWords(r.transcript);
+ const clk=panel.querySelector('.vm-big-clock');if(clk)clk.textContent=vmClock(vmSeconds);
+ const btn=panel.querySelector('.vm-main-play');if(btn){btn.textContent=vmPlaying?'❚❚':'▶';btn.setAttribute('aria-label',vmPlaying?'Pause':'Play');}
+ // Progressively highlight the current spoken word, like iOS Voice Memos.
+ const current=Math.min(words.length-1,Math.floor(vmSeconds/duration*words.length));
+ if(current!==vmLastWord){
+  const spans=panel.querySelectorAll('[data-vm-word]');
+  spans.forEach((sp,j)=>{sp.classList.toggle('vm-spoken',j<current);sp.classList.toggle('vm-current-word',j===current);});
+  const active=spans[current];if(active){
+   const viewport=panel.querySelector('.vm-transcript-viewport');
+   const target=active.offsetTop-viewport.offsetTop-viewport.clientHeight*.38;
+   viewport.scrollTo({top:Math.max(0,target),behavior:'smooth'});
+  }
+  vmLastWord=current;
+ }
+}
+VIEWS.voicememos=()=>({
+ cls:'vm-page',
+ html:`<div class="vm-shell">
+  <div class="vm-top"><span class="vm-decor vm-back">‹</span><div class="vm-top-right"><span class="vm-decor vm-search">⌕</span><span class="vm-decor vm-select">Select</span></div></div>
+  <h1 class="vm-heading">All Recordings</h1>
+  <div class="vm-list">${VM_RECORDINGS.map((r,i)=>`<div class="vm-row"><div class="vm-record-meta"><strong>${vmSafe(r.title)}</strong><div class="vm-sub"><span>${vmSafe(r.date)}</span><span>${vmTime(vmDuration(r))}</span></div></div><button class="vm-inline-play" onclick="vmToggle(${i})" aria-label="Play ${vmSafe(r.title)}">▶</button></div>`).join('')}</div>
+  <div class="vm-record-bottom"><div class="vm-record-red"></div></div>
+  <div class="vm-full" hidden></div>
+ </div>`,
+ init:()=>{vmStop();vmActive=-1;vmSeconds=0;vmLastWord=-1;}
+});
 
 /* --- NOTES --- */
 function noteDate(d,full){const [y,m,dd]=d.split('-').map(Number);if(full)return fmtYMD(y,m,dd);if(d==='2026-10-17')return fmtTime(14*60+14);if(d==='2026-10-16')return t('yesterday');const diff=(new Date(2026,9,17)-new Date(y,m-1,dd))/864e5;if(diff<7)return wdLong(y,m,dd);return fmtNum(y,m,dd)}

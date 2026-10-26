@@ -856,3 +856,104 @@ body {
 .lk-langw {
   display: none !important;
 }
+
+/* VOICE MEMOS — append to bottom of style.css */
+.vm-page{background:#fff!important;color:#080808!important;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+.vm-shell{height:100%;display:flex;flex-direction:column;background:#fff;position:relative;overflow:hidden}
+.vm-top{padding:24px 17px 0;display:flex;align-items:center;justify-content:space-between;flex:none}
+.vm-top-right{display:flex;gap:12px;align-items:center}
+.vm-decor{display:flex;align-items:center;justify-content:center;background:#f8f8f8;border-radius:24px;height:43px;min-width:43px;font-size:23px;box-shadow:0 2px 10px #00000006;pointer-events:none}
+.vm-back{font-size:42px;font-weight:200;padding-bottom:7px}
+.vm-search{font-size:32px}.vm-select{font-size:16px;padding:0 18px}
+.vm-heading{font-size:35px;letter-spacing:-1.2px;font-weight:750;margin:21px 17px 12px;flex:none}
+.vm-list{overflow-y:auto;padding:0 17px 135px;flex:1;overscroll-behavior:contain}
+.vm-row{position:relative;border-top:1px solid #e5e5e5;padding:12px 0 14px}
+.vm-record-meta{padding-right:4px}.vm-record-meta strong{font-size:18px;display:block;font-weight:600;margin-bottom:5px}
+.vm-sub{display:flex;justify-content:space-between;color:#929292;font-size:15px}
+.vm-inline-play{position:absolute;right:0;top:12px;opacity:1;width:42px;height:42px}
+.vm-inline-play{font-size:17px;color:#1688ef;top:10px;padding:10px}
+.vm-extra[hidden],.vm-transcript[hidden]{display:none!important}
+.vm-progress{height:5px;border-radius:9px;background:#e2e2e2;margin:29px 0 7px;overflow:hidden}
+.vm-progress-fill{height:100%;background:#0a0a0a;width:0%;border-radius:9px}
+.vm-progress-labels{display:flex;justify-content:space-between;color:#929292;font-size:13px}
+.vm-controls{display:flex;align-items:center;justify-content:space-between;margin:28px 0 6px}
+.vm-controls>span{font-size:24px;position:relative;color:#111;min-width:30px;text-align:center;pointer-events:none}
+.vm-controls small{font-size:9px;position:absolute;left:10px;top:10px}
+.vm-play{border:0;background:transparent;color:#050505;font-size:32px;cursor:pointer;line-height:1;padding:8px 14px}
+.vm-transcript{margin:20px -2px 8px;border-radius:20px;background:#f7f7f7;padding:22px 18px}
+.vm-transcript-top{text-align:center;font-size:22px;font-weight:700}.vm-transcript-date{text-align:center;color:#999;font-size:13px;margin-top:6px}
+.vm-transcript p{font-size:20px;line-height:1.5;color:#777;margin:24px 0 10px;white-space:pre-wrap}
+.vm-record-bottom{position:absolute;bottom:0;left:0;right:0;height:110px;background:linear-gradient(0deg,#fff 72%,#ffffffd9);display:flex;align-items:center;justify-content:center;pointer-events:none}
+.vm-record-red{width:68px;height:68px;border-radius:50%;background:#ff3540;border:4px solid #fff;box-shadow:0 0 0 2px #f6f6f6}
+
+/* Voice Memos — prevent header from overlapping status bar */
+.vm-page .vm-top {
+  padding-top: 66px !important;
+}
+
+/* VOICE MEMOS — append to bottom of style.css */
+.vm-page{background:#fff!important;color:#080808!important;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+.vm-shell{height:100%;display:flex;flex-direction:column;background:#fff;position:relative;overflow:hidden}
+.vm-top{padding:24px 17px 0;display:flex;align-items:center;justify-content:space-between;flex:none}
+.vm-top-right{display:flex;gap:12px;align-items:center}
+.vm-decor{display:flex;align-items:center;justify-content:center;background:#f8f8f8;border-radius:24px;height:43px;min-width:43px;font-size:23px;box-shadow:0 2px 10px #00000006;pointer-events:none}
+.vm-back{font-size:42px;font-weight:200;padding-bottom:7px}
+.vm-search{font-size:32px}.vm-select{font-size:16px;padding:0 18px}
+.vm-heading{font-size:35px;letter-spacing:-1.2px;font-weight:750;margin:21px 17px 12px;flex:none}
+.vm-list{overflow-y:auto;padding:0 17px 135px;flex:1;overscroll-behavior:contain}
+.vm-row{position:relative;border-top:1px solid #e5e5e5;padding:12px 0 14px}
+.vm-record-meta{padding-right:4px}.vm-record-meta strong{font-size:18px;display:block;font-weight:600;margin-bottom:5px}
+.vm-sub{display:flex;justify-content:space-between;color:#929292;font-size:15px}
+.vm-inline-play{position:absolute;right:0;top:12px;opacity:1;width:42px;height:42px}
+.vm-inline-play{font-size:17px;color:#1688ef;top:10px;padding:10px}
+.vm-extra[hidden],.vm-transcript[hidden]{display:none!important}
+.vm-progress{height:5px;border-radius:9px;background:#e2e2e2;margin:29px 0 7px;overflow:hidden}
+.vm-progress-fill{height:100%;background:#0a0a0a;width:0%;border-radius:9px}
+.vm-progress-labels{display:flex;justify-content:space-between;color:#929292;font-size:13px}
+.vm-controls{display:flex;align-items:center;justify-content:space-between;margin:28px 0 6px}
+.vm-controls>span{font-size:24px;position:relative;color:#111;min-width:30px;text-align:center;pointer-events:none}
+.vm-controls small{font-size:9px;position:absolute;left:10px;top:10px}
+.vm-play{border:0;background:transparent;color:#050505;font-size:32px;cursor:pointer;line-height:1;padding:8px 14px}
+.vm-transcript{margin:20px -2px 8px;border-radius:20px;background:#f7f7f7;padding:22px 18px}
+.vm-transcript-top{text-align:center;font-size:22px;font-weight:700}.vm-transcript-date{text-align:center;color:#999;font-size:13px;margin-top:6px}
+.vm-transcript p{font-size:20px;line-height:1.5;color:#777;margin:24px 0 10px;white-space:pre-wrap}
+.vm-record-bottom{position:absolute;bottom:0;left:0;right:0;height:110px;background:linear-gradient(0deg,#fff 72%,#ffffffd9);display:flex;align-items:center;justify-content:center;pointer-events:none}
+.vm-record-red{width:68px;height:68px;border-radius:50%;background:#ff3540;border:4px solid #fff;box-shadow:0 0 0 2px #f6f6f6}
+
+/* Fullscreen transcription player — reference-video layout */
+.vm-page .vm-top{padding-top:66px!important}
+.vm-page .vm-inline-play{border:0;background:transparent;color:#1688ef;cursor:pointer}
+.vm-page .vm-row{padding-right:48px}
+.vm-page .vm-full[hidden]{display:none!important}
+.vm-page .vm-full{position:absolute;inset:0;background:#fff;z-index:15;display:flex;flex-direction:column;padding-top:45px;box-sizing:border-box}
+.vm-full-top{height:54px;position:relative;flex:none}
+.vm-grabber{position:absolute;top:2px;left:calc(50% - 22px);width:44px;height:5px;background:#ccc;border-radius:6px}
+.vm-fake-dots,.vm-fake-check{position:absolute;top:15px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;pointer-events:none}
+.vm-fake-dots{left:17px;background:#fafafa;letter-spacing:2px;font-size:17px}
+.vm-fake-check{right:17px;background:#0095ff;color:white;font-size:27px}
+.vm-full-title{text-align:center;font-size:23px;font-weight:750;margin-top:6px;line-height:1.25;padding:0 65px}
+.vm-full-date{text-align:center;color:#8a8a8e;font-size:15px;font-weight:600;margin-top:7px}
+.vm-transcript-viewport{flex:1;min-height:0;overflow:auto;margin:30px 30px 0;scrollbar-width:none;mask-image:linear-gradient(to bottom,transparent 0%,black 7%,black 90%,transparent 100%)}
+.vm-transcript-viewport::-webkit-scrollbar{display:none}
+.vm-transcript-words{font-size:22px;line-height:1.44;font-weight:550;color:#96969a;white-space:pre-wrap;padding:25px 0 45px}
+.vm-transcript-words [data-vm-word]{transition:color .18s}
+.vm-transcript-words .vm-spoken{color:#5c5c60}
+.vm-transcript-words .vm-current-word{color:#050505;font-weight:700}
+.vm-full-bottom{height:260px;flex:none;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:10px 20px 18px;box-sizing:border-box;background:linear-gradient(to bottom,rgba(255,255,255,.93),#fff 20%)}
+.vm-big-clock{font-size:40px;letter-spacing:-1px;font-weight:750;font-variant-numeric:tabular-nums}
+.vm-full-controls{display:flex;align-items:center;justify-content:center;gap:42px}
+.vm-main-play{font-size:41px;font-weight:800;line-height:1;border:0;background:none;color:#000;min-width:55px;min-height:60px;cursor:pointer}
+.vm-fake-skip{font-size:36px;position:relative;pointer-events:none}
+.vm-fake-skip small{font-size:10px;position:absolute;top:20px;left:12px}
+.vm-full-actions{width:100%;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
+.vm-fake-caption{width:48px;height:48px;background:#0095ff;color:#fff;border-radius:50%;display:grid;place-items:center;font-size:27px}
+.vm-fake-replace{background:#f2f2f5;color:#aaa;border-radius:35px;padding:15px 34px;font-size:15px;font-weight:700}
+.vm-fake-sliders{width:48px;height:48px;border-radius:50%;background:#fafafa;display:grid;place-items:center;font-size:27px}
+
+/* Transcript back navigation */
+.vm-full-top{position:relative;}
+.vm-transcript-back{appearance:none;border:0;background:transparent;color:#007aff;font:500 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;display:flex;align-items:center;gap:5px;cursor:pointer;padding:9px 4px;position:relative;z-index:2;}
+.vm-transcript-back>span{font-size:15px;}
+
+/* Use the original three-dots circle as the transcript back button. */
+.vm-full-top .vm-dots-back{pointer-events:auto;appearance:none;border:0;cursor:pointer;color:#007aff;font-size:34px;font-weight:300;letter-spacing:0;line-height:1;padding:0 0 5px;background:#f7f7f8;}
