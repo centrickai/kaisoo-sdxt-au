@@ -1925,7 +1925,7 @@ const liveReplies=[
     "them": []
   }
 ];
-const CALL_ASK_AT=240;
+/*const CALL_ASK_AT=240;
 const CALL_AT=390;
 const CALL_ASK = [
   "jongin-ah",
@@ -1947,7 +1947,9 @@ const CALL_DECLINED = [
   "ㅋㅋㅋㅋ are you busy?",
   "i want to hear your sweet voice 😞",
   "call me when you're free"
-];
+];*/
+
+
 const mediaLabels={
  "[My Love]": {
   "kind": "audio",
@@ -2609,7 +2611,7 @@ const OTHER_CALLS={
   ["Chanyeol", "Bye, Soo!"],
  ]
 };
-const KYUNGSOO_AFTER=[
+/*const KYUNGSOO_AFTER=[
   ["Kyungsoo", "Jongin-ah?"],
   ["Jongin", "Hyunggg."],
   ["Kyungsoo", "Didn't you just get home?"],
@@ -2692,7 +2694,7 @@ const KYUNGSOO_AFTER=[
   ["Kyungsoo", "Love you too, Jongin-ah."],
   ["Jongin", "Bye, hyung."],
   ["Kyungsoo", "Bye. Sleep well, my sweetest boy."]
-];
+];*/
 
 const MAP_PLACES = [
     {
@@ -2871,7 +2873,7 @@ const MAP_RECENTS = [
   ["Ninoy Aquino International Airport", "Airport · Oct 7"]
 ];
 
-const INCOMING=[
+/*const INCOMING=[
  "jongin-ah",
  "guess what"
 ];
@@ -2884,7 +2886,7 @@ const DISPLAY={
  "조장": "Team Leader",
  "안내 음성": "Automated message",
  "모르는 사람": "Unknown caller"
-};
+};*/
 
 
 /* ============================================================
@@ -2977,8 +2979,67 @@ Teacher Jongin 🐻`,
 
 // SP_THREADS
 const STORY_SP_THREADS = [
- {id:1,name:'Teacher Nini',role:'Sookyung’s Class Teacher',initials:'TN',messages:[{from:'them',text:'Good afternoon, Mr. Do! Just wanted to let you know that Sookyung did really well during our reading activity today. 😊',time:'Yesterday · 3:12 PM'},{from:'me',text:'That’s wonderful to hear. Thank you for letting me know, Teacher!',time:'Yesterday · 3:18 PM'},{from:'them',text:'Of course! She was very excited to tell everyone about the book you read together.',time:'Yesterday · 3:20 PM'}]},
- {id:2,name:'School Administration',role:'Little Steps Academy',initials:'LS',messages:[{from:'them',text:'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.',time:'Oct 23 · 9:30 AM'},{from:'me',text:'Thank you! I’ll send it with her tomorrow.',time:'Oct 23 · 9:45 AM'}]}
+ {
+    id: 1,
+    name: 'Teacher Kim Jongin',
+    role: 'Kinder Sunshine · Class Teacher',
+    initials: 'KJ',
+    messages: [
+      // MONDAY — sandwich permission
+      {
+        from: 'me',
+        text: 'Good morning, Teacher Jongin. Sooky prepared a sandwich for you and was hoping to give it to you today. I just wanted to ask if the school allows teachers to accept homemade food from students. Thank you.',
+        time: 'Monday · 7:51 AM'
+      },
+      {
+        from: 'them',
+        text: 'Good morning, Mr. Do! Thank you for checking first. We can accept small food gifts from families as long as the ingredients are disclosed and there are no allergy concerns. Sooky mentioned the sandwich during our morning circle. She\'s very excited about it. 😊',
+        time: 'Monday · 8:06 AM'
+      },
+      {
+        from: 'me',
+        text: 'Thank you, Teacher. It contains bread, cream cheese, and strawberries. No nuts. I\'ll leave it with Sooky, then.',
+        time: 'Monday · 8:09 AM'
+      },
+      {
+        from: 'them',
+        text: 'Got it po. Thank you, Mr. Do. Please tell Sooky I appreciate her thoughtfulness. I\'ll thank her personally too. Have a good day!',
+        time: 'Monday · 8:12 AM'
+      },
+
+      // WEDNESDAY — Sooky's progress
+      {
+        from: 'them',
+        text: 'Good morning, Mr. Do! Just wanted to let you know that Sooky has been settling in really well. She\'s been participating more during circle time and even volunteered to help distribute crayons today. 😊\n\nAlso, thank you again for yesterday\'s sandwich. It was really good! Please tell Sooky I appreciated her little note.',
+        time: 'Wednesday · 8:04 AM'
+      },
+      {
+        from: 'me',
+        text: 'Good morning, Teacher. Thank you for the update. I\'m glad she\'s adjusting well. She\'s been talking about your class nonstop since Monday.\n\nAnd you\'re welcome. Sooky was very happy that you liked it.',
+        time: 'Wednesday · 8:18 AM'
+      },
+      {
+        from: 'them',
+        text: 'I\'m glad to hear that! She\'s a lovely kid, Mr. Do. You must be very proud of her.',
+        time: 'Wednesday · 8:24 AM'
+      },
+      {
+        from: 'me',
+        text: 'I am. Very much. Thank you, Teacher.',
+        time: 'Wednesday · 8:27 AM'
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: 'School Administration',
+    role: 'Little Oaks Kindergarten',
+    initials: 'LO',
+    messages: [
+      {from: 'them', text: 'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.', time: 'Oct 23 · 9:30 AM'},
+      {from: 'me', text: 'Thank you! I’ll send it with her tomorrow.', time: 'Oct 23 · 9:45 AM'}
+    ]
+  }
 ];
 
 // ATTENDANCE — Edit or add records here. Newest first.
