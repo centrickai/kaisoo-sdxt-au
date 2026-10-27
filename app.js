@@ -844,12 +844,22 @@ VIEWS.phone=()=>{const all=[...extraCalls,...calls].filter(c=>!missOnly||c[2]===
 const IM_EXTRA_GROUPS = [
   // Add the exact chatroom title here, e.g. 'Kinder A Parents 🧸'
 ];
-const isGroup=n=>/EXO 🪐|엑소 🪐|우리 셋 🐻|SM 러닝크루 🏃🔥/.test(n)||IM_EXTRA_GROUPS.includes(n)||Boolean(MEMBERS[n]);
-const MEMBERS={'우리 셋 🐻':3,'엑소 🪐': 6,'SM 러닝크루 🏃🔥':9};
+const isGroup=n=>/Accounting Team/.test(n)||IM_EXTRA_GROUPS.includes(n)||Boolean(MEMBERS[n]);
+const MEMBERS={'Accounting Team':3,'엑소 🪐': 6,'SM 러닝크루 🏃🔥':9};
 function lastDate(n){const d=((chatData[n]||[]).filter(x=>x[1]==='date').slice(-1)[0]||[''])[0];return d==='10월 16일'?'어제':d}
 function dateKey(n){if(n==='Kyungsoo my love 💞')return 9999;const l=lastDate(n);if(l==='어제')return 1016;const m=l.match(/(\d+)월 (\d+)일/);return m?+m[1]*100+ +m[2]:0}
 function previewText(s,grp){const m=mediaLabels[s];if(m)return m.kind==='image'?t('photo'):t('voiceMsg');const b=s.match(/^\[(.+)\]$/);if(b)return /기프티콘/.test(b[1])?t('giftSent'):/파일/.test(b[1])&&!/영상/.test(b[1])?t('fileColon')+fileInfo(b[1])[0]:/영상/.test(b[1])?t('video'):t('photo');return grp?s.replace(/^[^:：]+[:：]\s*/,''):s}
-function avatarFor(name,group){if(/Kyungsoo my love 💞/.test(name))return '<img src="media/kyungsoo_kakao_profile.jpg" alt="">';if(group)return `<svg viewBox="0 0 24 24"><circle cx="8.5" cy="9" r="3" fill="#fff"/><circle cx="15.5" cy="9" r="3" fill="#fff"/><path d="M2.5 19c.4-3 2.9-5 6-5s5.6 2 6 5ZM9.5 19c.4-3 2.9-5 6-5s5.6 2 6 5Z" fill="#fff"/></svg>`;return G.sil}
+//function avatarFor(name,group){if(/Kyungsoo my love 💞/.test(name))return '<img src="media/kyungsoo_kakao_profile.jpg" alt="">';if(group)return `<svg viewBox="0 0 24 24"><circle cx="8.5" cy="9" r="3" fill="#fff"/><circle cx="15.5" cy="9" r="3" fill="#fff"/><path d="M2.5 19c.4-3 2.9-5 6-5s5.6 2 6 5ZM9.5 19c.4-3 2.9-5 6-5s5.6 2 6 5Z" fill="#fff"/></svg>`;return G.sil}
+/* FIX 2 — Find the entire one-line function beginning with:
+   function avatarFor(name,group){
+   Replace that function with: */
+function avatarFor(name,group){
+  if(/Kyungsoo my love 💞/.test(name)) return '<img src="media/kyungsoo_kakao_profile.jpg" alt="">';
+  const photo = typeof IM_SENDER_PHOTOS !== 'undefined' ? IM_SENDER_PHOTOS[name] : '';
+  if(photo) return '<img src="'+esc(photo)+'" alt="">';
+  if(group) return `<svg viewBox="0 0 24 24"><circle cx="8.5" cy="9" r="3" fill="#fff"/><circle cx="15.5" cy="9" r="3" fill="#fff"/><path d="M2.5 19c.4-3 2.9-5 6-5s5.6 2 6 5ZM9.5 19c.4-3 2.9-5 6-5s5.6 2 6 5Z" fill="#fff"/></svg>`;
+  return G.sil;
+}
 function otherUnread(){return Object.entries(unread).filter(([k])=>k!==chatId).reduce((a,[,b])=>a+b,0)+(chatId==='Kyungsoo my love 💞'?0:ksooUnread)}
 VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a));
  return{cls:'kk',html:`<div class="kk-h"><b>Messages</b><span>${G.search}${G.chatPlus}</span></div><div class="scroll">${list.map(n=>{const arr=chatData[n]||[];let last=arr.filter(x=>x[1]!=='date').slice(-1)[0],time=fmtLabel(lastDate(n)),cnt=unread[n]||0;
@@ -918,10 +928,16 @@ function chatItems(id) {
 const IM_GROUP_PHOTOS = {
   // 'Your group name': ['images/person1.jpg', 'images/person2.jpg']
 };
+//const IM_SENDER_PHOTOS = {
+   //'Channie': 'images/chanyeol.jpg',
+  // 'Jongin': 'images/jongin.jpg',
+
+  /* FIX 1 — In app.js, find the existing IM_SENDER_PHOTOS object and replace it with: */
 const IM_SENDER_PHOTOS = {
-   'Channie': 'images/chanyeol.jpg',
+  'Channie': 'images/chanyeol.jpg',
   // 'Jongin': 'images/jongin.jpg',
 };
+
 function imGroupMembers(id){
   const configured=IM_GROUP_PHOTOS[id];
   if(configured&&configured.length)return configured;
