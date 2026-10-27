@@ -401,7 +401,7 @@ function renderHome(){
  HOME.innerHTML=`<div class="hgrid">
   <button class="widget wcal" data-app="calendar" onclick="openApp('calendar',this)"><div class="wd">${wdLong(new Date().getFullYear(),new Date().getMonth()+1,new Date().getDate())}</div><div class="wn">${new Date().getDate()}</div>${(events[17]||[]).map(x=>`<div class="we">${esc(x)}<small>${t('allDay')}</small></div>`).join('')}</button>
   ${manilaWxWidgetMarkup()}
-  ${['twitter','photos','mail','calendar','clock','notes','weather','settings','maps','voicememos','schoolportal'].map(appBtn).join('')}
+  ${['photos','mail','calendar','clock','notes','weather','settings','maps','voicememos','schoolportal'].map(appBtn).join('')}
  </div><button class="spot" onclick="this.animate([{transform:'translateX(-50%) scale(1)'},{transform:'translateX(-50%) scale(1.08)'},{transform:'translateX(-50%) scale(1)'}],300)">${G.search.replace('<svg','<svg width="13" height="13"')}${t('search')}</button>
  <div class="dock">${['phone','safari','kakao','music'].map(appBtn).join('')}</div>`}
 // INSERT HERE

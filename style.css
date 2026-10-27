@@ -47,7 +47,7 @@ svg{display:block}
   inset: -2px;
 
   /* ===== WALLPAPER CUSTOMIZATION ===== */
-  --wall-x: 75%; /* Horizontal: Left ↔ Right */
+  --wall-x: 48%; /* Horizontal: Left ↔ Right */
   --wall-y: 70%; /* Vertical: Top ↕ Bottom */
 
   background-color: #000;
