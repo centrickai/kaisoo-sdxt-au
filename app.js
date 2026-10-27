@@ -149,7 +149,7 @@ const CUSTOM_APP_ICONS = {
 };
 
 
-const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악',voicememos:'Voice Memos',schoolportal:'School Portal'};
+const APPS={maps:'지도',twitter:'X',photos:'사진',mail:'Mail',calendar:'캘린더',clock:'시계',notes:'메모',weather:'날씨',settings:'설정',phone:'전화',safari:'Safari',kakao:'카카오톡',music:'음악',voicememos:'Voice Memos',schoolportal:'LSM School Portal'};
 function appIcon(id){
     // Use a real image when a custom icon is available
   if (CUSTOM_APP_ICONS[id]) {
@@ -396,7 +396,7 @@ function lockIphone() {
    HOME SCREEN
    ============================================================ */
 function badgeOf(id){if(id==='phone')return 3+declined;if(id==='mail')return[0,1].filter(i=>!readMail.has(i)).length;if(id==='kakao')return Object.values(unread).reduce((a,b)=>a+b,0)+ksooUnread;return 0}
-function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='schoolportal'?'School Portal':id==='voicememos'?'Voice Memos':id==='twitter'?'X':t('app_'+id)}</span></button>`}
+function appBtn(id){const b=badgeOf(id);return `<button class="app" data-app="${id}" onclick="openApp('${id}',this.firstElementChild)"><div class="icon"><div class="ic">${appIcon(id)}</div>${b?`<span class="bdg">${b}</span>`:''}</div><span class="lbl">${id==='schoolportal'?'LSM School Portal':id==='voicememos'?'Voice Memos':id==='twitter'?'X':t('app_'+id)}</span></button>`}
 function renderHome(){
  HOME.innerHTML=`<div class="hgrid">
   <button class="widget wcal" data-app="calendar" onclick="openApp('calendar',this)"><div class="wd">${wdLong(new Date().getFullYear(),new Date().getMonth()+1,new Date().getDate())}</div><div class="wn">${new Date().getDate()}</div>${(events[17]||[]).map(x=>`<div class="we">${esc(x)}<small>${t('allDay')}</small></div>`).join('')}</button>
@@ -919,7 +919,7 @@ const IM_GROUP_PHOTOS = {
   // 'Your group name': ['images/person1.jpg', 'images/person2.jpg']
 };
 const IM_SENDER_PHOTOS = {
-  // 'Chanyeol': 'images/chanyeol.jpg',
+   'Channie': 'images/chanyeol.jpg',
   // 'Jongin': 'images/jongin.jpg',
 };
 function imGroupMembers(id){
@@ -1136,7 +1136,17 @@ function openKyungsoo(el){if(callState)return;chatId='Kyungsoo my love 💞';if(
 /* --- Safari --- */
 VIEWS.safari=()=>{if(safSearch)return{cls:'saf',html:`<div style="position:absolute;top:54px;left:0;right:0;padding:6px 14px;display:flex;gap:12px;align-items:center;z-index:3"><div class="srch" style="margin:0;flex:1;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.08);height:40px">${G.search}<span style="color:#000">|</span><span>${t('searchWeb')}</span></div><button style="color:var(--blue);font-size:17px" onclick="safSearch=false;show('safari')">${t('cancel')}</button></div>
  <div class="scroll" style="padding-top:112px"><div style="display:flex;justify-content:space-between;margin:0 16px 8px"><b style="font-size:20px">${t('recentSearches')}</b><span style="color:var(--blue)">${t('clear')}</span></div><div class="group srec">${searches.map(s=>`<div class="row" style="--inset:44px">${G.clock.replace('<svg','<svg width="18" height="18" style="color:#8e8e93;flex:none"')}<span>${esc(s)}</span></div>`).join('')}</div></div>`,init:pg=>pg.querySelector('.srec').animate([{opacity:0,transform:'translateY(16px)'},{opacity:1,transform:'none'}],{duration:300})};
- const fav=[['sf_portal','#2a5bd7'],['sf_acad','#1e8e5a'],['sf_lib','#8b5a2b'],['sf_elearn','#d9480f'],['sf_pe','#4b6cb7'],['sf_mail','#5e5ce6'],['sf_news','#34c759'],['app_maps','#ff9f0a']].map(([k,c])=>[[...t(k)][0].toUpperCase(),t(k),c]);
+  const fav=[
+  ['Little Steps Montessori', '🏫', '#4778c7'],
+  ['BIR eServices', '🧾', '#167a55'],
+  ['Google Sheets', '📊', '#24865b'],
+  ['Google Calendar', '📅', '#4285f4'],
+  ['Healthy Recipes', '🍱', '#e38a42'],
+  ['Pediatric Care', '🩺', '#54a6a6'],
+  ['Shopee', '🛍️', '#ee6934'],
+  ['GRINDR', '🎭', '#5a8fdb']
+ ].map(([name,icon,color])=>[icon,name,color]);
+ //const fav=[['sf_portal','#2a5bd7'],['sf_acad','#1e8e5a'],['sf_lib','#8b5a2b'],['sf_elearn','#d9480f'],['sf_pe','#4b6cb7'],['sf_mail','#5e5ce6'],['sf_news','#34c759'],['app_maps','#ff9f0a']].map(([k,c])=>[[...t(k)][0].toUpperCase(),t(k),c]);
  return{cls:'saf',html:`<div class="scroll"><div class="sh" style="font-size:22px">${t('favoritesSf')}</div><div class="favs">${fav.map(f=>`<div class="fav"><i style="color:${f[2]}">${f[0]}</i>${f[1]}</div>`).join('')}</div>
  <div class="sh" style="font-size:22px;margin-top:28px">${t('privacyReport')}</div><div class="group" style="padding:14px 16px;display:flex;gap:12px;align-items:center;font-size:15px"><span style="font-size:26px">🛡️</span><span>${t('privacyText')}</span></div>
  <div class="sh" style="font-size:22px;margin-top:28px">${t('readingList')}</div><div class="group"><div class="row muted" style="font-size:15px">${t('readingEmpty')}</div></div></div>
@@ -1509,8 +1519,8 @@ VIEWS.weather = () => ({
 const sIc=(c,i)=>`<span class="st-ic" style="background:${c}">${(G[i]||i).replace('<svg','<svg style="color:#fff" width="18" height="18"')}</span>`;
 const sRow=(c,i,t,r='',fn)=>`<div class="row ${fn?'tap':''}" style="--inset:57px;cursor:${fn?'pointer':'default'}" ${fn?`onclick="${fn}"`:''}>${sIc(c,i)}<span style="flex:1">${t}</span>${r.startsWith('<button')?r:`<span class="muted" style="font-size:17px">${r}</span>${G.chevR}`}</div>`;
 VIEWS.settings=()=>({cls:'grouped',html:navHTML({title:t('app_settings')})+`<div class="scroll"><h1 class="lt">${t('app_settings')}</h1><div class="srch">${G.search}${t('search')}</div>
- <div class="group" style="margin-bottom:22px"><div class="row" style="min-height:76px"><span style="width:58px;height:58px;border-radius:50%;background:linear-gradient(#a8aeb8,#7f858f);color:#fff;font-size:24px;font-weight:600;display:grid;place-items:center">종</span><div style="flex:1"><b style="font-size:20px;font-weight:500">Kim Jongin</b><div class="muted" style="font-size:13px">${t('acct')}</div></div>${G.chevR}</div></div>
- <div class="group" style="margin-bottom:22px">${sRow('#ff9500','<svg viewBox="0 0 24 24"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5Z" fill="#fff"/></svg>',t('airplane'),sw(false))}${sRow('#007aff','<svg viewBox="0 0 16 12"><path fill="#fff" d="M8 2.3c2.3 0 4.4.9 6 2.4l1.2-1.2A10.3 10.3 0 0 0 8 .6 10.3 10.3 0 0 0 .8 3.5L2 4.7a8.6 8.6 0 0 1 6-2.4Zm0 3.4c1.4 0 2.6.5 3.6 1.4l1.2-1.2A6.8 6.8 0 0 0 8 4a6.8 6.8 0 0 0-4.8 1.9l1.2 1.2c1-.9 2.2-1.4 3.6-1.4Zm0 3.4c-.6 0-1.2.2-1.6.6L8 11.3l1.6-1.6c-.4-.4-1-.6-1.6-.6Z"/></svg>','Wi-Fi','nini_home_5G')}${sRow('#007aff','<svg viewBox="0 0 24 24"><path d="m7 7 10 10-5 4V3l5 4L7 17" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>','Bluetooth',t('on'))}${sRow('#34c759','<svg viewBox="0 0 24 24"><path d="M12 4v16M7 9v11M17 7v13M2 13v7M22 11v9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>',t('cellular'))}${sRow('#34c759','<svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><rect x="5.5" y="9.5" width="8" height="5" rx="1" fill="#fff"/></svg>',t('battery'),'88%')}</div>
+ <div class="group" style="margin-bottom:22px"><div class="row" style="min-height:76px"><span style="width:58px;height:58px;border-radius:50%;background:linear-gradient(#a8aeb8,#7f858f);color:#fff;font-size:24px;font-weight:600;display:grid;place-items:center">DK</span><div style="flex:1"><b style="font-size:20px;font-weight:500">Kyungsoo Do</b><div class="muted" style="font-size:13px">${t('acct')}</div></div>${G.chevR}</div></div>
+ <div class="group" style="margin-bottom:22px">${sRow('#ff9500','<svg viewBox="0 0 24 24"><path d="M21 15.5v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0v5l-8 5v2l8-2.5V18l-2 1.5V21l3.5-1 3.5 1v-1.5L13 18v-5Z" fill="#fff"/></svg>',t('airplane'),sw(false))}${sRow('#007aff','<svg viewBox="0 0 16 12"><path fill="#fff" d="M8 2.3c2.3 0 4.4.9 6 2.4l1.2-1.2A10.3 10.3 0 0 0 8 .6 10.3 10.3 0 0 0 .8 3.5L2 4.7a8.6 8.6 0 0 1 6-2.4Zm0 3.4c1.4 0 2.6.5 3.6 1.4l1.2-1.2A6.8 6.8 0 0 0 8 4a6.8 6.8 0 0 0-4.8 1.9l1.2 1.2c1-.9 2.2-1.4 3.6-1.4Zm0 3.4c-.6 0-1.2.2-1.6.6L8 11.3l1.6-1.6c-.4-.4-1-.6-1.6-.6Z"/></svg>','Wi-Fi','dofamily_home_5G')}${sRow('#007aff','<svg viewBox="0 0 24 24"><path d="m7 7 10 10-5 4V3l5 4L7 17" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>','Bluetooth',t('on'))}${sRow('#34c759','<svg viewBox="0 0 24 24"><path d="M12 4v16M7 9v11M17 7v13M2 13v7M22 11v9" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>',t('cellular'))}${sRow('#34c759','<svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="2.5" fill="none" stroke="#fff" stroke-width="2"/><rect x="5.5" y="9.5" width="8" height="5" rx="1" fill="#fff"/></svg>',t('battery'),'94%')}</div>
  <div class="group" style="margin-bottom:22px">${sRow('#8e8e93','gear',t('general'))}${sRow('#007aff','person',t('access'))}${sRow('#8e8e93','camera',t('camera'))}${sRow('#32ade6','photo',t('wallpaper'))}${sRow('#8e8e93','search',t('search'))}</div>
  <div class="group" style="margin-bottom:22px">${sRow('#ff3b30','bellF',t('notif'))}${sRow('#ff2d55','speaker',t('sound'))}${sRow('#5856d6','<svg viewBox="0 0 24 24"><path d="M15.5 3.5A8.5 8.5 0 1 0 20.5 15 7 7 0 0 1 15.5 3.5Z" fill="#fff"/></svg>',t('focus'))}${sRow('#5856d6','<svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9h-9Z" fill="#fff"/><path d="M14 3.2V10h6.8A9 9 0 0 0 14 3.2Z" fill="#fff" opacity=".7"/></svg>',t('screenTime'),'',"push('screentime')")}</div>
  <div class="group" style="margin-bottom:22px">${sRow('#34c759','<svg viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M9 9.5v1M15 9.5v1M12 9.5v3.5h-1M9.5 16c1.5 1 3.5 1 5 0" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>',t('faceid'))}${sRow('#007aff','<svg viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3" fill="none" stroke="#fff" stroke-width="2"/><rect x="5" y="11" width="14" height="10" rx="2" fill="#fff"/></svg>',t('privacy'))}</div></div>`});

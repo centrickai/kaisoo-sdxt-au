@@ -2115,7 +2115,7 @@ const photoSections = [
   ]
 ];
 
-const speech = [
+/*const speech = [
   ["Jongin", "HYUNG."],
   ["Kyungsoo", "Why are you yelling already?"],
   ["Jongin", "Because I still can't believe you finally went to that place."],
@@ -2186,7 +2186,8 @@ const speech = [
   ["Kyungsoo", "(Laughs) Drive safely."],
   ["Jongin", "LOVE YOUUU."],
   ["Kyungsoo", "Love you. See you soon."]
-];
+];*/
+
 const OTHER_CALLS={
  "Mom": [
   ["Soo", "Hi, Mom."],
@@ -2364,7 +2365,7 @@ const OTHER_CALLS={
  ],
  "Little Steps Montessori": [
   ["Soo", "Hello, good morning."],
-  ["School Admin", "Good morning po! May I speak with Mr. Do Kyungsoo?"],
+  ["School Admin", "Good morning po! May I speak with Mr. Kyungsoo Do?"],
   ["Soo", "Speaking po."],
   ["School Admin", "Sir, this is Anna from Little Steps Montessori. Parent po kayo ni Sookyung from Kinder Sunshine, correct?"],
   ["Soo", "Yes, that's right. May concern po ba?"],
@@ -2403,7 +2404,7 @@ const OTHER_CALLS={
 
  "Sookyung Pedia": [
   ["Clinic Receptionist", "Good afternoon! Dr. Lee's clinic, how may I help you?"],
-  ["Soo", "Hi, good afternoon. This is Do Kyungsoo, dad ni Sookyung. Pwede po bang makausap si Doc Lee?"],
+  ["Soo", "Hi, good afternoon. This is Kyungsoo Do, dad ni Sookyung. Pwede po bang makausap si Doc Lee?"],
   ["Clinic Receptionist", "Hello, Sir Kyungsoo! Sandali lang po, check ko kung available si Doc."],
   ["Soo", "Sure, thank you."],
   ["Clinic Receptionist", "Sir, I'll transfer your call na lang po."],
