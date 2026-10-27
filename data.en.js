@@ -932,9 +932,9 @@ const chatData={
   ["SPX Express: Your parcel SPXPH260127052 is out for delivery today in Makati City. COD: PHP 0.00. Please keep your phone available for the rider.", "them"]
 ],
 
-'Dr. Lee\'s Clinic': [
+'Sookyung Pedia': [
   ['9월 12일', 'date'],
-  ['Good morning, Mr. Do! This is Dr. Lee\'s Clinic. We\'re confirming Sookyung\'s scheduled pediatric checkup this Thursday, October 15, at 10:30 AM. Kindly reply to confirm your appointment. Thank you!', 'them'],
+  ['Good morning, Mr. Do! This is Sookyung Pedia. We\'re confirming Sookyung\'s scheduled pediatric checkup this Thursday, October 15, at 10:30 AM. Kindly reply to confirm your appointment. Thank you!', 'them'],
   ['Good morning. Confirmed po. Just wanted to ask if we need to bring her vaccination card again or if you already have her records on file?', 'me'],
   ['We have her previous records, sir, but please bring her vaccination card for updating. Thank you!', 'them'],
   ['Noted. Thank you.', 'me'],
@@ -1154,7 +1154,7 @@ const chatNames=[
  "Channie",
  "J&T Delivery",
  "Shopee Xpress Delivery",
- "Dr. Lee\'s Clinic",
+ "Sookyung Pedia",
  "BPI",
  "Grab",
  "Mommy",
