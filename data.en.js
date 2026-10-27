@@ -1355,135 +1355,34 @@ const chatNames=[
 const notes = [
   [
     "Sooky's School Checklist",
-    "Sooky's First Day",
+    "can't believe my baby is in kinder",
     "Sooky's First Day\n[x] Iron school uniform\n[x] Prepare pink backpack\n[x] Pack crayons and pencils\n[x] Extra clothes\n[x] Water bottle\n[x] Lunchbox: chicken sandwich, strawberries\n[ ] Take first day picture\n[ ] Drop off by 7:45 AM\n[ ] Pick up at 12:00 PM\nReminder: Check communication notebook. Buy strawberry milk on the way home.",
     "2026-10-05"
   ],
   [
-    "Birthday plan 🎂",
-    "DON'T SPOIL THE SURPRISE",
-    "KYUNGSOO HYUNG'S BIRTHDAY\n\nideas:\n- dinner somewhere quiet\n- flowers\n- handwritten letter\n- photo album of our dates\n- cake!!!\n- maybe a watch?\n\nCK said not to buy everything\n\nask CK about decorations\nreserve the restaurant early\n\nIMPORTANT:\nDO NOT ACCIDENTALLY TELL HYUNG\n\nhe's going to figure it out isn't he",
-    "2026-10-23"
+    "Tuesday: Sooky's Lunchbox 🍓",
+    "Tuesday: Sooky's Lunchbox",
+    "[ ] Wash strawberries\n[ ] Prepare sandwich ingredients\n[ ] Check bread expiration\n[ ] Cut sandwiches into hearts\n[ ] Pack Sooky's lunch\n[ ] Ask teacher about food-sharing policy\n[ ] Extra hair ties\n\nReminder: Sooky insists Teacher Nini gets the bigger heart.",
+    "2026-10-05"
   ],
   [
-    "EXO",
-    "group dinner / practice / ask Junmyeon hyung",
-    "EXO\n\nreply to the group chat!!!\n\nask junmyeon hyung about next practice\ncheck everyone's schedules\ngroup dinner next thursday\n\nbring an extra shirt\ncharge earphones\n\nwe should take more pictures together.",
-    "2026-10-22"
+    "things (person) i need to stop thinking about",
+    "god help me",
+    "\n1. Friday night.\n2. The fact that Jongin is Sooky's teacher.\n3. The fact that Sooky likes him.\n4. The fact that he remembered my name.\n5. His smile.\n6. His arms. GRABE YUNG BRASO TALAGA.\n7. Friday night. Again.\n\nGet it together, Kyungsoo. Trenta ka na.",
+    "2026-10-05"
   ],
+
   [
-    "Practice",
-    "choreography / transitions / recording",
-    "dance practice\n\nwarm up properly\nreview choreography videos\nclean up transitions\nwork on timing\nstretch after practice\n\nthings to remember:\n- don't rush the counts\n- relax shoulders\n- check footwork\n- breathe\n\nrecord another practice video\n\nSTOP FORGETTING THE WATER BOTTLE",
-    "2026-10-21"
-  ],
-  [
-    "KAMONG ☕",
-    "visit noona / bring something",
-    "kamong\n\nvisit noona when there's time\nask how she's doing\n\nmaybe bring hyung next time\n\nremember to take pictures for noona\n\nand don't leave without saying goodbye this time ㅋㅋ",
-    "2026-10-20"
-  ],
-  [
-    "Gym",
-    "legs / back / core / stretching",
-    "workout\n\nmonday - back\nwednesday - legs\nfriday - shoulders + core\n\nstretch before and after\nfocus on mobility\nstay hydrated\n\nminho hyung keeps asking me to run\n\nNO.",
-    "2026-10-19"
+    "sooky's little letter",
+    "and mine (?)",
+    "Dear Teacher Nini,\n\nThank you for being my teacher. I like your class and the teddy bears.\n\nI hope you like my sandwich!\n\nLove,\nSooky and Papa 💗\n\n(She insisted on the last line.)",
+    "2026-10-06"
   ],
   [
     "Groceries",
     "eggs / milk / water / detergent",
-    "eggs\nmilk\nwater\nbananas\nchicken\nrice\ndetergent\ntissues\ntrash bags\n\nsomething sweet\n\nask hyung if he needs anything",
-    "2026-10-18"
-  ],
-  [
-    "Date ideas",
-    "somewhere quiet / good food / no cameras",
-    "places to go with hyung\n\n- quiet restaurant\n- walk by the han river\n- movie night at home\n- try that new dessert place\n- cook dinner together\n- bookstore\n- somewhere with a nice view\n\nmaybe a little weekend trip when we're both free\n\nno schedules\nno rushing\njust us.",
-    "2026-10-17"
-  ],
-  [
-    "Things to buy",
-    "socks / charger / dog treats",
-    "new workout socks\nphone charger\nlaundry detergent\ndog treats\nshampoo\nextra hair ties\n\nflowers?\n\nnot everything needs to be flowers jongin",
-    "2026-10-16"
-  ],
-  [
-    "Dogs 🐶",
-    "treats / grooming / pictures",
-    "monggu\njjanggu\njjangah\n\ncheck treats\nremember grooming\nmore pictures!!!\n\nneed to organize their photos\n\nwhy do i have 800 pictures of them sleeping\n\nactually never mind",
-    "2026-10-15"
-  ],
-  [
-    "Songs",
-    "playlist ideas / songs to practice",
-    "songs to listen to\n\nOff My Face\n좋다\n우주를 건너\n\nmake another playlist\n\nsongs that remind me of hyung\n\nmaybe send it to him\n\nor is that too embarrassing",
-    "2026-10-14"
-  ],
-  [
-    "Things hyung says",
-    "eat first / go to sleep / i miss you",
-    "things kyungsoo hyung says a lot\n\n\"have you eaten?\"\n\"go to sleep.\"\n\"don't overdo it.\"\n\"jongin-ah.\"\n\nhe always sounds serious\nbut he's actually really sweet\n\nespecially when he thinks i'm not paying attention\n\nI AM ALWAYS PAYING ATTENTION.",
-    "2026-10-13"
-  ],
-  [
-    "Dinner",
-    "ask hyung / check restaurant",
-    "dinner plans\n\nask kyungsoo hyung what he wants to eat\n\nhe'll probably say anything is fine\nthen reject my first three suggestions\n\nㅋㅋㅋㅋ\n\njust let him choose",
-    "2026-10-12"
-  ],
-  [
-    "Packing list",
-    "passport / headphones / charger",
-    "overseas schedule\n\npassport\nwallet\nphone\ncharger\npower bank\nearphones\ncomfortable clothes\nskincare\nmedication\nextra socks\n\ncheck flight time\n\ntext hyung before boarding\ntext mom when i land",
-    "2026-10-10"
-  ],
-  [
-    "Raeon & Rahee",
-    "presents / visit noona / soccer",
-    "visit noona's family\n\nraeon:\n- soccer\n- promised to play with him\n\nrahee:\n- wants something pink\n- ask noona what she likes now\n\nbring something for their baby sister too\n\nask hyung if he wants to come\n\napparently rahee likes him more than me\n\nunbelievable.",
-    "2026-10-09"
-  ],
-  [
-    "Choreography ideas",
-    "movement / musicality / transitions",
-    "dance ideas\n\ntry something with slower movements\nmore control\nless unnecessary movement\n\nfocus on musicality\n\nfilm it from different angles\n\nmaybe use that song i saved\n\nneed to stop thinking of choreography right before sleeping",
-    "2026-10-07"
-  ],
-  [
-    "Movies",
-    "watch with hyung this weekend",
-    "movie night\n\nlet hyung choose the movie\nget snacks\nblankets\n\ndon't fall asleep halfway through\n\nhe still brings it up every time",
-    "2026-10-05"
-  ],
-  [
-    "Things I want to do",
-    "travel / dance / spend more time together",
-    "things i want to do\n\ntravel somewhere new\nlearn another dance style\ntake more pictures\nspend more time with family\nsee the members more often\n\nhave more ordinary days with hyung\n\njust eating together\nwalking around\nwatching something stupid on tv\n\nthose are my favorite days.",
-    "2026-10-02"
-  ],
-  [
-    "Apartment",
-    "maintenance / recycling / cleaning",
-    "maintenance fee on the 25th\nrecycling tuesdays\n\nclean kitchen\nwash bedsheets\norganize closet\n\nbuy more hangers\n\nwhy do i have so many black shirts",
-    "2026-09-28"
-  ],
-  [
-    "Random thoughts",
-    "don't forget this",
-    "why do good ideas always come when i'm about to sleep\n\nneed to buy a new notebook\n\nask chanyeol hyung about that song\n\ncall mom\n\nreply to sehun\n\ncheck on junmyeon hyung\n\nremember to eat properly\n\nalso\n\nkyungsoo hyung looked really pretty today\n\nokay good night.",
-    "2026-09-22"
-  ],
-  [
-    "For hyung",
-    "things i want to tell him",
-    "things i want to tell kyungsoo hyung\n\nthank you for always taking care of me\nthank you for listening to me talk about nothing\nthank you for being patient when i'm annoying\n\nsometimes i think about how lucky i am\n\nhe probably knows all this already\n\nbut i should tell him more often\n\nmaybe tomorrow.",
-    "2026-09-15"
-  ],
-  [
-    "Reminders",
-    "mom / noona / members / schedules",
-    "call mom\nvisit noona\nreply to the members\ncheck schedule\nbook grooming appointment\n\nstop leaving messages unread\n\nespecially junmyeon hyung's\n\nhe WILL call",
-    "2026-09-01"
+    "eggs\nmilk\nwater\nbananas\nchicken\nrice\ndetergent\ntissues\ntrash bags\n",
+    "2026-10-01"
   ]
 ];
 /* ===== OCTOBER 2026 · KYUNGSOO'S CALENDAR ===== */
@@ -2701,11 +2600,403 @@ Yes, baby?
 We'll see, sweetheart.
 
 <i>Okay po!</i>`},
-  {title:'6001 8',date:'Mar 17, 2025',transcript:`[Replace this with the full transcript for recording 6001 8.]`},
-  {title:'6001 6',date:'Aug 10, 2024',transcript:`[Replace this with the full transcript for recording 6001 6.]`},
-  {title:'6001 5',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 5.]`},
-  {title:'6001 4',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 4.]`},
-  {title:'6001 3',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 3.]`},
+  {title:'01: two sandwiches',date:'Oct 5, 2026',transcript:`Okay. For the revised investment report, kailangan i-adjust yung projections for the third quarter. The client requested a more conservative estimate, so maybe we can—
+
+<i>Papa?</i>
+
+Hmm, baby?
+
+<i>Are you working po?</i>
+
+Just recording something, sweetheart. What is it?
+
+<i>Can you make two sandwiches po?</i>
+
+Two? Why, love?
+
+<i>One for me. One for Teacher Nini.</i>
+
+Oh.
+
+Teacher Nini?
+
+<i>Opo!</i>
+
+Baby, Teacher Nini probably has his own lunch.
+
+<i>But I want to give him one po.</i>
+
+(Chuckles) That's very sweet of you.
+
+<i>Can you make it heart-shaped po?</i>
+
+...Heart-shaped?
+
+<i>Opo! Para alam niya na love natin siya!</i>
+
+Baby, hindi naman natin—
+
+<i>Please, Papa? 🥺</i>
+
+(Laughs quietly) Okay, sweetheart. We'll make him a sandwich.
+
+<i>YAY!</i>
+
+But we have to ask him first if he can accept food from students, okay?
+
+<i>Okay po!</i>
+
+And what kind of sandwich does Teacher Nini like?
+
+<i>Hmm.</i>
+
+<i>Strawberry!</i>
+
+Strawberry sandwich?
+
+<i>Opo!</i>
+
+Baby, are you sure that's what he likes, or is that what you like?
+
+<i>(Giggles)</i>
+
+Ah. I see.
+
+<i>We can share po!</i>
+
+(Laughs) Okay, baby. We'll see.
+
+<i>Papa?</i>
+
+Yes, love?
+
+<i>Teacher Nini has a nice smile.</i>
+
+...He does?
+
+<i>Opo! Like you!</i>
+
+(Softly) Thank you, baby.
+
+<i>But he has bigger muscles.</i>
+
+...
+
+<i>Papa?</i>
+
+I'm still here, sweetheart.
+
+<i>You can go to the gym too po!</i>
+
+(Laughs) Okay. Thank you for the suggestion.`},
+  {title:'01: bedtime questions',date:'Oct 05, 2026',transcript:`<i>Papa?</i>
+
+Hmm, sweetheart?
+
+<i>Are you going to school tomorrow too?</i>
+
+I'm taking you to school, baby. Just like today.
+
+<i>Are you going to say hi to Teacher Nini?</i>
+
+Of course. Why?
+
+<i>Because you were shy today.</i>
+
+(Laughs softly) Baby, I wasn't shy.
+
+<i>You were po.</i>
+
+Oh? How do you know?
+
+<i>Because you looked at your shoes when he talked to you.</i>
+
+...
+
+<i>Papa?</i>
+
+I'm listening, sweetheart.
+
+<i>Teacher Nini is nice. You don't have to be shy.</i>
+
+(Chuckles) Okay, baby. I'll remember that.
+
+<i>And he's very handsome!</i>
+
+You told me that already.
+
+<i>Do you think he's handsome too po?</i>
+
+...
+
+Yes, baby. He's handsome.
+
+<i>Yay!</i>
+
+(Laughs) Why are you so happy?
+
+<i>Because we both like Teacher Nini!</i>
+
+Sweetheart, liking someone and thinking they're handsome are different things.
+
+<i>Oh.</i>
+
+<i>But you like him, right, Papa?</i>
+
+I think he's a very nice teacher.
+
+<i>That's good po!</i>
+
+Okay, little miss. Time to sleep.
+
+<i>Papa?</i>
+
+Yes, baby?
+
+<i>Can Teacher Nini come to our strawberry ice cream date?</i>
+
+...
+
+Baby, that's our special Saturday date.
+
+<i>But we can share po.</i>
+
+(Laughs softly) You're very generous, sweetheart.
+
+<i>Because you taught me sharing is caring!</i>
+
+...I did, didn't I?
+
+<i>Opo!</i>
+
+(Chuckles) Good night, baby.
+
+<i>Good night, Papa. I love you!</i>
+
+Love you more, sweetheart.`},
+  {title:'02: the bigger heart',date:'Oct 06, 2026',transcript:`<i>Papa! Papa, wait!</i>
+
+Hmm? What's wrong, baby?
+
+<i>That's my sandwich po!</i>
+
+Yes, sweetheart. I'm putting it in your lunchbox.
+
+<i>Noooo. The big heart is for Teacher Nini!</i>
+
+Baby, they're almost the same size.
+
+<i>But that one's bigger.</i>
+
+Okay. We'll switch them.
+
+<i>Thank you po!</i>
+
+You're welcome. Now, can you finish your milk?
+
+<i>Papa?</i>
+
+Yes, love?
+
+<i>Can you put a letter?</i>
+
+A letter?
+
+<i>Opo! Like the one you put in my lunchbox.</i>
+
+What do you want to say?
+
+<i>Dear Teacher Nini...</i>
+
+Okay.
+
+<i>Thank you for being my teacher.</i>
+
+That's very sweet.
+
+<i>And thank you for being handsome!</i>
+
+Baby.
+
+<i>What po?</i>
+
+Maybe let's thank him for being kind instead.
+
+<i>But he's handsome too.</i>
+
+I know, sweetheart.
+
+<i>You know po?</i>
+
+...I mean, yes. He looks nice.
+
+<i>Hehehe!</i>
+
+What's funny?
+
+<i>Nothing po!</i>
+
+Okay. Anything else?
+
+<i>From Sooky and Papa!</i>
+
+Just Sooky, baby.
+
+<i>But you made it!</i>
+
+Because you asked me to.
+
+<i>So it's from both of us po!</i>
+
+...
+
+<i>Please, Papa?</i>
+
+(Sighs) Okay, sweetheart.
+
+<i>YAY!</i>`},
+  {title:'02: two sandwiches pt. 2',date:'Oct 06, 2026',transcript:`<i>Papa! Papa!</i>
+
+Hmm, baby? What happened?
+
+<i>Teacher Nini ate my sandwich po!</i>
+
+He did?
+
+<i>Opo! He said it was yummy!</i>
+
+That's good, sweetheart.
+
+<i>And he said thank you!</i>
+
+Did you say you're welcome?
+
+<i>Opo!</i>
+
+Good girl.
+
+<i>Papa?</i>
+
+Yes, baby?
+
+<i>Teacher Nini said thank you to you too.</i>
+
+Oh. That's nice.
+
+<i>He said, "Please tell your Papa thank you for making it."</i>
+
+Okay. I'll remember that.
+
+<i>Papa, he likes strawberries too!</i>
+
+Really?
+
+<i>Opo! We're the same!</i>
+
+You both like strawberries?
+
+<i>And bears!</i>
+
+That's two things already.
+
+<i>And you!</i>
+
+...Me?
+
+<i>He likes you too po!</i>
+
+Baby, what makes you say that?
+
+<i>Because he smiled when I said your name!</i>
+
+...
+
+<i>Papa?</i>
+
+I'm listening, sweetheart.
+
+<i>Are you happy?</i>
+
+Of course, baby.
+
+<i>Yay! Me too!</i>`},
+  {title:'02: family picture',date:'Oct 07, 2026',transcript:`<i>Papa?</i>
+
+Hmm, baby?
+
+<i>Teacher Nini said we need a family picture po.</i>
+
+Yes, sweetheart. I saw the announcement.
+
+<i>Can we use the one with Lola?</i>
+
+Of course. Which one?
+
+<i>The one at the beach!</i>
+
+Oh, the one from your birthday?
+
+<i>Opo! And Tito Chan is there too!</i>
+
+That's a good picture.
+
+<i>Papa?</i>
+
+Yes, love?
+
+<i>Yuna said her picture has her mama and papa.</i>
+
+Okay.
+
+<i>Mine has you and Lola and Tito Chan.</i>
+
+That's right, baby.
+
+<i>Is that okay po?</i>
+
+Of course it's okay, sweetheart. Families don't all look the same.
+
+<i>Really?</i>
+
+Really. Some families have two parents. Some have one. Some live with their grandparents. What matters is that you have people who love you.
+
+<i>Like you?</i>
+
+Like me.
+
+<i>And Lola?</i>
+
+And Lola.
+
+<i>And Tito Chan!</i>
+
+Yes, baby. Even Tito Chan.
+
+<i>Papa!</i>
+
+What, sweetheart?
+
+<i>Can Teacher Nini be in our family picture too?</i>
+
+...
+
+Baby, Teacher Nini isn't part of our family.
+
+<i>Not yet po.</i>
+
+...
+
+What do you mean, not yet?
+
+<i>He can be our friend first!</i>
+
+(Laughs nervously) Oh. Okay, baby.
+
+<i>Then he can eat ice cream with us!</i>
+
+We'll see, sweetheart.
+
+<i>Okay po!</i>`},
   {title:'6001 2',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 2.]`}
 ];
 
