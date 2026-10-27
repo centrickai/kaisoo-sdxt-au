@@ -2079,7 +2079,6 @@ const photoSections = [
       "pin_615515474123779275.jpg",
       "pin_617345061504943525.jpg",
       "5_eun_seo_1655209545_2860427448678246647_44886155939.jpg",
-      "5_eun_seo_1652408990_2836933493332754982_44886155939.mp4",
       "5_eun_seo_1686030696_3118974000680539543_44886155939.jpg",
       "pin_1109292951984266801.jpg",
       "5_eun_seo_1666672470_2956585434731157171_44886155939.jpg",
@@ -3131,8 +3130,7 @@ What do you mean, not yet?
 
 We'll see, sweetheart.
 
-<i>Okay po!</i>`},
-  {title:'6001 2',date:'Aug 3, 2024',transcript:`[Replace this with the full transcript for recording 6001 2.]`}
+<i>Okay po!</i>`}
 ];
 
 // XPEOPLE
