@@ -449,7 +449,7 @@ function closeApp(){if(callState||['home','lock','pin'].includes(view))return;
  a.onfinish=()=>{if(tok!==animTok)return;APP.style.visibility='hidden';APP.querySelectorAll('video').forEach(v=>v.pause());APP.innerHTML='';a.cancel()};
  HOME.animate([{transform:'scale(1.1)',opacity:0},{transform:'none',opacity:1}],{duration:460,easing:'cubic-bezier(.2,.9,.22,1)'});updateIsland()}
 function push(id){show(id,'push')}
-function back(){if(PARENT[view])show(PARENT[view],'pop');else closeApp()}
+function back(){if(view==='voicememos'&&vmReturnChat){returnFromAttachedVoiceMemo();return;}if(PARENT[view])show(PARENT[view],'pop');else closeApp()}
 function hbAction(){if(callState)return;const vw=OV.querySelector('.viewer');if(vw)return closeViewer();if(OV.querySelector('.np'))return closeNP();
  if(view==='lock')return goPin();if(view==='pin')return;if(view==='home')return HOME.animate([{transform:'none'},{transform:'scale(.97)'},{transform:'none'}],250);closeApp()}
 (function hbGesture(){const hb=$('#hb');let y0=null;hb.addEventListener('pointerdown',e=>{y0=e.clientY;hb.setPointerCapture(e.pointerId)});hb.addEventListener('pointerup',e=>{if(y0===null)return;y0=null;hbAction()})})();
@@ -556,6 +556,23 @@ const vmDuration=r=>Math.max(3,Math.ceil(vmWords(r.transcript).length/VM_WORDS_P
 const vmTime=s=>`${Math.floor(Math.max(0,s)/60)}:${String(Math.floor(Math.max(0,s)%60)).padStart(2,'0')}`;
 const vmClock=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(Math.floor(s%60)).padStart(2,'0')}.${String(Math.floor((s%1)*100)).padStart(2,'0')}`;
 let vmActive=-1,vmPlaying=false,vmSeconds=0,vmTimer=null,vmStarted=0,vmLastWord=-1;
+// The attachment opens a readable transcript, without starting simulated playback.
+let vmReturnChat=null;
+function openAttachedVoiceMemo(index){
+ if(!VM_RECORDINGS[index]||view!=='chat')return;
+ const sc=document.getElementById('msgs');
+ vmReturnChat={id:chatId,scrollTop:sc?sc.scrollTop:0};
+ show('voicememos','push');
+ vmActive=index;vmSeconds=0;vmLastWord=-1;vmPlaying=false;
+ vmOpenTranscript();vmUpdate();
+}
+function returnFromAttachedVoiceMemo(){
+ if(!vmReturnChat)return;
+ const saved=vmReturnChat;vmReturnChat=null;vmStop();vmActive=-1;
+ chatId=saved.id;show('chat','pop');
+ const sc=document.getElementById('msgs');if(sc)sc.scrollTop=saved.scrollTop;
+}
+
 function vmStop(){if(vmTimer){clearInterval(vmTimer);vmTimer=null;}vmPlaying=false;}
 function vmToggle(i){
  if(vmActive!==i){vmStop();vmActive=i;vmSeconds=0;vmLastWord=-1;vmOpenTranscript();}
@@ -570,6 +587,7 @@ function vmToggle(i){
  },80);
 }
 function vmBackToRecordings(){
+ if(vmReturnChat){returnFromAttachedVoiceMemo();return;}
  vmStop();
  const pg=APP.querySelector('[data-view="voicememos"]');
  if(!pg)return;
@@ -596,7 +614,7 @@ function vmOpenTranscript(){
  pg.querySelector('.vm-list').style.visibility='hidden';
  pg.querySelector('.vm-heading').style.visibility='hidden';
  pg.querySelector('.vm-top').style.visibility='hidden';
- panel.innerHTML=`<div class="vm-full-top"><button type="button" class="vm-fake-dots vm-dots-back" onclick="vmBackToRecordings()" aria-label="Back to all recordings">‹</button><span class="vm-fake-check">✓</span></div>
+ panel.innerHTML=`<div class="vm-full-top"><button type="button" class="vm-fake-dots vm-dots-back" onclick="vmBackToRecordings()" aria-label="${vmReturnChat?'Back to Messages':'Back to all recordings'}">‹</button><span class="vm-fake-check">✓</span></div>
   <div class="vm-full-title">${vmSafe(r.title)}</div><div class="vm-full-date">${vmSafe(r.date)}&nbsp; ${vmTime(vmDuration(r))}</div>
   <div class="vm-transcript-viewport"><div class="vm-transcript-words">${vmFormattedWords(r.transcript)}</div></div>
   <div class="vm-full-bottom"><div class="vm-big-clock">00:00.00</div>
@@ -828,7 +846,15 @@ VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a))
  /* CHAT ROOM */
 const AUD_DUR={'media/my_love.mp3':'0:25','media/ssk.mp3':'1:40'};
 function fileInfo(n){return({'과제 파일':[t('f_assign'),'1.2MB'],'수정한 과제 파일':[t('f_assign2'),'1.3MB'],'실기 체크 시트 파일':[t('f_check'),'48KB']})[n]||[n+'.pdf','820KB']}
-function bubble(s){const m=mediaLabels[s];
+function voiceMemoAttachment(s){
+ const match=String(s).match(/^\[Voice Memo: (.+)\]$/i);
+ if(!match)return null;
+ const i=VM_RECORDINGS.findIndex(r=>r.title.toLowerCase().includes(match[1].toLowerCase()));
+ if(i<0)return `<div class="bb">${esc(s)}</div>`;
+ const r=VM_RECORDINGS[i];
+ return `<button type="button" class="bb im-vm-attachment" onclick="event.stopPropagation();openAttachedVoiceMemo(${i})" aria-label="Tap to read ${vmSafe(r.title)} in Voice Memos"><span class="im-vm-icon">▥</span><span class="im-vm-details"><strong>${vmSafe(r.title)}.m4a</strong><small>Voice Memos · ${vmTime(vmDuration(r))}</small><em>Tap to Read</em></span><span class="im-vm-arrow">›</span></button>`;
+}
+function bubble(s){const attachment=voiceMemoAttachment(s);if(attachment)return attachment;const m=mediaLabels[s];
  if(m&&m.kind==='image')return `<div class="bb img" onclick="event.stopPropagation();openViewerSrc('${m.src}',this.firstElementChild)"><img src="${m.src}" alt=""></div>`;
  if(m&&m.kind==='audio'){let w='';for(let i=0;i<20;i++)w+=`<i style="height:${5+Math.round(Math.abs(Math.sin(i*1.7+s.length))*15)}px;animation-delay:-${(i%5)*.13}s"></i>`;return `<div class="bb aud" data-src="${m.src}" onclick="event.stopPropagation();playChatAudio(this)"><span class="pl">${G.playF}</span><span class="wv">${w}</span><span class="du">${AUD_DUR[m.src]||'0:10'}</span></div>`}
  const b=s.match(/^\[(.+)\]$/);if(b){const n=b[1];
@@ -870,7 +896,7 @@ function chatItems(id) {
   const items = [];
   let tm = 0;
   
-  const TT=CHAT_TIMES[id]||[];arr.forEach((m,i)=>{if(m[1]==='date'){items.push({date:m[0]});return}
+  const TT=CHAT_TIMES[id]||[];arr.forEach((m,i)=>{if(m[1]==='date'){items.push({date:m[0]});return}if(m[1]==='story-vm'){items.push({storyVoiceMemo:m[0]});return}
   let text=m[0],sender=id==='Kyungsoo my love 💞'?'Kyungsoo my love 💞':id;if(grp&&m[1]==='them'){const mm=text.match(/^([^:：]+)[:：]\s*([\s\S]*)$/);if(mm){sender=mm[1];text=mm[2]}}
   if(TT[i]!=null)tm=TT[i];else tm+=1;items.push({who:m[1],text,sender,time:m[2]||ampm(tm),rd:m[3]==='rd'})});return items}
 /* Group-chat contact pictures: edit these paths when you add your own photos. */
@@ -900,6 +926,7 @@ function imGroupHeader(id){
 function imSenderAvatar(sender){const src=IM_SENDER_PHOTOS[sender];return src?'<img src="'+esc(src)+'" alt="">':avatarFor(sender,false)}
 function chatMsgs(id){const it=chatItems(id),grp=isGroup(id);let o='';
  it.forEach((x,i)=>{if(x.date){o+=`<div class="dpill"><span>${G.calSm.replace('<svg','<svg width="12" height="12"')}${fullDate(x.date)}</span></div>`;return}
+  if(x.storyVoiceMemo){const index=VM_RECORDINGS.findIndex(r=>r.title.toLowerCase().includes(String(x.storyVoiceMemo).toLowerCase()));if(index>=0){const r=VM_RECORDINGS[index];o+=`<div class="im-story-divider"><button type="button" class="im-story-vm" onclick="event.stopPropagation();openAttachedVoiceMemo(${index})" aria-label="Tap to read ${vmSafe(r.title)} in Voice Memos"><span class="im-story-vm-icon">♫</span><span class="im-story-vm-title">${vmSafe(r.title.replace(/^\d+\s*:\s*/,''))}</span><span class="im-story-vm-hint">Tap to Read ›</span></button></div>`;}return;}
   const p=it[i-1],n=it[i+1];
   const first=!p||p.date||p.who!==x.who||p.sender!==x.sender;
   // For group chats, consecutive messages from one sender form one visual stack.

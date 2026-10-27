@@ -237,6 +237,7 @@ const chatData={
   ["fineeee", "them"],
   ["ingat kayo ni sooky!", "them"],
   ["Thanks. I'll send you her picture.", "me"],
+  ["breakfast negotiations", "story-vm"],
 
   ["10월 5일", "date"],
   ["Chan.", "me"],
@@ -409,6 +410,7 @@ const chatData={
   ["wag kang tititig sa braso", "them"],
   ["Goodbye.", "me"],
   ["HAHAHAHAHAHAHAHA", "them"],
+  ["sooky's first day", "story-vm"],
 
   ["10월 5일", "date"], 
   ["SOOOOOO", "them"],
@@ -510,6 +512,7 @@ const chatData={
   ["Especially after everything you've said today.", "me"],
   ["HAHAHAHAHAHAHA", "them"],
   ["love you too soo", "them"],
+  ["two sandwiches", "story-vm"],
 
   ["10월 5일", "date"],
   ["Chan, are you busy?", "me"],
@@ -593,6 +596,7 @@ const chatData={
   ["okay bye rehearsal na ulit 😭", "them"],
   ["Good. Please stay there.", "me"],
   ["LOVE YOU SOO 😘", "them"],
+  ["bedtime questions","story-vm"],
 
   ["10월 5일", "date"],
   ["SOOOOO", "them"],
@@ -676,6 +680,7 @@ const chatData={
   ["PUTANGINA MO.", "me"],
   ["HAHAHAHAHAHAHAHA", "them"],
   ["GOOD NIGHT 😭😭😭", "them"],
+  ["the bigger heart","story-vm"],
 
 
   ["10월 6일", "date"],
@@ -732,6 +737,7 @@ const chatData={
   ["Goodbye.", "me"],
   ["HAHAHAHAHAHA", "them"],
   ["GOOD LUCK MR DO 😘", "them"],
+  ["two sandwiches pt. 2","story-vm"],
 
 
   ["10월 6일", "date"],
@@ -920,6 +926,7 @@ const chatData={
   ["wag kang magdala ng heart-shaped sandwich sa orientation", "them"],
   ["Goodbye.", "me"],
   ["HAHAHAHAHAHAHAHA", "them"],
+  ["family picture", "story-vm"]
 
 ],
 

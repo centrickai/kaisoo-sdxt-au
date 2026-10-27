@@ -1020,11 +1020,18 @@ body {
 .pg.sp-page .sp-scroll, .pg.sp-page .sp-conversation { flex:1 1 0; min-height:0; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; touch-action:pan-y; }
 .pg.sp-page .sp-tabs { flex:0 0 75px; position:relative; z-index:2; }
 
-/* Interactive checklists in predefined Notes: use [ ] and [x] in note bodies. */
-.note-v .note-text-line{min-height:1.5em;white-space:pre-wrap;overflow-wrap:anywhere}
-.note-v .note-check-row{display:flex;align-items:flex-start;gap:12px;min-height:31px;white-space:pre-wrap;cursor:pointer;overflow-wrap:anywhere}
-.note-v .note-check-row input{appearance:none;-webkit-appearance:none;flex:0 0 22px;width:22px;height:22px;margin:2px 0 0;border:1.6px solid #c1c1c6;border-radius:50%;background:transparent;cursor:pointer;position:relative}
-.note-v .note-check-row input:checked{background:#e0a700;border-color:#e0a700}
-.note-v .note-check-row input:checked::after{content:'✓';position:absolute;inset:0;text-align:center;line-height:19px;color:#fff;font-size:15px;font-weight:700}
-.note-v .note-check-row span{flex:1;min-width:0}
-.note-v .note-check-row.checked span{color:#999;text-decoration:line-through}
+/* Interactive Voice Memos file attachment in Messages */
+.bb.im-vm-attachment{display:flex;align-items:center;gap:10px;min-width:215px;max-width:270px;width:100%;padding:12px!important;text-align:left;border:0;border-radius:15px;cursor:pointer;font-family:inherit;line-height:1.25;box-sizing:border-box}
+.im-vm-icon{width:37px;height:43px;flex:none;border-radius:8px;background:rgba(128,128,128,.15);display:grid;place-items:center;font-size:22px}
+.im-vm-details{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}
+.im-vm-details strong{font-size:12px;overflow-wrap:anywhere;font-weight:650}
+.im-vm-details small{font-size:11px;opacity:.7}
+.im-vm-details em{font-size:12px;font-style:normal;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.im-vm-arrow{font-size:25px;opacity:.65;flex:none}
+
+/* Reader-facing Voice Memo checkpoint: centered like a date separator, not a chat bubble */
+.im-story-divider{display:flex;justify-content:center;align-items:center;margin:19px 0 21px;padding:0 18px}
+.im-story-vm{display:flex;flex-direction:column;align-items:center;gap:5px;max-width:245px;width:100%;padding:12px 18px;border:0;border-radius:15px;background:#FFDE59;color:inherit;font:inherit;text-align:center;cursor:pointer}
+.im-story-vm-icon{font-size:20px;line-height:1.1;opacity:.7}
+.im-story-vm-title{font-size:12px;font-weight:650;line-height:1.35}
+.im-story-vm-hint{font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:2px;opacity:.85}
