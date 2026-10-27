@@ -1385,12 +1385,86 @@ const notes = [
     "Dear Teacher Nini,\n\nThank you for being my teacher. I like your class and the teddy bears.\n\nI hope you like my sandwich!\n\nLove,\nSooky and Papa 💗\n\n(She insisted on the last line.)",
     "2026-10-06"
   ],
+
   [
-    "Groceries",
-    "eggs / milk / water / detergent",
-    "eggs\nmilk\nwater\nbananas\nchicken\nrice\ndetergent\ntissues\ntrash bags\n",
-    "2026-10-01"
-  ]
+  "Things to do on my day off",
+  "a little reset",
+  "[ ] Get a haircut\n" +
+  "[ ] Clean out the closet\n" +
+  "[ ] Finish the book on my bedside table\n" +
+  "[ ] Buy new bedsheets\n" +
+  "[ ] Try that pasta recipe\n" +
+  "[ ] Do absolutely nothing for at least an hour",
+  "2026-10-09"
+  ],
+
+[
+  "Groceries",
+  "shopping list",
+  "[ ] Eggs\n" +
+  "[ ] Milk\n" +
+  "[ ] Rice\n" +
+  "[ ] Chicken\n" +
+  "[ ] Mushrooms\n" +
+  "[ ] Garlic\n" +
+  "[ ] Strawberries\n" +
+  "[ ] Yogurt\n" +
+  "[ ] Bread\n" +
+  "[ ] Coffee beans\n" +
+  "[ ] Dishwashing liquid\n" +
+  "[ ] Laundry detergent",
+  "2026-10-09"
+],
+
+[
+  "Monthly expenses",
+  "budget tracker",
+  "Rent / Mortgage\n\n" +
+  "Electricity\n\n" +
+  "Water\n\n" +
+  "Internet\n\n" +
+  "Groceries\n\n" +
+  "School expenses\n\n" +
+  "Transportation\n\n" +
+  "Savings\n\n" +
+  "Emergency fund\n\n" +
+  "Personal spending\n\n" +
+  "Review every payday.",
+  "2026-10-09"
+],
+
+[
+  "Monday priorities",
+  "work reminders",
+  "• Review quarterly reports\n" +
+  "• Follow up on pending documents\n" +
+  "• Prepare client presentation\n" +
+  "• Check revised forecasts\n" +
+  "• Submit expense claims\n" +
+  "• Clear inbox before Friday\n\n" +
+  "Stop accepting meetings without agendas.",
+  "2026-10-12"
+],
+
+[
+  "Creamy mushroom pasta",
+  "recipe",
+  "Ingredients:\n" +
+  "• Pasta\n" +
+  "• Mushrooms\n" +
+  "• Garlic\n" +
+  "• Butter\n" +
+  "• Cooking cream\n" +
+  "• Parmesan\n" +
+  "• Black pepper\n\n" +
+  "Notes:\n" +
+  "• Don't add too much cream.\n" +
+  "• Save some pasta water.\n" +
+  "• More garlic next time.\n" +
+  "• Sooky prefers less pepper.",
+  "2026-10-09"
+],
+
 ];
 /* ===== OCTOBER 2026 · KYUNGSOO'S CALENDAR ===== */
 const events = {

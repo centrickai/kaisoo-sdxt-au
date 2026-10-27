@@ -1035,3 +1035,80 @@ body {
 .im-story-vm-icon{font-size:20px;line-height:1.1;opacity:.7}
 .im-story-vm-title{font-size:12px;font-weight:650;line-height:1.35}
 .im-story-vm-hint{font-size:11px;font-weight:700;text-decoration:underline;text-underline-offset:2px;opacity:.85}
+
+/* iOS NOTES CHECKLIST — paste at the VERY END of style.css.
+   Overrides the previous Notes checklist CSS fix if it is present.
+   Works with your existing app.js noteBodyHTML() and data.en.js [x]/[ ] items.
+*/
+
+/* Keep each text line and checklist row separate. */
+.notes-pg .note-v {
+  white-space: normal;
+  font-size: 17px;
+  line-height: 1.45;
+}
+.notes-pg .note-text-line {
+  display: block;
+  min-height: 1.45em;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Apple Notes-style checklist: round yellow controls, aligned text. */
+.notes-pg .note-check-row {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  gap: 10px;
+  margin: 3px 0;
+  padding: 0;
+  line-height: 1.45;
+  white-space: normal;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.notes-pg .note-check-row input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  display: block;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  padding: 0;
+  border: 1.5px solid #c7c7cc;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  outline-offset: 3px;
+}
+.notes-pg .note-check-row input[type="checkbox"]:checked {
+  border-color: #e6ac00;
+  background: #e6ac00;
+}
+.notes-pg .note-check-row input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.notes-pg .note-check-row span {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+/* iOS Notes dims and strikes through completed checklist items. */
+.notes-pg .note-check-row.checked span {
+  color: #8e8e93;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
