@@ -1419,17 +1419,17 @@ const notes = [
 [
   "Monthly expenses",
   "budget tracker",
-  "Rent / Mortgage\n\n" +
-  "Electricity\n\n" +
-  "Water\n\n" +
-  "Internet\n\n" +
-  "Groceries\n\n" +
-  "School expenses\n\n" +
-  "Transportation\n\n" +
-  "Savings\n\n" +
-  "Emergency fund\n\n" +
+  "Rent / Mortgage\n" +
+  "Electricity\n" +
+  "Water\n" +
+  "Internet\n" +
+  "Groceries\n" +
+  "School expenses\n" +
+  "Transportation\n" +
+  "Savings\n" +
+  "Emergency fund\n" +
   "Personal spending\n\n" +
-  "Review every payday.",
+  "review every payday",
   "2026-10-09"
 ],
 
@@ -1442,7 +1442,7 @@ const notes = [
   "• Check revised forecasts\n" +
   "• Submit expense claims\n" +
   "• Clear inbox before Friday\n\n" +
-  "Stop accepting meetings without agendas.",
+  "stop accepting meetings without agendas!!!!",
   "2026-10-12"
 ],
 
