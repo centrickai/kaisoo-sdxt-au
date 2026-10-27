@@ -2896,15 +2896,100 @@ const DISPLAY={
 
 // SP_POSTS
 const STORY_SP_POSTS = [
- {id:1,author:'Little Steps Montessori',role:'School Administration',initials:'LS',date:'Today · 8:15 AM',tag:'Announcement',title:'Family Day is coming! 🌼',body:'Hello, parents! Our Family Day celebration is coming up soon. We’re preparing games, snacks, and activities for our little learners. Please check your child’s take-home folder for the permission slip. We can’t wait to see you!',comments:[{name:'Maria Santos',text:'Thank you for organizing this! ❤️',time:'8:32 AM'},{name:'Kyungsoo',text:'Sookyung has been talking about this all week 😊',time:'9:04 AM'}]},
- {id:2,author:'Teacher Nini',role:'Class Teacher',initials:'TN',date:'Yesterday · 4:30 PM',tag:'Class Update',title:'A little peek at our week 🎨',body:'Our class explored colors, painted their favorite animals, and practiced sharing with friends. The kids were so proud of their artwork! Please ask them what they made today.',comments:[{name:'Ana Lee',text:'Awww, they must have had so much fun!',time:'5:12 PM'},{name:'Kyungsoo',text:'Sookyung insisted on showing me her painting as soon as we got home. Thank you, Teacher!',time:'6:08 PM'},{name:'Teacher Nini',text:'She worked very hard on it! 🥹',time:'6:21 PM'}]},
- {id:3,author:'Little Steps Academy',role:'School Administration',initials:'LS',date:'Oct 22 · 10:00 AM',tag:'Reminder',title:'Please label your child’s belongings',body:'A gentle reminder to write your child’s name on water bottles, lunch boxes, and extra clothes. This helps us return everything to the right family. Thank you!',comments:[{name:'Carla Mendoza',text:'Noted, thank you!',time:'10:18 AM'}]}
+ {
+    id: 3,
+    author: 'Teacher Kim Jongin',
+    role: 'Kinder Sunshine · Weekly Update',
+    initials: 'KJ',
+    date: 'Friday, Oct 9 · 9:26 AM',
+    tag: 'Weekly Update',
+    title: 'Our First Week Together! ☀️',
+    body: `Good morning, Sunshine families!
+
+We've officially made it through our first week of kindergarten! I'm so proud of how much the children have grown in just a few days.
+
+Next week's theme will be All About My Family. Please help your child bring one printed family photo by Wednesday. We'll use these during our sharing activity.
+
+A few reminders:
+
+- Please label all water bottles and lunchboxes.
+- Bring one family photo by Wednesday.
+- Check your child's communication notebook.
+- Our first Parent Orientation will be held next Friday at 3:00 PM.
+
+Thank you for your continued support!
+
+Teacher Jongin 🐻`,
+    comments: []
+  },
+  {
+    id: 2,
+    author: 'Teacher Kim Jongin',
+    role: 'Kinder Sunshine · Daily Class Update',
+    initials: 'KJ',
+    date: 'Monday, Oct 5 · 11:52 AM',
+    tag: 'Daily Class Update',
+    title: 'Our First Day Together! ☀️🐻',
+    body: `Good afternoon, Sunshine families!
+
+We had a wonderful first day getting to know one another. Today's activities included:
+
+- Morning circle and introductions
+- Favorite things show-and-tell
+- Coloring our classroom sunshine
+- Storytime: The Kissing Hand
+- Free play and friendship activities
+
+The children did a lovely job settling into their new classroom. Some were a little shy at first, but everyone participated at their own pace.
+
+Please check your child's communication notebook for individual reminders.
+
+Thank you, parents, for trusting us with your little ones. See you tomorrow!
+
+Teacher Jongin 🐻`,
+    comments: []
+  },
+  {
+    id: 1,
+    author: 'Teacher Kim Jongin',
+    role: 'Kinder Sunshine · Class Announcement',
+    initials: 'KJ',
+    date: 'Monday, Oct 5 · 10:24 AM',
+    tag: 'Class Announcement',
+    title: 'Good morning, Sunshine families! ☀️',
+    body: `We've had a lovely first morning together! The children have been getting to know their classmates, sharing their favorite things, and working on our first art activity.
+
+A few reminders for this week:
+
+- Kindly label your child's belongings.
+- Please bring an extra set of clothes.
+- Check your child's communication notebook daily.
+- Dismissal is at 12:00 PM.
+
+Thank you for helping make our first day special!
+
+See you at dismissal!
+
+Teacher Jongin 🐻`,
+    comments: []
+  }
 ];
 
 // SP_THREADS
 const STORY_SP_THREADS = [
  {id:1,name:'Teacher Nini',role:'Sookyung’s Class Teacher',initials:'TN',messages:[{from:'them',text:'Good afternoon, Mr. Do! Just wanted to let you know that Sookyung did really well during our reading activity today. 😊',time:'Yesterday · 3:12 PM'},{from:'me',text:'That’s wonderful to hear. Thank you for letting me know, Teacher!',time:'Yesterday · 3:18 PM'},{from:'them',text:'Of course! She was very excited to tell everyone about the book you read together.',time:'Yesterday · 3:20 PM'}]},
  {id:2,name:'School Administration',role:'Little Steps Academy',initials:'LS',messages:[{from:'them',text:'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.',time:'Oct 23 · 9:30 AM'},{from:'me',text:'Thank you! I’ll send it with her tomorrow.',time:'Oct 23 · 9:45 AM'}]}
+];
+
+// ATTENDANCE — Edit or add records here. Newest first.
+// status: 'Present', 'Absent', or 'Late'. Empty checkOut means not yet dismissed.
+// notification and notificationTime control the attendance notification cards.
+const STORY_SP_ATTENDANCE = [
+ {date:'Oct 5, 2026',day:'Monday',status:'Present',checkIn:'7:39 AM',checkOut:'12:04 PM',notification:'Sookyung has safely checked out of school.',notificationTime:'12:04 PM',teacher:'Teacher Nini',note:'Picked up by Papa.'}
+ //{date:'Oct 26, 2026',day:'Monday',status:'Present',checkIn:'7:41 AM',checkOut:'12:02 PM',notification:'Sookyung arrived safely at school.',notificationTime:'7:41 AM',teacher:'Teacher Nini',note:'Ready for morning circle!'},
+ //{date:'Oct 23, 2026',day:'Friday',status:'Present',checkIn:'7:43 AM',checkOut:'12:06 PM',notification:'Sookyung has checked out for the day.',notificationTime:'12:06 PM',teacher:'Teacher Nini',note:''},
+ //{date:'Oct 22, 2026',day:'Thursday',status:'Late',checkIn:'8:12 AM',checkOut:'12:01 PM',notification:'Late arrival recorded for Sookyung.',notificationTime:'8:12 AM',teacher:'School Office',note:'Arrival recorded after morning assembly.'},
+ //{date:'Oct 21, 2026',day:'Wednesday',status:'Absent',checkIn:'',checkOut:'',notification:'Sookyung was marked absent today.',notificationTime:'8:30 AM',teacher:'School Office',note:'Excused absence.'}
 ];
 
 // VM_RECORDINGS

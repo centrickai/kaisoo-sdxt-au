@@ -483,6 +483,8 @@ const VIEWS={};
    ============================================================ */
 const SP_POSTS = typeof STORY_SP_POSTS !== 'undefined' ? structuredClone(STORY_SP_POSTS) : [];
 const SP_THREADS = typeof STORY_SP_THREADS !== 'undefined' ? structuredClone(STORY_SP_THREADS) : [];
+const SP_ATTENDANCE = typeof STORY_SP_ATTENDANCE !== 'undefined' ? structuredClone(STORY_SP_ATTENDANCE) : [];
+let spAttendanceFilter='all';
 let spTab='bulletin',spPostId=null,spThreadId=null;
 const spEsc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 // Direction-aware page transitions within the School Portal.
@@ -520,15 +522,28 @@ function spSendMessage(id){const el=document.querySelector('#sp-message-input');
 function spAvatar(initials){return `<span class="sp-avatar">${spEsc(initials)}</span>`}
 function spComment(c){return `<div class="sp-comment">${spAvatar(c.name==='Kyungsoo'?'KD':c.name==='Teacher Nini'?'TN':c.name.split(' ').map(x=>x[0]).join('').slice(0,2))}<div class="sp-comment-text"><b>${spEsc(c.name)}</b><p>${spEsc(c.text)}</p><small>${spEsc(c.time)}</small></div></div>`}
 function spPost(p,full){return `<article class="sp-post"> <div class="sp-author">${spAvatar(p.initials)}<div><b>${spEsc(p.author)}</b><small>${spEsc(p.role)} · ${spEsc(p.date)}</small></div></div><span class="sp-tag">${spEsc(p.tag)}</span><h3>${spEsc(p.title)}</h3><p class="sp-post-body">${spEsc(p.body)}</p><div class="sp-post-footer"><span>💬 ${p.comments.length} ${p.comments.length===1?'comment':'comments'}</span>${full?'':`<button onclick="spOpenPost(${p.id})">Read & comment ›</button>`}</div>${full?`<div class="sp-comments"><h4>Parent comments</h4>${p.comments.map(spComment).join('')}</div><div class="sp-compose"><input id="sp-comment-input" placeholder="Write a comment…" maxlength="1000" onkeydown="if(event.key==='Enter')spAddComment(${p.id})"><button onclick="spAddComment(${p.id})" aria-label="Post comment">↑</button></div>`:''}</article>`}
+function spAttendanceCard(r){
+ const status=String(r.status||'Present').toLowerCase();
+ const checkIn=r.checkIn||'—',checkOut=r.checkOut||'—';
+ return `<article class="sp-att-card"><div class="sp-att-card-top"><div><b>${spEsc(r.day||'')}</b><small>${spEsc(r.date||'')}</small></div><span class="sp-att-status ${status==='present'?'present':status==='absent'?'absent':'other'}">${spEsc(r.status||'Present')}</span></div><div class="sp-att-times"><div><small>CHECK-IN</small><strong>${spEsc(checkIn)}</strong></div><div><small>CHECK-OUT</small><strong>${spEsc(checkOut)}</strong></div></div>${r.note?`<p class="sp-att-note">${spEsc(r.note)}</p>`:''}${r.teacher?`<small class="sp-att-teacher">Recorded by ${spEsc(r.teacher)}</small>`:''}</article>`;
+}
+function spAttendancePage(){
+ const all=SP_ATTENDANCE;
+ const visible=spAttendanceFilter==='all'?all:all.filter(r=>String(r.status||'').toLowerCase()===spAttendanceFilter);
+ const present=all.filter(r=>String(r.status||'').toLowerCase()==='present').length;
+ const latest=all[0];
+ return `<div class="sp-main-head"><span class="sp-eyebrow">LITTLE STEPS MONTESSORI</span><h1>Attendance</h1><p>Sookyung Do · Kindergarten</p></div><div class="sp-scroll sp-att-scroll"><div class="sp-att-summary"><span>Attendance record</span><strong>${present} <small>/ ${all.length} days present</small></strong><p>${latest?`${spEsc(latest.day||'Latest update')} · ${spEsc(latest.status||'')}`:'No attendance records yet'}</p></div><div class="sp-att-section">Attendance notifications</div>${all.filter(r=>r.notification).slice(0,5).map(r=>`<div class="sp-att-alert"><span class="sp-att-alert-icon">${String(r.status||'').toLowerCase()==='absent'?'!':'✓'}</span><div><b>${spEsc(r.notification)}</b><small>${spEsc(r.date||'')}${r.notificationTime?' · '+spEsc(r.notificationTime):''}</small></div></div>`).join('')||'<p class="sp-att-empty">No notifications yet.</p>'}<div class="sp-att-section">Daily records</div><div class="sp-att-filters"><button class="${spAttendanceFilter==='all'?'active':''}" onclick="spAttendanceFilter='all';spRefresh()">All</button><button class="${spAttendanceFilter==='present'?'active':''}" onclick="spAttendanceFilter='present';spRefresh()">Present</button><button class="${spAttendanceFilter==='absent'?'active':''}" onclick="spAttendanceFilter='absent';spRefresh()">Absent</button></div>${visible.map(spAttendanceCard).join('')||'<p class="sp-att-empty">No records for this filter.</p>'}</div>`;
+}
 function spPage(){
  const detailPost=SP_POSTS.find(p=>p.id===spPostId);
  const detailThread=SP_THREADS.find(t=>t.id===spThreadId);
  let content='';
  if(detailPost){content=`<div class="sp-topline"><button onclick="spBack()">‹ Bulletin</button><b>Post</b><span></span></div><div class="sp-scroll">${spPost(detailPost,true)}</div>`;}
  else if(detailThread){content=`<div class="sp-topline"><button onclick="spBack()">‹ Mailbox</button><b>${spEsc(detailThread.name)}</b><span></span></div><div class="sp-conversation">${detailThread.messages.map(m=>`<div class="sp-bubble-wrap ${m.from==='me'?'mine':''}"><div class="sp-bubble">${spEsc(m.text)}</div><small>${spEsc(m.time)}</small></div>`).join('')}</div><div class="sp-msg-compose"><input id="sp-message-input" placeholder="Message ${spEsc(detailThread.name)}…" maxlength="2000" onkeydown="if(event.key==='Enter')spSendMessage(${detailThread.id})"><button onclick="spSendMessage(${detailThread.id})" aria-label="Send message">↑</button></div>`;}
+ else if(spTab==='attendance'){content=spAttendancePage();}
  else if(spTab==='bulletin'){content=`<div class="sp-main-head"><span class="sp-eyebrow">LITTLE STEPS MONTESSORI</span><h1>Bulletin Board</h1><p>Updates from Sookyung’s school</p></div><div class="sp-scroll">${SP_POSTS.map(p=>spPost(p,false)).join('')}</div>`;}
  else {content=`<div class="sp-main-head"><span class="sp-eyebrow">LITTLE STEPS MONTESSORI</span><h1>Mailbox</h1><p>Messages from teachers & school staff</p></div><div class="sp-scroll sp-inbox">${SP_THREADS.map(t=>{const last=t.messages[t.messages.length-1];return `<button class="sp-thread" onclick="spOpenThread(${t.id})">${spAvatar(t.initials)}<span class="sp-thread-text"><b>${spEsc(t.name)}</b><small>${spEsc(t.role)}</small><span>${spEsc(last.text)}</span></span><span class="sp-thread-chevron">›</span></button>`}).join('')}</div>`;}
- return `<div class="sp-app"><div class="sp-safe"></div>${content}${!detailPost&&!detailThread?`<div class="sp-tabs"><button class="${spTab==='bulletin'?'active':''}" onclick="spSwitch('bulletin')"><span>▤</span>Bulletin</button><button class="${spTab==='mailbox'?'active':''}" onclick="spSwitch('mailbox')"><span>✉</span>Mailbox</button></div>`:''}</div>`;
+ return `<div class="sp-app"><div class="sp-safe"></div>${content}${!detailPost&&!detailThread?`<div class="sp-tabs"><button class="${spTab==='bulletin'?'active':''}" onclick="spSwitch('bulletin')"><span>▤</span>Bulletin</button><button class="${spTab==='mailbox'?'active':''}" onclick="spSwitch('mailbox')"><span>✉</span>Mailbox</button><button class="${spTab==='attendance'?'active':''}" onclick="spSwitch('attendance')"><span>✓</span>Attendance</button></div>`:''}</div>`;
 }
 VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c=pg.querySelector('.sp-conversation');if(c)c.scrollTop=c.scrollHeight;}});
 

@@ -1112,3 +1112,34 @@ body {
   text-decoration: line-through;
   text-decoration-thickness: 1px;
 }
+/* ===== School Portal — Attendance ===== */
+.sp-att-scroll{padding-bottom:28px}
+.sp-att-summary{background:#176e64;color:#fff;border-radius:19px;padding:19px 18px;margin:0 0 17px}
+.sp-att-summary>span{display:block;font-size:11px;opacity:.78}
+.sp-att-summary>strong{display:block;font-size:32px;letter-spacing:-1px;margin:5px 0}
+.sp-att-summary>strong small{font-size:13px;font-weight:500;letter-spacing:0;opacity:.85}
+.sp-att-summary>p{margin:0;font-size:12px;opacity:.85}
+.sp-att-section{font-size:13px;font-weight:800;color:#2b4843;margin:18px 3px 10px}
+.sp-att-alert{display:flex;gap:11px;background:#fff;padding:13px;border-radius:14px;margin-bottom:8px;align-items:center}
+.sp-att-alert-icon{width:31px;height:31px;border-radius:50%;background:#e2f3ed;color:#177b67;display:grid;place-items:center;flex:none;font-weight:800}
+.sp-att-alert>div{min-width:0;display:flex;flex-direction:column;gap:4px}
+.sp-att-alert b{font-size:12px;line-height:1.4}
+.sp-att-alert small{font-size:10px;color:#81938f}
+.sp-att-filters{display:flex;gap:7px;margin-bottom:12px}
+.sp-att-filters button{border:1px solid #dbe7e3;border-radius:20px;background:#fff;color:#58736c;padding:7px 13px;font-size:11px;cursor:pointer}
+.sp-att-filters button.active{background:#176e64;border-color:#176e64;color:#fff}
+.sp-att-card{background:#fff;border-radius:16px;padding:15px;margin-bottom:10px}
+.sp-att-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sp-att-card-top>div{display:flex;flex-direction:column;gap:3px}
+.sp-att-card-top b{font-size:14px}
+.sp-att-card-top small,.sp-att-teacher{font-size:10px;color:#879994}
+.sp-att-status{border-radius:12px;padding:5px 9px;font-size:10px;font-weight:700;background:#fff0d8;color:#9b641d}
+.sp-att-status.present{background:#e2f4e9;color:#287c53}
+.sp-att-status.absent{background:#fde9e7;color:#b94b42}
+.sp-att-times{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0 9px}
+.sp-att-times>div{background:#f5f8f7;border-radius:10px;padding:10px}
+.sp-att-times small{display:block;color:#8a9d98;font-size:9px;letter-spacing:.5px;margin-bottom:5px}
+.sp-att-times strong{font-size:13px}
+.sp-att-note{font-size:11px;line-height:1.5;margin:7px 0;color:#617a73}
+.sp-att-empty{font-size:12px;color:#81938f;padding:12px}
+.sp-tabs button{min-width:0}
