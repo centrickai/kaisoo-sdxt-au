@@ -625,7 +625,7 @@ const chatData={
   ["Recovered missing property, identified its owner, and facilitated urgent document retrieval.", "me"],
 
   ["HAHAHAHA.", "them"],
-  ["Ang impressive ng résumé niyo, sir.", "them"],
+  ["Ang impressive ng resume niyo, sir.", "them"],
 
   ["Thank you. I expect a certificate.", "me"],
 
