@@ -955,7 +955,7 @@ function initIMUnread() {
     }
   });
 }
-initIMUnread();
+//initIMUnread();
 
 function markIMRead(name) {
   imReadChats.add(name);
@@ -973,12 +973,16 @@ function markIMRead(name) {
   updateIsland();
 }
 
+
+
 function otherUnread(){return Object.entries(unread).filter(([k])=>k!==chatId).reduce((a,[,b])=>a+b,0)+(chatId==='Kyungsoo my love 💞'?0:ksooUnread)}
 VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a));
  return{cls:'kk',html:`<div class="kk-h"><b>Messages</b><span>${G.search}${G.chatPlus}</span></div><div class="scroll">${list.map(n=>{const arr=chatData[n]||[];let last=arr.filter(x=>x[1]!=='date').slice(-1)[0],time=fmtLabel(lastDate(n)),cnt=unread[n]||0;
   if(n==='Kyungsoo my love 💞'&&todayChat.length){last=todayChat[todayChat.length-1];time=last[2];cnt=ksooUnread}
   return `<button class="crow" onclick="chatId=${esc(JSON.stringify(n))};push('chat')"><div class="av">${avatarFor(n,isGroup(n))}</div><div style="flex:1;min-width:0"><div class="cn">${esc(dn(n))}${MEMBERS[n]?`<small>${MEMBERS[n]}</small>`:''}</div><div class="cp">${last?esc(previewText(last[0],isGroup(n))):''}</div></div><div class="cm"><span class="ct">${time}</span>${cnt?`<span class="kbdg">${cnt}</span>`:''}</div></button>`}).join('')}</div>
  `}};
+
+ initIMUnread();
 
 
  /* CHAT ROOM */
