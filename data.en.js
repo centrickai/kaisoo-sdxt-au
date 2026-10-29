@@ -2578,7 +2578,7 @@ const emails = [
 ];
 const calls = [
   ["Teacher Jongin", "오늘 22:12", "부재중"],
-  ["Mom", "오늘 08:12", "수신"],
+  ["Mommy Do", "오늘 08:12", "수신"],
   ["Little Steps Montessori", "어제 16:38", "수신"],
   ["Channie", "어제 15:06", "발신"],
   ["0917-***-4821", "어제 13:42", "부재중"], // Unrecognized: pre-approved loan offer
@@ -3021,7 +3021,7 @@ const photoSections = [
 ];*/
 
 const OTHER_CALLS={
- "Mom": [
+ "Mommy Do": [
   ["Soo", "Hi, Mom."],
   ["Mom", "Hi, sweetheart. Busy ka ba?"],
   ["Soo", "Hindi naman. Nagfo-fold lang ako ng laundry. Why?"],
