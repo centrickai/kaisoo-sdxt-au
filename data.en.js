@@ -371,7 +371,7 @@ const chatData={
 "Teacher Jongin": [
   
   ["10월 22일", "date"],
-  ["Good afternoon, Mr. Do! This is Teacher Jongin from Little Oaks.", "them"],
+  ["Good afternoon, Mr. Do! This is Teacher Jongin from Little Steps.", "them"],
   ["Sorry po, accidentally kong natawagan yung number niyo habang nag-a-update ng parent contact list. 😅", "them"],
   ["Please disregard the missed call.", "them"],
 
