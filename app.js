@@ -982,7 +982,6 @@ VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a))
   return `<button class="crow" onclick="chatId=${esc(JSON.stringify(n))};push('chat')"><div class="av">${avatarFor(n,isGroup(n))}</div><div style="flex:1;min-width:0"><div class="cn">${esc(dn(n))}${MEMBERS[n]?`<small>${MEMBERS[n]}</small>`:''}</div><div class="cp">${last?esc(previewText(last[0],isGroup(n))):''}</div></div><div class="cm"><span class="ct">${time}</span>${cnt?`<span class="kbdg">${cnt}</span>`:''}</div></button>`}).join('')}</div>
  `}};
 
- initIMUnread();
 
 
  /* CHAT ROOM */
@@ -1003,8 +1002,7 @@ function bubble(s){const attachment=voiceMemoAttachment(s);if(attachment)return 
   if(/기프티콘/.test(n))return `<div class="bb gift"><div class="gt">🍵</div><div class="gb"><b>${t('giftArrived')}</b>${t('giftItem')}</div><div class="gbtn">${t('giftCheck')}</div></div>`;
   if(/파일/.test(n)&&!/영상/.test(n)){const f=fileInfo(n);return `<div class="bb file"><span class="fi">${f[0].split('.').pop().toUpperCase()}</span><div><div class="fn">${esc(f[0])}</div><div class="fs">${t('expired')} · ${f[1]}</div></div></div>`}
   const vid=/영상/.test(n);return `<div class="bb exp">${vid?G.video:G.photo}<span>${vid?t('expVideo'):t('expPhoto')}</span></div>`}
- return `<div class="bb">${esc(s)}</div>`}
-//function fullDate(l){return fmtLabel(l,true)}
+ return `<div class="bb">${esc(s)}</div>`} //function fullDate(l){return fmtLabel(l,true)}
 
 function fullDate(l) {
   if (l === currentChatDate()) {
@@ -1041,7 +1039,10 @@ function chatItems(id) {
   const TT=CHAT_TIMES[id]||[];arr.forEach((m,i)=>{if(m[1]==='date'){items.push({date:m[0]});return}if(m[1]==='story-vm'){items.push({storyVoiceMemo:m[0]});return}
   let text=m[0],sender=id==='Kyungsoo my love 💞'?'Kyungsoo my love 💞':id;if(grp&&m[1]==='them'){const mm=text.match(/^([^:：]+)[:：]\s*([\s\S]*)$/);if(mm){sender=mm[1];text=mm[2]}}
   if(TT[i]!=null)tm=TT[i];else tm+=1;items.push({who:m[1],text,sender,time:m[2]||ampm(tm),rd:m[3]==='rd'})});return items}
-/* Group-chat contact pictures: edit these paths when you add your own photos. */
+
+initIMUnread();
+
+  /* Group-chat contact pictures: edit these paths when you add your own photos. */
 const IM_GROUP_PHOTOS = {
   // 'Your group name': ['images/person1.jpg', 'images/person2.jpg']
 };
