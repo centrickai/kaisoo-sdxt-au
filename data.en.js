@@ -1575,7 +1575,7 @@ const chatData={
 
 'School Accounting Office': [
   ['9월 5일', 'date'],
-  ['Good morning, Mr. Do! This is the Accounting Office of Little Oaks Kindergarten. Welcome to the new school year! We’re confirming receipt of Sookyung’s enrollment payment. Thank you po.', 'them'],
+  ['Good morning, Mr. Do! This is the Accounting Office of Little Steps Kindergarten. Welcome to the new school year! We’re confirming receipt of Sookyung’s enrollment payment. Thank you po.', 'them'],
   ['Good morning. Thank you for confirming.', 'me'],
   ['9월 13일', 'date'],
   ['Good afternoon, Mr. Do. This is a friendly reminder that Sookyung’s next tuition installment of PHP 8,500.00 is due on October 20. Please let us know if you need a copy of the statement.', 'them'],
@@ -3283,145 +3283,410 @@ const DISPLAY={
 // SP_POSTS
 const STORY_SP_POSTS = [
  {
-    id: 3,
-    author: 'Teacher Kim Jongin',
-    role: 'Kinder Sunshine · Weekly Update',
-    initials: 'KJ',
-    date: 'Friday, Oct 9 · 9:26 AM',
-    tag: 'Weekly Update',
-    title: 'Our First Week Together! ☀️',
-    body: `Good morning, Sunshine families!
+  id: 1,
+  author: 'Teacher Kim Jongin',
+  role: 'Kinder Sunflowers',
+  initials: 'KJ',
+  date: 'Monday, Sep 7 · 9:00 AM',
+  tag: 'Announcement',
+  title: 'Welcome to Kinder Sunflowers! 🌻',
+  body: `Good morning, parents and guardians!
 
-We've officially made it through our first week of kindergarten! I'm so proud of how much the children have grown in just a few days.
+Our Kinder Sunflowers are getting familiar with their classroom today. We've started with free play, classroom introductions, and simple activities to help everyone feel comfortable.
 
-Next week's theme will be All About My Family. Please help your child bring one printed family photo by Wednesday. We'll use these during our sharing activity.
+Some children may need extra reassurance during their first few days. We'll continue supporting them at their own pace.
 
-A few reminders:
+Please remember to check your child's take-home folder after dismissal.
 
-- Please label all water bottles and lunchboxes.
-- Bring one family photo by Wednesday.
-- Check your child's communication notebook.
-- Our first Parent Orientation will be held next Friday at 3:00 PM.
+Thank you!
+
+Teacher Jongin & Teacher Mina`,
+    comments: []
+  },
+  {
+  id: 2,
+  author: 'Teacher Kim Jongin',
+  role: 'Kinder Sunflowers',
+  initials: 'KJ',
+  date: 'Wednesday, Sep 9 · 7:25 AM',
+  tag: 'Announcement',
+  title: 'Kinder Sunflowers - All About Me Activity',
+  body: `Dear Parents and Guardians,
+
+This week, our Kinder Sunflowers will begin their All About Me sharing activity.
+
+Kindly help your child choose one printed family photograph to bring to school by Thursday, September 10.
+
+The photograph may include parents, grandparents, guardians, siblings, pets, or anyone your child considers part of their family.
+
+Each child will have an opportunity to introduce the people in their photograph. Sharing is voluntary, and children may speak as much or as little as they feel comfortable with.
+
+Please write your child's full name on the back of the photograph.
+
+Thank you!
+
+Teacher Jongin`,
+    comments: []
+  },
+  {
+  id: 3,
+  author: 'Little Steps Administration',
+  role: 'Little Steps Kindergarten',
+  initials: 'LO',
+  date: 'Wednesday, Sep 9 · 9:32 AM',
+  tag: 'Announcement',
+  title: 'Parent Orientation - Friday, September 11',
+  body: `Dear Parents and Guardians,
+
+Please be reminded of our upcoming Parent Orientation.
+
+Date: Friday, September 11, 2026
+
+Time: 9:00 AM – 10:30 AM
+
+Venue: Little Steps Multipurpose Room
+
+We'll discuss classroom routines, school policies, parent communication procedures, and upcoming activities.
+
+We encourage at least one parent or authorized guardian to attend.
+
+Thank you!`,
+    comments: []
+  },
+
+  {
+  id: 4,
+  author: 'Teacher Kim Jongin',
+  role: 'Kinder Sunflowers',
+  initials: 'KJ',
+  date: 'Friday, Sep 18 · 4:26 PM',
+  tag: 'Weekly Update',
+  title: 'Kinder Sunflowers - Week 2 Highlights',
+  body: `Dear Parents and Guardians,
+
+Our second week has been full of wonderful progress!
+
+This week, the children explored colors and shapes through collaborative art, practiced taking turns during free play, and completed our All About Me sharing activity.
+
+We're happy to see many of our Kinder Sunflowers growing more confident with classroom routines and beginning to form friendships.
+
+Next week's reminders:
+
+- Please check your child's take-home folder.
+- Bring a small, labeled hand towel.
+- Kindly submit any outstanding parent consent forms.
 
 Thank you for your continued support!
 
-Teacher Jongin 🐻`,
-    comments: []
-  },
-  {
-    id: 2,
-    author: 'Teacher Kim Jongin',
-    role: 'Kinder Sunshine · Daily Class Update',
-    initials: 'KJ',
-    date: 'Monday, Oct 5 · 11:52 AM',
-    tag: 'Daily Class Update',
-    title: 'Our First Day Together! ☀️🐻',
-    body: `Good afternoon, Sunshine families!
+Teacher Jongin & Teacher Mina`,
+comments: []
+},
 
-We had a wonderful first day getting to know one another. Today's activities included:
 
-- Morning circle and introductions
-- Favorite things show-and-tell
-- Coloring our classroom sunshine
-- Storytime: The Kissing Hand
-- Free play and friendship activities
+{
+  id: 5,
+  author: 'Teacher Kim Jongin',
+  role: 'Kinder Sunflowers',
+  initials: 'KJ',
+  date: 'Friday, Oct 9 · 7:32 AM',
+  tag: 'Announcement',
+  title: 'Family Reading Morning - Today',
+  body: `Good morning, parents and guardians!
 
-The children did a lovely job settling into their new classroom. Some were a little shy at first, but everyone participated at their own pace.
+We're excited to welcome our volunteer readers for today's Family Reading Morning.
 
-Please check your child's communication notebook for individual reminders.
+Time: 9:15–10:00 AM
+Venue: Kinder Sunflowers Classroom
 
-Thank you, parents, for trusting us with your little ones. See you tomorrow!
+Please check in at the main office before proceeding to the classroom.
 
-Teacher Jongin 🐻`,
-    comments: []
-  },
-  {
-    id: 1,
-    author: 'Teacher Kim Jongin',
-    role: 'Kinder Sunshine · Class Announcement',
-    initials: 'KJ',
-    date: 'Monday, Oct 5 · 10:24 AM',
-    tag: 'Class Announcement',
-    title: 'Good morning, Sunshine families! ☀️',
-    body: `We've had a lovely first morning together! The children have been getting to know their classmates, sharing their favorite things, and working on our first art activity.
+Our volunteer readers will share a short story with the children, followed by a simple group activity.
 
-A few reminders for this week:
+Thank you for sharing your time with our class!
 
-- Kindly label your child's belongings.
-- Please bring an extra set of clothes.
-- Check your child's communication notebook daily.
-- Dismissal is at 12:00 PM.
+Teacher Jongin & Teacher Mina`,
+comments: []
+},
 
-Thank you for helping make our first day special!
 
-See you at dismissal!
 
-Teacher Jongin 🐻`,
-    comments: []
-  }
 ];
 
 // SP_THREADS
+
 const STORY_SP_THREADS = [
- {
+  {
     id: 1,
     name: 'Teacher Kim Jongin',
-    role: 'Kinder Sunshine · Class Teacher',
+    role: 'Kinder Sunflowers · Class Teacher',
     initials: 'KJ',
     messages: [
-      // MONDAY - sandwich permission
+      // TUESDAY, SEPTEMBER 8 — Sooky's adjustment
+      {
+        from: 'them',
+        text: 'Good afternoon po, Mr. Do! Teacher Jongin here. Just wanted to let you know that Sookyung did really well today. She was a little quiet during our morning activity, pero she joined the other kids during free play. 😊',
+        time: 'Sep 8 · 1:14 PM'
+      },
+      {
+        from: 'me',
+        text: 'Good afternoon, Teacher. Thank you for letting me know. She was asking this morning if she could bring her stuffed penguin to school tomorrow.',
+        time: 'Sep 8 · 1:28 PM'
+      },
+      {
+        from: 'them',
+        text: 'Ah yes, she mentioned her penguin to me earlier! Haha. She can bring it naman po, as long as it stays in her bag during class activities.',
+        time: 'Sep 8 · 1:31 PM'
+      },
+      {
+        from: 'me',
+        text: 'Noted. I’ll let her know. Thank you again.',
+        time: 'Sep 8 · 1:35 PM'
+      },
+
+      // WEDNESDAY, SEPTEMBER 9 — Family photograph
+      {
+        from: 'me',
+        text: 'Good evening, Teacher. Just confirming, is there a preferred size for the family photograph?',
+        time: 'Sep 9 · 7:42 PM'
+      },
+      {
+        from: 'them',
+        text: 'Good evening po! Any standard printed photo is okay. 4x6 would be perfect, but smaller is fine too.',
+        time: 'Sep 9 · 7:48 PM'
+      },
+      {
+        from: 'me',
+        text: 'Alright. Thank you.',
+        time: 'Sep 9 · 7:50 PM'
+      },
+      {
+        from: 'them',
+        text: 'You’re welcome po! 😊',
+        time: 'Sep 9 · 7:51 PM'
+      },
+
+      // MONDAY, SEPTEMBER 14 — Sandwich permission
       {
         from: 'me',
         text: 'Good morning, Teacher Jongin. Sooky prepared a sandwich for you and was hoping to give it to you today. I just wanted to ask if the school allows teachers to accept homemade food from students. Thank you.',
-        time: 'Monday · 7:51 AM'
+        time: 'Sep 14 · 7:51 AM'
       },
       {
         from: 'them',
-        text: 'Good morning, Mr. Do! Thank you for checking first. We can accept small food gifts from families as long as the ingredients are disclosed and there are no allergy concerns. Sooky mentioned the sandwich during our morning circle. She\'s very excited about it. 😊',
-        time: 'Monday · 8:06 AM'
+        text: 'Good morning, Mr. Do! Thank you for checking first. We can accept small food gifts from families as long as the ingredients are disclosed and there are no allergy concerns. Sooky mentioned the sandwich during our morning circle. She’s very excited about it. 😊',
+        time: 'Sep 14 · 8:06 AM'
       },
       {
         from: 'me',
-        text: 'Thank you, Teacher. It contains bread, cream cheese, and strawberries. No nuts. I\'ll leave it with Sooky, then.',
-        time: 'Monday · 8:09 AM'
+        text: 'Thank you, Teacher. It contains bread, cream cheese, and strawberries. No nuts. I’ll leave it with Sooky, then.',
+        time: 'Sep 14 · 8:09 AM'
       },
       {
         from: 'them',
-        text: 'Got it po. Thank you, Mr. Do. Please tell Sooky I appreciate her thoughtfulness. I\'ll thank her personally too. Have a good day!',
-        time: 'Monday · 8:12 AM'
+        text: 'Got it po. Thank you, Mr. Do. Please tell Sooky I appreciate her thoughtfulness. I’ll thank her personally too. Have a good day!',
+        time: 'Sep 14 · 8:12 AM'
       },
 
-      // WEDNESDAY - Sooky's progress
+      // WEDNESDAY, SEPTEMBER 16 — Sooky's progress
       {
         from: 'them',
-        text: 'Good morning, Mr. Do! Just wanted to let you know that Sooky has been settling in really well. She\'s been participating more during circle time and even volunteered to help distribute crayons today. 😊\n\nAlso, thank you again for yesterday\'s sandwich. It was really good! Please tell Sooky I appreciated her little note.',
-        time: 'Wednesday · 8:04 AM'
+        text: 'Good morning, Mr. Do! Just wanted to let you know that Sooky has been settling in really well. She’s been participating more during circle time and even volunteered to answer a question yesterday. 😊\n\nAlso, thank you again for Monday’s sandwich. It was really good! Please tell Sooky I appreciated her little note.',
+        time: 'Sep 16 · 8:04 AM'
       },
       {
         from: 'me',
-        text: 'Good morning, Teacher. Thank you for the update. I\'m glad she\'s adjusting well. She\'s been talking about your class nonstop since Monday.\n\nAnd you\'re welcome. Sooky was very happy that you liked it.',
-        time: 'Wednesday · 8:18 AM'
+        text: 'Good morning, Teacher. Thank you for the update. I’m glad she’s adjusting well. She’s been talking about your class nonstop since Monday.\n\nAnd you’re welcome. Sooky was very happy that you liked it.',
+        time: 'Sep 16 · 8:18 AM'
       },
       {
         from: 'them',
-        text: 'I\'m glad to hear that! She\'s a lovely kid, Mr. Do. You must be very proud of her.',
-        time: 'Wednesday · 8:24 AM'
+        text: 'I’m glad to hear that! She’s a lovely kid, Mr. Do. You must be very proud of her.',
+        time: 'Sep 16 · 8:24 AM'
       },
       {
         from: 'me',
         text: 'I am. Very much. Thank you, Teacher.',
-        time: 'Wednesday · 8:27 AM'
+        time: 'Sep 16 · 8:27 AM'
+      },
+
+      // THURSDAY, SEPTEMBER 17 — Crayon distribution
+      {
+        from: 'them',
+        text: 'Hi, Mr. Do! Just a quick update. Sookyung volunteered to help distribute crayons today. She was very serious about making sure everyone got the same number. 😅',
+        time: 'Sep 17 · 12:46 PM'
+      },
+      {
+        from: 'me',
+        text: 'That sounds like her. She counts everything at home too.',
+        time: 'Sep 17 · 1:02 PM'
+      },
+      {
+        from: 'them',
+        text: 'Haha, I noticed! She actually corrected me when I gave one table an extra crayon.',
+        time: 'Sep 17 · 1:05 PM'
+      },
+      {
+        from: 'me',
+        text: 'Oh no. I hope she was polite about it.',
+        time: 'Sep 17 · 1:09 PM'
+      },
+      {
+        from: 'them',
+        text: 'Very polite naman po! She just said, "Teacher Nini, that’s not fair." 😭',
+        time: 'Sep 17 · 1:12 PM'
+      },
+      {
+        from: 'me',
+        text: 'I apologize on her behalf.',
+        time: 'Sep 17 · 1:15 PM'
+      },
+      {
+        from: 'them',
+        text: 'No need po hahaha. She was right naman.',
+        time: 'Sep 17 · 1:17 PM'
+      },
+
+      // WEDNESDAY, SEPTEMBER 23 — Forgotten water bottle
+      {
+        from: 'me',
+        text: 'Good morning, Teacher. Sooky left her pink water bottle at home. Would it be alright if my mother drops it off at the office?',
+        time: 'Sep 23 · 8:06 AM'
+      },
+      {
+        from: 'them',
+        text: 'Good morning po! Yes, of course. She can leave it with the front desk and we’ll bring it to Sookyung.',
+        time: 'Sep 23 · 8:10 AM'
+      },
+      {
+        from: 'me',
+        text: 'Thank you. She was very upset about it this morning.',
+        time: 'Sep 23 · 8:12 AM'
+      },
+      {
+        from: 'them',
+        text: 'She told me already po. 😅 Don’t worry, we have extra cups here in case she gets thirsty before it arrives.',
+        time: 'Sep 23 · 8:14 AM'
+      },
+      {
+        from: 'me',
+        text: 'That’s a relief. Thank you, Teacher.',
+        time: 'Sep 23 · 8:16 AM'
+      },
+
+      // TUESDAY, OCTOBER 6 — Health update
+      {
+        from: 'them',
+        text: 'Good afternoon, Mr. Do! Just wanted to ask if Sookyung is feeling better? She mentioned having a little cough yesterday.',
+        time: 'Oct 6 · 2:18 PM'
+      },
+      {
+        from: 'me',
+        text: 'Good afternoon. Yes, she’s doing better. No fever, thankfully. I’ll continue monitoring her tonight.',
+        time: 'Oct 6 · 2:25 PM'
+      },
+      {
+        from: 'them',
+        text: 'Glad to hear that po. Please let her rest if she needs to. We can always help her catch up with any missed activities.',
+        time: 'Oct 6 · 2:29 PM'
+      },
+      {
+        from: 'me',
+        text: 'I appreciate it. Thank you for checking on her.',
+        time: 'Oct 6 · 2:34 PM'
+      },
+      {
+        from: 'them',
+        text: 'Of course po. 😊',
+        time: 'Oct 6 · 2:36 PM'
+      },
+
+      // FRIDAY, OCTOBER 9 — Family Reading Morning
+      {
+        from: 'them',
+        text: 'Mr. Do, thank you again for reading to the class this morning! The kids really enjoyed it.',
+        time: 'Oct 9 · 1:23 PM'
+      },
+      {
+        from: 'me',
+        text: 'Thank you for inviting me. I had a good time too.',
+        time: 'Oct 9 · 1:38 PM'
+      },
+      {
+        from: 'them',
+        text: 'Sookyung was telling everyone that her papa does different voices when reading at home. Haha.',
+        time: 'Oct 9 · 1:42 PM'
+      },
+      {
+        from: 'me',
+        text: 'I was hoping she wouldn’t mention that.',
+        time: 'Oct 9 · 1:46 PM'
+      },
+      {
+        from: 'them',
+        text: 'Too late po. She already told half the class. 😭',
+        time: 'Oct 9 · 1:49 PM'
+      },
+      {
+        from: 'me',
+        text: 'Wonderful.',
+        time: 'Oct 9 · 1:51 PM'
+      },
+      {
+        from: 'them',
+        text: 'For what it’s worth, they all thought you were really good at it.',
+        time: 'Oct 9 · 1:54 PM'
+      },
+      {
+        from: 'me',
+        text: 'That’s very generous of them.',
+        time: 'Oct 9 · 1:57 PM'
+      },
+
+      // TUESDAY, OCTOBER 27 — Aftercare arrangement
+      {
+        from: 'me',
+        text: 'Good morning, Teacher. Just wanted to confirm that Sooky’s aftercare arrangement for today has been approved by the office.',
+        time: 'Oct 27 · 10:34 AM'
+      },
+      {
+        from: 'them',
+        text: 'Yes po, Mr. Do! We received the confirmation. Sookyung will be accompanied to the aftercare room after dismissal.',
+        time: 'Oct 27 · 10:39 AM'
+      },
+      {
+        from: 'me',
+        text: 'Thank you. I should be there before 4.',
+        time: 'Oct 27 · 10:42 AM'
+      },
+      {
+        from: 'them',
+        text: 'Noted po. I’ll let her know you’re picking her up later than usual so she won’t worry.',
+        time: 'Oct 27 · 10:45 AM'
+      },
+      {
+        from: 'me',
+        text: 'I appreciate that, Teacher.',
+        time: 'Oct 27 · 10:48 AM'
+      },
+      {
+        from: 'them',
+        text: 'No problem po. See you later!',
+        time: 'Oct 27 · 10:50 AM'
       }
     ]
   },
+  
   {
     id: 2,
     name: 'School Administration',
-    role: 'Little Oaks Kindergarten',
+    role: 'Little Steps Kindergarten',
     initials: 'LO',
     messages: [
       {from: 'them', text: 'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.', time: 'Oct 23 · 9:30 AM'},
-      {from: 'me', text: 'Thank you! I’ll send it with her tomorrow.', time: 'Oct 23 · 9:45 AM'}
+      {from: 'me', text: 'Thank you! I’ll send it with her tomorrow.', time: 'Oct 23 · 9:45 AM'},
+      {from: 'them',
+      text: 'Aftercare Request - Confirmed\n\nLittle Steps Administration\n\nStudent: Sookyung Do\nDate: October 27, 2026\nExtended pickup: Until 4:00 PM\nAuthorized pickup: Do Kyungsoo\n\nYour request for today\'s supervised aftercare program has been approved.\n\nSookyung will join the aftercare group following regular dismissal. Please proceed to the designated pickup area when you arrive.\n\nIf your arrival time changes, kindly inform the school administration.',
+      time: 'Oct 27 · 10:26 AM'}
     ]
   }
 ];
@@ -3430,7 +3695,11 @@ const STORY_SP_THREADS = [
 // status: 'Present', 'Absent', or 'Late'. Empty checkOut means not yet dismissed.
 // notification and notificationTime control the attendance notification cards.
 const STORY_SP_ATTENDANCE = [
- {date:'Oct 5, 2026',day:'Monday',status:'Present',checkIn:'7:39 AM',checkOut:'12:04 PM',notification:'Sookyung has safely checked out of school.',notificationTime:'12:04 PM',teacher:'Teacher Nini',note:'Picked up by Papa.'}
+ {date:'Sep 7, 2026',day:'Monday',status:'Present',checkIn:'7:42 AM',checkOut:'12:06 PM',notification:'Sookyung has safely checked out of school.',notificationTime:'12:06 PM',teacher:'Teacher Nini',note:'First day of school. Picked up by Mommy.'},
+  {date:'Sep 8, 2026',day:'Tuesday',status:'Present',checkIn:'7:38 AM',checkOut:'11:54 AM',notification:'Sookyung has safely checked out of school.',notificationTime:'11:54 AM',teacher:'Teacher Nini',note:'Picked up by Lola Do.'},
+  {date:'Sep 9, 2026',day:'Wednesday',status:'Present',checkIn:'7:41 AM',checkOut:'12:02 PM',notification:'Sookyung has safely checked out of school.',notificationTime:'12:02 PM',teacher:'Teacher Nini',note:'Picked up by Lola Do.'},
+  {date:'Sep 10, 2026',day:'Thursday',status:'Present',checkIn:'7:35 AM',checkOut:'11:58 AM',notification:'Sookyung has safely checked out of school.',notificationTime:'11:58 AM',teacher:'Teacher Nini',note:'Picked up by Lola Do.'},
+  {date:'Sep 11, 2026',day:'Friday',status:'Present',checkIn:'7:44 AM',checkOut:'12:07 PM',notification:'Sookyung has safely checked out of school.',notificationTime:'12:07 PM',teacher:'Teacher Nini',note:'Parent Orientation day. Picked up by Papa.'}
  //{date:'Oct 26, 2026',day:'Monday',status:'Present',checkIn:'7:41 AM',checkOut:'12:02 PM',notification:'Sookyung arrived safely at school.',notificationTime:'7:41 AM',teacher:'Teacher Nini',note:'Ready for morning circle!'},
  //{date:'Oct 23, 2026',day:'Friday',status:'Present',checkIn:'7:43 AM',checkOut:'12:06 PM',notification:'Sookyung has checked out for the day.',notificationTime:'12:06 PM',teacher:'Teacher Nini',note:''},
  //{date:'Oct 22, 2026',day:'Thursday',status:'Late',checkIn:'8:12 AM',checkOut:'12:01 PM',notification:'Late arrival recorded for Sookyung.',notificationTime:'8:12 AM',teacher:'School Office',note:'Arrival recorded after morning assembly.'},
@@ -3497,7 +3766,7 @@ Sooky: (Giggles)
 
 <i>…</i>
 
-Teacher Mina: Good morning! Welcome to Little Oaks!
+Teacher Mina: Good morning! Welcome to Little Steps!
 
 Kyungsoo: Good morning.
 
@@ -4141,23 +4410,23 @@ We'll see, sweetheart.
 ];
 
 // XPEOPLE
-const STORY_XPEOPLE = {
- sooberry:{name:'soo ☁️',avatar:'☁️',bio:'papa to my favorite little person ☁️🤍 | coffee, quiet mornings & little victories',location:'Manila, Philippines',joined:'Joined March 2021',following:'128',followers:'2,416',banner:'sky',photo:'',coverUrl:''},
- parkchanyeol:{name:'channie 🦒',avatar:'🦒',bio:'music, late-night gigs, and being the favorite tito 🎸',location:'Manila, Philippines',joined:'Joined June 2019',following:'341',followers:'8,902',banner:'sunset',photo:'',coverUrl:''},
- niniloveskids:{name:'nini 🐻',avatar:'🐻',bio:'kindergarten teacher 🌻 | little humans, big feelings | dance after class',location:'Manila, Philippines',joined:'Joined April 2022',following:'203',followers:'1,284',banner:'green',photo:'',coverUrl:''},
- ohsehun:{name:'sehun 🐣',avatar:'🐣',bio:'just here to observe the chaos',location:'Manila, Philippines',joined:'Joined January 2020',following:'98',followers:'3,125',banner:'slate',photo:'',coverUrl:''},
- ningyizhuo:{name:'ningning 🦋',avatar:'🦋',bio:'hana’s mom 💗 | kindergarten parent life | oversharing enthusiast',location:'Manila, Philippines',joined:'Joined May 2021',following:'486',followers:'5,241',banner:'pink',photo:'',coverUrl:''},
- junmyeon:{name:'junmyeon 🐰',avatar:'🐰',bio:'dad to Minjun | lists, schedules & community events 🐰',location:'Manila, Philippines',joined:'Joined February 2019',following:'201',followers:'1,876',banner:'blue',photo:'',coverUrl:''}
-};
+//const STORY_XPEOPLE = {
+ //sooberry:{name:'soo ☁️',avatar:'☁️',bio:'papa to my favorite little person ☁️🤍 | coffee, quiet mornings & little victories',location:'Manila, Philippines',joined:'Joined March 2021',following:'128',followers:'2,416',banner:'sky',photo:'',coverUrl:''},
+ //parkchanyeol:{name:'channie 🦒',avatar:'🦒',bio:'music, late-night gigs, and being the favorite tito 🎸',location:'Manila, Philippines',joined:'Joined June 2019',following:'341',followers:'8,902',banner:'sunset',photo:'',coverUrl:''},
+ //niniloveskids:{name:'nini 🐻',avatar:'🐻',bio:'kindergarten teacher 🌻 | little humans, big feelings | dance after class',location:'Manila, Philippines',joined:'Joined April 2022',following:'203',followers:'1,284',banner:'green',photo:'',coverUrl:''},
+ //ohsehun:{name:'sehun 🐣',avatar:'🐣',bio:'just here to observe the chaos',location:'Manila, Philippines',joined:'Joined January 2020',following:'98',followers:'3,125',banner:'slate',photo:'',coverUrl:''},
+ //ningyizhuo:{name:'ningning 🦋',avatar:'🦋',bio:'hana’s mom 💗 | kindergarten parent life | oversharing enthusiast',location:'Manila, Philippines',joined:'Joined May 2021',following:'486',followers:'5,241',banner:'pink',photo:'',coverUrl:''},
+ //junmyeon:{name:'junmyeon 🐰',avatar:'🐰',bio:'dad to Minjun | lists, schedules & community events 🐰',location:'Manila, Philippines',joined:'Joined February 2019',following:'201',followers:'1,876',banner:'blue',photo:'',coverUrl:''}
+//};
 
 // XPOSTS
-const STORY_XPOSTS = [
- {id:1,handle:'sooberry',when:'2h',body:'reminder to bring an extra umbrella sa car because apparently one umbrella is not enough when you have a very talkative five-year-old and an unexpected passenger 😭☔',likes:128,replies:12,reposts:9,views:'4,203',thread:[{handle:'parkchanyeol',body:'unexpected passenger daw oh'},{handle:'sooberry',body:'chan 😭'}]},
- {id:2,handle:'parkchanyeol',when:'3h',body:'some people need to realize na hindi lahat ng carpool ay carpool lang 🤭',likes:92,replies:7,reposts:3,views:'2,804',thread:[{handle:'sooberry',body:'DELETE THIS 😭'}]},
- {id:3,handle:'sooberry',when:'1d',body:'first PTA meeting done 🥹 proud of my little girl and so thankful sa mga teachers na patient and kind sa kids 🤍',likes:214,replies:18,reposts:14,views:'6,192',thread:[{handle:'ningyizhuo',body:'Sookyung and Hana playdate soon!!! 🥹'}]},
- {id:4,handle:'ningyizhuo',when:'1d',body:'PTA meeting survival club 🤝 ang cute ng kinder A babies pls 😭',likes:78,replies:5,reposts:2,views:'1,209',thread:[]},
- {id:5,handle:'junmyeon',when:'2d',body:'Thank you, Kinder A parents, for volunteering for Family Day! Will share the finalized schedule soon.',likes:45,replies:4,reposts:6,views:'942',thread:[]},
- {id:6,handle:'sooberry',when:'4d',body:'my daughter told me today that her teacher deserves a gold star because he always listens to her 🥹',likes:391,replies:24,reposts:31,views:'9,142',thread:[]},
- {id:7,handle:'niniloveskids',when:'5h',body:'sometimes the smallest kindness can make a rainy day feel warm ☔',likes:246,replies:19,reposts:17,views:'5,027',thread:[{handle:'ohsehun',body:'sure. the weather.'}]},
- {id:8,handle:'ohsehun',when:'6h',body:'my friend is acting suspiciously happy about the rain. interesting.',likes:71,replies:8,reposts:2,views:'1,604',thread:[]}
-];
+//const STORY_XPOSTS = [
+ //{id:1,handle:'sooberry',when:'2h',body:'reminder to bring an extra umbrella sa car because apparently one umbrella is not enough when you have a very talkative five-year-old and an unexpected passenger 😭☔',likes:128,replies:12,reposts:9,views:'4,203',thread:[{handle:'parkchanyeol',body:'unexpected passenger daw oh'},{handle:'sooberry',body:'chan 😭'}]},
+ //{id:2,handle:'parkchanyeol',when:'3h',body:'some people need to realize na hindi lahat ng carpool ay carpool lang 🤭',likes:92,replies:7,reposts:3,views:'2,804',thread:[{handle:'sooberry',body:'DELETE THIS 😭'}]},
+ //{id:3,handle:'sooberry',when:'1d',body:'first PTA meeting done 🥹 proud of my little girl and so thankful sa mga teachers na patient and kind sa kids 🤍',likes:214,replies:18,reposts:14,views:'6,192',thread:[{handle:'ningyizhuo',body:'Sookyung and Hana playdate soon!!! 🥹'}]},
+ //{id:4,handle:'ningyizhuo',when:'1d',body:'PTA meeting survival club 🤝 ang cute ng kinder A babies pls 😭',likes:78,replies:5,reposts:2,views:'1,209',thread:[]},
+ //{id:5,handle:'junmyeon',when:'2d',body:'Thank you, Kinder A parents, for volunteering for Family Day! Will share the finalized schedule soon.',likes:45,replies:4,reposts:6,views:'942',thread:[]},
+ //{id:6,handle:'sooberry',when:'4d',body:'my daughter told me today that her teacher deserves a gold star because he always listens to her 🥹',likes:391,replies:24,reposts:31,views:'9,142',thread:[]},
+ //{id:7,handle:'niniloveskids',when:'5h',body:'sometimes the smallest kindness can make a rainy day feel warm ☔',likes:246,replies:19,reposts:17,views:'5,027',thread:[{handle:'ohsehun',body:'sure. the weather.'}]},
+ //{id:8,handle:'ohsehun',when:'6h',body:'my friend is acting suspiciously happy about the rain. interesting.',likes:71,replies:8,reposts:2,views:'1,604',thread:[]}
+//];
