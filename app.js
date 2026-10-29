@@ -955,7 +955,7 @@ function initIMUnread() {
     }
   });
 }
-//initIMUnread();
+initIMUnread();
 
 function markIMRead(name) {
   imReadChats.add(name);
