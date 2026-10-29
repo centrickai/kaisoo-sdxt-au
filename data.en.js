@@ -1,7 +1,7 @@
 // ===== Game Data (en) - automatically generated: tr/build.js (based on the original Korean file data.ko.js) =====
 // Names, dates, and chat room keys remain unchanged in Korean (the code reads them)
 const chatData={
-"Mommy": [
+"Mommy Do": [
   ["9월 7일", "date"],
   ['Good morning, anak! Gising na ba ang kindergarten girl natin? ❤️', 'them'],
   ['Good morning, Mommy!', 'me'],
@@ -2947,7 +2947,7 @@ const photoSections = [
   ]
 ];
 
-/*const speech = [
+const speech = [
   ["Jongin", "HYUNG."],
   ["Kyungsoo", "Why are you yelling already?"],
   ["Jongin", "Because I still can't believe you finally went to that place."],
@@ -3018,7 +3018,7 @@ const photoSections = [
   ["Kyungsoo", "(Laughs) Drive safely."],
   ["Jongin", "LOVE YOUUU."],
   ["Kyungsoo", "Love you. See you soon."]
-];*/
+];
 
 const OTHER_CALLS={
  "Mommy Do": [
