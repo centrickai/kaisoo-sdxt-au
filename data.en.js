@@ -1153,6 +1153,292 @@ const chatData={
 ["HAHAHAHA", "them"],
 
 
+["9월 26일", "date"],
+
+["chan", "me"],
+["you'll never guess who we ran into sa bookstore", "me"],
+
+["sino", "them"],
+["si mommy do?", "them"],
+
+["chan, why would i be surprised to see my own mother 😭", "me"],
+
+["HAHAHAHA", "them"],
+["edi sino", "them"],
+
+["teacher jongin", "me"],
+
+["...", "them"],
+["PUTANGINA", "them"],
+["AGAIN???? 😭", "them"],
+
+["yes", "me"],
+["apparently buong makati iisang bookstore lang ang pinupuntahan", "me"],
+
+["HAHAHAHA", "them"],
+["kasama mo si sooky?", "them"],
+
+["oo", "me"],
+["siya pa unang nakakita", "me"],
+
+["ay patay", "them"],
+["siguradong nilapitan niya agad", "them"],
+
+["correct", "me"],
+["sumigaw ng \"teacher nini\" sa gitna ng bookstore", "me"],
+
+["AHAHAHAHAHA", "them"],
+["MY BABY 😭", "them"],
+
+["very enthusiastic reunion", "me"],
+["no regard whatsoever for her father's peace of mind", "me"],
+
+["HAHAHAHA", "them"],
+["pero okay naman kayo?", "them"],
+
+["yes", "me"],
+["actually normal lang", "me"],
+["he was with a friend", "me"],
+
+["ohhh", "them"],
+["may witness na naman", "them"],
+
+["chan 😭", "me"],
+["not everything requires a criminal investigation", "me"],
+
+["HAHAHAHA", "them"],
+["sorry", "them"],
+["sino friend niya", "them"],
+
+["sehun", "me"],
+["funny guy", "me"],
+["medyo mahilig mang-asar", "me"],
+
+["ay bagay kami", "them"],
+
+["god forbid", "me"],
+
+["GAGO HAHAHAHA", "them"],
+
+["although hindi siya kasing ingay mo", "me"],
+
+["offensive", "them"],
+
+["factual", "me"],
+
+["😭", "them"],
+
+["apparently they've been browsing for almost an hour", "me"],
+["sehun looked like he was about to file a complaint", "me"],
+
+["HAHAHAHAHA", "them"],
+["ikaw naman, ilang oras ka nagtagal?", "them"],
+
+["don't start", "me"],
+["sooky tried to renegotiate her two-book limit", "me"],
+
+["AHAHAHA", "them"],
+["magkano damage", "them"],
+
+["two books", "me"],
+["and stickers", "me"],
+
+["oh that's not bad", "them"],
+
+["thank you", "me"],
+["her financial education is progressing nicely", "me"],
+
+["HAHAHAHAHA", "them"],
+["what books?", "them"],
+
+["one about penguins", "me"],
+["and we're going on a bear hunt", "me"],
+
+["AWWW", "them"],
+["i love that one", "them"],
+
+["she insists i have to do the bear voice", "me"],
+
+["PLEASE RECORD IT", "them"],
+
+["absolutely not", "me"],
+
+["SOO 😭", "them"],
+["kahit audio lang", "them"],
+
+["i refuse to distribute recordings of myself impersonating wildlife", "me"],
+
+["HAHAHAHAHAHA", "them"],
+["ang arte mo", "them"],
+
+["i have professional standards", "me"],
+
+["you literally told me about your friday night in detail", "them"],
+
+["that was a confidential consultation", "me"],
+
+["PUTANGINA 😭", "them"],
+["HAHAHAHAHA", "them"],
+
+["anyway", "me"],
+["sooky's napping", "me"],
+["i'll finish some work before dinner", "me"],
+
+["weekend na weekend ka nagtatrabaho", "them"],
+
+["just reviewing something", "me"],
+["thirty minutes max", "me"],
+
+["famous last words", "them"],
+
+["i'm setting a timer", "me"],
+
+["okay responsible adult", "them"],
+["coffee next week?", "them"],
+
+["sure", "me"],
+["let's confirm closer to friday", "me"],
+
+["deal", "them"],
+["and soo", "them"],
+
+["what", "me"],
+
+["next time makasalubong mo si teacher nini", "them"],
+["pakisabi hello from your favorite best friend", "them"],
+
+["i'll pass", "me"],
+
+["WHY 😭", "them"],
+
+["because i have no intention of introducing you as a recurring character in my personal humiliation", "me"],
+
+["OUCH", "them"],
+
+
+["10월 9일", "date"],
+
+["SOOOOO", "them"],
+["how was your reading debut", "them"],
+
+["a resounding success", "me"],
+["my audience was extremely enthusiastic", "me"],
+
+["HAHAHAHAHA", "them"],
+["DID YOU DO THE BEAR VOICE", "them"],
+
+["unfortunately yes", "me"],
+
+["PUTANGINA 😭😭😭", "them"],
+["I KNEW IT", "them"],
+
+["sooky publicly announced my alleged talent", "me"],
+["in front of an entire classroom", "me"],
+
+["HAHAHAHAHA", "them"],
+["that's my girl", "them"],
+
+["and apparently the children wanted an encore", "me"],
+
+["NOOOOO 😭", "them"],
+["please tell me may video", "them"],
+
+["no", "me"],
+["and thank god for that", "me"],
+
+["SOO", "them"],
+["sayang naman", "them"],
+
+["some performances are meant to remain exclusive", "me"],
+
+["HAHAHAHAHA", "them"],
+["ang damot mo", "them"],
+
+["i have a reputation to maintain", "me"],
+
+["you told me about friday night in detail", "them"],
+
+["chan 😭", "me"],
+["that was confidential information", "me"],
+
+["HAHAHAHAHA", "them"],
+["okay fine", "them"],
+["pero ang cute naman", "them"],
+["sooky must've been so proud", "them"],
+
+["she was", "me"],
+["honestly, that made everything worth it", "me"],
+
+["aww 🥹", "them"],
+["see", "them"],
+["best papa award", "them"],
+
+["thank you", "me"],
+["i'll add it to my credentials", "me"],
+
+["HAHAHAHAHA", "them"],
+["how was teacher nini", "them"],
+
+["survived the morning somehow", "me"],
+["he had to demonstrate walking through imaginary mud", "me"],
+
+["HAHAHAHAHA", "them"],
+["parang masaya class nila", "them"],
+
+["it is", "me"],
+["and honestly, grabe yung patience ng teachers", "me"],
+["twenty minutes pa lang ako dun, pagod na ko", "me"],
+
+["welcome to kindergarten 😭", "them"],
+
+["exactly", "me"],
+["sooky absolutely loves it though", "me"],
+
+["good", "them"],
+["that's what matters", "them"],
+
+["yep", "me"],
+
+["btw may problema pala ako", "them"],
+
+["that sounds ominous", "me"],
+
+["yung kotse ko", "them"],
+["may weird sound pag nagbrake", "them"],
+
+["chan", "me"],
+["please have that checked today", "me"],
+
+["balak ko bukas", "them"],
+
+["absolutely not", "me"],
+["brakes are not decorative accessories", "me"],
+
+["GAGO 😭", "them"],
+
+["i'm serious", "me"],
+["don't drive it unnecessarily until you know what's wrong", "me"],
+
+["okay okay", "them"],
+["i'll bring it to the shop after lunch", "them"],
+
+["good", "me"],
+
+["grabe parang tatay kita", "them"],
+
+["someone has to exercise judgment in this friendship", "me"],
+
+["HAHAHAHAHA", "them"],
+["sige na", "them"],
+["good luck sa meeting mo", "them"],
+
+["thank you", "me"],
+["and please don't die because of a brake pad", "me"],
+
+["LOVE YOU TOO 😭", "them"],
+
+
+
 
 
 ],
