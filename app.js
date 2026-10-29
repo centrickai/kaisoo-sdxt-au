@@ -982,7 +982,7 @@ VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a))
   return `<button class="crow" onclick="chatId=${esc(JSON.stringify(n))};push('chat')"><div class="av">${avatarFor(n,isGroup(n))}</div><div style="flex:1;min-width:0"><div class="cn">${esc(dn(n))}${MEMBERS[n]?`<small>${MEMBERS[n]}</small>`:''}</div><div class="cp">${last?esc(previewText(last[0],isGroup(n))):''}</div></div><div class="cm"><span class="ct">${time}</span>${cnt?`<span class="kbdg">${cnt}</span>`:''}</div></button>`}).join('')}</div>
  `}};
 
-
+initIMUnread();
 
  /* CHAT ROOM */
 const AUD_DUR={'media/my_love.mp3':'0:25','media/ssk.mp3':'1:40'};
@@ -1040,7 +1040,7 @@ function chatItems(id) {
   let text=m[0],sender=id==='Kyungsoo my love 💞'?'Kyungsoo my love 💞':id;if(grp&&m[1]==='them'){const mm=text.match(/^([^:：]+)[:：]\s*([\s\S]*)$/);if(mm){sender=mm[1];text=mm[2]}}
   if(TT[i]!=null)tm=TT[i];else tm+=1;items.push({who:m[1],text,sender,time:m[2]||ampm(tm),rd:m[3]==='rd'})});return items}
 
-initIMUnread();
+
 
   /* Group-chat contact pictures: edit these paths when you add your own photos. */
 const IM_GROUP_PHOTOS = {
