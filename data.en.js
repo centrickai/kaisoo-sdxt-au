@@ -365,10 +365,457 @@ const chatData={
 
 ["Kiss Sooky for me!", "them"],
 ["Will do!", "me"],
-
-
-
   
+],
+
+"Teacher Jongin": [
+  ["10월 27일", "date"],
+
+  ["Good evening, Teacher!", "me"],
+  ["Sorry to bother you. May naiwan yata kayo sa car.", "me"],
+
+  ["Good evening po, Mr. Do!", "them"],
+  ["Ay, really? Ano po yun?", "them"],
+
+  ["A USB drive.", "me"],
+  ["Nahanap ko sa may passenger seat.", "me"],
+
+  ["...", "them"],
+  ["OH NO. 😭", "them"],
+  ["Sa akin po yun.", "them"],
+
+  ["Figured as much. 😂", "me"],
+  ["Don't worry, safe naman dito.", "me"],
+
+  ["Sorry po! Hindi ko napansin na nahulog pala.", "them"],
+  ["Kanina ko pa hinahanap sa bag ko. 😭", "them"],
+
+  ["Ah, so you noticed already.", "me"],
+  ["I was about to say, I can bring it tomorrow pag hinatid ko si Sooky.", "me"],
+
+  ["Thank you po!", "them"],
+  ["Actually, may favor sana ako.", "them"],
+
+  ["Sure. What is it?", "me"],
+
+  ["May kailangan kasi akong file from that USB for tomorrow's class.", "them"],
+  ["Yung final copy, doon ko lang pala na-save.", "them"],
+
+  ["Oh, okay.", "me"],
+  ["Anong file yung kailangan niyo?", "me"],
+
+  ["PowerPoint po for our activity tomorrow.", "them"],
+  ["Shapes Around Us yung filename.", "them"],
+  ["Possible po bang ma-send niyo sa akin tonight?", "them"],
+  ["If hindi masyadong hassle.", "them"],
+
+  ["Of course.", "me"],
+  ["Let me get my laptop.", "me"],
+
+  ["Thank you so much po. 😭", "them"],
+
+  ["Teacher, okay lang. HAHAHA.", "me"],
+  ["Parang buong lesson plan yung pinapagawa niyo sa akin.", "me"],
+
+  ["HAHAHAHA. Sorry!", "them"],
+  ["Medyo nagpanic lang ako nung hindi ko mahanap.", "them"],
+
+  ["Understandable.", "me"],
+  ["Buti nga ako yung nakakita.", "me"],
+
+  ["Bakit po? 😂", "them"],
+
+  ["Baka ginawang furniture ni Sooky for Pinguinnie.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Actually, possible.", "them"],
+
+  ["Gumagawa kasi siya ng bahay for him lately.", "me"],
+  ["May designated bedroom na, apparently.", "me"],
+
+  ["Ang sosyal naman ni Pinguinnie.", "them"],
+
+  ["I'm beginning to think he lives a more comfortable life than I do.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Last week nga, sinabi ni Sooky na kailangan daw ni Pinguinnie ng driver's license.", "them"],
+
+  ["Oh, God.", "me"],
+  ["Sinabi niya rin sa inyo yun?", "me"],
+
+  ["Oo. 😂", "them"],
+  ["Gusto niya raw kasi mag-drive si Pinguinnie papuntang school.", "them"],
+
+  ["And did you explain that penguins aren't qualified to operate motor vehicles?", "me"],
+
+  ["Sinabi ko kailangan muna niyang matutunan yung traffic rules.", "them"],
+
+  ["HAHAHAHA.", "me"],
+  ["Excellent answer.", "me"],
+  ["Ako naman tinatanong kung pwede ko raw siyang turuan mag-park.", "me"],
+
+  ["HAHAHAHA. Grabe.", "them"],
+  ["Busy pala talaga si Pinguinnie.", "them"],
+
+  ["Extremely.", "me"],
+  ["More demanding schedule than mine.", "me"],
+
+  ["Okay, I'm on my laptop na.", "me"],
+  ["May folder dito na Teaching Materials. Yun ba?", "me"],
+
+  ["Yes po!", "them"],
+  ["May October folder sa loob, then Shapes Activity.", "them"],
+
+  ["Got it.", "me"],
+  ["Found the PowerPoint.", "me"],
+  ["Just confirming, wala namang confidential student information dito?", "me"],
+
+  ["Wala po. Lesson slides lang and sample pictures.", "them"],
+  ["No student records or personal details.", "them"],
+
+  ["Perfect.", "me"],
+  ["Sending now.", "me"],
+
+  ["Shapes Around Us.pptx", "me"],
+
+  ["Received!", "them"],
+  ["Thank you so much po. 😭", "them"],
+
+  ["You're welcome!", "me"],
+
+  ["Grabe, you really saved me.", "them"],
+
+  ["Happy to help.", "me"],
+  ["Although medyo concerned na ako sa relationship niyo with technology.", "me"],
+
+  ["HAHAHAHA. Bakit naman po?", "them"],
+
+  ["First, the accidental call.", "me"],
+  ["Now, the USB.", "me"],
+  ["Should I expect a third incident?", "me"],
+
+  ["Mr. Do. 😭", "them"],
+  ["Huwag niyo naman i-jinx!", "them"],
+
+  ["HAHAHAHA. Sorry.", "me"],
+
+  ["For the record, marunong naman po akong gumamit ng technology.", "them"],
+
+  ["I'll take your word for it.", "me"],
+
+  ["Ang hirap naman i-defend ng sarili ko dito. 😂", "them"],
+
+  ["I have two documented incidents supporting my argument.", "me"],
+
+  ["Documented talaga?", "them"],
+
+  ["Accountant ako, Teacher.", "me"],
+  ["We appreciate supporting evidence.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Fair enough.", "them"],
+  ["Pero kayo rin naman, naiwan niyo yung car keys niyo nung first day.", "them"],
+
+  ["...", "me"],
+  ["I was wondering kung kailan niyo ulit babanggitin yan.", "me"],
+
+  ["HAHAHAHA. Sorry, couldn't resist.", "them"],
+
+  ["Apparently neither of us should be trusted with small personal belongings.", "me"],
+
+  ["At least hindi ko naiwan buong bag ko.", "them"],
+
+  ["Please don't give the universe ideas. 😭", "me"],
+
+  ["HAHAHAHA.", "them"],
+
+  ["Thank you rin pala sa ride kanina.", "them"],
+  ["Buti nakauwi ako before lumakas lalo yung ulan.", "them"],
+
+  ["Good!", "me"],
+  ["Glad you made it home safely.", "me"],
+
+  ["Kayo rin po ba? Hindi na masyadong traffic?", "them"],
+
+  ["Medyo, pero manageable naman.", "me"],
+  ["Sooky actually fell asleep mga ten minutes after you got out.", "me"],
+
+  ["Aww. Napagod siguro sa aftercare.", "them"],
+
+  ["Probably.", "me"],
+  ["Pagdating namin sa parking, nagising siya tapos snacks agad yung hinanap.", "me"],
+
+  ["HAHAHAHA. Ang bilis ng recovery.", "them"],
+
+  ["Truly remarkable.", "me"],
+
+  ["At least nakapag-rest kahit saglit.", "them"],
+
+  ["So you're on her side now?", "me"],
+
+  ["I'm just considering the evidence. 😂", "them"],
+
+  ["Borrowing my terminology, Teacher?", "me"],
+
+  ["Learning from the expert.", "them"],
+
+  ["HAHAHAHA.", "me"],
+  ["Very good.", "me"],
+
+  ["Thank you. 😂", "them"],
+
+  ["By the way, hindi ko inexpect na nasa school pa kayo kanina.", "me"],
+  ["Usually ba late kayo umuuwi?", "me"],
+
+  ["Hindi naman po everyday.", "them"],
+  ["Minsan lang kapag maraming materials na kailangan i-prepare.", "them"],
+  ["Today, may inaayos pa ako for tomorrow.", "them"],
+
+  ["Ah. Hence the USB.", "me"],
+
+  ["Unfortunately. 😭", "them"],
+
+  ["Well, at least nakuha niyo na yung file.", "me"],
+
+  ["Thanks to you.", "them"],
+
+  ["I'd say thanks to my excellent investigative skills.", "me"],
+
+  ["Finding a USB under a car seat counts as investigative work now? 😂", "them"],
+
+  ["Absolutely.", "me"],
+  ["Recovered missing property, identified its owner, and facilitated urgent document retrieval.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Ang impressive ng résumé niyo, sir.", "them"],
+
+  ["Thank you. I expect a certificate.", "me"],
+
+  ["I'll see what I can do. 😂", "them"],
+
+  ["By the way, naalala ko yung sinabi ni Sooky kanina sa car.", "them"],
+
+  ["Which one? 😭", "me"],
+  ["Ang dami niyang sinabi.", "me"],
+
+  ["Yung tungkol sa clouds na nag-aaway.", "them"],
+
+  ["Teacher.", "me"],
+  ["That was your theory. HAHAHA.", "me"],
+
+  ["I know. 😂", "them"],
+  ["Pero kanina kasi, tinanong niya ako kung pwede raw bang manghiram ng gamit yung clouds.", "them"],
+
+  ["Oh, God.", "me"],
+  ["Ano naman sinabi niyo?", "me"],
+
+  ["Wala silang hands.", "them"],
+
+  ["HAHAHAHA.", "me"],
+  ["Very convincing scientific explanation.", "me"],
+
+  ["Medyo disappointed siya. 😭", "them"],
+
+  ["I can imagine.", "me"],
+  ["One time, tinanong niya ako bakit hindi raw kami sinusundan ng moon papasok sa grocery.", "me"],
+
+  ["HAHAHAHA. Ang cute.", "them"],
+
+  ["Sabi ko may iba rin siyang errands.", "me"],
+
+  ["That's actually a good answer. 😂", "them"],
+
+  ["Thank you.", "me"],
+  ["I've developed extensive experience in celestial inquiries.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Have you considered teaching kindergarten?", "them"],
+
+  ["Absolutely not.", "me"],
+  ["Twenty minutes of Family Reading Morning was enough to convince me na hindi biro yung trabaho niyo.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["You did really well that day, though.", "them"],
+
+  ["Thank you.", "me"],
+  ["Although hindi pa rin ako nakaka-recover sa bear voice incident.", "me"],
+
+  ["Actually, naaalala pa rin ng kids yun.", "them"],
+
+  ["That's exactly what frightens me.", "me"],
+
+  ["Si Sooky nga, may sinabi last week.", "them"],
+
+  ["Oh, no.", "me"],
+
+  ["Apparently, may baby bear voice version pa kayo?", "them"],
+
+  ["...", "me"],
+  ["She told you WHAT?", "me"],
+
+  ["HAHAHAHAHA.", "them"],
+  ["Sabi niya mas cute raw yun.", "them"],
+
+  ["I'm going to have a very serious conversation with my daughter.", "me"],
+
+  ["Huwag naman po. 😂", "them"],
+  ["Proud na proud siya sa inyo.", "them"],
+
+  ["She's managing my public image without authorization.", "me"],
+
+  ["I think she's doing a great job.", "them"],
+
+  ["Of course you do.", "me"],
+  ["You're getting exclusive performances.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Hindi ko naman ni-request!", "them"],
+
+  ["And yet you're encouraging her.", "me"],
+
+  ["Maybe a little. 😂", "them"],
+
+  ["Unbelievable.", "me"],
+
+  ["Anyway, nakakain na kayo?", "me"],
+
+  ["Hindi pa. Tinatapos ko pa yung slides.", "them"],
+  ["Kayo po?", "them"],
+
+  ["About to cook dinner.", "me"],
+  ["Sooky requested spaghetti.", "me"],
+
+  ["Again? 😂", "them"],
+
+  ["Yes.", "me"],
+  ["I'm beginning to suspect she would happily eat pasta every day.", "me"],
+
+  ["At least alam niya yung gusto niya.", "them"],
+
+  ["True.", "me"],
+  ["Unfortunately, ako yung responsible for providing it.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Fair enough.", "them"],
+
+  ["Kayo? Cooking or ordering?", "me"],
+
+  ["Probably ordering na lang.", "them"],
+  ["Wala na akong energy magluto tonight. 😭", "them"],
+
+  ["Understandable. Long day.", "me"],
+
+  ["May Korean place near my building. Masarap yung kimchi jjigae nila.", "them"],
+
+  ["Oh, nice.", "me"],
+  ["That sounds considerably more interesting than my fifth spaghetti dinner this month.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Pwede naman kayong magluto ng iba.", "them"],
+
+  ["Teacher, you're underestimating the political influence of a five-year-old.", "me"],
+
+  ["Fair point. 😂", "them"],
+
+  ["May negotiations involved.", "me"],
+  ["Occasionally, concessions must be made.", "me"],
+
+  ["Complicated household pala.", "them"],
+
+  ["Very.", "me"],
+  ["I'm merely the administrator.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Si Sooky yung boss?", "them"],
+
+  ["Naturally.", "me"],
+
+  ["I can see that.", "them"],
+
+  ["Actually, speaking of her...", "me"],
+  ["May pinapatanong pala siya sa inyo.", "me"],
+
+  ["Ay, ano po yun?", "them"],
+
+  ["Kung allowed ba kayong makinig ng music outside school.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Bakit naman hindi?", "them"],
+
+  ["She's still processing the fact that teachers have personal lives.", "me"],
+
+  ["Ah, right. Akala niya dati sa school ako nakatira. 😂", "them"],
+
+  ["Exactly.", "me"],
+  ["And now she's concerned about your recreational privileges.", "me"],
+
+  ["Please tell her allowed naman po ako.", "them"],
+
+  ["I'll pass along the good news.", "me"],
+
+  ["Thank you. Very reassuring. 😂", "them"],
+
+  ["Mr. Do, may napansin ako.", "them"],
+
+  ["Hmm?", "me"],
+
+  ["Kanina pa pala tayo nag-uusap. 😭", "them"],
+
+  ["...", "me"],
+  ["Oh, God.", "me"],
+  ["HAHAHAHA. Oo nga.", "me"],
+
+  ["USB file lang naman dapat yung itatanong ko.", "them"],
+
+  ["And somehow napunta tayo sa driver's license ng penguin at marital disputes ng clouds.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Very productive conversation.", "them"],
+
+  ["Absolutely.", "me"],
+  ["I'm sure both our employers would be delighted.", "me"],
+
+  ["Yung school baka tanungin bakit hindi ko pa tapos slides ko. 😂", "them"],
+
+  ["Speaking of which, tapusin niyo na yung work niyo.", "me"],
+
+  ["Yes po. Almost done.", "them"],
+
+  ["Good.", "me"],
+  ["I'll start dinner bago mag-file ng formal complaint si Sooky.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Thank you ulit for everything today.", "them"],
+
+  ["No problem at all, Teacher.", "me"],
+  ["And don't forget your USB tomorrow.", "me"],
+
+  ["I won't!", "them"],
+  ["Although...", "them"],
+
+  ["Oh, no.", "me"],
+  ["Ano na namang naiwan niyo? 😭", "me"],
+
+  ["HAHAHAHA. Wala!", "them"],
+  ["Actually, may naalala lang ako.", "them"],
+
+  ["Should I be concerned?", "me"],
+
+  ["Hindi naman. 😂", "them"],
+  ["May gusto lang sana akong itanong.", "them"],
+  ["Hindi about school.", "them"],
+
+  ["Sure. Go ahead.", "me"],
+
+  ["Okay, pero promise hindi kayo tatawa.", "them"],
+
+  ["Teacher, that's a rather demanding condition.", "me"],
+
+  ["HAHAHAHA. Fair.", "them"],
+  ["Kasi naalala ko yung sinabi niyo nung Friday.", "them"],
+
+  ["...", "me"],
+  ["Which Friday?", "me"]
 ],
 
 "Channie":[
@@ -1700,7 +2147,7 @@ const chatData={
 
 };
 const chatNames=[
- //"Teacher Jongin",
+ "Teacher Jongin",
  "Channie",
  "J&T Delivery",
  "Shopee Xpress Delivery",
@@ -3677,7 +4124,7 @@ const STORY_SP_ATTENDANCE = [
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
 { title: "01: sooky's first day",
-  date: "Sep 7, 2026",
+  date: "September 7, 2026",
   transcript: `Sooky: Papa, wait!
 
 Kyungsoo: Hmm? What's wrong, sweetheart?
@@ -4405,6 +4852,1271 @@ Jongin: (Laughs) Have a good day, sir.
 
 Kyungsoo: You too.`
 },
+
+{
+  title: "02: tito channie's visit",
+  date: "September 12, 2026",
+  transcript: `Sooky: TITO CHANNIE!
+
+Chanyeol: THERE’S MY BABY!
+
+Sooky: You came!
+
+Chanyeol: Of course I came! I promised you.
+
+Chanyeol: Oof! Big hug!
+
+Sooky: Did you bring my crayons?
+
+Chanyeol: Wow. Not even hello first?
+
+Sooky: Hello!
+
+Chanyeol: (Laughs) Hello, baby.
+
+Kyungsoo: Shoes off, Chan.
+
+Chanyeol: Yes, sir.
+
+Kyungsoo: And wash your hands before touching the food.
+
+Chanyeol: You really know how to welcome guests.
+
+Kyungsoo: You're not a guest. You're practically furniture at this point.
+
+Chanyeol: GAGO.
+
+Sooky: Papa, Tito said a bad word!
+
+Kyungsoo: I heard, sweetheart.
+
+Chanyeol: Sorry, baby! Tito slipped.
+
+Kyungsoo: A remarkably frequent occurrence.
+
+Chanyeol: (Laughs) Grabe ka. Okay. Who wants to see the surprise?
+
+Sooky: MEEEE!
+
+Sooky: Wow!
+
+Kyungsoo: Chan.
+
+Chanyeol: What?
+
+Kyungsoo: That packaging is enormous.
+
+Chanyeol: The actual gift is smaller.
+
+Kyungsoo: I sincerely hope so.
+
+Sooky: CRAYONS!
+
+Chanyeol: Washable crayons!
+
+Sooky: So many colors!
+
+Kyungsoo: Oh, those are the ones I was looking for.
+
+Chanyeol: Yep.
+
+Chanyeol: And...
+
+Kyungsoo: Chan.
+
+Chanyeol: Wait lang.
+
+Chanyeol: I also got her a scrapbook.
+
+Sooky: What's that?
+
+Chanyeol: It's a book where you can put your drawings and pictures.
+
+Sooky: Can I put my school picture?
+
+Chanyeol: Of course!
+
+Sooky: And Pinguinnie?
+
+Chanyeol: Especially Pinguinnie.
+
+Kyungsoo: Alright, that is actually a very thoughtful gift.
+
+Chanyeol: See? I have good ideas.
+
+Kyungsoo: Occasionally.
+
+Chanyeol: HAHAHAHA.
+
+Sooky: Papa, can we put my drawing?
+
+Kyungsoo: Absolutely. Let's get the one from the fridge.
+
+Chanyeol: So, no complaints?
+
+Kyungsoo: I still reserve the right to complain about your spending habits.
+
+Chanyeol: But?
+
+Kyungsoo: But thank you. She'll love that scrapbook.
+
+Chanyeol: You're welcome.
+
+Chanyeol: Uy, can I have some of that pasta?
+
+Kyungsoo: Of course. There's more in the kitchen.
+
+Chanyeol: Ang sarap nito.
+
+Kyungsoo: Thank you.
+
+Chanyeol: Honestly, you should open a restaurant.
+
+Kyungsoo: With what time, Chan?
+
+Chanyeol: Good point.
+
+Kyungsoo: I already have two full-time responsibilities and a daughter who believes strawberry soup is commercially viable.
+
+Chanyeol: HAHAHAHAHA.
+
+Chanyeol: She can be your business partner.
+
+Kyungsoo: Terrible idea. She'd spend the entire budget on purple shoes.
+
+Chanyeol: (Laughs)
+
+Sooky: Papa! Can I put a sticker here?
+
+Kyungsoo: Anywhere you like, baby. It's your scrapbook.
+
+Sooky: Okay!
+
+Chanyeol: So, speaking of school...
+
+Kyungsoo: I was wondering how long you'd last.
+
+Chanyeol: HAHAHA.
+
+Chanyeol: I behaved all week!
+
+Kyungsoo: You sent me a message yesterday that simply said "educational romance" followed by sixteen laughing emojis.
+
+Chanyeol: That was an observation.
+
+Kyungsoo: It was an act of harassment.
+
+Chanyeol: (Laughs) Okay, sorry.
+
+Chanyeol: But seriously, now that you've talked to him, are you feeling better?
+
+Kyungsoo: Much.
+
+Kyungsoo: The uncertainty was more uncomfortable than the conversation itself.
+
+Chanyeol: Yeah.
+
+Kyungsoo: He's a reasonable person. We were able to discuss everything without making it a dramatic confrontation.
+
+Chanyeol: Good.
+
+Chanyeol: Honestly, that's probably why things went smoothly. Neither of you was trying to make it into something else.
+
+Kyungsoo: Exactly.
+
+Kyungsoo: Friday was enjoyable. Monday was an unfortunate surprise. That's all.
+
+Chanyeol: An unfortunate surprise with a school handbook.
+
+Kyungsoo: (Laughs) Yes.
+
+Chanyeol: At least you got a free tote bag.
+
+Kyungsoo: I paid tuition, Chan. Nothing about that tote bag was free.
+
+Chanyeol: PUTA HAHAHAHAHA.
+
+Kyungsoo: Language. My daughter is right there.
+
+Chanyeol: Sorry!
+
+Sooky: Tito Channie!
+
+Chanyeol: Yes, baby?
+
+Sooky: Look at my scrapbook!
+
+Chanyeol: Oh, wow!
+
+Sooky: I made a penguin!
+
+Chanyeol: That's beautiful!
+
+Sooky: And this is Papa!
+
+Chanyeol: ...
+
+Kyungsoo: Don't.
+
+Chanyeol: WHY IS YOUR HEAD SO BIG HAHAHAHA.
+
+Kyungsoo: Chan.
+
+Sooky: Because Papa is big!
+
+Chanyeol: She's right!
+
+Kyungsoo: I feel extraordinarily loved in this household.`
+},
+
+
+{
+  title: "03: bookstore date with sooky",
+  date: "September 26, 2026",
+  transcript: `Sooky: Papa, look!
+
+Kyungsoo: What did you find, sweetheart?
+
+Sooky: They have the big crayons!
+
+Kyungsoo: Oh, those are nice.
+
+Sooky: Can we buy them?
+
+Kyungsoo: You already have a whole art set from Tito Channie.
+
+Sooky: But these are bigger.
+
+Kyungsoo: (Chuckles) I can see that.
+
+Sooky: We don't have big ones.
+
+Kyungsoo: We don't need every size of crayon, baby.
+
+Sooky: Just one box?
+
+Kyungsoo: We're choosing books today, remember?
+
+Sooky: Two books.
+
+Kyungsoo: That's right.
+
+Sooky: Can I have three?
+
+Kyungsoo: Nice try.
+
+Sooky: Four?
+
+Kyungsoo: (Laughs) You're negotiating in the wrong direction.
+
+Sooky: (Giggles)
+
+Sooky: Papa!
+
+Kyungsoo: Hmm?
+
+Sooky: A BEAR!
+
+Kyungsoo: Oh, look at that.
+
+Sooky: I want this one!
+
+Kyungsoo: We're Going on a Bear Hunt.
+
+Kyungsoo: That's a lovely book.
+
+Sooky: Can we read it tonight?
+
+Kyungsoo: Of course.
+
+Sooky: You have to do the bear voice.
+
+Kyungsoo: I haven't agreed to that part.
+
+Sooky: Please?
+
+Kyungsoo: (Chuckles) We'll negotiate.
+
+Sooky: Papa, I want this one too!
+
+Kyungsoo: That's already your second book.
+
+Sooky: But I didn't pick a penguin book.
+
+Kyungsoo: I see.
+
+Kyungsoo: This is going to be a very complicated shopping trip.
+
+Sooky: (Giggles)
+
+<i>(They browse another shelf.)</i>
+
+Sooky: TEACHER NINI!
+
+<i>(Kyungsoo turns.)</i>
+
+Kyungsoo: Hmm?
+
+Sooky: Teacher Nini!
+
+Jongin: Oh! Hi, Sooky!
+
+Sooky: Papa! It's Teacher Nini!
+
+Kyungsoo: Yes, sweetheart. I can see him.
+
+Jongin: Good morning, Mr. Do.
+
+Kyungsoo: Good morning, Teacher Jongin.
+
+Jongin: Didn't expect to see you here.
+
+Kyungsoo: Likewise.
+
+Sehun: Jongin, ito ba yung—
+
+Jongin: Sehun.
+
+Sehun: Yung student mo?
+
+Jongin: Yes.
+
+Sehun: Ah.
+
+Sehun: Hi!
+
+Sooky: Hello!
+
+Jongin: Mr. Do, this is my friend Sehun.
+
+Jongin: Sehun, this is Sooky's dad, Mr. Do.
+
+Kyungsoo: Kyungsoo. Nice to meet you.
+
+Sehun: Sehun. Nice to meet you rin po.
+
+Sooky: Teacher Nini, why are you here?
+
+Jongin: I'm buying books.
+
+Sooky: For school?
+
+Jongin: Some of them, yes.
+
+Sooky: Can I see?
+
+Jongin: Sure!
+
+Sooky: That's a rabbit!
+
+Jongin: It is.
+
+Sooky: Does he have a name?
+
+Jongin: I think we'll have to read the story to find out.
+
+Sooky: Oh.
+
+Sehun: That's how he gets you. He makes you read the whole book.
+
+Jongin: (Laughs) That's usually the idea.
+
+Kyungsoo: A surprisingly effective sales strategy.
+
+Sehun: Diba po?
+
+Sooky: I have a bear book!
+
+Jongin: Really? Let me see.
+
+Jongin: Oh, We're Going on a Bear Hunt.
+
+Jongin: That's a good one!
+
+Sooky: Papa's going to make bear sounds.
+
+Kyungsoo: Apparently, I've been assigned additional responsibilities.
+
+Jongin: (Chuckles) Sounds like a big commitment.
+
+Kyungsoo: I haven't received the full job description yet.
+
+Sehun: May audition pa po ba?
+
+Kyungsoo: I believe the selection process was rather informal.
+
+Sooky: Papa makes a good bear!
+
+Kyungsoo: Thank you for the endorsement, baby.
+
+Jongin: Well, I'm sure it'll be good.
+
+Kyungsoo: You're very confident for someone who hasn't heard the performance.
+
+Jongin: I trust Sooky's judgment.
+
+Sooky: (Giggles)
+
+Sehun: Speaking of books, we've been here for almost an hour.
+
+Jongin: Hindi pa one hour.
+
+Sehun: Okay, forty-five minutes.
+
+Sehun: Twenty minutes dun deciding between two picture books.
+
+Jongin: Both were good.
+
+Sehun: Pareho namang may rabbit.
+
+Jongin: Magkaiba yung stories, Sehun.
+
+Kyungsoo: In fairness, choosing books can be surprisingly difficult.
+
+Sehun: Oh, no. Don't encourage him. (Laughs)
+
+Kyungsoo: I once spent an unreasonable amount of time comparing two coffee grinders, so I can't judge.
+
+Jongin: Coffee grinders?
+
+Kyungsoo: Yes. Same general specifications, completely different prices.
+
+Sehun: Please tell me you bought the cheaper one.
+
+Kyungsoo: Unfortunately, no.
+
+Jongin: (Laughs) Was the expensive one worth it?
+
+Kyungsoo: I tell myself that every morning while making coffee.
+
+Sooky: Papa, can we look at stickers?
+
+Kyungsoo: Sure, sweetheart. Stay beside me, okay?
+
+Sooky: Okay!
+
+Kyungsoo: We should finish our shopping.
+
+Jongin: Of course.
+
+Kyungsoo: Nice meeting you, Sehun.
+
+Sehun: Nice meeting you too po.
+
+Jongin: See you at school, Sooky!
+
+Sooky: Bye, Teacher Nini!
+
+Jongin: Bye!
+
+Kyungsoo: Enjoy your weekend, Teacher.
+
+Jongin: You too po, Mr. Do.
+
+...
+
+Sooky: Papa?
+
+Kyungsoo: Yes, baby?
+
+Sooky: Teacher Nini is outside school.
+
+Kyungsoo: He is.
+
+Sooky: Does he go shopping every Saturday?
+
+Kyungsoo: I don't know, sweetheart.
+
+Sooky: Oh.
+
+Sooky: I thought teachers live in school.
+
+Kyungsoo: (Chuckles) No, baby. Teachers have homes too.
+
+Sooky: Do they sleep?
+
+Kyungsoo: Of course.
+
+Sooky: Does Teacher Nini have a bed?
+
+Kyungsoo: ...
+
+Kyungsoo: I'm sure he does, sweetheart.
+
+Sooky: And a kitchen?
+
+Kyungsoo: Probably.
+
+Sooky: Maybe he makes strawberry soup!
+
+Kyungsoo: (Laughs) Maybe.`
+},
+
+
+{
+  title: "03: we're going on a bear hunt",
+  date: "October 9, 2026",
+  transcript: `Teacher Mina: Okay, Sunflowers! Everybody, let's sit on the carpet, please.
+
+Child 1: Teacher, where's Yuna?
+
+Teacher Mina: She's getting her water bottle. She'll be here in a moment.
+
+Sooky: Papa! Here!
+
+Kyungsoo: I see you, sweetheart.
+
+Teacher Mina: Sooky, let's let Papa sit on the reading chair, okay?
+
+Sooky: Okay!
+
+Jongin: Good morning, everyone!
+
+Children: GOOD MORNING!
+
+Jongin: Today we have a special guest joining us.
+
+Jongin: Sooky's dad volunteered to read a story for our Family Reading Morning.
+
+Sooky: MY PAPA!
+
+Jongin: Yes, your papa. (Chuckles)
+
+Kyungsoo: Good morning, everyone!
+
+Children: GOOD MORNING!
+
+Kyungsoo: It's very nice to meet you all.
+
+Jongin: And later, we'll also have Yuna's mom reading another story.
+
+Yuna: My mommy's coming!
+
+Jongin: She is. But first, let's listen to Mr. Do.
+
+Sooky: Teacher Nini!
+
+Jongin: Yes, Sooky?
+
+Sooky: Papa can sound like a bear!
+
+Kyungsoo: Sweetheart.
+
+Sooky: He does it at home!
+
+Jongin: Oh, really?
+
+Sooky: YES!
+
+Kyungsoo: I don't recall agreeing to this particular part of the presentation.
+
+Jongin: Well, now I'm curious.
+
+Kyungsoo: That sounds suspiciously like pressure, Teacher.
+
+Jongin: (Laughs) No pressure po, Mr. Do.
+
+Sooky: Papa, do it!
+
+Kyungsoo: You're supposed to be on my side, baby.
+
+Sooky: I am!
+
+<i>(Several children giggle.)</i>
+
+Kyungsoo: Alright. We'll see what happens when we reach the bear.
+
+Jongin: Fair enough.
+
+Kyungsoo: Has anyone here ever gone looking for a bear?
+
+Child 1: ME!
+
+Child 2: I saw one at the zoo!
+
+Child 3: Bears are scary!
+
+Kyungsoo: They can be, yes.
+
+Sooky: But they're cute!
+
+Kyungsoo: They can also be cute.
+
+Jongin: Very good point, Sooky.
+
+Kyungsoo: Today, we're going on an imaginary adventure.
+We might encounter some very interesting places along the way.
+
+Child 2: Like a forest?
+
+Kyungsoo: Excellent guess.
+
+Child 1: A mountain?
+
+Kyungsoo: Maybe.
+
+Sooky: A CAVE!
+
+Kyungsoo: Baby, we haven't started yet.
+
+Sooky: Sorry. (Giggles)
+
+Kyungsoo: It's alright.
+Now, I need everyone to help me with something.
+
+Children: WHAT?
+
+Kyungsoo: When I ask you to make a sound, you have to make it as loudly—or as quietly—as I tell you.
+
+Jongin: Can we do that, Sunflowers?
+
+Children: YES!
+
+Kyungsoo: Excellent. Let's begin.
+
+<i>(Kyungsoo reads the story, pausing at each setting to invite the children to make sound effects and movements.)</i>
+
+Kyungsoo: Alright, we're crossing some very tall grass. What do you think it sounds like?
+
+Child 3: SHHHHH!
+
+Kyungsoo: Very good! Let's try together.
+
+<i>(The children imitate grass rustling.)</i>
+
+Teacher Mina: Very nice!
+
+<i>...</i>
+
+Kyungsoo: Oh, dear. Now we've reached some very sticky mud.
+
+Child 1: EWWWW!
+
+Jongin: (Chuckles) Nobody wants to get their shoes dirty?
+
+Sooky: I don't!
+
+Kyungsoo: Neither do I, sweetheart.
+
+Child 2: Teacher Nini, you have to walk in the mud!
+
+Jongin: Me?
+
+Child 2: YES!
+
+Jongin: Alright, alright.
+
+<i>(Jongin pretends to carefully step through the mud.)</i>
+
+Children: (Laughing)
+
+Kyungsoo: Wonderful. Our teacher has volunteered to demonstrate the appropriate technique.
+
+Jongin: I don't remember volunteering. (Laughs)
+
+Kyungsoo: Interesting. That makes two of us.
+Now, everyone, what do you think lives inside the cave?
+
+Children: A BEAR!
+
+Kyungsoo: Hmm. Should we look?
+
+Sooky: YES!
+
+Child 3: NO!
+
+Kyungsoo: Alright. Very carefully...oh!
+
+Sooky: PAPA! THE BEAR VOICE!
+
+Kyungsoo: I see there's no escaping this.
+
+Jongin: (Chuckles) I believe the audience has made its decision.
+
+Kyungsoo: Very demanding audience, Teacher.
+
+Jongin: They're enthusiastic.
+
+Kyungsoo: That's a generous description.
+
+<i>(Kyungsoo makes a deep, exaggerated bear growl.)</i>
+
+Children: AAAAAAH!
+
+<i>(The children burst into laughter.)</i>
+
+Sooky: AGAIN!
+
+Child 1: AGAIN!
+
+Child 2: MR. DO, AGAIN!
+
+Kyungsoo: Oh, goodness.
+
+Jongin: I think you've become very popular.
+
+Kyungsoo: I'm starting to regret demonstrating this particular skill.
+
+Kyungsoo: ROOOOAAAAAR!
+
+<i>(The children laugh even harder.)</i>
+
+Teacher Mina: Okay, Sunflowers! Let's help our reader finish the story.
+
+Jongin: Yes! We still need to get everyone safely home.
+
+<i>Kyungsoo finishes the story, inviting the children to act out the characters' hurried return.</i>
+
+Jongin: Alright! Let's give Mr. Do a big round of applause!
+
+<i>(The children clap.)</i>
+
+Children: THANK YOU!
+
+Kyungsoo: You're very welcome!
+
+Sooky: Papa!
+
+Kyungsoo: Yes, sweetheart?
+
+Sooky: You did the bear voice!
+
+Kyungsoo: Anything for my only baby.
+
+Sooky: I told Teacher Nini you're good!
+
+Kyungsoo: Thank you for believing in me.
+
+Jongin: (Laughs) She was right.
+
+Kyungsoo: I'll be sure to include that in my performance review.
+
+Teacher Mina: Okay, children! Let's get ready for our drawing activity while Yuna's mom prepares her story.
+
+Kyungsoo: Thank you for having me, Teacher.
+
+Jongin: Thank you rin po for volunteering. The kids really enjoyed that.
+
+Kyungsoo: I'm glad.I was slightly worried when they started demanding repeat performances.
+
+Jongin: (Laughs) Once they like something, they tend to remember it.
+
+Kyungsoo: A terrifying prospect.
+
+Jongin: You might be asked to do it again someday.
+
+Kyungsoo: Please don't make that an official school requirement.
+
+Jongin: No promises po.
+
+Kyungsoo: You seem considerably more comfortable managing this audience than I am.
+
+Jongin: Practice lang po. But you handled them well. Hindi madaling mag-keep ng attention ng ganitong karaming five-year-olds.
+
+Kyungsoo: Thank you. Honestly, I have a newfound appreciation for your profession.
+
+Jongin: (Chuckles) Thank you po.
+
+Kyungsoo: Twenty minutes and I've already had to negotiate with six different children.
+
+Jongin: That's a normal morning for us.
+
+Kyungsoo: I don't doubt it.
+
+Teacher Mina: Mr. Do, thank you so much po! The children had a wonderful time.
+
+Kyungsoo: My pleasure.
+
+Teacher Mina: Sooky was very proud of you.
+
+Kyungsoo: I think she was mostly pleased that I agreed to the bear voice.
+
+Teacher Mina: (Laughs) That was definitely the highlight!
+
+Kyungsoo: I'll remember that.
+
+Jongin: You set a pretty high standard for our next guest reader.
+
+Kyungsoo: Then I sincerely apologize to Yuna's mother.
+Anyway, I should get going. I have a meeting at eleven.
+
+Jongin: Of course po.
+
+Kyungsoo: Thank you again, Teachers.
+
+Teacher Mina: Thank you, sir!
+
+Jongin: Have a good day!
+
+Kyungsoo: You too.
+
+Sooky: BYE, PAPA!
+
+Kyungsoo: Bye, sweetheart!
+
+Sooky: I LOVE YOU!
+
+Kyungsoo: Love you too, baby!`
+},
+
+
+{
+  title: "04: rainy pickup",
+  date: "October 27, 2026",
+  transcript: `Aftercare Teacher: Good afternoon po, sir!
+
+Kyungsoo: Good afternoon. I'm here for Sookyung Do.
+
+Aftercare Teacher: Yes, sir. She's just finishing her drawing.
+
+Kyungsoo: Thank you for taking care of her.
+
+Aftercare Teacher: You're welcome po. She had a good afternoon.
+
+Sooky: PAPA!
+
+Kyungsoo: Hi, baby!
+
+Sooky: You're here!
+
+Kyungsoo: Of course I'm here.
+
+Kyungsoo: Sorry I couldn't pick you up earlier, sweetheart.
+
+Sooky: It's okay.
+
+Sooky: I played with blocks!
+
+Kyungsoo: You did?
+
+Sooky: And we had crackers.
+
+Kyungsoo: Sounds like a pretty good afternoon.
+
+Sooky: Papa, look at my drawing!
+
+Kyungsoo: Oh, wow. Is that a bear?
+
+Sooky: It's a bear having a birthday!
+
+Kyungsoo: Very festive.
+
+Sooky: He has a cake.
+
+Kyungsoo: That's a lovely cake.
+
+Sooky: Can we have cake too?
+
+Kyungsoo: (Chuckles) Nice try, sweetheart.
+
+...
+
+Sooky: Papa?
+
+Kyungsoo: Hmm?
+
+Sooky: It's raining.
+
+Kyungsoo: Oh.
+
+Kyungsoo: Well, that's unfortunate timing.
+
+Sooky: It's loud!
+
+Kyungsoo: It is, baby. Let's stay here muna.
+
+Sooky: Can I use my umbrella?
+
+Kyungsoo: Once we get to the car, okay?
+
+...
+
+Sooky: TEACHER NINI!
+
+Jongin: Oh! Hi, Sooky!
+
+Sooky: Teacher Nini, it's raining!
+
+Jongin: I know. Ang lakas, no?
+
+Sooky: There's thunder!
+
+Jongin: Narinig ko nga.
+
+Kyungsoo: Good afternoon, Teacher.
+
+Jongin: Good afternoon po, Mr. Do.
+
+Kyungsoo: Hindi pa kayo umuuwi?
+
+Jongin: Hindi pa po. May inaayos lang akong materials for tomorrow.
+
+Jongin: Paalis na sana ako kaso biglang umulan.
+
+Kyungsoo: Ah. Bad timing.
+
+Jongin: Sobra. (Laughs)
+
+Sooky: Are you going home?
+
+Jongin: Later, Sooky. Hintayin ko munang humina yung ulan.
+
+Sooky: You can use my umbrella!
+
+Jongin: Aww. Thank you!
+
+Kyungsoo: Baby, I don't think Teacher Jongin would fit under your umbrella.
+
+Sooky: Why?
+
+Kyungsoo: Medyo maliit para sa kanya.
+
+Jongin: (Laughs) I think your papa's right.
+
+Sooky: You can borrow Papa's!
+
+Kyungsoo: Sweetheart, I still need that one.
+
+Sooky: But we have a car!
+
+Kyungsoo: Well, yes, but—
+Actually...
+
+Jongin: Hmm?
+
+Kyungsoo: Teacher, pauwi na rin ba kayo after this?
+
+Jongin: Yes po. Balak ko na sanang umalis, pero mukhang matatagalan pa yung ulan.
+
+Kyungsoo: Saan pala kayo banda nakatira?
+
+Jongin: Around Makati lang din po.
+
+Kyungsoo: Oh. We're heading that way.
+
+Kyungsoo: If along the route naman, you can ride with us.
+
+Jongin: Ay, no, okay lang po!
+
+Jongin: Thank you, though. Baka makaabala pa ako.
+
+Kyungsoo: Hindi naman. Nasa labas na yung car.
+
+Jongin: Sure po?
+
+Kyungsoo: Of course.
+
+Kyungsoo: Ang lakas din kasi ng ulan. Mukhang hindi agad mag-stop.
+
+Jongin: Okay lang naman po akong maghintay.
+
+Kyungsoo: You can, of course. I'm just offering. No pressure.
+
+Sooky: Teacher Nini, come with us!
+
+Jongin: (Chuckles) Sooky...
+
+Sooky: We have space!
+
+Kyungsoo: She's right about that.
+
+Jongin: If you're really sure, Mr. Do.
+
+Kyungsoo: Very sure.
+
+Jongin: Sige po. Thank you.
+
+Kyungsoo: You're welcome.
+
+Jongin: Kukunin ko lang po yung bag ko sa classroom.
+
+Kyungsoo: Sure. We'll wait here.`
+},
+
+
+{
+  title: "04: unexpected passenger",
+  date: "October 27, 2026",
+  transcript: `Sooky: Teacher Nini!
+
+Jongin: Yes?
+
+Sooky: You're in our car!
+
+Jongin: (Laughs) I am.
+
+Sooky: Do you like our car?
+
+Jongin: Very much.
+
+Sooky: It's black!
+
+Jongin: It is! I can see that.
+
+Kyungsoo: She gives every passenger a very thorough introduction.
+
+Jongin: (Chuckles) I appreciate it.
+
+Kyungsoo: Seat belt, baby.
+
+Sooky: Done already!
+
+Kyungsoo: Good girl.
+
+Kyungsoo: So, Teacher, saan ko kayo ihahatid?
+
+Jongin: Around Poblacion po. Near the residential area.
+
+Jongin: I'll guide you na lang pag malapit na tayo.
+
+Kyungsoo: Oh, that's fine. Madadaanan naman.
+
+Jongin: Thank you ulit. Sorry talaga sa abala.
+
+Kyungsoo: Teacher, hindi kayo nakakaabala.
+
+Jongin: (Laughs) Okay po. Last apology na.
+
+Sooky: Papa!
+
+Kyungsoo: Yes, sweetheart?
+
+Sooky: The sky is angry!
+
+Kyungsoo: It certainly sounds angry.
+
+Jongin: Baka nag-aaway yung clouds.
+
+Sooky: Why?
+
+Jongin: Hmm. Maybe may isang cloud na nanghiram ng umbrella?
+
+Sooky: Clouds don't have umbrellas!
+
+Jongin: Ay, oo nga pala. (Laughs)
+
+Kyungsoo: A serious flaw in your meteorological theory, Teacher.
+
+Jongin: Kailangan ko pa yatang i-review yung research ko.
+
+Sooky: Papa, can we listen to music?
+
+Kyungsoo: Sure. What would you like?
+
+Sooky: Papa! Play Rover!
+
+Kyungsoo: Rover again, baby?
+
+Sooky: YES! Please!
+
+Kyungsoo: (Laughs) Okay, DJ Sooky.
+
+Sooky: YAYYYY!
+KAMON AN HASH-TAK MI!
+TEKA LAY WIT MI!
+MISTA WOVA WOVA WOVA!
+AM KAMING OBA OBA OBAAA!
+
+Jongin: HAHAHAHA. Ang cute!
+
+Kyungsoo: She's very confident about those lyrics.
+
+Sooky: PAPA! I'm singing!
+
+Kyungsoo: I know, baby. You're doing great.
+
+Sooky: KAMI WOVA WOVA WOVA!
+
+Sooky: AM KAMING OBAAAA!
+
+Jongin: (Laughs) May sarili siyang version.
+
+Kyungsoo: I've tried teaching her the words. Ayaw niya.
+
+Jongin: HAHAHAHA. Mas gusto niya yung kanya.
+
+Sooky: Teacher Nini! Sing with me!
+
+Jongin: Ako rin? (Laughs)
+
+Sooky: YES!
+
+Jongin: Okay, okay.
+Mista Wova wova wova!
+
+Sooky: AM KAMING OBA OBA OBA!
+
+Kyungsoo: Wow. You learned that rather quickly, Teacher.
+
+Jongin: Mukhang may talent po ako. (Laughs)
+
+Sooky: PAPA! YOU TOO!
+
+Kyungsoo: Baby, I'm driving.
+
+Sooky: You can sing!
+
+Kyungsoo: Alright. Mista Wova—
+
+Sooky: NO, PAPA!
+
+Kyungsoo: What? 
+
+Sooky: That's Teacher Nini's part!
+
+<i>(Jongin laughs.)</i>
+
+Jongin: Ay, may assigned parts pala.
+
+Kyungsoo: Apparently, I wasn't informed of the arrangement.
+
+Sooky: Papa, you sing the other part!
+
+Kyungsoo: Which one, sweetheart?
+
+Sooky: KAMON AN HASH-TAK MI!
+
+Kyungsoo: (Laughs) Alright, boss.
+
+Jongin: By the way, Mr. Do, buti nakapag-request kayo ng aftercare today.
+
+Kyungsoo: Honestly, malaking relief. Biglaan kasi yung meeting, tapos parehong unavailable yung mom ko and my friend.
+
+Jongin: Buti may slot pa.
+
+Kyungsoo: Exactly. I was worried baka fully booked na.
+
+Jongin: Usually, mabilis naman mag-confirm yung admin team.
+
+Kyungsoo: They were really helpful. Although based sa kwento ni Sooky, parang gusto na niya araw-arawin.
+
+Jongin: (Laughs) Because of the crackers?
+
+Kyungsoo: Apparently. The crackers made a strong impression.
+
+Sooky: And the blocks!
+
+Kyungsoo: Of course, baby. The blocks too.
+
+Jongin: Very important detail.
+
+...
+
+Kyungsoo: Is this your usual commute?
+
+Jongin: More or less po. Usually hindi naman ganito katraffic.
+
+Kyungsoo: I was going to say. Medyo unfortunate yung timing natin.
+
+Jongin: HAHAHA. Sorry po.
+
+Kyungsoo: You just apologized again.
+
+Jongin: Ay, habit na yata.
+
+Kyungsoo: So I've noticed.
+
+Jongin: I'm working on it. (Laughs)
+
+Kyungsoo: Good. I'd hate to start charging you per apology.
+
+Jongin: Oh no, baka ubos agad sweldo ko.
+
+Kyungsoo: A very real financial risk.
+
+...
+
+Sooky: Papa?
+
+Kyungsoo: Hmm?
+
+Sooky: Can Teacher Nini come with us again tomorrow?
+
+Kyungsoo: Well, that depends, sweetheart.
+
+Jongin: (Chuckles) Why tomorrow?
+
+Sooky: Because it's fun!
+
+Jongin: Aww. Thank you, Sooky.
+
+Kyungsoo: You're quite popular, Teacher.
+
+Jongin: Apparently. (Laughs)
+Ah, dito na lang po sa corner. Malapit na yung building ko.
+
+Kyungsoo: Sure? I can take you to the entrance.
+
+Jongin: Okay na po. May covered walkway from here.
+
+Kyungsoo: Alright.
+
+...
+
+Jongin: Thank you ulit, Mr. Do. Sobrang laking tulong.
+
+Kyungsoo: You're welcome. Ingat pauwi.
+
+Jongin: Kayo rin po.
+Bye, Sooky!
+
+Sooky: Bye, Teacher Nini!
+
+Jongin: See you tomorrow!
+
+Sooky: Okay!
+
+Kyungsoo: Teacher!
+Your umbrella.
+
+Jongin: Ay! Thank you. Muntik na.
+
+Kyungsoo: That would've defeated the purpose of the entire arrangement.
+
+Jongin: HAHAHAHA. Oo nga po.
+
+Jongin: Ingat!
+
+Kyungsoo: You too.
+
+...
+
+Kyungsoo: Alright, we're home.
+
+Sooky: Papa, I can't reach my water bottle.
+
+Kyungsoo: Wait, baby. I'll get it.
+Hmm?
+
+Sooky: What?
+
+Kyungsoo: There's something here.
+
+Sooky: What's that?
+
+Kyungsoo: A USB drive.
+
+Sooky: Is it mine?
+
+Kyungsoo: I don't think so.
+
+Sooky: Is it Teacher Nini's?
+
+Kyungsoo: Probably.
+
+Sooky: Oh, no!
+
+Kyungsoo: It's alright, sweetheart. I'll let him know.
+
+Sooky: So he can get it back?
+
+Kyungsoo: Yes, anak ko.`
+},
+
+
+
+
+
 
 
 
