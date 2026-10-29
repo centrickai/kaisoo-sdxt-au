@@ -421,7 +421,7 @@ const chatData={
   ["TANGINA 😭", "them"],
   ["ANO SABI MO", "them"],
 
-  ["\"do kyungsoo\"", "me"],
+  ["\"kyungsoo do\"", "me"],
   ["yun lang", "me"],
   ["parang nagdefend ako ng thesis", "me"],
 
@@ -615,7 +615,7 @@ const chatData={
   ["yeah", "them"],
   ["pero syempre hindi mo rin naman pwedeng biglang sabihin sa classroom na single ka", "them"],
 
-  ["\"good morning, I'm do kyungsoo. no spouse, no active boyfriend, no pending applications\"", "me"],
+  ["\"good morning, I'm kyungsoo do. no spouse, no active boyfriend, no pending applications\"", "me"],
 
   ["HAHAHAHAHAHA", "them"],
   ["tangina ano yan?? linkedin profile 😭", "them"],
@@ -1991,112 +1991,70 @@ const januaryEvents = {
 
 
 const searches = [
-  "how to get a 5 year old to sleep before 9pm",
-  "bakit ayaw matulog ng anak ko kahit pagod na",
-  "montessori school calendar october 2026",
-  "montessori practical life activities at home age 5",
-  "easy montessori activities for kindergarten at home",
-  "how to label kids school supplies without stickers falling off",
-  "cute lunchbox ideas for picky eaters",
-  "baon ideas for 5 year old na ayaw ng gulay",
-  "how to keep rice warm in kids lunchbox",
-  "best insulated lunch bag for kindergarten",
-  "how to remove strawberry stains from white uniform",
-  "paano tanggalin ang crayon sa sofa",
-  "why does my daughter ask why 100 times a day",
-  "normal ba na sobrang daldal ng 5 year old",
-  "how to explain different kinds of families to children",
-  "how to explain single parent family to preschooler",
-  "how to answer where is my other dad questions age 5",
-  "gentle parenting when you're exhausted",
-  "how to apologize to your child after getting impatient",
-  "how to raise a confident daughter as a single dad",
-  "how to braid little girls hair easy tutorial",
-  "easy hairstyles for little girls short hair",
   "bakit ang hirap magtali ng buhok ng bata",
+  "easy hairstyles for 5 year old girl",
+  "paano mag french braid ng buhok",
   "cute hair clips for girls korea",
   "strawberry themed birthday party ideas for kids",
   "strawberry milk recipe for kids",
-  "is strawberry milk okay for kids everyday",
-  "how much sugar can a five year old have",
-  "how to make fluffy pancakes without burning them",
-  "easy breakfast recipes for kids before school",
-  "korean egg roll lunchbox recipe",
-  "how to make mini rice balls for kids",
-  "vegetables hidden in pasta sauce recipe",
-  "how to make homemade chicken nuggets crispy",
-  "why is my kid only eating the side dishes",
-  "how to meal prep for one adult and one child",
-  "weekly grocery list single parent",
-  "how long can cooked rice stay in fridge",
-  "safe way to reheat leftover pasta",
-  "best way to clean lunchbox silicone seals",
-  "how to get glitter out of carpet",
-  "how to wash stuffed animals without ruining them",
-  "how to repair teddy bear loose stitching",
-  "what to do when child loses favorite stuffed toy",
-  "where to buy strawberry plushie seoul",
-  "how to make paper crowns for kids",
-  "easy rainy day activities for five year olds",
-  "indoor playground seoul for kindergarten kids",
-  "best parks for kids in seoul",
-  "family friendly cafes seoul play area",
-  "children's library seoul weekend hours",
-  "aquarium tickets seoul children",
-  "kid friendly museums seoul",
-  "how to make weekends special on a budget with kids",
-  "how to manage full time work and school pickup",
-  "how to make shared calendar for school events",
-  "how to stop forgetting parent teacher meeting",
-  "how to write polite message to school teacher",
-  "school pickup authorization letter template",
-  "how to ask friend to babysit without feeling guilty",
-  "thank you gift ideas for friend who babysits",
-  "easy dinner recipes after long work day",
-  "how to stop overcooking salmon",
-  "korean beef radish soup recipe",
-  "simple doenjang jjigae recipe",
-  "how to make kimchi fried rice less spicy for kids",
-  "how to cook broccoli so kids actually eat it",
-  "bakit mas masarap pagkain kapag may nagluto para sayo",
-  "how to remove garlic smell from hands",
-  "why do onions make you cry even with glasses",
-  "how to keep kitchen clean while cooking",
-  "best compact air fryer for apartment",
-  "how to organize tiny apartment with kids toys",
-  "toy storage ideas small living room",
-  "how to declutter kids artwork without throwing it away",
-  "how to preserve children's drawings",
-  "best photo album for childhood memories",
-  "how to back up iphone photos to icloud",
-  "why is iphone storage full after deleting photos",
-  "how to recover accidentally deleted notes iphone",
-  "how to make emergency contact list for babysitter",
-  "how to mute work group chat after office hours",
-  "how to write a professional follow up email",
-  "excel formula count days until deadline",
-  "how to focus at work when sleep deprived",
-  "why does coffee make me sleepy sometimes",
-  "iced americano near me",
-  "best coffee beans for iced americano",
-  "how to make iced americano at home",
-  "how to get coffee stain out of blue sweater",
-  "best comfortable shoes for parents walking all day",
-  "how to remove ink stain from office shirt",
-  "how to fold fitted sheet properly",
-  "why do fitted sheets never fold properly",
-  "how often should you wash kids bedding",
-  "how to stop a child from stealing all the blanket",
-  "normal ba na anak ko buong kama ang sakop",
-  "bedtime stories for five year olds about kindness",
-  "children's books about family and belonging",
-  "how to explain friendship to a five year old",
-  "what to say when kid asks if papa is lonely",
-  "why do kids say the most embarrassing things in public",
-  "how to keep a straight face when your child is funny",
-  "is it normal to miss your child when they're at school",
-  "how to stop checking school pickup time every hour",
-  "how to be a good dad when you're doing it alone"
+  "how to remove hair tie without hurting child",
+  "bakit ayaw matulog ng anak ko",
+  "best lunchbox for kindergarten philippines",
+  "how to help child adjust to kindergarten",
+  "normal ba umiyak ang parent sa first day of school",
+  "little steps kindergarten school calendar 2026",
+  "how to choose family photo for school activity",
+  "4x6 photo printing near me",
+  "paano tanggalin ang crayon sa wall",
+  "kids water bottle leak proof pink",
+  "strawberry cream cheese sandwich recipe",
+  "can teachers accept homemade food from parents",
+  "how to know if your child likes their teacher",
+  "bakit mas nakikinig ang bata sa teacher kaysa sa magulang",
+  "cute penguin stuffed toy for kids",
+  "how to stop child from bringing toys everywhere",
+  "how to teach a 5 year old to tie shoelaces",
+  "bakit lahat na lang tinatanong ng bata",
+  "how to explain why papa has to work",
+  "quick breakfast ideas for picky eaters",
+  "anong gagawin pag ayaw kumain ng gulay ng bata",
+  "how to keep strawberries fresh longer",
+  "best bedtime story books for 5 year olds",
+  "we're going on a bear hunt read aloud tips",
+  "how to read a story in front of kindergarten class",
+  "paano hindi kabahan sa harap ng mga bata",
+  "family day kindergarten outfit ideas",
+  "family day permission slip sample",
+  "aftercare program for kindergarten",
+  "is after school care okay for 5 year olds",
+  "how to explain late pickup to child",
+  "how to apologize to child for being late",
+  "how to balance work and being a single dad",
+  "normal ba ma-guilty pag busy sa work",
+  "excel reconciliation formula",
+  "portfolio valuation reconciliation checklist",
+  "how to fix excel formula not calculating",
+  "best coffee shops near office",
+  "converge pay bill online",
+  "uniqlo polo shirt size chart",
+  "how to remove coffee stains from white shirt",
+  "easy garlic butter shrimp recipe",
+  "paano magluto ng sinigang na hindi masyadong maasim",
+  "how long does cooked rice last in fridge",
+  "bakit ang mahal ng groceries ngayon",
+  "how to politely decline a blind date",
+  "is it awkward to see someone after a one night stand",
+  "how to act normal around someone you hooked up with",
+  "little steps teacher jongin kim",
+  "is it okay to date your child's teacher",
+  "teacher parent relationship boundaries",
+  "paano malalaman kung friendly lang siya",
+  "why does someone keep smiling at you",
+  "how to stop thinking about someone",
+  "normal ba kiligin sa simpleng thank you",
+  "how to tell if someone is flirting or just being nice",
+  "paano mag move on sa taong lagi mong nakikita",
+  "how to delete individual searches on safari iphone"
 ];
 const emails = [
   ["Little Steps Montessori School", "October Parent Bulletin 🎒", "Good morning, parents! Please check the updated October classroom activities, school reminders, and materials to bring this week.", "오늘"],
@@ -2760,7 +2718,7 @@ const OTHER_CALLS={
   ["Soo", "Hello, good morning."],
   ["School Admin", "Good morning po! May I speak with Mr. Kyungsoo Do?"],
   ["Soo", "Speaking po."],
-  ["School Admin", "Sir, this is Anna from Little Steps Montessori. Parent po kayo ni Sookyung from Kinder Sunshine, correct?"],
+  ["School Admin", "Sir, this is Anna from Little Steps Montessori. Parent po kayo ni Sookyung from Kinder Sunflower, correct?"],
   ["Soo", "Yes, that's right. May concern po ba?"],
   ["School Admin", "Wala naman po, sir. We're just calling regarding the updated student information forms. May ilang details lang po kaming kailangang i-confirm."],
   ["Soo", "Ah, okay. Sure po."],
@@ -3294,7 +3252,7 @@ const DISPLAY={
 const STORY_SP_POSTS = [
  {
   id: 1,
-  author: 'Teacher Kim Jongin',
+  author: 'Teacher Jongin Kim',
   role: 'Kinder Sunflowers',
   initials: 'KJ',
   date: 'Monday, Sep 7 · 9:00 AM',
@@ -3315,7 +3273,7 @@ Teacher Jongin & Teacher Mina`,
   },
   {
   id: 2,
-  author: 'Teacher Kim Jongin',
+  author: 'Teacher Jongin Kim',
   role: 'Kinder Sunflowers',
   initials: 'KJ',
   date: 'Wednesday, Sep 9 · 7:25 AM',
@@ -3366,7 +3324,7 @@ Thank you!`,
 
   {
   id: 4,
-  author: 'Teacher Kim Jongin',
+  author: 'Teacher Jongin Kim',
   role: 'Kinder Sunflowers',
   initials: 'KJ',
   date: 'Friday, Sep 18 · 4:26 PM',
@@ -3395,7 +3353,7 @@ comments: []
 
 {
   id: 5,
-  author: 'Teacher Kim Jongin',
+  author: 'Teacher Jongin Kim',
   role: 'Kinder Sunflowers',
   initials: 'KJ',
   date: 'Friday, Oct 9 · 7:32 AM',
@@ -3427,7 +3385,7 @@ comments: []
 const STORY_SP_THREADS = [
   {
     id: 1,
-    name: 'Teacher Kim Jongin',
+    name: 'Teacher Jongin Kim',
     role: 'Kinder Sunflowers · Class Teacher',
     initials: 'KJ',
     messages: [
@@ -3695,7 +3653,7 @@ const STORY_SP_THREADS = [
       {from: 'them', text: 'Hello, Mr. Do! This is the school office. A reminder that the Family Day permission slip can be returned to Sookyung’s teacher.', time: 'Oct 23 · 9:30 AM'},
       {from: 'me', text: 'Thank you! I’ll send it with her tomorrow.', time: 'Oct 23 · 9:45 AM'},
       {from: 'them',
-      text: 'Aftercare Request - Confirmed\n\nLittle Steps Administration\n\nStudent: Sookyung Do\nDate: October 27, 2026\nExtended pickup: Until 4:00 PM\nAuthorized pickup: Do Kyungsoo\n\nYour request for today\'s supervised aftercare program has been approved.\n\nSookyung will join the aftercare group following regular dismissal. Please proceed to the designated pickup area when you arrive.\n\nIf your arrival time changes, kindly inform the school administration.',
+      text: 'Aftercare Request - Confirmed\n\nLittle Steps Administration\n\nStudent: Sookyung Do\nDate: October 27, 2026\nExtended pickup: Until 4:00 PM\nAuthorized pickup: Kyungsoo Do\n\nYour request for today\'s supervised aftercare program has been approved.\n\nSookyung will join the aftercare group following regular dismissal. Please proceed to the designated pickup area when you arrive.\n\nIf your arrival time changes, kindly inform the school administration.',
       time: 'Oct 27 · 10:26 AM'}
     ]
   }
@@ -3718,7 +3676,7 @@ const STORY_SP_ATTENDANCE = [
 
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
-{ title: "sooky's first day",
+{ title: "01: sooky's first day",
   date: "Sep 7, 2026",
   transcript: `Sooky: Papa, wait!
 
@@ -3836,11 +3794,11 @@ Jongin: Sorry. Good morning po.
 
 Teacher Mina: Sir, this is Teacher Jongin. He's the class adviser of Kinder Sunflowers.
 
-Jongin: Kim Jongin po.
+Jongin: Jongin Kim po.
 
 <i>(Another pause.)</i>
 
-Kyungsoo: Do Kyungsoo.
+Kyungsoo: Kyungsoo Do.
 
 Jongin: Right. I mean-nice to meet you, Mr. Do.
 
@@ -4020,403 +3978,436 @@ Teacher Mina: No problem po!
 
 Kyungsoo: Thanks again.`
 },
-  {title:'01: two sandwiches',date:'Oct 5, 2026',transcript:`Okay. For the revised investment report, kailangan i-adjust yung projections for the third quarter. The client requested a more conservative estimate, so maybe we can-
+  
+{
+  title: "01: sooky's drawing",
+  date: "September 8, 2026",
+  transcript: `Sooky: Papa! Look what I made!
 
-<i>Papa?</i>
+Kyungsoo: Oh, wow. Come here, let me see.
 
-Hmm, baby?
+Sooky: It's our house!
 
-<i>Are you working po?</i>
+Kyungsoo: That's lovely, sweetheart. Who's this?
 
-Just recording something, sweetheart. What is it?
+Sooky: Me!
 
-<i>Can you make two sandwiches po?</i>
+Kyungsoo: And this one?
 
-Two? Why, love?
+Sooky: You!
 
-<i>One for me. One for Teacher Nini.</i>
+Kyungsoo: Why is my head so big?
 
-Oh.
+Sooky: Because you're big!
 
-Teacher Nini?
+Kyungsoo: (Laughs) That's fair.
 
-<i>Opo!</i>
+Sooky: And Lola!
 
-Baby, Teacher Nini probably has his own lunch.
+Kyungsoo: Oh, Lola's there too. Why does she have pink hair?
 
-<i>But I want to give him one po.</i>
+Sooky: Because it's pretty.
 
-(Chuckles) That's very sweet of you.
+Kyungsoo: She'll love that. Maybe we'll show her later.
 
-<i>Can you make it heart-shaped po?</i>
+Sooky: Can we put it on the fridge?
 
-...Heart-shaped?
+Kyungsoo: Of course. Which magnet do you want?
 
-<i>Opo! Para alam niya na love natin siya!</i>
+Sooky: Penguin!
 
-Baby, hindi naman natin-
+Kyungsoo: Alright.
 
-<i>Please, Papa? 🥺</i>
+<i>A few moments later.</i>
 
-(Laughs quietly) Okay, sweetheart. We'll make him a sandwich.
+Kyungsoo: So, tell me about school. Did you have fun?
 
-<i>YAY!</i>
+Sooky: Yes!
 
-But we have to ask him first if he can accept food from students, okay?
+Kyungsoo: What was your favorite part?
 
-<i>Okay po!</i>
+Sooky: The kitchen!
 
-And what kind of sandwich does Teacher Nini like?
+Kyungsoo: I had a feeling you'd say that.
 
-<i>Hmm.</i>
+Sooky: I made soup for Teacher Nini.
 
-<i>Strawberry!</i>
+Kyungsoo: Oh, really? Was it good?
 
-Strawberry sandwich?
+Sooky: Yes! He ate two bowls!
 
-<i>Opo!</i>
+Kyungsoo: Two bowls? Wow. He must've been hungry.
 
-Baby, are you sure that's what he likes, or is that what you like?
+Sooky: It's pretend, Papa.
 
-<i>(Giggles)</i>
+Kyungsoo: Ah. Right. My mistake.
 
-Ah. I see.
+Sooky: And Yuna played with me!
 
-<i>We can share po!</i>
+Kyungsoo: That's nice. Is Yuna your new friend?
 
-(Laughs) Okay, baby. We'll see.
+Sooky: Yes. She has a purple bag.
 
-<i>Papa?</i>
+Kyungsoo: Oh, I see.
 
-Yes, love?
+Sooky: I want a purple bag.
 
-<i>Teacher Nini has a nice smile.</i>
+Kyungsoo: You just got a new pink one, baby.
 
-...He does?
+Sooky: But purple is pretty.
 
-<i>Opo! Like you!</i>
+Kyungsoo: It is. Maybe we can get you something purple next time.
 
-(Softly) Thank you, baby.
+Sooky: Purple shoes?
 
-<i>But he has bigger muscles.</i>
+Kyungsoo: (Chuckles) We'll see.
 
-...
+Sooky: Papa?
 
-<i>Papa?</i>
+Kyungsoo: Hmm?
 
-I'm still here, sweetheart.
+Sooky: Are you going to school with me tomorrow?
 
-<i>You can go to the gym too po!</i>
+Kyungsoo: I'll drop you off, yes.
 
-(Laughs) Okay. Thank you for the suggestion.`},
-  {title:'01: bedtime questions',date:'Oct 05, 2026',transcript:`<i>Papa?</i>
+Sooky: And then you go to work?
 
-Hmm, sweetheart?
+Kyungsoo: That's right.
 
-<i>Are you going to school tomorrow too?</i>
+Sooky: Okay.
 
-I'm taking you to school, baby. Just like today.
+Kyungsoo: Are you still a little nervous?
 
-<i>Are you going to say hi to Teacher Nini?</i>
+Sooky: Not anymore.
 
-Of course. Why?
+Kyungsoo: That's good to hear.
 
-<i>Because you were shy today.</i>
+Sooky: Teacher Nini said we're reading a story tomorrow.
 
-(Laughs softly) Baby, I wasn't shy.
+Kyungsoo: Oh? Which story?
 
-<i>You were po.</i>
+Sooky: It's a surprise!
 
-Oh? How do you know?
+Kyungsoo: Well, then I guess you'll have to tell me when you get home.
 
-<i>Because you looked at your shoes when he talked to you.</i>
+Sooky: Okay!
 
-...
+Kyungsoo: Come on. Let's wash your hands. Dinner's almost ready.
 
-<i>Papa?</i>
+Sooky: Can we have nuggets?
 
-I'm listening, sweetheart.
+Kyungsoo: We're having veggie patties, remember?
 
-<i>Teacher Nini is nice. You don't have to be shy.</i>
+Sooky: With ketchup?
 
-(Chuckles) Okay, baby. I'll remember that.
+Kyungsoo: Yes, sweetheart. With ketchup.`
+},
 
-<i>And he's very handsome!</i>
 
-You told me that already.
+{
+  title: "02: parent orientation",
+  date: "September 11, 2026",
+  transcript: `Teacher Mina: Good morning po! Parents of Kinder Sunflowers, you can sign the attendance sheet here.
 
-<i>Do you think he's handsome too po?</i>
+Kyungsoo: Good morning. Kyungsoo Do, for Sookyung Do.
 
-...
+Teacher Mina: Good morning, Mr. Do! Yes po, you're on the list.
 
-Yes, baby. He's handsome.
+Kyungsoo: Thank you.
 
-<i>Yay!</i>
+Teacher Mina: How's Sooky doing? She was very excited when she arrived.
 
-(Laughs) Why are you so happy?
+Kyungsoo: She's doing well. Apparently, she gave Pinguinnie a lecture on school enrollment this morning.
 
-<i>Because we both like Teacher Nini!</i>
+Teacher Mina: (Laughs) Ay, really?
 
-Sweetheart, liking someone and thinking they're handsome are different things.
+Kyungsoo: He isn't five yet, so he has to stay home.
 
-<i>Oh.</i>
+Teacher Mina: Well, she's not wrong!
 
-<i>But you like him, right, Papa?</i>
+Kyungsoo: Exactly. I couldn't argue.
 
-I think he's a very nice teacher.
+Teacher Mina: Hahaha! Please have a seat po. We'll begin shortly.
 
-<i>That's good po!</i>
+<i>A few minutes later.</i>
 
-Okay, little miss. Time to sleep.
+Jongin: Good morning, everyone.
 
-<i>Papa?</i>
+Jongin: I'm Teacher Jongin, the class adviser for Kinder Sunflowers. Thank you po for taking time out of your schedules to be here.
 
-Yes, baby?
+Jongin: Teacher Mina and I will be working closely with your children throughout the school year.
 
-<i>Can Teacher Nini come to our strawberry ice cream date?</i>
+Teacher Mina: Good morning po! We're very happy to meet everyone.
 
-...
+Jongin: We know starting kindergarten is a big adjustment—not just for the kids, but for parents as well.
 
-Baby, that's our special Saturday date.
+Jongin: Some of you probably had a very emotional first morning.
 
-<i>But we can share po.</i>
+<i>A few parents laugh.</i>
 
-(Laughs softly) You're very generous, sweetheart.
+Jongin: And some of you might have been more nervous than your children.
 
-<i>Because you taught me sharing is caring!</i>
+Kyungsoo: (Laughs softly)
 
-...I did, didn't I?
+Jongin: That's okay, too.
 
-<i>Opo!</i>
+Jongin: During our first few weeks, we're focusing on classroom routines, social interaction, and helping the children feel secure enough to explore and participate.
 
-(Chuckles) Good night, baby.
+Jongin: We don't expect everyone to adjust at the same pace.
 
-<i>Good night, Papa. I love you!</i>
+<i>The session continues.</i>
 
-Love you more, sweetheart.`},
-  {title:'02: the bigger heart',date:'Oct 06, 2026',transcript:`<i>Papa! Papa, wait!</i>
+Jongin: Before we finish, we also want to remind everyone that if you're experiencing difficulties at home that might affect your child's adjustment, you're welcome to inform us privately.
 
-Hmm? What's wrong, baby?
+Jongin: You don't need to share anything you're uncomfortable with, but knowing when a child may need additional reassurance helps us support them appropriately.
 
-<i>That's my sandwich po!</i>
+Teacher Mina: Thank you po! We'll be distributing the parent handbook and school calendar before you leave.
 
-Yes, sweetheart. I'm putting it in your lunchbox.
+Jongin: And thank you again for being here. We're looking forward to a wonderful year with your children.`
+},
 
-<i>Noooo. The big heart is for Teacher Nini!</i>
 
-Baby, they're almost the same size.
+{
+  title: "02: the talk",
+  date: "September 11, 2026",
+  transcript: `Teacher Mina: Thank you po! Have a good day.
 
-<i>But that one's bigger.</i>
+Kyungsoo: Teacher Mina, one more thing about pickup authorizations.
 
-Okay. We'll switch them.
+Teacher Mina: Yes po?
 
-<i>Thank you po!</i>
+Kyungsoo: My mother is listed as a regular authorized pickup person. I don't need to submit a new form each week, correct?
 
-You're welcome. Now, can you finish your milk?
+Teacher Mina: That's right, sir. Her authorization stays valid unless you request changes.
 
-<i>Papa?</i>
+Kyungsoo: Perfect. Thank you.
 
-Yes, love?
+Teacher Mina: You're welcome!
 
-<i>Can you put a letter?</i>
+Jongin: Mr. Do?
 
-A letter?
+Kyungsoo: Teacher Jongin.
 
-<i>Opo! Like the one you put in my lunchbox.</i>
+Jongin: Do you have a minute po?
 
-What do you want to say?
+Kyungsoo: Certainly.
 
-<i>Dear Teacher Nini...</i>
+Jongin: I wanted to ask you something. Privately… if that's alright.
 
-Okay.
 
-<i>Thank you for being my teacher.</i>
+Kyungsoo: About school?
 
-That's very sweet.
+Jongin: Not exactly.
 
-<i>And thank you for being handsome!</i>
+<i>(An awkward pause.)</i>
 
-Baby.
+Kyungsoo: Ah.
 
-<i>What po?</i>
+<i>(Jongin glances toward the nearby parents.)</i>
 
-Maybe let's thank him for being kind instead.
+Jongin: Maybe over there? It's a little quieter.
 
-<i>But he's handsome too.</i>
+Kyungsoo: Of course.
 
-I know, sweetheart.
+Jongin: First, I hope this doesn't make you uncomfortable.
 
-<i>You know po?</i>
+Kyungsoo: Teacher, considering how we met, I think that ship has sailed.
 
-...I mean, yes. He looks nice.
+<i>Jongin laughs despite himself.</i>
 
-<i>Hehehe!</i>
+Jongin: Fair point.
 
-What's funny?
+Kyungsoo: Go ahead.
 
-<i>Nothing po!</i>
+Jongin: It's about… Friday.
 
-Okay. Anything else?
+Kyungsoo: I figured.
 
-<i>From Sooky and Papa!</i>
+Jongin: When you arrived with Sooky on Monday, I realized there was something we never discussed.
 
-Just Sooky, baby.
+Kyungsoo: Alright…
 
-<i>But you made it!</i>
+Jongin: We didn't really talk about our personal situations that night.
 
-Because you asked me to.
+Jongin: And I don't want to assume anything, but I need to ask if you're married. Or if you're currently seeing someone.
 
-<i>So it's from both of us po!</i>
+Kyungsoo: Ah.
 
-...
+Kyungsoo: That's what you've been worried about.
 
-<i>Please, Papa?</i>
+Jongin: Yeah.
 
-(Sighs) Okay, sweetheart.
+Jongin: I know we both understood na that Friday was casual. But finding na may anak ka made me realize I didn't know enough to rule out the possibility that someone else might be involved.
 
-<i>YAY!</i>`},
-  {title:'02: two sandwiches pt. 2',date:'Oct 06, 2026',transcript:`<i>Papa! Papa!</i>
+Jongin: And I wouldn't be okay with that.
 
-Hmm, baby? What happened?
+Kyungsoo: I understand.
 
-<i>Teacher Nini ate my sandwich po!</i>
+Kyungsoo: For the record, I'm not married. I'm not in a relationship either.
 
-He did?
+Jongin: Okay.
 
-<i>Opo! He said it was yummy!</i>
+Jongin: That's a relief.
 
-That's good, sweetheart.
+Kyungsoo: I'm raising Sooky on my own. Her other dad… well, he isn't involved in our lives.
 
-<i>And he said thank you!</i>
+Jongin: I see.
 
-Did you say you're welcome?
+Jongin: Thank you for telling me.
 
-<i>Opo!</i>
+Kyungsoo: I hadn't mentioned na may anak ako kasi, frankly, we didn't get around to discussing our respective family histories.
 
-Good girl.
+Jongin: (Chuckles) We really didn't.
 
-<i>Papa?</i>
+Kyungsoo: But I wasn't trying to conceal anything.
 
-Yes, baby?
+Jongin: I didn't think you were.
 
-<i>Teacher Nini said thank you to you too.</i>
+Jongin: It just seemed better to ask than spend the next few weeks wondering.
 
-Oh. That's nice.
+Kyungsoo: Sensible decision.
 
-<i>He said, "Please tell your Papa thank you for making it."</i>
+Kyungsoo: Actually, a friend mentioned on Monday that you might think I was married.
 
-Okay. I'll remember that.
+Jongin: Oh.
 
-<i>Papa, he likes strawberries too!</i>
+Kyungsoo: I'd been too preoccupied with the sheer absurdity of the situation to consider that.
 
-Really?
+Jongin: Understandable.
 
-<i>Opo! We're the same!</i>
+Kyungsoo: He was extremely entertained, by the way.
 
-You both like strawberries?
+Jongin: (Laughs) My friend too.
 
-<i>And bears!</i>
+Kyungsoo: Of course.
 
-That's two things already.
+Kyungsoo: Two very supportive people.
 
-<i>And you!</i>
+Jongin: Very. I don't think I'll ever hear the end of it.
 
-...Me?
+Kyungsoo: Neither will I, unfortunately.
 
-<i>He likes you too po!</i>
+<i>(A brief pause.)</i>
 
-Baby, what makes you say that?
+Jongin: I also wanted to make sure that what happened doesn't affect how comfortable you feel having me as Sooky's teacher.
 
-<i>Because he smiled when I said your name!</i>
+Kyungsoo: I appreciate that.
 
-...
+Kyungsoo: But wala naman akong concerns about your work. Sooky likes you, and she's doing very well in class.
 
-<i>Papa?</i>
+Jongin: I'm glad.
 
-I'm listening, sweetheart.
+Kyungsoo: And I believe we're both capable of keeping our personal history separate from school matters.
 
-<i>Are you happy?</i>
+Jongin: Absolutely.
 
-Of course, baby.
+Kyungsoo: Good.
 
-<i>Yay! Me too!</i>`},
-  {title:'02: family picture',date:'Oct 07, 2026',transcript:`<i>Papa?</i>
+<i>(They stand quietly for a moment.)</i>
 
-Hmm, baby?
+Jongin: I have to admit, though, Monday caught me completely off guard.
 
-<i>Teacher Nini said we need a family picture po.</i>
+Kyungsoo: Really? I hadn't noticed.
 
-Yes, sweetheart. I saw the announcement.
+Jongin: Okay. I deserved that.
 
-<i>Can we use the one with Lola?</i>
+Kyungsoo: Maya pa "oh" ka pa when you saw me.
 
-Of course. Which one?
+Jongin: I know. Hahaha.
 
-<i>The one at the beach!</i>
+Kyungsoo: Then your assistant teacher had to call your attention.
 
-Oh, the one from your birthday?
+Jongin: I remember, Mr. Do. Very clearly.
 
-<i>Opo! And Tito Chan is there too!</i>
+Kyungsoo: And I had to stand there pretending I didn't know precisely why you'd forgotten how to introduce yourself.
 
-That's a good picture.
+<i>(Jongin laughs, looking down briefly.)</i>
 
-<i>Papa?</i>
+Jongin: To be fair, ikaw rin naman. You weren't doing much better.
 
-Yes, love?
+Kyungsoo: Excuse me?
 
-<i>Yuna said her picture has her mama and papa.</i>
+Jongin: Muntik mo nang maiwan yung car keys mo sa classroom.
 
-Okay.
+Kyungsoo: ...
 
-<i>Mine has you and Lola and Tito Chan.</i>
+<i>(Kyungsoo lets out a disbelieving laugh.)</i>
 
-That's right, baby.
+Kyungsoo: You noticed that?
 
-<i>Is that okay po?</i>
+Jongin: Teacher Mina gave them back to you right in front of me.
 
-Of course it's okay, sweetheart. Families don't all look the same.
+Kyungsoo: I was hoping that particular incident had escaped your attention.
 
-<i>Really?</i>
+Jongin: Unfortunately not.
 
-Really. Some families have two parents. Some have one. Some live with their grandparents. What matters is that you have people who love you.
+Kyungsoo: Of course. Wonderful.
 
-<i>Like you?</i>
+Jongin: At least I remembered my own name.
 
-Like me.
+Kyungsoo: After a considerable delay.
 
-<i>And Lola?</i>
+Jongin: (Laughs) Alright. Fair.
 
-And Lola.
+Kyungsoo: Honestly, I was doing exceptionally well until your assistant teacher called you over.
 
-<i>And Tito Chan!</i>
+Jongin: I was doing fine until I turned around.
 
-Yes, baby. Even Tito Chan.
+Kyungsoo: Apparently, neither of us was prepared for a professional introduction under those circumstances.
 
-<i>Papa!</i>
+Jongin: No, definitely not.
 
-What, sweetheart?
+Kyungsoo: Well, I'm glad we cleared this up.
 
-<i>Can Teacher Nini be in our family picture too?</i>
+Jongin: Me too.
 
-...
+Kyungsoo: And Teacher?
 
-Baby, Teacher Nini isn't part of our family.
+Jongin: Yes?
 
-<i>Not yet po.</i>
+Kyungsoo: You don't have to worry that I'm going to make a big deal out of Friday. I wasn't expecting anything beyond that night.
 
-...
+Jongin: Neither was I.
 
-What do you mean, not yet?
+Kyungsoo: Perfect. Then we're on the same page.
 
-<i>He can be our friend first!</i>
+Jongin: …
 
-(Laughs nervously) Oh. Okay, baby.
+Jongin: We are.
 
-<i>Then he can eat ice cream with us!</i>
+Teacher Mina: Teacher Jongin! Nandito na po yung materials for Monday.
 
-We'll see, sweetheart.
+Jongin: Coming, Teacher!
 
-<i>Okay po!</i>`}
+Jongin: Sorry, I have to go.
+
+Kyungsoo: Of course. I should head to the office anyway.
+
+Jongin: Thank you for talking with me.
+
+Kyungsoo: Thank you for asking directly.
+
+Jongin: Have a good afternoon, Mr. Do.
+
+Kyungsoo: You too, Teacher Jongin.
+
+<i>(Kyungsoo starts to leave, then pauses.)</i>
+
+Kyungsoo: And for what it's worth, your orientation was very good.
+
+Jongin: Thank you.
+
+Kyungsoo: Particularly sa part about staying calm during unexpected situations.
+
+Kyungsoo: Quite applicable, don't you think?
+
+Jongin: (Laughs) Have a good day, sir.
+
+Kyungsoo: You too.`
+},
+
+
+
 ];
 
 // XPEOPLE
