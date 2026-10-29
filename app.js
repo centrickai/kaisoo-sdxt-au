@@ -28,7 +28,7 @@ const daysUntilBirthday = Math.ceil(
 );
 
 let lockNotes = [{
-  title: "ny baby sooky's birthday 🍰",
+  title: "my baby sooky's birthday 🍰",
   body: fmtMD(1, 13) + ' · ' + daysUntilBirthday + ' days left',
   app: 'rem',
   time: t('now')

@@ -2,894 +2,1158 @@
 // Names, dates, and chat room keys remain unchanged in Korean (the code reads them)
 const chatData={
 "Mommy": [
-  ["10월 5일", "date"],
-  ["Good morning, anak! Gising na ba kayo ng baby ko?", "them"],
-  ["Good morning, Ma. Kakagising lang namin.", "me"],
-  ["Awww. Excited na ba siya sa school?", "them"],
-  ["Very. She's been talking about it since last night.", "me"],
-  ["HAHAHAHA! Mana sa lola. Excited lagi sa new beginnings.", "them"],
-  ["Ma, you literally complained about Mondays yesterday.", "me"],
-  ["Aba, iba naman yung Monday sa school at Monday sa work.", "them"],
-  ["Send ka ng picture later ha! I want to see her first day outfit.", "them"],
-  ["School uniform lang naman, Ma.", "me"],
-  ["So? My granddaughter will still be the prettiest girl in that classroom.", "them"],
-  ["Of course she will.", "me"],
-  ["Ayan! At least we agree on something.", "them"],
-  ["By the way, kumusta ka na? You seemed a little distracted yesterday.", "them"],
-  ["I'm okay naman. Just tired.", "me"],
-  ["Are you sure? Baka may problema sa work?", "them"],
-  ["Wala naman. Everything's fine.", "me"],
-  ["Hmm. How was your Friday night pala? You said you'd have dinner with a client.", "them"],
-  ["It went well. We finished earlier than expected.", "me"],
-  ["And after that?", "them"],
-  ["I went out for a bit.", "me"],
-  ["Alone?", "them"],
-  ["Yes, Ma.", "me"],
-  ["Sayang naman! You should've invited someone cute.", "them"],
-  ["Ma, please. It's too early for this.", "me"],
-  ["HAHAHAHA! I'm just saying. You're thirty, single, and handsome. Sayang naman kung puro spreadsheets na lang ka-date mo.", "them"],
-  ["My spreadsheets don't give me headaches.", "me"],
-  ["But they don't give you kisses either.", "them"],
-  ["Oh my God.", "me"],
-  ["HAHAHAHAHA! Sige na. Prepare breakfast for my baby. Love you both!", "them"],
-  ["Love you, Ma. I'll send a picture later.", "me"],
+  ["9월 7일", "date"],
+  ['Good morning, anak! Gising na ba ang kindergarten girl natin? ❤️', 'them'],
+  ['Good morning, Mommy!', 'me'],
+  ['Since 5:30 pa po.', 'me'],
+  ['She woke me up to ask if her teacher likes penguins.', 'me'],
 
-  ["10월 5일", "date"],
-  ["Anak! How was Sooky's first day?", "them"],
-  ["She loved it, Ma. She's been talking about her classmates since we got home.", "me"],
-  ["Awww! My baby girl!", "them"],
-  ["Did she make friends?", "them"],
-  ["Yes. There's a girl named Yuna. Apparently, they both have pink water bottles.", "me"],
-  ["HAHAHAHA! Friendship goals agad.", "them"],
-  ["She's very happy.", "me"],
-  ["Good! How about her teacher? Mabait ba?", "them"],
-  ["Yes, Ma. He seems very nice.", "me"],
-  ["He? Male teacher?", "them"],
-  ["Yes.", "me"],
-  ["Ohhh. That's nice! Bihira na rin yung young male kindergarten teachers.", "them"],
-  ["I guess.", "me"],
-  ["Is he handsome?", "them"],
-  ["Ma.", "me"],
-  ["ANO BA", "them"],
-  ["Curious lang ako!", "them"],
-  ["Yes, he's handsome. Happy?", "me"],
-  ["AY WOW.", "them"],
-  ["Sumagot agad.", "them"],
-  ["You literally asked me.", "me"],
-  ["HAHAHAHAHA!", "them"],
-  ["Single ba?", "them"],
-  ["How would I know?", "me"],
-  ["Edi ask mo!", "them"],
-  ["Ma, he's Sooky's teacher.", "me"],
-  ["And? Teacher lang naman, hindi pari.", "them"],
-  ["Oh my God.", "me"],
-  ["HAHAHAHAHAHA!", "them"],
-  ["I'm just saying, anak. You deserve to have a little fun too.", "them"],
-  ["I know, Ma.", "me"],
-  ["You've spent so many years taking care of Sooky. I'm proud of you, but I hope you remember to take care of yourself too.", "them"],
-  ["I do take care of myself.", "me"],
-  ["I know. But there's more to life than work and being a papa.", "them"],
-  ["I know, Ma. Really.", "me"],
-  ["Okay, okay. Hindi na kita kukulitin. For now.", "them"],
+  ['Hahaha! Ano sagot mo?', 'them'],
+  ['Sabi ko I don\'t know, baby. You can ask when you get there.', 'me'],
+  ['Tapos sabi niya what if her teacher likes sharks instead.', 'me'],
+
+  ['Ay, problema nga naman. 😂', 'them'],
+  ['Apparently, we need to establish that before she agrees to go to school.', 'me'],
+
+  ['How is she now?', 'them'],
+  ['She\'s eating breakfast. Medyo kinakabahan na.', 'me'],
+  ['She asked if I could sit beside her the whole morning.', 'me'],
+
+  ['Aww, baby. First day jitters.', 'them'],
+  ['Ikaw? Nervous ka rin?', 'them'],
+
+  ['A little, honestly.', 'me'],
+  ['I know she\'ll be fine. It\'s just her first time in a completely new environment.', 'me'],
+
+  ['She\'ll adjust, anak. Give her time.', 'them'],
+  ['I know po.', 'me'],
+
+  ['Don\'t forget to take pictures! I want to see her in her uniform.', 'them'],
+  ['Already took about thirty.', 'me'],
+
+  ['Send them!', 'them'],
+  ['I\'ll send the good ones.', 'me'],
+
+  ['Lahat maganda. Apo ko yan.', 'them'],
+  ['Mommy, in one of them she\'s picking her nose. 😭', 'me'],
+
+  ['HAHAHAHA! Wag naman yun.', 'them'],
+  ['Exactly.', 'me'],
+
+  ['By the way, tuloy tayo sa pickup later? 11:30?', 'them'],
+  ['Yes po. Your name is already on the authorized pickup list.', 'me'],
+  ['I\'ll send the instructions again just in case.', 'me'],
+
+  ['Okay. I\'ll arrive early.', 'them'],
+  ['May lunch kami ni Tita Lorna, but I\'ll leave before dismissal.', 'them'],
+
+  ['Please don\'t rush. Just make sure you\'re there before 11:30.', 'me'],
+  ['Yes, sir. 🫡', 'them'],
+
+  ['Hahaha. Thank you, Mommy.', 'me'],
+
+  ['Don\'t forget to eat breakfast yourself.', 'them'],
+  ['I will.', 'me'],
+
+  ['Love you both! ❤️', 'them'],
+  ['Love you too, Ma.', 'me'],
+
+    ["9월 7일", "date"],
+
+  ["Anak, nasundo ko na si Sooky!", "them"],
+  ["Thank you, Mommy. How is she?", "me"],
+
+  ["Very happy! May dala pang drawing.", "them"],
+  ["Sabi niya may friend na raw siya. Yuna daw.", "them"],
+
+  ["That's wonderful. 🥹", "me"],
+  ["Did she cry when you picked her up?", "me"],
+
+  ["Hindi naman. Pero hinahanap niya yung water bottle niya.", "them"],
+  ["Teacher Nini helped her find it.", "them"],
+  ["Very nice young man. He introduced himself.", "them"],
+
+  ["That's good po.", "me"],
+
+  ["Ang gwapo rin pala ng teacher niya!", "them"],
+  ["Mommy 😭", "me"],
+
+  ["What? Totoo naman!", "them"],
+  ["Yes, Ma. He's handsome. 😂", "me"],
+
+  ["Hahaha! At least we agree.", "them"],
+
+  ["Anyway, we're having lunch. Sooky wants pancakes.", "them"],
+  ["Actual lunch first, please.", "me"],
+
+  ["Of course, anak. Pasta muna.", "them"],
   ["Thank you.", "me"],
-  ["But send me a picture of the teacher sometime.", "them"],
-  ["MA.", "me"],
-  ["HAHAHAHAHAHA!", "them"],
 
-  ["10월 5일", "date"],
-  ["Anak, kumain na kayo?", "them"],
-  ["Not yet, Ma. I'm preparing dinner.", "me"],
-  ["What's for dinner?", "them"],
-  ["Chicken adobo and vegetables.", "me"],
-  ["Awww. My baby girl eats so well because of you.", "them"],
-  ["She requested adobo, actually.", "me"],
-  ["HAHAHAHA! Mana talaga sa'yo. Very particular sa food.", "them"],
-  ["I wonder where I got that from.", "me"],
-  ["Aba, bakit parang kasalanan ko?", "them"],
-  ["Wala naman akong sinabi.", "me"],
-  ["HAHAHAHA. Sige na. Kiss my apo for me!", "them"],
-  ["Will do, Ma.", "me"],
-  ["And anak?", "them"],
-  ["Yes?", "me"],
-  ["Don't forget what I told you earlier. You deserve to be happy too.", "them"],
-  ["I am happy, Ma.", "me"],
-  ["I know you are. But you can be happier.", "them"],
-  ["Love you, Ma.", "me"],
-  ["Love you more, anak.", "them"],
+  ["I'll bring her home after. May dinner ka na bang na-plan?", "them"],
+  ["Yes. Veggie patties and rice. I prepped everything yesterday.", "me"],
 
-  ["10월 9일", "date"],
-  ["Ma, do you still have the photos from Sooky's beach birthday?", "me"],
-  ["Of course! Why, anak?", "them"],
-  ["She needs a family photo for school next week.", "me"],
-  ["Awww! That's so cute.", "them"],
-  ["I'll send you the pictures later.", "them"],
-  ["Thanks, Ma.", "me"],
-  ["How's my baby doing at school?", "them"],
-  ["She's doing really well. Her teacher says she's participating more now.", "me"],
-  ["That's wonderful! I'm so proud of her.", "them"],
-  ["Me too.", "me"],
-  ["And how's the handsome teacher?", "them"],
-  ["Ma.", "me"],
-  ["HAHAHAHAHA!", "them"],
-  ["What? I'm just asking.", "them"],
-  ["He's fine.", "me"],
-  ["Fine as in okay, or fine as in handsome?", "them"],
-  ["Oh my God.", "me"],
-  ["HAHAHAHAHAHA!", "them"],
-  ["Anak, I'm your mother. I know when you're avoiding a question.", "them"],
-  ["I'm not avoiding anything.", "me"],
-  ["Sure, sure.", "them"],
-  ["Anyway, I'll send the photos. Kiss Sooky for me!", "them"],
-  ["Love you, Ma.", "me"],
-  ["Love you too, anak!", "them"],
+  ["Very good! Mas organized ka pa sa akin.", "them"],
+  ["I learned from you.", "me"],
+
+  ["Hahaha! Flatterer.", "them"],
+  ["Love you, Mommy.", "me"],
+  ["Love you too, anak. ❤️", "them"],
+
+  
+["9월 9일", "date"],
+
+["Mommy, I printed the photo from our lunch.", "me"],
+["Yay! Which one did Sooky choose?", "them"],
+
+["The one where I'm blinking. 😂", "me"],
+["HAHAHA! That one?", "them"],
+
+["Yes po.", "me"],
+["She said it's funny.", "me"],
+
+["Well, it is funny.", "them"],
+["Mommy. 😭", "me"],
+
+["Hahaha! Sorry, anak.", "them"],
+["At least maganda ako sa picture.", "them"],
+
+["Of course. That's clearly the important part.", "me"],
+["Exactly! 💅", "them"],
+["Hahaha.", "me"],
+
+["How's school going so far?", "them"],
+["Really well, actually.", "me"],
+["She's settling in much faster than I expected. Excited na siyang pumasok every morning.", "me"],
+
+["I'm so glad. She's growing up so quickly.", "them"],
+["I know.", "me"],
+["Parang kailan lang I was teaching her how to hold a spoon.", "me"],
+
+["And now she's choosing the most embarrassing photo of her father for school. 😂", "them"],
+["The circle of life.", "me"],
+["Hahaha!", "them"],
+
+["Anak, don't forget to make time for yourself too, okay? Work and school can get overwhelming.", "them"],
+["I know po.", "me"],
+["I'm managing.", "me"],
+
+["Good. I'm proud of you.", "them"],
+["Thank you, Mommy. ❤️", "me"],
+
+["I have brunch with my friends tomorrow, so I'll call you after.", "them"],
+["Enjoy po! Please don't buy Sooky another dress.", "me"],
+
+["I didn't say I was shopping.", "them"],
+["You didn't have to. 😂", "me"],
+
+["Goodnight, anak!", "them"],
+["Goodnight, Ma. Love you.", "me"],
+["Love you too! ❤️", "them"],
+
+
+["9월 11일", "date"],
+
+["Good morning, darling! ❤️", "them"],
+["Orientation day!", "them"],
+
+["Good morning, Mommy.", "me"],
+["Yes po. I'm reviewing the handbook over breakfast.", "me"],
+
+["Of course you are. 😂", "them"],
+["You really haven't changed since college.", "them"],
+
+["I prefer to arrive informed.", "me"],
+
+["Anak, it's a kindergarten orientation, not a board meeting.", "them"],
+["There are still policies worth understanding.", "me"],
+
+["Hahaha. I know, darling. I'm teasing.", "them"],
+["How's Sooky?", "them"],
+
+["Eating toast.", "me"],
+["She's explaining to her stuffed penguin that he can't come to school because he's not enrolled.", "me"],
+
+["HAHAHAHA!", "them"],
+["Poor Pinguinnie.", "them"],
+
+["She says he needs to wait until he's five.", "me"],
+["Well, at least she's following school policy.", "them"],
+["Exactly. A model student.", "me"],
+
+["I'll get her at 11:30, okay?", "them"],
+["Thank you po.", "me"],
+["I should be done with orientation by 10:30, but I have to go straight to the office afterward.", "me"],
+
+["No problem. I have lunch with Lorna tomorrow instead.", "them"],
+["Mommy, you didn't need to change your schedule.", "me"],
+
+["I know. I wanted to.", "them"],
+["Besides, Lorna has another boyfriend problem. I'd rather listen to my granddaughter tell me about strawberry soup.", "them"],
+
+["An excellent choice.", "me"],
+["Right? 😂", "them"],
+
+["I'll call you after orientation.", "me"],
+["Okay, anak. Have a good morning!", "them"],
+
+["You too, Ma. Love you.", "me"],
+["Love you both! ❤️", "them"],
+
+
+["9월 26일", "date"],
+
+["Good morning, darling! ❤️", "them"],
+["Are you still taking Sooky to the bookstore today?", "them"],
+
+["Good morning, Mommy!", "me"],
+["Yes po. We're leaving after breakfast.", "me"],
+
+["Can you check if they have that cookbook I showed you?", "them"],
+["The Italian one?", "me"],
+
+["Yes! The one with the green cover.", "them"],
+["Mommy, half the cookbooks in existence have green covers. 😂", "me"],
+
+["Hahaha! Wait, I'll find the picture.", "them"],
+["[Photo]", "them"],
+
+["Got it. I'll check po.", "me"],
+["Thank you, anak!", "them"],
+
+["By the way, I had lunch with Lorna yesterday.", "them"],
+["How was it?", "me"],
+
+["Very nice. We tried that new Italian restaurant.", "them"],
+["Although she spent half our lunch complaining about her boyfriend.", "them"],
+
+["Oh, dear.", "me"],
+["Are they still together?", "me"],
+
+["Apparently!", "them"],
+["She says he forgot their anniversary again.", "them"],
+
+["Again? Mommy, at this point, I'd recommend a shared calendar.", "me"],
+["HAHAHA! I said the same thing!", "them"],
+
+["You could even automate the reminders.", "me"],
+["That's my son. Always looking for a practical solution.", "them"],
+
+["I'm sure they appreciate our consultation.", "me"],
+["Unfortunately, neither of them listens. 😂", "them"],
+
+["Shocking.", "me"],
+
+["Speaking of which, Lorna was asking about you.", "them"],
+["Oh?", "me"],
+
+["Whether you're seeing anyone.", "them"],
+["Ah. That again.", "me"],
+
+["Don't worry. I told her you're perfectly happy and don't need another surprise introduction.", "them"],
+["Thank you, Mommy.", "me"],
+
+["She means well naman.", "them"],
+["I know po. But I'm not particularly interested in dating right now.", "me"],
+
+["And that's entirely your decision, darling.", "them"],
+["Although I wouldn't mind having someone new to gossip about. 😌", "them"],
+
+["MOMMY 😭", "me"],
+["Hahaha! I'm teasing!", "them"],
+
+["Your hobby is bullying your only child.", "me"],
+["And I'm very good at it.", "them"],
+
+["Unfortunately, yes.", "me"],
+
+["Enjoy your day, anak. Give Sooky a kiss for me!", "them"],
+["Will do po. Love you!", "me"],
+["Love you both! ❤️", "them"],
+
+
+["10월 9일", "date"],
+
+["Anak! Sooky told me about your reading performance!", "them"],
+["Oh no.", "me"],
+
+["HAHAHA! She says you make a very funny bear.", "them"],
+["Wonderful. My reputation is expanding.", "me"],
+
+["I'm so proud of you!", "them"],
+["Thank you po.", "me"],
+["She had a wonderful time.", "me"],
+
+["That's lovely.", "them"],
+["I'm glad you made time for it.", "them"],
+
+["Me too.", "me"],
+["I was a little nervous beforehand, actually.", "me"],
+
+["Really?", "them"],
+["Twenty excited five-year-olds can be quite intimidating.", "me"],
+
+["Hahaha! But you did it!", "them"],
+["Barely survived.", "me"],
+
+["Dramatic.", "them"],
+["Learned from you.", "me"],
+
+["Excuse me! 😂", "them"],
+["HAHAHA.", "me"],
+
+["How was work afterward?", "them"],
+["Busy, but manageable. We finished the review.", "me"],
+
+["Good. Rest this weekend, darling.", "them"],
+["I will po.", "me"],
+
+["By the way, Lorna invited me to Tagaytay next month.", "them"],
+["Oh, that's nice!", "me"],
+
+["Just for a weekend. Wellness retreat daw.", "them"],
+["You should go.", "me"],
+
+["I was thinking about it.", "them"],
+["I just wanted to make sure you're okay with my schedule.", "them"],
+
+["Mommy, you don't need my permission to take a vacation. 😂", "me"],
+["We'll be fine.", "me"],
+
+["I know, darling. Just letting you know.", "them"],
+["Enjoy yourself. You deserve it.", "me"],
+
+["Thank you, anak. ❤️", "them"],
+["I'll bring pasalubong for Sooky!", "them"],
+
+["Of course you will.", "me"],
+["That part was never in doubt.", "me"],
+
+["HAHAHA!", "them"],
+["Love you, darling!", "them"],
+
+["Love you too, Ma.", "me"],
+
+
+["10월 27일", "date"],
+
+["Mommy, good morning po!", "me"],
+["Free po ba kayo this afternoon?", "me"],
+
+["Good morning, anak! ❤️", "them"],
+["Nasa Alabang ako today. Why?", "them"],
+
+["May biglaang meeting po kasi ako at 1:30.", "me"],
+["May kailangan kaming i-revise for tomorrow's valuation review.", "me"],
+["Baka hindi ako umabot sa pickup ni Sooky.", "me"],
+
+["Ay, sayang!", "them"],
+["I have lunch with my friends, then an appointment at three.", "them"],
+["Hindi yata ako makakabalik sa Makati on time, darling.", "them"],
+
+["No worries po.", "me"],
+["I'll arrange aftercare with the school.", "me"],
+
+["Sure ka? I can ask Lorna kung pwede kaming umalis nang maaga.", "them"],
+
+["Mommy, please don't change your plans.", "me"],
+["Kaya naman po. Promise.", "me"],
+
+["Alright, anak.", "them"],
+["Let me know if you need anything, okay?", "them"],
+
+["Of course. Thank you po. ❤️", "me"],
+
+["Kiss Sooky for me!", "them"],
+["Will do!", "me"],
+
+
+
   
 ],
 
 "Channie":[
-  ["10월 5일", "date"],
-  ["SOOOOOOO", "them"],
-  ["GOOD MORNINGGGG", "them"],
-  ["FIRST DAY NI INAANAK TODAY 😭😭😭", "them"],
-  ["Good morning. Yes, I know. I'm the one taking her to school.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["send pic naman later", "them"],
-  ["gusto ko makita yung inaanak kong future valedictorian", "them"],
-  ["She's five, Chanyeol.", "me"],
-  ["and?????", "them"],
-  ["never too early to manifest", "them"],
-  ["Please don't put academic pressure on my daughter.", "me"],
-  ["HAHAHAHAHA SORRY NA", "them"],
-  ["btw kumusta ka na", "them"],
-  ["I'm fine. Why?", "me"],
-  ["wala lang", "them"],
-  ["baka may hangover ka pa 🤭", "them"],
-  ["It's Monday.", "me"],
-  ["oo nga", "them"],
-  ["three days since the incident", "them"],
-  ["Can we please stop calling it an incident?", "me"],
-  ["okay sorry", "them"],
-  ["the historical event", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["okay okay 😭", "them"],
-  ["pero seryoso", "them"],
-  ["any updates sa mystery guy", "them"],
-  ["What updates? I don't even have his number.", "me"],
-  ["ay oo nga pala", "them"],
-  ["you left before breakfast 😭", "them"],
-  ["I panicked, okay?", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["soo imagine mo", "them"],
-  ["first time mo makipag hook up in years", "them"],
-  ["tapos hindi mo man lang nakuha pangalan", "them"],
-  ["I know his name.", "me"],
-  ["OH?????", "them"],
+  ["9월 7일", "date"],
+
+  ["CHAN", "me"],
+  ["PUTANGINA", "me"],
+
+  ["bakit", "them"],
+  ["ano ginawa mo 😭", "them"],
+
+  ["I NEED YOU TO READ THIS CAREFULLY", "me"],
+  ["REMEMBER THE GUY FROM FRIDAY", "me"],
+
+  ["oo", "them"],
+  ["si hotel guy?", "them"],
+
+  ["OO", "me"],
+  ["SIYA YUNG TEACHER NI SOOKY", "me"],
+
+  ["ha???", "them"],
   ["WAIT", "them"],
-  ["ANO PANGALAN", "them"],
-  ["Jongin.", "me"],
-  ["jongin", "them"],
-  ["cute name ah", "them"],
-  ["bagay sa pogi", "them"],
-  ["How would you know? You haven't even seen him.", "me"],
-  ["based sa description mo nung saturday", "them"],
-  ["\"matangkad, moreno, maganda katawan\"", "them"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["I did not say it like that.", "me"],
-  ["SOO 😭", "them"],
-  ["YOU LITERALLY SAID HE LOOKED LIKE A GREEK GOD", "them"],
-  ["I was sleep-deprived.", "me"],
-  ["ah okay", "them"],
-  ["sleep deprived", "them"],
-  ["wonder why 🤭", "them"],
-  ["Putangina mo.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["sorry sorry", "them"],
-  ["pero one question", "them"],
-  ["No.", "me"],
-  ["hindi ko pa nga tinatanong 😭", "them"],
-  ["I already know it's something stupid.", "me"],
-  ["okay fine", "them"],
-  ["pero was he good", "them"],
-  ["CHANYEOL.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["ANSWER THE QUESTION", "them"],
-  ["I'm literally preparing my daughter's lunchbox.", "me"],
-  ["okay so later na lang", "them"],
-  ["There is no later.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["fineeee", "them"],
-  ["ingat kayo ni sooky!", "them"],
-  ["Thanks. I'll send you her picture.", "me"],
-  ["breakfast negotiations", "story-vm"],
+  ["ANONG TEACHER NI SOOKY???", "them"],
 
-  ["10월 5일", "date"],
-  ["Chan.", "me"],
-  ["oh", "them"],
-  ["bakit", "them"],
-  ["Tangina.", "me"],
-  ["HAHAHAHA ANO NA NAMAN 😭", "them"],
-  ["I have a BIG problem.", "me"],
-  ["hala bakit", "them"],
-  ["anong nangyari", "them"],
-  ["Remember the guy from Friday?", "me"],
-  ["OO NAMAN????? 👀", "them"],
-  ["Siya yung bagong adviser ni Sooky.", "me"],
-  ["HA?????????????", "them"],
-  ["WAIT LANG", "them"],
-  ["ANONG ADVISER 😭", "them"],
-  ["Class adviser niya, Chanyeol.", "me"],
-  ["SOO 😭😭😭😭", "them"],
-  ["TANGINA NAMAN", "them"],
-  ["HANGOVER KA PA BA????", "them"],
-  ["Chanyeol, please. I'm serious.", "me"],
-  ["AKO RIN NAMAN 😭", "them"],
-  ["WAIT", "them"],
-  ["AS IN YUNG GUY SA HOTEL????", "them"],
-  ["Yes. How many guys do you think I slept with that night?", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["SORRY NA 😭", "them"],
-  ["NAKILALA KA BA NIYA", "them"],
-  ["Of course he recognized me.", "me"],
-  ["ANONG GINAWA MO", "them"],
-  ["Nothing. I just smiled.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["Can you stop laughing?", "me"],
-  ["SORRY 😭😭😭", "them"],
-  ["ANONG SABI NIYA", "them"],
-  ["\"Good morning, Mr. Do.\"", "me"],
-  ["HAHAHAHAHAHAHAHAHAHAHAHA", "them"],
-  ["MR. DO 😭😭😭", "them"],
-  ["Putangina mo, Chanyeol.", "me"],
-  ["SOO 😭", "them"],
-  ["IMAGINE", "them"],
-  ["LAST FRIDAY FIRST NAME BASIS KAYO", "them"],
-  ["NGAYON MR. DO NA", "them"],
-  ["I hate you so much.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["SI SOOKY????", "them"],
-  ["She introduced us.", "me"],
-  ["NOOOOO 😭😭😭", "them"],
-  ["She said, \"Papa, this is Teacher Nini! He's very handsome po!\"", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["MAY TASTE ANG INAANAK KO", "them"],
-  ["I wanted to disappear.", "me"],
-  ["WAIT LANG", "them"],
-  ["SOO", "them"],
-  ["NAKITA MO NA SIYA NANG HUBAD", "them"],
-  ["TAPOS NGAYON NAKA TEACHER UNIFORM 😭", "them"],
-  ["CHANYEOL.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["OKAY SORRY", "them"],
-  ["PERO HOW ARE YOU SUPPOSED TO TAKE HIM SERIOUSLY 😭", "them"],
-  ["I don't know. That's literally my problem.", "me"],
-  ["okay okay", "them"],
-  ["seryoso na", "them"],
-  ["did he say anything about friday?", "them"],
-  ["No. He was actually very professional.", "me"],
-  ["He introduced himself as Sooky's adviser and explained their schedule.", "me"],
-  ["oh okay", "them"],
-  ["that's good naman", "them"],
-  ["at least hindi awkward", "them"],
-  ["Chanyeol, I couldn't even look him in the eye.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["Please.", "me"],
-  ["SORRY 😭", "them"],
-  ["pero wait", "them"],
-  ["may question ako", "them"],
-  ["What now?", "me"],
-  ["gwapo pa rin ba kahit naka teacher uniform", "them"],
-  ["Chanyeol.", "me"],
-  ["SAGOT", "them"],
-  ["Yes, unfortunately.", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["TANGINA SOO", "them"],
-  ["GOOD LUCK SA SCHOOL YEAR 😭😭😭", "them"],
-  ["I'm going to work.", "me"],
-  ["HAHAHAHAHAHA", "them"],
-  ["ingat mr do 😘", "them"],
-  ["Gago.", "me"],
+  ["ADVISER NIYA", "me"],
+  ["SA KINDER", "me"],
 
-  ["10월 5일", "date"],
-  ["Chan.", "me"],
-  ["oh", "them"],
-  ["bakit", "them"],
-  ["Nag-post na siya sa school portal.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["What?", "me"],
-  ["SOO 😭", "them"],
-  ["TEACHER SIYA", "them"],
-  ["MALAMANG MAG POPOST YAN", "them"],
-  ["I KNOW.", "me"],
-  ["EDI BAKIT KA NAGPAPANIC 😭", "them"],
-  ["I'm not panicking.", "me"],
-  ["sure ka?", "them"],
-  ["Yes.", "me"],
-  ["okay", "them"],
-  ["screenshot mo nga", "them"],
-  ["Why?", "me"],
-  ["curious lang ako sa announcement ni teacher nini 🤭", "them"],
-  ["Gago ka.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["[Photo]", "me"],
-  ["SOO", "them"],
-  ["MAY BEAR EMOJI PA 😭", "them"],
-  ["So?", "me"],
-  ["WALA LANG", "them"],
-  ["BAGAY KAYO", "them"],
-  ["Putangina, Chanyeol. Please get a job.", "me"],
-  ["MAY TRABAHO AKO 😭", "them"],
-  ["may gig ako mamayang gabi", "them"],
-  ["Then rehearse.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay fine", "them"],
-  ["good luck sa dismissal mamaya", "them"],
-  ["Thanks. I'll need it.", "me"],
-  ["AY WOW", "them"],
-  ["UMAMIN NA NERBYOS 😭", "them"],
-  ["Goodbye, Chanyeol.", "me"],
-
-  ["10월 5일", "date"], 
-  ["soo", "them"],
-  ["lunch break mo na diba", "them"],
-  ["SOOOOO", "them"],
-  ["What?", "me"],
-  ["HAHAHAHAHAHA", "them"],
-  ["wala lang checking lang", "them"],
-  ["Chanyeol, I'm literally on my way to Sooky's school.", "me"],
-  ["AYAN NA NGA 😭", "them"],
-  ["THE MOMENT OF TRUTH", "them"],
-  ["Can you please be normal for once?", "me"],
-  ["normal naman ako ah", "them"],
-  ["concerned lang ako sa best friend ko", "them"],
-  ["Concerned about what?", "me"],
-  ["baka mahimatay ka pag nakita mo ulit yung teacher", "them"],
-  ["I'm not going to faint.", "me"],
-  ["okay good", "them"],
-  ["kasi nakakahiya naman kung kailangan ka niyang i-cpr", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["what if mouth to mouth", "them"],
-  ["Putangina mo.", "me"],
-  ["AYAN GALIT NA 😭", "them"],
-  ["okay sorry", "them"],
-  ["pero seryoso, how are you feeling?", "them"],
-  ["Fine. A little nervous, but fine.", "me"],
-  ["ay wow", "them"],
-  ["honest answer", "them"],
-  ["character development", "them"],
-  ["Don't make me regret telling you things.", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["sige na", "them"],
-  ["drive safely", "them"],
-  ["wag ka muna mag reply habang nagddrive", "them"],
-  ["I'm parked, actually.", "me"],
-  ["OH", "them"],
-  ["NASA SCHOOL KA NA????", "them"],
-  ["Yes. I'm about to go inside.", "me"],
-  ["GOOD LUCK MR DO 😭", "them"],
-  ["Thank you.", "me"],
-  ["and soo", "them"],
-  ["What?", "me"],
-  ["wag kang tititig sa braso", "them"],
-  ["Goodbye.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["sooky's first day", "story-vm"],
-
-  ["10월 5일", "date"], 
-  ["SOOOOOO", "them"],
-  ["UPDATE", "them"],
-  ["ANO NANGYARI", "them"],
-  ["buhay ka pa ba 😭", "them"],
-  ["I'm alive, unfortunately.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["ANO NANGYARI", "them"],
-  ["Nothing happened. I picked Sooky up.", "me"],
-  ["okay", "them"],
-  ["and????", "them"],
-  ["And we went home.", "me"],
-  ["SOO 😭", "them"],
-  ["ALAM KONG MAY KULANG SA KWENTO MO", "them"],
-  ["Fine.", "me"],
-  ["He talked to me.", "me"],
-  ["AAAAAAAAAAAAA", "them"],
-  ["ANONG SABI", "them"],
-  ["He said Sooky did really well today.", "me"],
-  ["okay", "them"],
-  ["tapos", "them"],
-  ["He also mentioned that she's very observant and asks a lot of questions.", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["MANA SAYO", "them"],
-  ["Then he asked if she was feeling okay because she seemed a little nervous this morning.", "me"],
-  ["aww", "them"],
-  ["attentive naman ni teacher", "them"],
-  ["He is.", "me"],
-  ["OH?????", "them"],
-  ["HE IS DAW", "them"],
-  ["Don't start.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay okay", "them"],
-  ["so awkward ba", "them"],
-  ["A little.", "me"],
-  ["bakit", "them"],
-  ["Because I know what he looks like without that cardigan.", "me"],
-  ["HAHAHAHAHAHAHAHAHAHAHAHA", "them"],
-  ["PUTANGINA SOO 😭😭😭", "them"],
-  ["IKAW NA NAGSABI HA", "them"],
-  ["I hate that I told you anything.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["wait", "them"],
-  ["CARDIGAN????", "them"],
-  ["NAKA CARDIGAN SIYA????", "them"],
-  ["Yes. Why?", "me"],
-  ["wala lang", "them"],
-  ["cute naman", "them"],
-  ["from taking it off to putting it on", "them"],
-  ["CHANYEOL.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["sorry sorry 😭", "them"],
-  ["pero seriously", "them"],
-  ["did he recognize you?", "them"],
-  ["Yes. Obviously.", "me"],
-  ["did he act weird?", "them"],
-  ["No. He was professional.", "me"],
-  ["that's good naman", "them"],
-  ["Yeah.", "me"],
-  ["so what's the problem", "them"],
-  ["The problem is I have to see him every weekday.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["SOO", "them"],
-  ["FIVE DAYS A WEEK 😭", "them"],
-  ["Thank you for reminding me.", "me"],
-  ["you're welcome", "them"],
-  ["at least hindi mo na kailangan ng dating app", "them"],
-  ["I'm not dating him.", "me"],
-  ["hindi pa", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay fine", "them"],
-  ["pero soo", "them"],
-  ["one question", "them"],
-  ["What?", "me"],
-  ["did he look at you", "them"],
-  ["Of course. We were talking.", "me"],
-  ["hindi yung normal na tingin", "them"],
-  ["you know what i mean", "them"],
-  ["I don't.", "me"],
-  ["SOO 😭", "them"],
-  ["YUNG TINGIN NA MAY NAALALA SIYA", "them"],
-  ["...", "me"],
-  ["OH MY GOD", "them"],
-  ["MERON NO", "them"],
-  ["I don't know.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["TANGINA ANG FUNNY MO", "them"],
-  ["Can we talk about something else?", "me"],
-  ["sure", "them"],
-  ["anong lunch niyo ni sooky", "them"],
-  ["Nag drive thru lang kami sa Jollibee.", "me"],
-  ["aww", "them"],
-  ["save some for me", "them"],
-  ["You're not invited.", "me"],
-  ["GRABE 😭", "them"],
-  ["after all we've been through", "them"],
-  ["Especially after everything you've said today.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["love you too soo", "them"],
-  ["two sandwiches", "story-vm"],
-
-  ["10월 5일", "date"],
-  ["Chan, are you busy?", "me"],
-  ["rehearsal pa", "them"],
-  ["pero break namin", "them"],
-  ["whyyyy", "them"],
-  ["Sooky wants me to make a sandwich for her teacher.", "me"],
-  ["awww cute naman", "them"],
-  ["wait", "them"],
-  ["teacher nini?????", "them"],
-  ["Yes.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["SOO 😭", "them"],
-  ["POTA NAMAN", "them"],
-  ["What's funny now?", "me"],
-  ["WALA 😭", "them"],
-  ["ANG CUTE LANG", "them"],
-  ["ANONG SANDWICH", "them"],
-  ["She wants a strawberry jam sandwich.", "me"],
-  ["cuteeeee", "them"],
-  ["Heart-shaped.", "me"],
-  ["...", "them"],
-  ["HA?????????", "them"],
-  ["HEART SHAPED?????", "them"],
-  ["Yes.", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["TANGINA SOO 😭😭😭", "them"],
-  ["MAY PA HEART SHAPED SANDWICH", "them"],
-  ["It's for her teacher, Chanyeol.", "me"],
-  ["OO NGA", "them"],
-  ["TEACHER NA NAKASAMA MO SA HOTEL", "them"],
-  ["Can you not?", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["sorry sorry", "them"],
-  ["pero bakit heart", "them"],
-  ["She said she wants him to know that we love him.", "me"],
-  ["WE???????", "them"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["SOO MAY WE NA 😭", "them"],
-  ["SHE'S FIVE.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["okay sorry", "them"],
-  ["pero ang bilis naman", "them"],
-  ["first day pa lang may love confession na", "them"],
-  ["From my daughter, not me.", "me"],
-  ["sure", "them"],
-  ["ikaw yung gagawa diba", "them"],
-  ["Obviously. She's five.", "me"],
-  ["so technically", "them"],
-  ["you're making a heart-shaped sandwich for the guy you slept with", "them"],
-  ["...", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["I hate you.", "me"],
-  ["WAIT LANG 😭", "them"],
-  ["IMAGINE MO", "them"],
-  ["\"good morning teacher, i made this for you\"", "them"],
-  ["tapos heart shaped", "them"],
-  ["tapos alam niya kung saan nanggaling yung hands na gumawa", "them"],
-  ["Putangina, Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["okay sorry", "them"],
-  ["pero seryoso", "them"],
-  ["let sooky give it", "them"],
-  ["cute gesture naman", "them"],
-  ["I told her we have to ask first if he's allowed to accept food.", "me"],
-  ["ay oo nga", "them"],
-  ["responsible parent era", "them"],
-  ["I've been a responsible parent for five years.", "me"],
-  ["except last friday", "them"],
-  ["CHANYEOL.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["SORRY NA 😭", "them"],
-  ["pero wait", "them"],
-  ["may tanong ako", "them"],
-  ["No.", "me"],
-  ["what if tikman niya", "them"],
-  ["The sandwich?", "me"],
-  ["ikaw bahala kung alin", "them"],
-  ["PUTANGINA MO.", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["okay bye rehearsal na ulit 😭", "them"],
-  ["Good. Please stay there.", "me"],
-  ["LOVE YOU SOO 😘", "them"],
-  ["bedtime questions","story-vm"],
-
-  ["10월 5일", "date"],
-  ["SOOOOO", "them"],
-  ["tapos na gig namin", "them"],
-  ["and i have IMPORTANT QUESTIONS", "them"],
-  ["Please tell me they're not about Jongin.", "me"],
-  ["...", "them"],
-  ["okay nevermind 😭", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["SORRY NA", "them"],
-  ["pero wait", "them"],
-  ["JONGIN NA TAWAG MO SA KANYA?????", "them"],
-  ["That's his name.", "me"],
-  ["hindi na teacher nini 😭", "them"],
-  ["I'm not calling a grown man Teacher Nini.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay fine", "them"],
-  ["kumusta si sooky", "them"],
-  ["Asleep already.", "me"],
-  ["awww", "them"],
-  ["did she like her first day", "them"],
-  ["Very much. She made a new friend and apparently loves her teacher.", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["like father like daughter", "them"],
-  ["Don't.", "me"],
-  ["okay okay 😭", "them"],
-  ["pero soo", "them"],
-  ["can i ask something serious", "them"],
-  ["Sure.", "me"],
-  ["are you okay with seeing him every day?", "them"],
-  ["I don't really have a choice.", "me"],
-  ["i know", "them"],
-  ["but are you okay", "them"],
-  ["Honestly, I don't know.", "me"],
-  ["because of friday?", "them"],
-  ["Partly.", "me"],
-  ["I just wasn't expecting to see him again.", "me"],
-  ["understandable naman", "them"],
-  ["And now he's Sooky's teacher.", "me"],
-  ["yeah", "them"],
-  ["that's complicated", "them"],
-  ["Exactly.", "me"],
-  ["but hey", "them"],
-  ["he seems like a decent guy based sa kwento mo", "them"],
-  ["He is.", "me"],
-  ["and he didn't make things awkward today", "them"],
-  ["No. He was actually really considerate.", "me"],
-  ["then maybe you don't have to worry too much", "them"],
-  ["I guess.", "me"],
-  ["just take it one day at a time", "them"],
-  ["you don't have to figure everything out tonight", "them"],
-  ["Thanks, Chan.", "me"],
-  ["always, soo", "them"],
-  ["also", "them"],
-  ["may final question ako", "them"],
-  ["What?", "me"],
-  ["did you finish the heart shaped sandwich", "them"],
-  ["Yes.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["POTA 😭", "them"],
-  ["SOO YOU MADE A HEART SHAPED SANDWICH FOR YOUR ONE NIGHT STAND", "them"],
-  ["FOR MY DAUGHTER'S TEACHER.", "me"],
-  ["SAME PERSON NAMAN 😭😭😭", "them"],
-  ["Good night, Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["GOOD NIGHT MR DO 😘", "them"],
-
-
-  ["10월 5일", "date"],
-  ["soo", "them"],
-  ["last message promise", "them"],
-  ["don't overthink tomorrow okay", "them"],
-  ["you're doing great", "them"],
-  ["both as a dad and as yourself", "them"],
-  ["love u gago 🫶", "them"],
-  ["Thanks, Chan. Love you too.", "me"],
-  ["also", "them"],
-  ["pag nanghingi ulit si teacher nini ng sandwich", "them"],
-  ["tell him to take you out to dinner first", "them"],
-  ["PUTANGINA MO.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["GOOD NIGHT 😭😭😭", "them"],
-  ["the bigger heart","story-vm"],
-
-
-  ["10월 6일", "date"],
-  ["Chan, I need your opinion.", "me"],
-  ["good morning din sayo 😭", "them"],
-  ["ano na naman", "them"],
-  ["Sooky wants to give Jongin a sandwich.", "me"],
-  ["oo alam ko", "them"],
-  ["the legendary heart shaped sandwich", "them"],
-  ["She also wants to include a letter.", "me"],
-  ["AWWWW", "them"],
-  ["ANG CUTE NAMAN NG INAANAK KO", "them"],
-  ["She made me write \"Love, Sooky and Papa.\"", "me"],
-  ["...", "them"],
-  ["HA?????????", "them"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
-  ["SOO 😭😭😭", "them"],
-  ["I KNOW.", "me"],
-  ["LOVE, SOOKY AND PAPA?????", "them"],
-  ["FAMILY PACKAGE NA AGAD 😭", "them"],
-  ["Can you please be serious?", "me"],
-  ["SORRY 😭", "them"],
-  ["WAIT LANG", "them"],
-  ["TANGINA ANG AGA AGA", "them"],
-  ["HINDI PA AKO NAKAKAPE", "them"],
-  ["I'm thinking of changing it before we leave.", "me"],
-  ["wag mo baguhin", "them"],
-  ["Why not?", "me"],
-  ["kasi sulat ni sooky yun", "them"],
-  ["tsaka technically from both of you naman talaga", "them"],
-  ["It sounds weird.", "me"],
-  ["sayo lang weird kasi may history kayo 😭", "them"],
-  ["kung ibang teacher yan wala ka namang problema", "them"],
-  ["...", "me"],
-  ["OH DIBA", "them"],
-  ["TAMA AKO", "them"],
-  ["I hate when you're right.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["pero wait", "them"],
-  ["may tanong ako", "them"],
-  ["What?", "me"],
-  ["bakit hindi ikaw yung may baon na sandwich", "them"],
-  ["What are you talking about?", "me"],
-  ["wala lang", "them"],
-  ["baka gutom ka rin kasi", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay sorry 😭", "them"],
-  ["pero seryoso", "them"],
-  ["don't overthink it", "them"],
-  ["it's just a sandwich", "them"],
-  ["A heart-shaped sandwich.", "me"],
-  ["na gawa with love", "them"],
-  ["Goodbye.", "me"],
-  ["HAHAHAHAHAHA", "them"],
-  ["GOOD LUCK MR DO 😘", "them"],
-  ["two sandwiches pt. 2","story-vm"],
-
-
-  ["10월 6일", "date"],
-  ["Chan.", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["bakit", "them"],
-  ["ano na naman ginawa ni teacher nini", "them"],
-  ["He ate the sandwich.", "me"],
-  ["...", "them"],
-  ["HAHAHAHAHAHAHAHAHA", "them"],
-  ["TANGINA SOO 😭", "them"],
-  ["Can you please stop laughing?", "me"],
-  ["SORRY 😭", "them"],
-  ["ANG CUTE KASI", "them"],
-  ["NAGUSTUHAN BA NIYA", "them"],
-  ["Apparently, yes.", "me"],
-  ["AYYYYY", "them"],
-  ["may approval na from the teacher", "them"],
-  ["It's a sandwich, Chanyeol.", "me"],
-  ["exactly", "them"],
-  ["first step yan", "them"],
-  ["First step to what?", "me"],
-  ["sa puso niya", "them"],
-  ["Putangina mo.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["okay sorry", "them"],
-  ["pero anong sabi ni sooky", "them"],
-  ["She said he thanked me.", "me"],
-  ["awww", "them"],
-  ["And apparently, he smiled when she mentioned my name.", "me"],
-  ["...", "them"],
-  ["SOOOOOOOO", "them"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["Don't.", "me"],
-  ["HINDI PA NGA AKO NAGSASALITA 😭", "them"],
-  ["I know you.", "me"],
-  ["okay pero", "them"],
-  ["he smiled when he heard your name", "them"],
-  ["cute naman", "them"],
-  ["He probably smiles at everyone. He's a kindergarten teacher.", "me"],
-  ["wow", "them"],
-  ["grabe ang denial", "them"],
-  ["I'm being realistic.", "me"],
-  ["sure", "them"],
-  ["very realistic", "them"],
-  ["especially yung notes mo about his arms", "them"],
-  ["How do you know about my notes?", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["WALA AKONG ALAM SA NOTES MO", "them"],
-  ["SOO 😭😭😭", "them"],
-  ["MAY NOTES KA?????", "them"],
-  ["...", "me"],
-  ["HAHAHAHAHAHAHAHAHAHA", "them"],
   ["PUTANGINA", "them"],
-  ["ANO YAN", "them"],
-  ["PROS AND CONS NG PAGIGING BOYFRIEND NI TEACHER NINI", "them"],
-  ["I'm blocking you.", "me"],
   ["HAHAHAHAHAHAHAHA", "them"],
-  ["SORRY NA 😭", "them"],
+  ["SOO 😭😭😭", "them"],
+  ["LIKE THEE GUYFRIDAY NIGHT??????", "them"],
 
-  ["10월 7일", "date"],["Chan, I think I have a problem.", "me"],
-  ["GOOD MORNING DIN 😭", "them"],
-  ["ANO NA NAMAN", "them"],
-  ["Jongin messaged me.", "me"],
-  ["HA?????????", "them"],
-  ["SAAN", "them"],
-  ["School portal.", "me"],
-  ["ah", "them"],
-  ["akala ko personal number 😭", "them"],
-  ["Of course not.", "me"],
-  ["okay okay", "them"],
-  ["anong sabi", "them"],
-  ["He said Sooky's adjusting well.", "me"],
-  ["good naman ah", "them"],
-  ["And he thanked me again for the sandwich.", "me"],
-  ["AYYYYYY", "them"],
-  ["SANDWICH PART TWO", "them"],
-  ["Can you stop?", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["okay sorry", "them"],
-  ["pero what's the problem", "them"],
-  ["I keep rereading his messages.", "me"],
-  ["...", "them"],
-  ["SOO", "them"],
-  ["😭😭😭😭😭", "them"],
-  ["Don't.", "me"],
-  ["TANGINA", "them"],
-  ["YOU LIKE HIM", "them"],
-  ["I don't.", "me"],
-  ["YOU DOOOOO", "them"],
-  ["Chanyeol, please.", "me"],
-  ["okay wait", "them"],
-  ["serious muna", "them"],
-  ["is it because he's nice to sooky?", "them"],
-  ["Partly.", "me"],
-  ["He's really patient with her. And he notices the little things.", "me"],
-  ["that's good", "them"],
-  ["I know.", "me"],
-  ["and the other part?", "them"],
-  ["...", "me"],
-  ["SOO 😭", "them"],
-  ["YOU CAN TELL ME", "them"],
-  ["I think he's attractive. That's all.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["THAT'S ALL DAW", "them"],
-  ["AFTER ONE NIGHT TOGETHER 😭", "them"],
-  ["Putangina mo.", "me"],
-  ["HAHAHAHAHA", "them"],
-  ["okay okay", "them"],
-  ["pero seriously", "them"],
-  ["there's nothing wrong with liking someone", "them"],
-  ["kahit parent ka", "them"],
-  ["I know that.", "me"],
-  ["then why are you acting like it's a crime", "them"],
-  ["Because I don't want Sooky getting attached to someone who might eventually leave.", "me"],
-  ["...", "them"],
-  ["ah", "them"],
-  ["soo", "them"],
-  ["i get it", "them"],
-  ["pero hindi naman lahat ng tao katulad ng ex mo", "them"],
-  ["I know.", "me"],
-  ["and you don't have to do anything about your feelings right now", "them"],
-  ["just let things be", "them"],
-  ["Yeah. Maybe that's better.", "me"],
-  ["exactly", "them"],
-  ["saka teacher niya pa rin si jongin", "them"],
-  ["boundaries muna", "them"],
-  ["I know. That's why I'm keeping everything professional.", "me"],
-  ["good", "them"],
-  ["proud of you", "them"],
-  ["Thanks, Chan.", "me"],
-  ["pero soo", "them"],
-  ["What?", "me"],
-  ["rereading messages???", "them"],
-  ["TANGINA PARANG HIGH SCHOOL CRUSH 😭😭😭", "them"],
-  ["I take back my thanks.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
+  ["YES", "me"],
+  ["CHAN I ALMOST DIED", "me"],
 
-  ["10월 9일", "date"],
-  ["Chan.", "me"],
-  ["oh", "them"],
-  ["good morning", "them"],
-  ["anong balita sa love life", "them"],
-  ["Wala akong love life.", "me"],
+  ["gago seryoso ka ba", "them"],
+
+  ["oo 😭", "me"],
+  ["kung nakita mo lang mukha naming dalawa", "me"],
+
+  ["wait", "them"],
+  ["nasa classroom ka na nung nakita mo?", "them"],
+
+  ["yes", "me"],
+  ["may assistant teacher na nagpakilala samin", "me"],
+  ["tinawag niya yung adviser", "me"],
+  ["tapos pagharap nung adviser", "me"],
+  ["IT WAS THATJONGIN", "me"],
+
+  ["TANGINA 😭", "them"],
+  ["ANO SABI MO", "them"],
+
+  ["\"do kyungsoo\"", "me"],
+  ["yun lang", "me"],
+  ["parang nagdefend ako ng thesis", "me"],
+
+  ["HAHAHAHAHAHA", "them"],
+  ["AND??? what did he say???", "them"],
+
+  ["nagpakilala", "me"],
+  ["nag \"oh\" muna bago nag good morning", "me"],
+  ["tapos nagpause", "me"],
+  ["tapos tinawag siya nung assistant teacher 😭", "me"],
+
+  ["GAGO HAHAHAHAHA", "them"],
+  ["buti hindi niya nasabi pangalan mo agad", "them"],
+
+  ["I KNOW", "me"],
+  ["imagine kung nag \"kyungsoo?\" siya in front of everyone", "me"],
+
+  ["tapos ikaw \"jongin???\" 😭", "them"],
+
+  ["funeral ko na agad", "me"],
+
   ["HAHAHAHAHA", "them"],
-  ["okay", "them"],
-  ["anong balita sa school life", "them"],
-  ["Parent Orientation next Friday.", "me"],
-  ["oh nice", "them"],
-  ["attend ka?", "them"],
-  ["Obviously. It's Sooky's school.", "me"],
-  ["okay", "them"],
-  ["so makikita mo si teacher nini for an entire hour", "them"],
-  ["Chanyeol.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["sorry 😭", "them"],
+  ["sorry", "them"],
+  ["medyo nahihirapan ako huminga", "them"],
+
+  ["ako rin kanina", "me"],
+  ["tangina chan", "me"],
+  ["do you understand how absurd this is", "me"],
+  ["last friday I was very familiar with that man", "me"],
+  ["tapos kanina tinatanong niya ko kung may food allergies anak ko", "me"],
+
+  ["HAHAHAHAHAHA", "them"],
+  ["PUTANGINA", "them"],
+  ["from hotel to homeroom 😭", "them"],
+
+  ["PLEASE", "me"],
+  ["ang elegant ng transition", "me"],
+  ["may enrollment form pa as a souvenir 💀", "me"],
+
+  ["HAHAHAHA", "them"],
+  ["wait lang", "them"],
+  ["teka", "them"],
+  ["hindi ba yung guy na yan yung sabi mong medyo adventurous?", "them"],
+
+  ["CHAN SHUT UP", "me"],
+
+  ["curious lang naman 😭", "them"],
+
+  ["yes", "me"],
+  ["and I'd very much like to erase certain memories before Friday's orientation", "me"],
+
+  ["HAHAHAHAHAHA", "them"],
+  ["meron pang orientation???", "them"],
+
+  ["YES", "me"],
+  ["the universe is committed to humiliating me", "me"],
+
+  ["grabe ka naman 😭", "them"],
+  ["pero teka seryoso", "them"],
+  ["paano ka nakapag-usap nang normal", "them"],
+
+  ["sheer professionalism", "me"],
+  ["at divine intervention", "me"],
+
+  ["HAHAHAHA", "them"],
+
+  ["chan", "me"],
+  ["he said \"we'll verify her ID at the pickup desk\"", "me"],
+  ["sobrang composed niya nung sinabi yun", "me"],
+
+  ["eh ano naman 😭", "them"],
+
+  ["wala", "me"],
+  ["nakakagago lang kasi i KNOW what he sounds like when he's not being composed", "me"],
+
+  ["PUTANGINA MO SOO 😭😭😭", "them"],
+  ["ANG KALAT MO", "them"],
+
+  ["don't insult me", "me"],
+  ["I'm a respectable parent", "me"],
+
+  ["after that message???", "them"],
+
+  ["HAHAHAHAHA", "me"],
+
+  ["pero okay naman siya?", "them"],
+
+  ["as a teacher? yes", "me"],
+  ["he's actually really good with the kids", "me"],
+  ["si sooky kanina sobrang nervous", "me"],
+  ["he helped her settle in without making a big deal out of it", "me"],
+
+  ["then that's good", "them"],
+  ["and how was sooky after?", "them"],
+
+  ["occupied sa play kitchen", "me"],
+  ["pinaalis na nga ko kasi nagluluto raw siya", "me"],
+
+  ["HAHAHAHA", "them"],
+  ["my independent baby inaanak", "them"],
+
+  ["learned from the best", "me"],
+
+  ["from papa do syempre", "them"],
+
+  ["obviously", "me"],
+  ["ako taga-finance lang", "me"],
+
+  ["HAHAHAHA", "them"],
   ["pero wait", "them"],
-  ["parent orientation?", "them"],
-  ["Yes.", "me"],
-  ["ibig sabihin", "them"],
-  ["may parent-teacher interaction", "them"],
-  ["That's generally how orientations work.", "me"],
+  ["how does it feel knowing na he’s literally your daughter’s teahcer?", "them"],
+
+  ["honestly?", "me"],
+  ["more concerned about the awkwardness than anything else", "me"],
+  ["first day pa lang ni sooky", "me"],
+  ["I don't want her school experience getting weird because of something I did on a Friday night", "me"],
+
+  ["oo gets", "them"],
+  ["lalo na kung araw-araw kayong magkikita", "them"],
+
+  ["exactly", "me"],
+  ["and I can't exactly request a different class adviser just because I always get reminded by his bedroom voice", "me"],
+
+  ["SOO 😭", "them"],
+  ["ANG AGA PA", "them"],
+
+  ["you asked", "me"],
+
   ["HAHAHAHAHA", "them"],
-  ["what if may one on one", "them"],
-  ["Then we'll discuss Sooky's progress.", "me"],
-  ["sure", "them"],
-  ["academic performance lang", "them"],
-  ["Yes.", "me"],
-  ["no extracurricular activities", "them"],
-  ["Putangina mo.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["okay sorry", "them"],
-  ["pero seryoso", "them"],
-  ["are you going alone?", "them"],
-  ["Of course.", "me"],
-  ["gusto mo samahan kita", "them"],
-  ["Why?", "me"],
-  ["moral support", "them"],
-  ["You'd make everything worse.", "me"],
-  ["HAHAHAHAHAHAHA", "them"],
-  ["FAIR ENOUGH", "them"],
-  ["pero if you need me, just call", "them"],
-  ["Thanks, Chan.", "me"],
-  ["always", "them"],
-  ["also", "them"],
-  ["wag kang magdala ng heart-shaped sandwich sa orientation", "them"],
-  ["Goodbye.", "me"],
-  ["HAHAHAHAHAHAHAHA", "them"],
-  ["family picture", "story-vm"]
+  ["okay pero real question", "them"],
+  ["gusto mo pa ba siya makita after nung friday?", "them"],
+
+  ["WHAT?! NO", "me"],
+  ["chan, I was looking for something casual", "me"],
+  ["we had a good time andthat was it", "me"],
+
+  ["well if you say so", "them"],
+  ["sorry ang dami kasing nangyari bigla", "them"],
+
+  ["wala akong planong i-date yung tao", "me"],
+  ["I didn't even ask for his number", "me"],
+
+  ["right", "them"],
+  ["and at least okay yung experience mo sa kanya", "them"],
+
+  ["more than okay", "me"],
+  ["that's precisely why this is so mortifying 😭", "me"],
+
+  ["HAHAHAHA", "them"],
+  ["okay gets ko na", "them"],
+  ["hindi ka kinikilig", "them"],
+  ["gusto mo lang maglaho", "them"],
+
+  ["THANK YOU", "me"],
+  ["finally someone who understands", "me"],
+
+  ["hindi naman ako sure na naiintindihan kita", "them"],
+  ["wala pa kong na-hookup na adviser ng magiging anak ko", "them"],
+
+  ["tangina mo HAHAHAHAHA", "me"],
+
+  ["saka yung tingin niya sayo kanina", "them"],
+  ["baka napaisip din siya", "them"],
+
+  ["of course", "me"],
+  ["lalo na hindi niya alam na may anak ako", "me"],
+
+  ["oh", "them"],
+  ["wait", "them"],
+  ["sinabi mo bang single ka nung friday?", "them"],
+
+  ["uhm…hindi?", "me"],
+
+  ["as in hindi niyo napag-usapan?", "them"],
+
+  ["nope", "me"],
+  ["we weren't exactly conducting background checks", "me"],
+
+  ["hahaha okay fair", "them"],
+  ["pero baka akala niya married ka", "them"],
+
+  ["that's what I just realized…", "me"],
+  ["SHIT", "me"],
+
+  ["oo nga", "them"],
+  ["he might be worried", "them"],
+
+  ["god ayokong isipin niya na may niloko akong asawa or boyfriend", "me"],
+  ["because I didn't", "me"],
+
+  ["yeah", "them"],
+  ["pero syempre hindi mo rin naman pwedeng biglang sabihin sa classroom na single ka", "them"],
+
+  ["\"good morning, I'm do kyungsoo. no spouse, no active boyfriend, no pending applications\"", "me"],
+
+  ["HAHAHAHAHAHA", "them"],
+  ["tangina ano yan?? linkedin profile 😭", "them"],
+
+  ["marital status: available but not recruiting", "me"],
+
+  ["GAGO HAHAHAHAHA", "them"],
+
+  ["anyway", "me"],
+  ["hindi ko naman hahabulin siya to clarify", "me"],
+  ["if it comes up privately, fine", "me"],
+  ["if not, I'll just be normal", "me"],
+
+  ["and you think kaya mo?", "them"],
+
+  ["yes", "me"],
+  ["eventually", "me"],
+  ["maybe after I stop remembering Friday every time he says \"Mr. Do\"", "me"],
+
+  ["HAHAHAHAHA", "them"],
+  ["grabe ka", "them"],
+  ["pero soo, seriously", "them"],
+  ["don't stress yourself too much", "them"],
+  ["first day pa lang ni sooky. enjoy mo rin na okay siya sa school", "them"],
+
+  ["I know", "me"],
+  ["and I am relieved", "me"],
+  ["honestly she's doing much better than I expected", "me"],
+  ["ako lang yung may unexpected orientation experience", "me"],
+
+  ["HAHAHAHAHA", "them"],
+  ["uy may call ako in five", "them"],
+  ["message kita mamaya", "them"],
+
+  ["go", "me"],
+  ["thanks for being incredibly unhelpful", "me"],
+
+  ["anytime 😘", "them"],
+
+  
+["9월 9일", "date"],
+
+["good morning", "them"],
+["buhay ka pa ba", "them"],
+
+["barely", "me"],
+
+["HAHAHAHA", "them"],
+["kumusta drop-off", "them"],
+
+["normal na", "me"],
+["medyo", "me"],
+
+["medyo? 😭", "them"],
+
+["look, nobody died", "me"],
+["that's progress", "me"],
+
+["HAHAHAHAHA", "them"],
+["at least", "them"],
+
+["honestly, it was fine", "me"],
+["may inaasikaso siyang ibang bata so we barely talked", "me"],
+["si sooky naman dumiretso agad sa play area", "me"],
+
+["ay wow", "them"],
+["hindi na nagpaiwan sayo?", "them"],
+
+["hindi", "me"],
+["I got one hug and a very enthusiastic goodbye", "me"],
+
+["proud tito moment 🥹", "them"],
+
+["proud papa moment too", "me"],
+
+["aww", "them"],
+["saka buti hindi na awkward masyado", "them"],
+
+["I wouldn't say we're completely past that", "me"],
+["but it's manageable", "me"],
+
+["so wala ka nang balak lumipat ng bansa", "them"],
+
+["not yet, at least not this week", "me"],
+
+["HAHAHAHAHA", "them"],
+
+["actually medyo nakakatawa na lang ngayon", "me"],
+["I went to that school expecting to deal with separation anxiety", "me"],
+["turns out ako yung kailangan ng emotional support", "me"],
+
+["tangina HAHAHAHAHA", "them"],
+["pero oo gets ko", "them"],
+["at least okay na yung first few days", "them"],
+
+["yep", "me"],
+["now I just need to survive parent orientation on Friday", "me"],
+
+["with teacher jongin 😭", "them"],
+
+["yes chan", "me"],
+["with the class adviser", "me"],
+
+["sorry HAHAHA", "them"],
+["baka may slideshow pa siya", "them"],
+
+["if he uses the phrase \"hands-on learning\" I'm leaving", "me"],
+
+["PUTANGINA MO 😭😭😭", "them"],
+["ang bastos mo talaga", "them"],
+
+["I'm talking about educational methodology", "me"],
+["kindly stop projecting", "me"],
+
+["HAHAHAHAHAHA", "them"],
+["sophisticated ka pang magsalita pero masama ugali mo", "them"],
+
+["thank you. my mother raised me well", "me"],
+
+["halatang anak ka ni mommy do 😭", "them"],
+
+["and I'm her only child", "me"],
+["she had sufficient time to perfect the product", "me"],
+
+["HAHAHAHAHA", "them"],
+["btw may family photo activity daw si sooky?", "them"],
+
+["yes", "me"],
+["she needs a printed picture by tomorrow", "me"],
+
+["ay cute", "them"],
+["which one are you sending", "them"],
+
+["I gave her options last night", "me"],
+["she wants the photo from lunch with mommy", "me"],
+
+["the one where your eyes are closed?", "them"],
+
+["unfortunately", "me"],
+
+["HAHAHAHAHA", "them"],
+["PLEASE SEND IT", "them"],
+
+["no", "me"],
+
+["😭", "them"],
+
+["she says I look sleepy", "me"],
+
+["she has a point", "them"],
+
+["I was blinking", "me"],
+
+["that's what they all say", "them"],
+
+["this family is deeply committed to humiliating me", "me"],
+
+["HAHAHAHAHA", "them"],
+["anyway", "them"],
+["saturday pa rin ha", "them"],
+
+["yes", "me"],
+["please arrive at 2 like a civilized person", "me"],
+
+["anong oras ba ako usually dumadating", "them"],
+
+["either 1:15 or 4:30", "me"],
+
+["flexibility is a gift", "them"],
+
+["punctuality is also a gift", "me"],
+
+["okay na sir 😭", "them"],
+
+
+["9월 11일", "date"],
+
+["soo", "them"],
+["buhay ka pa ba 😭", "them"],
+
+["barely", "me"],
+
+["HAHAHAHA", "them"],
+["tapos na orientation?", "them"],
+
+["yes", "me"],
+["nasa parking na ko", "me"],
+
+["good", "them"],
+["kumpleto gamit mo?", "them"],
+["baka may naiwan ka na namang susi 😭", "them"],
+
+["CHAN, IT’S BEEN FOUR DAYS", "me"],
+["can we please move on", "me"],
+
+["HAHAHAHA", "them"],
+["concerned lang ako sa wellbeing mo", "them"],
+
+["your concern is deeply appreciated", "me"],
+["anyway", "me"],
+["nakausap ko si jongin", "me"],
+
+["ah okay", "them"],
+["WAIT", "them"],
+["SI JONGIN?????", "them"],
+
+["YES 😭", "me"],
+
+["PUTANGINA HAHAHAHAHA", "them"],
+["yung about friday???", "them"],
+
+["oo…", "me"],
+["he asked if i was married", "me"],
+
+["AYUN NGA", "them"],
+["SABI KO SAYO EH", "them"],
+
+["apparently yun nga yung iniisip niya since monday", "me"],
+["akala niya baka may asawa ako", "me"],
+
+["gets ko naman siya", "them"],
+["imagine mo nakipag-hookup ka tapos biglang may anak pala yung guy", "them"],
+["mapapaisip ka rin talaga", "them"],
+
+["exactly", "me"],
+["kaya i appreciated na he asked me directly", "me"],
+["kesa kung ano-anong conclusion yung gawin niya", "me"],
+
+["oo naman", "them"],
+["at least it’s clear between the two of you", "them"],
+
+["yeah", "me"],
+["sinabi ko na single ako", "me"],
+["and i'm raising sooky on my own", "me"],
+
+["ayun", "them"],
+["problem solved", "them"],
+["wala nang imaginary asawa na maghahabol sa inyong dalawa 😭", "them"],
+
+["thank god", "me"],
+["i have enough responsibilities", "me"],
+["hindi ko na kailangan ng fictional kabit allegations", "me"],
+
+["HAHAHAHAHA", "them"],
+["\"fictional kabit allegations\" 😭", "them"],
+["ang OA  pa rin kahit nagkakagulo na buhay mo", "them"],
+
+["i was raised properly", "me"],
+
+["debatable", "them"],
+
+["putangina mo HAHAHAHA", "me"],
+
+["HAHAHAHAHA", "them"],
+["pero seriously, maayos naman siyang kausap?", "them"],
+
+["oo", "me"],
+["actually very reasonable", "me"],
+["hindi naman niya ginawang issue yung nangyari", "me"],
+["he just wants to know kung may ibang taong involved", "me"],
+
+["which is good", "them"],
+["at least may prinsipyo si sir", "them"],
+
+["exactly", "me"],
+["and we agreed na professional lang sa school", "me"],
+["wala namang expectations from friday", "me"],
+
+["very mature", "them"],
+["proud ako sa inyong dalawa", "them"],
+
+["thank you", "me"],
+["your approval means absolutely nothing", "me"],
+
+["GAGO 😭", "them"],
+["HAHAHAHAHA", "them"],
+
+["GOSH", "me"],
+["pero may nakakahiya pa", "me"],
+
+["...", "them"],
+["soo 😭", "them"],
+
+["naalala niya yung car keys ko", "me"],
+
+["HA?????????", "them"],
+["HAHAHAHAHAHA", "them"],
+["PUTANGINA", "them"],
+
+["yes", "me"],
+["he actually brought it up", "me"],
+["and i thought we were having a perfectly civilized conversation", "me"],
+
+["HAHAHAHAHA", "them"],
+["so hindi ka lang pala nagkalat mag-isa nung monday", "them"],
+["may witness pa 😭", "them"],
+
+["unfortunately", "me"],
+["although i reminded him na he forgot how to introduce himself", "me"],
+
+["HAHAHAHAHA", "them"],
+["AYAN", "them"],
+["quits na kayo", "them"],
+
+["precisely", "me"],
+["pareho kaming may embarrassing material against each other", "me"],
+
+["parang may mutual blackmail agreement 😭", "them"],
+
+["an informal non-disclosure arrangement", "me"],
+
+["GAGO HAHAHAHAHA", "them"],
+["okay wait", "them"],
+["so nagjojoke na kayo sa isa't isa?", "them"],
+
+["apparently", "me"],
+["mas funny pala siya kapag hindi nagbabasa ng enrollment forms", "me"],
+
+["ayyyyy", "them"],
+
+["don't", "me"],
+
+["WALA AKONG SINASABI 😭", "them"],
+
+["chan, i can practically see your eyebrows moving", "me"],
+
+["HAHAHAHAHA", "them"],
+["pero bagay naman na may sense of humor siya", "them"],
+["imagine kung super seryoso niya buong school year", "them"],
+
+["actually oo nga", "me"],
+["mas magiging awkward pa siguro", "me"],
+
+["exactly", "them"],
+["mas okay nang pareho kayong marunong makisama", "them"],
+
+["yeah", "me"],
+["at least tapos na yung malaking misunderstanding", "me"],
+["pwede na kong mag-focus sa actual reason kung bakit ako pumupunta sa school", "me"],
+
+["which is your daughter", "them"],
+
+["congratulations", "me"],
+["excellent deduction", "me"],
+
+["HAHAHAHAHA", "them"],
+["btw okay yung orientation mismo?", "them"],
+
+["yes actually", "me"],
+["maayos yung presentation", "me"],
+["na-cover lahat ng questions ko about progress reports and photo privacy", "me"],
+
+["nice", "them"],
+["sulit yung pag-absent mo sa office", "them"],
+
+["half-day lang", "me"],
+["may reporting review pa ko mamaya", "me"],
+
+["ay grabe", "them"],
+["may work ka pa pala", "them"],
+
+["unfortunately, investments don't reconcile themselves", "me"],
+
+["HAHAHAHAHA", "them"],
+["sige magtrabaho ka na", "them"],
+["and please", "them"],
+["wag ka nang mawawalan ng car keys", "them"],
+
+["one more joke about my car keys and i'm blocking you", "me"],
+
+["LOVE YOU TOO 😘", "them"],
+
+["I DON’T", "me"],
+
+
+["9월 12일", "date"],
+
+["downstairs na ko", "them"],
+
+["chan", "me"],
+["it's 1:41", "me"],
+
+["i know", "them"],
+
+["we agreed on two", "me"],
+
+["traffic was kind to me today", "them"],
+
+["congratulations", "me"],
+["please enjoy your additional nineteen minutes in the lobby", "me"],
+
+["SOO 😭", "them"],
+["may dala akong food", "them"],
+
+["excellent", "me"],
+["now the lobby can enjoy your company and refreshments", "me"],
+
+["GAGO HAHAHAHAHA", "them"],
+["papasukin mo na ko", "them"],
+
+["HAHAHAHA", "me"],
+["okay. i'll notify the guard", "me"],
+
+
+["9월 18일", "date"],
+
+["soo", "them"],
+["just finished work", "them"],
+["i'm exhausted", "them"],
+
+["same", "me"],
+["had a reporting review that felt like an endurance sport", "me"],
+
+["HAHAHAHA", "them"],
+["at least friday na", "them"],
+
+["thank god", "me"],
+
+["dinner ka na?", "them"],
+
+["yes", "me"],
+["sooky requested aglio olio", "me"],
+
+["my baby has taste", "them"],
+
+["she does", "me"],
+["although she informed me mine is inferior to the one mommy makes", "me"],
+
+["HAHAHAHA", "them"],
+["brutal", "them"],
+
+["i raised an honest child", "me"],
+
+["and now you're suffering the consequences", "them"],
+
+["precisely", "me"],
+
+["btw saw the pictures your mom sent", "them"],
+["si sooky may new friend na naman", "them"],
+
+["eunseo", "me"],
+["apparently yuna and eunseo are now both her best friends", "me"],
+
+["awww", "them"],
+["ang bilis niya maka-adjust", "them"],
+
+["yeah", "me"],
+["i'm really happy about it", "me"],
+["she even asked if she could stay longer yesterday", "me"],
+
+["HAHAHAHA", "them"],
+["from ayaw pumasok to ayaw umuwi", "them"],
+
+["exactly", "me"],
+
+["meanwhile ikaw", "them"],
+["still recovering from the first day incident?", "them"],
+
+["chan, it's been nearly two weeks", "me"],
+
+["i'm just checking 😭", "them"],
+
+["we're fine", "me"],
+["we discuss school matters like perfectly normal adults", "me"],
+
+["wow", "them"],
+["congratulations on achieving basic social functioning", "them"],
+
+["thank you", "me"],
+["the recovery has been remarkable", "me"],
+
+["HAHAHAHA", "them"],
+
+["actually i barely think about friday when i see him now", "me"],
+["i'm usually too busy making sure sooky remembered her water bottle", "me"],
+
+["that's good", "them"],
+["as it should be", "them"],
+
+["exactly", "me"],
+
+["although i still have one question", "them"],
+
+["oh god", "me"],
+
+["hypothetical lang", "them"],
+["if hindi siya teacher ni sooky", "them"],
+["would you hook up with him again", "them"],
+
+["CHANYEOL 😭", "me"],
+["i refuse to participate in hypothetical scenarios involving my daughter's teacher", "me"],
+
+["HAHAHA", "them"],
+["not even for research?", "them"],
+
+["your research ethics are appalling", "me"],
+
+["sorry 😭", "them"],
+
+["but yes, he's attractive", "me"],
+["that's never been in dispute", "me"],
+
+["HAHAHAHA", "them"],
+["hindi mo sinagot yung question ko", "them"],
+
+["a deliberate and strategic decision", "me"],
+
+["GAGO", "them"],
+
+["thank you", "me"],
+
+["HAHAHAHA", "them"],
+["anyway", "them"],
+["free ka ba tomorrow afternoon?", "them"],
+
+["groceries in the morning", "me"],
+["bookstore with sooky after lunch", "me"],
+
+["nice", "them"],
+["i'll be around that area", "them"],
+["maybe coffee?", "them"],
+
+["sure", "me"],
+["just text me", "me"],
+
+["okay", "them"],
+["and soo", "them"],
+
+["yes?", "me"],
+
+["no more surprises involving kindergarten teachers please", "them"],
+
+["i'll inform the universe of your request", "me"],
+
+["HAHAHAHA", "them"],
+
+
+
 
 ],
 
