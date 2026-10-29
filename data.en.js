@@ -3412,7 +3412,7 @@ const STORY_SP_ATTENDANCE = [
 
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
-{title:'01: breakfast negotiations with sooky my love',date:'Oct 05, 2026',transcript:`Papa?
+{title:'01: breakfast negotiations with sooky my love',date:'Oct 05, 2026',transcript:`Sooky: Papa?
 
 Hmm, baby?
   

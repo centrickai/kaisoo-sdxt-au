@@ -556,17 +556,78 @@ VIEWS.schoolportal=()=>({cls:'sp-page',dark:false,html:spPage(),init(pg){const c
 const VM_WORDS_PER_MINUTE = 200;
 const VM_RECORDINGS = typeof STORY_VM_RECORDINGS !== 'undefined' ? structuredClone(STORY_VM_RECORDINGS) : [];
 const vmSafe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const vmWords=s=>String(s).replace(/<\/?i>/gi,'').trim().match(/\S+/gu)||[];
-function vmFormattedWords(s){
- let italic=false,index=0;
- return (String(s).match(/<\/?i>|\s+|[^\s<>]+/giu)||[]).map(token=>{
-  if(/^<i>$/i.test(token)){italic=true;return '';}
-  if(/^<\/i>$/i.test(token)){italic=false;return '';}
-  if(/^\s+$/u.test(token))return token;
-  return `<span data-vm-word="${index++}"${italic?' style="font-style:italic !important;font-weight:700 !important"':''}>${vmSafe(token)}</span>`;
+//const vmWords=s=>String(s).replace(/<\/?i>/gi,'').trim().match(/\S+/gu)||[];
+
+const vmWords = s =>
+  String(s)
+    .replace(/<\/?i>/gi, '')
+    .replace(/(^|\n)[ \t]*[^:\n]+:[ \t]*/g, '$1')
+    .trim()
+    .match(/\S+/gu) || [];
+
+//function vmFormattedWords(s){
+// let italic=false,index=0;
+// return (String(s).match(/<\/?i>|\s+|[^\s<>]+/giu)||[]).map(token=>{
+ // if(/^<i>$/i.test(token)){italic=true;return '';}
+ // if(/^<\/i>$/i.test(token)){italic=false;return '';}
+ // if(/^\s+$/u.test(token))return token;
+//  return `<span data-vm-word="${index++}"${italic?' style="font-style:italic !important;font-weight:700 !important"':''}>${vmSafe(token)}</span>`;
   //return `<span data-vm-word="${index++}"${italic?' style="font-style:italicized;font-weight:700"':''}>${vmSafe(token)}</span>`;
- }).join('');
+// }).join('');
+//}
+
+
+function vmFormattedWords(s) {
+  let italic = false;
+  let index = 0;
+
+  return String(s)
+    .split('\n')
+    .map(line => {
+      const match = line.match(/^(\s*)([^:\n]+:)([ \t]*)(.*)$/);
+
+      let prefix = '';
+      let dialogue = line;
+
+      if (match) {
+        prefix =
+          vmSafe(match[1]) +
+          `<span class="vm-speaker">${vmSafe(match[2])}</span>` +
+          vmSafe(match[3]);
+
+        dialogue = match[4];
+      }
+
+      const formatted = (
+        dialogue.match(/<\/?i>|\s+|[^\s<>]+/giu) || []
+      ).map(token => {
+        if (/^<i>$/i.test(token)) {
+          italic = true;
+          return '';
+        }
+
+        if (/^<\/i>$/i.test(token)) {
+          italic = false;
+          return '';
+        }
+
+        if (/^\s+$/u.test(token)) {
+          return token;
+        }
+
+        return `<span data-vm-word="${index++}"${
+          italic
+            ? ' style="font-style:italic !important;font-weight:700 !important"'
+            : ''
+        }>${vmSafe(token)}</span>`;
+      }).join('');
+
+      return prefix + formatted;
+    })
+    .join('\n');
 }
+
+
 const vmDuration=r=>Math.max(3,Math.ceil(vmWords(r.transcript).length/VM_WORDS_PER_MINUTE*60));
 const vmTime=s=>`${Math.floor(Math.max(0,s)/60)}:${String(Math.floor(Math.max(0,s)%60)).padStart(2,'0')}`;
 const vmClock=s=>`${String(Math.floor(s/60)).padStart(2,'0')}:${String(Math.floor(s%60)).padStart(2,'0')}.${String(Math.floor((s%1)*100)).padStart(2,'0')}`;
