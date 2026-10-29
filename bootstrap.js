@@ -1,6 +1,6 @@
 /* Language: ?lang= in the URL → Previous selection → Browser language, in that order. Change it using the 🌐 button on the lock screen */
 (function(){
- window.LANGS=[['en','English'],['ko','한국어'],['zh','简体中文'],['th','ภาษาไทย']];
+ window.LANGS=[['en','English']];//,['ko','한국어'],['zh','简体中文'],['th','ภาษาไทย']];
  //['ja','日本語'],
  const ok=l=>LANGS.some(x=>x[0]===l);let sel=null;
  try{sel=new URLSearchParams(location.search).get('lang')}catch(e){}
