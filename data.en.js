@@ -2106,7 +2106,7 @@ const chatData={
   ['9월 18일', 'date'],
   ['GrabFood: Your order has been confirmed. Items: pork adobo meal, extra rice, and mango shake.', 'them'],
   ['GrabFood: Delivered! Total paid: PHP 386.00.', 'them'],
-  ['October 25, 2026', 'date'],
+  ['9월 25일', 'date'],
   ['GrabMart: Your order has been delivered. Items: strawberries, cream cheese, sandwich bread, and lunchbox wipes. Total paid: PHP 694.00.', 'them']
 ],
 
@@ -2154,7 +2154,7 @@ const chatNames=[
  "Sookyung Pedia",
  "BPI",
  "Grab",
- "Mommy",
+ "Mommy Do",
  "School Accounting Office",
  "Converge ICT",
  "Meralco",

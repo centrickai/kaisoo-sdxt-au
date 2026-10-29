@@ -11,7 +11,8 @@ const elapsed=()=>(Date.now()-base)/1000+timeOffset;
 let view='lock',curDark=true,SC=1,lastRect=null,animTok=0,firstOpen=true,pendingOpen=null;
 let pincode='',noteId=0,selectedDay=new Date().getDate(),calMonth=new Date().getMonth()+1,chatId='Kyungsoo my love 💞',videoIndex=0,mailId=0,missOnly=false,safSearch=false;
 let calYear = new Date().getFullYear();
-let unread={'민호 형 🔕':2,'준면이 형 🐰':1,'SM 러닝크루 🏃🔥':26}; //kakao unread; same names for all language
+//let unread={'민호 형 🔕':2,'준면이 형 🐰':1,'SM 러닝크루 🏃🔥':26}; //kakao unread; same names for all language
+let unread = {};
 let ksooUnread=0,todayChat=[],incoming=0,replyStage=0,lineIdx=0,typing=false,pendingText='',replyBusy=false;
 let introDelivered=0, introReady=false;
 let alarmStates=Array(7).fill(true),readMail=new Set(),nowSong=-1,flashOn=false;
@@ -921,6 +922,56 @@ function avatarFor(name,group){
   if(group) return `<svg viewBox="0 0 24 24"><circle cx="8.5" cy="9" r="3" fill="#fff"/><circle cx="15.5" cy="9" r="3" fill="#fff"/><path d="M2.5 19c.4-3 2.9-5 6-5s5.6 2 6 5ZM9.5 19c.4-3 2.9-5 6-5s5.6 2 6 5Z" fill="#fff"/></svg>`;
   return G.sil;
 }
+
+// ===== iMESSAGE DEFAULT UNREAD STATUS =====
+// A chat is unread by default if its last message is from "them".
+// Opening the chat marks it as read.
+
+const IM_READ_KEY = 'imessage_read_chats';
+
+let imReadChats = new Set();
+
+try {
+  imReadChats = new Set(
+    JSON.parse(localStorage.getItem(IM_READ_KEY) || '[]')
+  );
+} catch (e) {
+  imReadChats = new Set();
+}
+
+function initIMUnread() {
+  chatNames.forEach(name => {
+    const messages = chatData[name] || [];
+
+    const last = messages
+      .slice()
+      .reverse()
+      .find(m => Array.isArray(m) && m[1] !== 'date');
+
+    if (imReadChats.has(name)) {
+      unread[name] = 0;
+    } else {
+      unread[name] = last && last[1] === 'them' ? 1 : 0;
+    }
+  });
+}
+initIMUnread();
+function markIMRead(name) {
+  imReadChats.add(name);
+
+  try {
+    localStorage.setItem(IM_READ_KEY, JSON.stringify([...imReadChats]));
+  } catch (e) {}
+
+  unread[name] = 0;
+
+  if (name === 'Kyungsoo my love 💞') {
+    ksooUnread = 0;
+  }
+
+  updateIsland();
+}
+
 function otherUnread(){return Object.entries(unread).filter(([k])=>k!==chatId).reduce((a,[,b])=>a+b,0)+(chatId==='Kyungsoo my love 💞'?0:ksooUnread)}
 VIEWS.kakao=()=>{const list=chatNames.slice().sort((a,b)=>dateKey(b)-dateKey(a));
  return{cls:'kk',html:`<div class="kk-h"><b>Messages</b><span>${G.search}${G.chatPlus}</span></div><div class="scroll">${list.map(n=>{const arr=chatData[n]||[];let last=arr.filter(x=>x[1]!=='date').slice(-1)[0],time=fmtLabel(lastDate(n)),cnt=unread[n]||0;
