@@ -1510,7 +1510,7 @@ const chatData={
   ['If possible, yes. Preferably after hers.', 'me'],
   ['Noted! Sookyung at 9:30 AM and Mr. Do at 10:15 AM. See you both! 🦷', 'them'],
   ['9월 16일', 'date'],
-  ['Appointment reminder: Sookyung — 9:30 AM; Kyungsoo — 10:15 AM tomorrow. Kindly arrive 10 minutes early.', 'them'],
+  ['Appointment reminder: Sookyung - 9:30 AM; Kyungsoo - 10:15 AM tomorrow. Kindly arrive 10 minutes early.', 'them'],
   ['Thank you. We’ll be there.', 'me'],
   ['9월 17일', 'date'],
   ['Thank you for visiting Bright Smiles Dental Clinic! Sookyung did a great job today. See you at your next checkup! 😊', 'them'],
@@ -1716,32 +1716,59 @@ const chatNames=[
  
 ];
 const notes = [
+ 
+
+[
+  "friday - read to sooky's class",
+  "sooky's reading morning and work reminders",
+  "[ ] Sooky's breakfast\n[ ] Storybook\n[ ] Water bottle\n[ ] School bag\n[ ] Reading Morning - 9:15 AM\n[ ] Office by 11:00 AM\n[ ] Review reconciliation comments\n[ ] Follow up on valuation support\n\nBook: We're Going on a Bear Hunt",
+  "2026-10-09"
+],
+  
+  
+[
+  "sat errands",
+  "weekend errands with sooky",
+  "[ ] Groceries\n[ ] Bookstore - Sooky\n[ ] Mommy's cookbook\n[ ] New water bottle lid\n[ ] Pick up dry cleaning\n[ ] Birthday card for Tita Lorna\n\nSooky's bookstore budget: 2 books and she is vv aware of this\n\nand nag propose na ng amendments",
+  "2026-09-26"
+],
+
+  
   [
-    "Sooky's School Checklist",
+  "weekend errands",
+  "errands, sooky's plans, and school reminders",
+  "[ ] Groceries\n[ ] Bookstore with Sooky\n[ ] Coffee with Chan - confirm\n[ ] Laundry\n[ ] Review household expenses\n[ ] Pay Converge bill\n[ ] Replace water bottle lid\n\nSchool\n[ ] Orientation\n[ ] Family photograph\n[ ] Return signed consent form",
+  "2026-09-18"
+  ],
+  
+  [
+  "friday - work & sooky school",
+  "work deadlines, school reminders, and weekend plans",
+  "Work\n[ ] Parent Orientation\n[ ] Confirm photo policy\n[ ] Pickup authorization\n[ ] 1:30 PM reporting review\n[ ] Clear valuation exceptions\n[ ] Reconciliation sign-offs\n\nWeekend\n[ ] Saturday - Chan visits, 2 PM\n[ ] Groceries\n[ ] Print extra family photos\n[ ] Laundry\n\nSchool\n[ ] Add school dates to Calendar\n[ ] Read remainder of parent handbook",
+  "2026-09-11"
+  ],
+  
+  [
+  "SOOKY - SCHOOL / HOME",
+  "school reminders and little things",
+  "[ ] Print family photograph\n[ ] Write “Do Sookyung” on the back\n[ ] Place in take-home folder\n[ ] Check Parent Portal on Friday\n[ ] Pack extra wipes\n[ ] Buy penguin socks\n\nFamily photo: lunch with Mommy.\n\nsooky insisted on the picture where my eyes are closed because this is her favorite photo of me.\n\nnever let channie see it!!!!",
+  "2026-09-07"
+  ],
+
+  [
+  "THIS WEEK",
+  "work, errands, and sooky's school reminders",
+  "Work\n[ ] Portfolio reconciliation exceptions\n[ ] Review valuation support\n[ ] Wednesday - reporting review\n[ ] Outstanding items before Friday EOD\n\nHome\n[ ] Laundry detergent\n[ ] Return wrong-size polo\n[ ] Check Converge bill\n[ ] Replace water filter\n\nSooky\n[ ] First day\n[ ] Check school folder\n[ ] Parent Orientation - Friday\n[ ] Confirm next week's pickup schedule with Mommy",
+  "2026-09-07"
+  ],
+
+  [
+    "Sooky's school checklist",
     "can't believe my baby is in kinder",
     "Sooky's First Day\n[x] Iron school uniform\n[x] Prepare pink backpack\n[x] Pack crayons and pencils\n[x] Extra clothes\n[x] Water bottle\n[x] Lunchbox: chicken sandwich, strawberries\n[ ] Take first day picture\n[ ] Drop off by 7:45 AM\n[ ] Pick up at 12:00 PM\nReminder: Check communication notebook. Buy strawberry milk on the way home.",
-    "2026-10-05"
+    "2026-09-06"
   ],
-  [
-    "Tuesday: Sooky's Lunchbox 🍓",
-    "Tuesday: Sooky's Lunchbox",
-    "[ ] Wash strawberries\n[ ] Prepare sandwich ingredients\n[ ] Check bread expiration\n[ ] Cut sandwiches into hearts\n[ ] Pack Sooky's lunch\n[ ] Ask teacher about food-sharing policy\n[ ] Extra hair ties\n\nReminder: Sooky insists Teacher Nini gets the bigger heart.",
-    "2026-10-05"
-  ],
-  [
-    "things (person) i need to stop thinking about",
-    "god help me",
-    "\n1. Friday night.\n2. The fact that Jongin is Sooky's teacher.\n3. The fact that Sooky likes him.\n4. The fact that he remembered my name.\n5. His smile.\n6. His arms. GRABE YUNG BRASO TALAGA.\n7. Friday night. Again.\n\nGet it together, Kyungsoo. Trenta ka na.",
-    "2026-10-05"
-  ],
-
-  [
-    "sooky's little letter",
-    "and mine (?)",
-    "Dear Teacher Nini,\n\nThank you for being my teacher. I like your class and the teddy bears.\n\nI hope you like my sandwich!\n\nLove,\nSooky and Papa 💗\n\n(She insisted on the last line.)",
-    "2026-10-06"
-  ],
-
+  
   [
   "Things to do on my day off",
   "a little reset",
@@ -1751,7 +1778,7 @@ const notes = [
   "[ ] Buy new bedsheets\n" +
   "[ ] Try that pasta recipe\n" +
   "[ ] Do absolutely nothing for at least an hour",
-  "2026-10-09"
+  "2026-08-23"
   ],
 
 [
@@ -1769,7 +1796,7 @@ const notes = [
   "[ ] Coffee beans\n" +
   "[ ] Dishwashing liquid\n" +
   "[ ] Laundry detergent",
-  "2026-10-09"
+  "2026-08-19"
 ],
 
 [
@@ -1786,7 +1813,7 @@ const notes = [
   "Emergency fund\n" +
   "Personal spending\n\n" +
   "review every payday",
-  "2026-10-09"
+  "2026-08-11"
 ],
 
 [
@@ -1799,7 +1826,7 @@ const notes = [
   "• Submit expense claims\n" +
   "• Clear inbox before Friday\n\n" +
   "stop accepting meetings without agendas!!!!",
-  "2026-10-12"
+  "2026-08-09"
 ],
 
 [
@@ -1818,7 +1845,7 @@ const notes = [
   "• Save some pasta water.\n" +
   "• More garlic next time.\n" +
   "• Sooky prefers less pepper.",
-  "2026-10-09"
+  "2026-08-02"
 ],
 
 ];
@@ -3247,7 +3274,7 @@ const DISPLAY={
 
 
 /* ============================================================
-   STORY CONTENT — EDIT HERE
+   STORY CONTENT - EDIT HERE
    School Portal bulletin posts, comments, private mailbox,
    Voice Memos transcripts, and X profiles/posts.
    The app handles presentation, navigation, and interaction.
@@ -3342,7 +3369,7 @@ const STORY_SP_THREADS = [
     role: 'Kinder Sunshine · Class Teacher',
     initials: 'KJ',
     messages: [
-      // MONDAY — sandwich permission
+      // MONDAY - sandwich permission
       {
         from: 'me',
         text: 'Good morning, Teacher Jongin. Sooky prepared a sandwich for you and was hoping to give it to you today. I just wanted to ask if the school allows teachers to accept homemade food from students. Thank you.',
@@ -3364,7 +3391,7 @@ const STORY_SP_THREADS = [
         time: 'Monday · 8:12 AM'
       },
 
-      // WEDNESDAY — Sooky's progress
+      // WEDNESDAY - Sooky's progress
       {
         from: 'them',
         text: 'Good morning, Mr. Do! Just wanted to let you know that Sooky has been settling in really well. She\'s been participating more during circle time and even volunteered to help distribute crayons today. 😊\n\nAlso, thank you again for yesterday\'s sandwich. It was really good! Please tell Sooky I appreciated her little note.',
@@ -3399,7 +3426,7 @@ const STORY_SP_THREADS = [
   }
 ];
 
-// ATTENDANCE — Edit or add records here. Newest first.
+// ATTENDANCE - Edit or add records here. Newest first.
 // status: 'Present', 'Absent', or 'Late'. Empty checkOut means not yet dismissed.
 // notification and notificationTime control the attendance notification cards.
 const STORY_SP_ATTENDANCE = [
@@ -3412,140 +3439,309 @@ const STORY_SP_ATTENDANCE = [
 
 // VM_RECORDINGS
 const STORY_VM_RECORDINGS = [
-{title:'01: breakfast negotiations with sooky my love',date:'Oct 05, 2026',transcript:`Sooky: Papa?
+{ title: "sooky's first day",
+  date: "Sep 7, 2026",
+  transcript: `Sooky: Papa, wait!
 
-Hmm, baby?
-  
-<i>Can Mr. Bubbles go to school with me po?</i>
-  
-Your teddy bear?
-  
-<i>Opo.</i>
-  
-Baby, remember what we talked about? Toys stay at home unless Teacher says you can bring them.
-  
-<i>But Mr. Bubbles will be lonely.</i>
-  
-He has all your other teddy bears here.
-  
-<i>But they're not his best friends.</i>
-  
-Oh? Who's his best friend, then?
-  
-<i>Me po.</i>
-  
-Of course.
-  
-<i>What if he misses me?</i>
-  
-Then I'll keep him company while you're at school.
-  
-<i>Promise po?</i>
-  
-Promise, sweetheart.
-  
-<i>You have to give him a hug, Papa. He likes hugs.</i>
-  
-Okay. I'll give him a hug.
-  
-<i>And kisses po.</i>
-  
-Kisses too?
-  
-<i>Opo. On his forehead.</i>
-  
-Yes, ma'am.
-  
-<i>Thank you, Papa! I love you!</i>
-  
-Love you more, baby.`},
-  
-{title:'01: sooky\'s first day',date:'Oct 5, 2026',transcript:  `Okay, baby. Tell Papa about your first day.
+Kyungsoo: Hmm? What's wrong, sweetheart?
 
-<i>Papa! We made a sunshine po!</i>
+Sooky: My bag.
 
-You did? Can I see?
+Kyungsoo: What about your bag?
 
-<i>It's in my bag! But don't look yet, okay?</i>
+Sooky: I want to carry it.
 
-Why not?
+Kyungsoo: Okay, here you go.
 
-<i>Because it's a surprise po.</i>
+Sooky: It's heavy.
 
-(Laughs softly) Okay. I won't look.
+Kyungsoo: (Chuckles) I know, baby. That's why I was carrying it.
 
-<i>And I made a new friend!</i>
+Sooky: Can you carry it again?
 
-Really? What's her name?
+Kyungsoo: Of course. Come here.
 
-<i>Yuna! She has a pink water bottle like mine.</i>
+Sooky: Papa?
 
-That's nice, sweetheart.
+Kyungsoo: Yes?
 
-<i>But hers has a bunny. Mine has a bear.</i>
+Sooky: Are you going inside with me?
 
-Of course. You love bears.
+Kyungsoo: I'll walk you to your classroom. Then Papa has to go to work, okay?
 
-<i>Just like Teacher Nini!</i>
+Sooky: But I don't know anyone.
 
-Oh?
+Kyungsoo: That's okay. You'll meet your classmates today.
 
-<i>Teacher Nini likes bears too!</i>
+Sooky: What if nobody wants to play with me?
 
-That's nice, baby.
+Kyungsoo: Hmm. Well, we don't know that yet, do we?
 
-<i>Papa, did you know Teacher Nini is very strong?</i>
+Sooky: No.
 
-...Strong?
+Kyungsoo: Let's see how it goes. You don't have to make friends with everyone on your first day.
 
-<i>Opo! He carried the big box of toys all by himself!</i>
+Sooky: Okay.
 
-Oh. Good for him.
+Kyungsoo: Want to hold my hand?
 
-<i>And he has big arms!</i>
+Sooky: Both hands.
 
-(Clears throat) Baby, let's put your seat belt on properly.
+Kyungsoo: Both? Who's going to carry your bag?
 
-<i>Papa?</i>
+Sooky: You can put it on your back.
 
-Hmm?
+Kyungsoo: Ah. I see you've planned everything.
 
-<i>Why were you so quiet when Teacher Nini talked to you?</i>
+Sooky: (Giggles)
 
-What do you mean?
+<i>…</i>
 
-<i>You just smiled po.</i>
+Teacher Mina: Good morning! Welcome to Little Oaks!
 
-I was listening, sweetheart.
+Kyungsoo: Good morning.
 
-<i>But you always talk a lot when it's my teachers.</i>
+Teacher Mina: Kayo po ba yung parent ni Sookyung Do?
 
-(Laughs nervously) Do I?
+Kyungsoo: Yes, I'm her dad.
 
-<i>Opo. You ask many questions.</i>
+Teacher Mina: Perfect. I'm Teacher Mina. Hi, Sookyung!
 
-Well, I didn't have any questions today.
+Sooky: You can call me Sooky.
 
-<i>Oh.</i>
+Teacher Mina: Oh! You prefer Sooky?
 
-<i>Papa?</i>
+Sooky: Yes, please.
 
-Yes, baby?
+Teacher Mina: Alright, Sooky. I'll remember that. Are you excited?
 
-<i>Are you shy?</i>
+Sooky: A little bit.
 
-...No, sweetheart.
+Teacher Mina: That's okay! Would you like to see your classroom?
 
-<i>It's okay po. Teacher Nini is nice.</i>
+Sooky: Can Papa come?
 
-(Laughs softly) I know, baby.
+Teacher Mina: Of course. Papa can stay for a little while.
 
-<i>You can be friends with him!</i>
+Kyungsoo: Thank you, Teacher.
 
-We'll see, sweetheart.
+Sooky: Papa, look! A rainbow!
 
-<i>Okay po!</i>`},
-  {title:'01: two sandwiches',date:'Oct 5, 2026',transcript:`Okay. For the revised investment report, kailangan i-adjust yung projections for the third quarter. The client requested a more conservative estimate, so maybe we can—
+Kyungsoo: That's beautiful, sweetheart.
+
+Sooky: And they have a kitchen!
+
+Teacher Mina: Yes! That's our pretend kitchen. May reading corner din tayo and an art area.
+
+Sooky: Can I play?
+
+Teacher Mina: In a bit, okay? Meet muna natin your class adviser.
+
+Sooky: Okay!
+
+Teacher Mina: Teacher Jongin? Nandito na si Sookyung!
+
+Jongin: Good morning! I'll be right-
+
+<i>(A short silence.)</i>
+
+Jongin: Oh.
+
+Kyungsoo: ...
+
+Jongin: ...
+
+Teacher Mina: Teacher Jongin?
+
+Jongin: Sorry. Good morning po.
+
+Teacher Mina: Sir, this is Teacher Jongin. He's the class adviser of Kinder Sunflowers.
+
+Jongin: Kim Jongin po.
+
+<i>(Another pause.)</i>
+
+Kyungsoo: Do Kyungsoo.
+
+Jongin: Right. I mean-nice to meet you, Mr. Do.
+
+Kyungsoo: Likewise, Teacher.
+
+Teacher Mina: Sir, before we start, may ilang details lang po tayong need i-confirm.
+
+Kyungsoo: Of course.
+
+Teacher Mina: I'll assist Sooky muna with her things. Teacher Jongin can help you with the enrollment details.
+
+Kyungsoo: Thank you.
+
+<i>Sooky follows Teacher Mina toward the cubbies.</i>
+
+Jongin: So, um. I have Sookyung's information here.
+
+Kyungsoo: Alright.
+
+Jongin: Just need to verify a few things po. Standard procedure lang.
+
+Kyungsoo: Sure. Go ahead.
+
+Jongin: No known food allergies?
+
+Kyungsoo: None.
+
+Jongin: Okay. And is she allowed to have snacks provided by the school?
+
+Kyungsoo: Yes. I've packed something for her as well, in case she doesn't like what's being served.
+
+Jongin: That's fine po. We usually encourage the kids to try, pero we don't force them to finish everything.
+
+Kyungsoo: I appreciate that. She's still a little picky with vegetables.
+
+Jongin: Noted. And for today's dismissal, your authorized pickup person is your mother?
+
+Kyungsoo: Yes. She'll be here at 11:30.
+
+Jongin: Okay. We'll verify her ID at the pickup desk.
+
+Kyungsoo: Perfect.
+
+<i>Another pause.</i>
+
+Jongin: That's everything for now.
+
+Kyungsoo: Great.
+
+Jongin: Great.
+
+<i>...</i>
+
+Kyungsoo: ...
+
+Jongin: ...
+
+Kyungsoo: So-
+
+Sooky: Papa!
+
+Kyungsoo: Yes, baby?
+
+Sooky: Look! A strawberry!
+
+Kyungsoo: Oh, that's nice.
+
+Sooky: It's not real.
+
+Kyungsoo: I can see that, sweetheart.
+
+Sooky: Can I make soup?
+
+Kyungsoo: Have you asked your teacher?
+
+Sooky: Not yet.
+
+Jongin: You can, Sooky. May bowls tayo doon. Want me to help you find one?
+
+Sooky: Yes!
+
+Jongin: Alright. Come on.
+
+Jongin: What are we making?
+
+Sooky: Strawberry soup.
+
+Jongin: Strawberry soup? That's interesting.
+
+Sooky: It's yummy.
+
+Jongin: Talaga? What's in it?
+
+Sooky: Strawberries.
+
+Jongin: Anything else?
+
+Sooky: Water.
+
+Jongin: Ah, okay. Very simple recipe.
+
+Sooky: Do you want some?
+
+Jongin: Sure. I'd love some.
+
+Sooky: Wait! It's hot.
+
+Jongin: Ay, sorry. I'll wait muna.
+
+<i>(Several minutes later.)</i>
+
+Kyungsoo: Sooky, sweetheart?
+
+Sooky: Hmm?
+
+Kyungsoo: Papa has to go now.
+
+Sooky: No.
+
+Kyungsoo: Baby, remember what we talked about in the car?
+
+Sooky: Five more minutes.
+
+Kyungsoo: Okay. Five more minutes, then I really have to leave.
+
+Jongin: No rush naman po, sir. We still have time before our first activity.
+
+Kyungsoo: Thank you. She's been looking forward to this all week, but she got nervous this morning.
+
+Jongin: Normal lang po. We'll help her settle in.
+
+Kyungsoo: I appreciate that.
+
+<i>After a little while.</i>
+
+Kyungsoo: Alright, baby. Time for Papa to go.
+
+Sooky: Okay.
+
+Kyungsoo: Can I have a hug?
+
+Sooky: Mwah!
+
+Kyungsoo: I love you, sweetheart. Be good, okay?
+
+Sooky: Okay!
+
+Kyungsoo: Listen to your teachers.
+
+Sooky: Papa, I'm cooking!
+
+Kyungsoo: (Laughs) Right. Sorry for interrupting, Chef.
+
+Jongin: Mr. Do?
+
+Kyungsoo: Yes?
+
+Jongin: Um-
+
+Jongin: We'll send classroom updates through the Parent Portal later po.
+
+Kyungsoo: Of course.
+
+Jongin: In case you want to check how she's doing.
+
+Kyungsoo: Thank you, Teacher.
+
+Jongin: Have a good day.
+
+Kyungsoo: You too.
+
+Teacher Mina: Sir! Your car key.
+
+Kyungsoo: Oh-thank you. I must have left it on the table.
+
+Teacher Mina: No problem po!
+
+Kyungsoo: Thanks again.`
+},
+  {title:'01: two sandwiches',date:'Oct 5, 2026',transcript:`Okay. For the revised investment report, kailangan i-adjust yung projections for the third quarter. The client requested a more conservative estimate, so maybe we can-
 
 <i>Papa?</i>
 
@@ -3579,7 +3775,7 @@ Baby, Teacher Nini probably has his own lunch.
 
 <i>Opo! Para alam niya na love natin siya!</i>
 
-Baby, hindi naman natin—
+Baby, hindi naman natin-
 
 <i>Please, Papa? 🥺</i>
 
