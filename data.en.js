@@ -2296,143 +2296,159 @@ const notes = [
 ],
 
 ];
-/* ===== OCTOBER 2026 · KYUNGSOO'S CALENDAR ===== */
+/* ===== KYUNGSOO’S CALENDAR · OCT 2026 – JAN 2027 ===== */
+/* Mommy Do’s birthday: date not yet established in the story.
+   Set MOMMY_DO_BIRTHDAY to "YYYY-MM-DD" once confirmed. */
+const MOMMY_DO_BIRTHDAY = "2026-12-05";
+
+/* ===== OCTOBER 2026 ===== */
 const events = {
-  "1": ["Drop off Sookyung at Montessori · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
-  "2": ["Montessori drop-off · 8 AM", "Submit work report · 11 AM", "Grocery shopping · 5 PM"],
-  "3": ["Laundry 🧺 · 9 AM", "Library visit with Sookyung 📚 · 2 PM"],
-  "4": ["Sunday breakfast with Sookyung 🥞 · 9 AM", "Meal prep for the week · 4 PM"],
-  "5": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Check Sooky's school bag 🎒 · 8 PM"],
-  "6": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Read bedtime stories 📖 · 8 PM"],
-  "7": ["Pack Sooky's lunch 🍓 · 7 AM", "Work deadline · 2 PM", "Call Mom · 8 PM"],
-  "8": ["Montessori drop-off · 8 AM", "Pay utility bills", "Pick up Sookyung · 3 PM"],
-  "9": ["Montessori drop-off · 8 AM", "Weekly work check-in · 10 AM", "Buy fruit and milk 🥛 · 5 PM"],
-  "10": ["Pancakes with Sookyung 🥞 · 9 AM", "Playground 🛝 · 3 PM"],
-  "11": ["Clean apartment · 10 AM", "Movie night with Sookyung 🍿 · 7 PM"],
-  "12": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Wash Sooky's uniforms · 7 PM"],
-  "13": ["Pack Sooky's lunch 🍱 · 7 AM", "Work meeting · 11 AM", "Pick up Sookyung · 3 PM"],
-  "14": ["Montessori drop-off · 8 AM", "Check school announcements 📋", "Grocery run · 5 PM"],
-  "15": ["Montessori drop-off · 8 AM", "Submit work files · 4 PM", "Storytime with Sookyung 📚 · 8 PM"],
-  "16": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Dinner with Channie · 6 PM"],
-  "17": ["Groceries 🛒 · 11 AM", "Laundry", "Bake cookies with Sookyung 🍪 · 3 PM"],
-  "18": ["Slow Sunday ☀️", "Visit the park with Sookyung · 4 PM", "Prepare Monday lunchbox · 7 PM"],
-  "19": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
-  "20": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy school supplies ✏️ · 5 PM"],
-  "21": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Call Mom · 8 PM"],
-  "22": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Fold laundry · 8 PM"],
-  "23": ["Montessori drop-off · 8 AM", "Work check-in · 11 AM", "Family movie night 🍿 · 7 PM"],
-  "24": ["Breakfast with Sookyung 🍓 · 9 AM", "Playground with Sookyung 🛝 · 3 PM", "Pick up groceries · 5 PM"],
-  "25": ["Sunday cleaning · 10 AM", "Apartment maintenance fee due", "Prep Sooky's uniforms · 6 PM"],
-  "26": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
-  "27": ["Pack lunchbox 🍱 · 7 AM", "Work meeting · 10 AM", "Read with Sookyung · 8 PM"],
-  "28": ["Montessori drop-off · 8 AM", "Buy Halloween treats 🎃 · 5 PM", "Check school bag · 8 PM"],
-  "29": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Prepare Sooky's costume 🎃 · 7 PM"],
-  "30": ["Halloween activity at Montessori 🎃 · 9 AM", "Pick up Sookyung · 3 PM", "Sort Halloween photos 📸 · 8 PM"],
-  "31": ["Halloween 🎃", "Costume photos with Sookyung 📸 · 11 AM", "Halloween movie night 🍿 · 7 PM"]
+  "1": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "2": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "3": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "4": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "5": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "6": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Check on Sooky’s cough · 7 AM"],
+  "7": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "8": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "9": ["Little Steps drop-off · 7:40 AM", "Family Reading Morning · Little Steps · 9:15 AM", "Office meeting · 11 AM", "Sooky pickup · 12 PM"],
+  "10": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "11": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "12": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Review reconciliation comments · 10 AM"],
+  "13": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "14": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "15": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "16": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Follow up on valuation support · 2 PM"],
+  "17": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "18": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "19": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM"],
+  "20": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "21": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Check school parent portal · 7 PM"],
+  "22": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "23": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Confirm next week’s pickup arrangements · 6 PM"],
+  "24": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "25": ["Apartment maintenance fee due", "Prep Sooky’s uniforms · 6 PM"],
+  "26": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Portfolio valuation review · 10 AM"],
+  "27": ["Little Steps drop-off · 7:40 AM", "Urgent investment reporting meeting · 10 AM", "Request Sooky’s aftercare · Until 4 PM", "Pick up Sooky · 4 PM", "Return Teacher Jongin’s USB · Tomorrow"],
+  "28": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM", "Return USB to Teacher Jongin · Drop-off"],
+  "29": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM"],
+  "30": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "October month-end NAV reconciliation · 2 PM"],
+  "31": ["Halloween", "Costume photos with Sooky · 11 AM", "Movie night · 7 PM"],
 };
 
 /* ===== NOVEMBER 2026 ===== */
 const novemberEvents = {
-  "1": ["All Saints' Day 🕯️", "Family time", "Prepare school things · 7 PM"],
-  "2": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Pick up Sookyung · 3 PM"],
-  "3": ["Pack Sooky's lunch 🍱 · 7 AM", "Work meeting · 11 AM", "Groceries · 5 PM"],
-  "4": ["Montessori drop-off · 8 AM", "Submit work report · 3 PM", "Storytime 📚 · 8 PM"],
-  "5": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check school announcements"],
-  "6": ["Montessori drop-off · 8 AM", "Weekly work review · 11 AM", "Family pizza night 🍕 · 7 PM"],
-  "7": ["Breakfast with Sookyung 🥞 · 9 AM", "Visit the playground 🛝 · 3 PM"],
-  "8": ["Laundry and cleaning 🧺", "Bake with Sookyung 🍪 · 3 PM", "Prep Monday lunchbox"],
-  "9": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
-  "10": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy milk and fruit 🍓 · 5 PM"],
-  "11": ["Montessori drop-off · 8 AM", "Check Sooky's reading folder 📚", "Call Mom · 8 PM"],
-  "12": ["Montessori drop-off · 8 AM", "Work deadline · 4 PM", "Bedtime stories · 8 PM"],
-  "13": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Dinner with Channie · 6 PM"],
-  "14": ["Grocery shopping 🛒 · 10 AM", "Arts and crafts with Sookyung 🎨 · 2 PM"],
-  "15": ["Slow Sunday ☀️", "Movie afternoon with Sookyung 🍿 · 3 PM", "Prepare uniforms"],
-  "16": ["Montessori drop-off · 8 AM", "Work meeting · 11 AM", "Pick up Sookyung · 3 PM"],
-  "17": ["Montessori drop-off · 8 AM", "Submit work files · 2 PM", "Laundry · 7 PM"],
-  "18": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check school notices 📋"],
-  "19": ["Montessori drop-off · 8 AM", "Work check-in · 10 AM", "Cook Sooky's favorite dinner 🍝 · 6 PM"],
-  "20": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Family game night 🎲 · 7 PM"],
-  "21": ["Library trip with Sookyung 📚 · 11 AM", "Grocery run · 4 PM"],
-  "22": ["Clean apartment · 10 AM", "Make cookies with Sookyung 🍪 · 3 PM"],
-  "23": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
-  "24": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy school supplies ✏️ · 5 PM"],
-  "25": ["Montessori drop-off · 8 AM", "Apartment maintenance fee due", "Call Mom · 8 PM"],
-  "26": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Read with Sookyung 📖 · 8 PM"],
-  "27": ["🎂 CHANYEOL'S BIRTHDAY 🦒🎉", "Send birthday wishes · 9 AM", "Birthday dinner with Chanyeol · 7 PM"],
-  "28": ["Weekend groceries 🛒 · 10 AM", "Park with Sookyung 🛝 · 3 PM"],
-  "29": ["Laundry 🧺", "Prepare December calendar · 4 PM", "Family movie night 🍿 · 7 PM"],
-  "30": ["Montessori drop-off · 8 AM", "Work month-end review · 2 PM", "Check December school schedule 📋"]
+  "1": ["All Saints’ Day", "Family visit"],
+  "2": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "All Souls’ Day · Check school holiday schedule"],
+  "3": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "4": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "5": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "6": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Review October valuation adjustments · 11 AM"],
+  "7": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "8": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "9": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "10": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "11": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "12": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "13": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Investment accounting team check-in · 11 AM"],
+  "14": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "15": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "16": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "17": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM"],
+  "18": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "19": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "20": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Review outstanding portfolio breaks · 2 PM"],
+  "21": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "22": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "23": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "24": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "25": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Apartment maintenance fee due"],
+  "26": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "27": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Chanyeol’s birthday", "Birthday dinner with Chan · 7 PM"],
+  "28": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "29": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "30": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "November month-end close · 2 PM"],
 };
 
 /* ===== DECEMBER 2026 ===== */
 const decemberEvents = {
-  "1": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Start Christmas gift list 🎁"],
-  "2": ["Montessori drop-off · 8 AM", "Work meeting · 11 AM", "Christmas craft with Sookyung 🎄 · 7 PM"],
-  "3": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy wrapping paper 🎁 · 5 PM"],
-  "4": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Family movie night 🍿 · 7 PM"],
-  "5": ["Christmas shopping 🎁 · 11 AM", "Hot chocolate with Sookyung ☕ · 4 PM"],
-  "6": ["Decorate Christmas tree with Sookyung 🎄 · 10 AM", "Bake cookies 🍪 · 3 PM"],
-  "7": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
-  "8": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check Montessori holiday notices 📋"],
-  "9": ["Montessori drop-off · 8 AM", "Submit work report · 2 PM", "Call Mom · 8 PM"],
-  "10": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Prepare Sooky's holiday outfit 🎀"],
-  "11": ["Montessori drop-off · 8 AM", "Work check-in · 11 AM", "Christmas movie night 🎄 · 7 PM"],
-  "12": ["Buy gifts for family 🎁 · 11 AM", "Wrap presents while Sookyung naps"],
-  "13": ["Laundry and cleaning 🧺", "Gingerbread decorating with Sookyung 🍪 · 3 PM"],
-  "14": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Review holiday school schedule"],
-  "15": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Pick up Sookyung · 3 PM"],
-  "16": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Prepare holiday cards 💌 · 7 PM"],
-  "17": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check gifts for Sooky's classmates 🎁"],
-  "18": ["Montessori holiday celebration 🎄 · 10 AM", "Take photos of Sookyung 📸", "Dinner at home · 6 PM"],
-  "19": ["Christmas shopping with Sookyung 🎄 · 11 AM", "Hot chocolate break ☕ · 3 PM"],
-  "20": ["Rest day", "Wrap presents 🎁", "Christmas movies with Sookyung 🍿"],
-  "21": ["Work year-end check-in · 10 AM", "Grocery shopping · 5 PM", "Read Christmas stories 📖 · 8 PM"],
-  "22": ["Finish work tasks · 11 AM", "Buy ingredients for Christmas dinner 🛒"],
-  "23": ["Clean apartment · 10 AM", "Prepare Christmas dessert 🍰 · 3 PM", "Call family · 8 PM"],
-  "24": ["Christmas Eve 🎄", "Bake with Sookyung 🍪 · 2 PM", "Christmas Eve dinner · 7 PM"],
-  "25": ["Merry Christmas! 🎄", "Open presents with Sookyung 🎁 · 8 AM", "Christmas lunch with family · 12 PM", "Christmas movie night 🍿 · 7 PM"],
-  "26": ["Rest day", "Organize Sooky's new toys 🧸", "Walk at the park · 4 PM"],
-  "27": ["Breakfast with Sookyung 🥞 · 9 AM", "Visit Channie · 3 PM"],
-  "28": ["Work year-end paperwork · 11 AM", "Grocery shopping · 5 PM"],
-  "29": ["Sort family photos 📸 · 11 AM", "Cook dinner with Sookyung 🍳 · 6 PM"],
-  "30": ["Prepare New Year's groceries 🛒", "Clean apartment · 3 PM", "Call Mom · 8 PM"],
-  "31": ["New Year's Eve 🎆", "Family dinner · 7 PM", "Watch countdown with Sookyung ✨"]
+  "1": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "2": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "3": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "4": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Review year-end valuation support · 11 AM"],
+  "5": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "6": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "7": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "8": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "9": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "10": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM"],
+  "11": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Follow up on audit evidence requests · 11 AM"],
+  "12": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "13": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "14": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "15": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "16": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "17": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "18": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Check Little Steps holiday celebration schedule"],
+  "19": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "20": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "21": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Check school parent portal · 7 PM", "Year-end portfolio reconciliation · 10 AM"],
+  "22": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Submit outstanding valuation support · 2 PM"],
+  "23": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "24": ["Christmas Eve", "Prepare family dinner · 5 PM"],
+  "25": ["Christmas Day", "Christmas lunch with family · 12 PM"],
+  "26": ["Rest day with Sooky", "Organize new toys · 3 PM"],
+  "27": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "28": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM", "Year-end accounting follow-ups · 11 AM"],
+  "29": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "30": ["New Year groceries · 10 AM", "Prepare family dinner menu · 6 PM"],
+  "31": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "New Year’s Eve", "Family dinner · 7 PM"],
 };
 
 /* ===== JANUARY 2027 ===== */
 const januaryEvents = {
-  "1": ["Happy New Year! 🎆", "New Year's breakfast with Sookyung 🥞 · 9 AM", "Call family"],
-  "2": ["Rest day", "Playground with Sookyung 🛝 · 3 PM"],
-  "3": ["Organize school supplies ✏️ · 11 AM", "Prepare Sooky's uniforms · 6 PM"],
-  "4": ["Check Montessori reopening schedule 📋", "Work · 9 AM", "Buy lunchbox snacks 🍓 · 5 PM"],
-  "5": ["Work meeting · 10 AM", "Prepare school bag 🎒 · 7 PM"],
-  "6": ["Work · 9 AM", "Grocery shopping 🛒 · 5 PM", "Storytime 📚 · 8 PM"],
-  "7": ["Check Montessori school notices", "Work deadline · 2 PM", "Call Mom · 8 PM"],
-  "8": ["Work · 9 AM", "Family pizza night 🍕 · 7 PM"],
-  "9": ["Library visit with Sookyung 📚 · 11 AM", "Bake cookies 🍪 · 3 PM"],
-  "10": ["Laundry and cleaning 🧺", "Prepare weekly lunchboxes 🍱"],
-  "11": ["Work meeting · 10 AM", "Buy groceries · 5 PM", "Prepare birthday dinner ingredients 🎂"],
-  "12": ["🎂 MY BIRTHDAY 🎉", "Birthday breakfast with Sookyung 🍓 · 8 AM", "Birthday dinner with family · 7 PM", "Take birthday photos 📸"],
-  "13": ["Work · 9 AM", "Pick up Sookyung · 3 PM", "Organize birthday photos 📸"],
-  "14": ["Work meeting · 11 AM", "Grocery run · 5 PM", "Bedtime stories 📖 · 8 PM"],
-  "15": ["Work deadline · 2 PM", "Dinner with Channie · 7 PM"],
-  "16": ["Breakfast with Sookyung 🥞 · 9 AM", "Park visit 🛝 · 3 PM"],
-  "17": ["Rest day", "Movie afternoon with Sookyung 🍿 · 3 PM", "Prepare uniforms"],
-  "18": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Pick up Sookyung · 3 PM"],
-  "19": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Check reading folder 📚"],
-  "20": ["Montessori drop-off · 8 AM", "Work deadline · 3 PM", "Buy fruit and milk 🥛 · 5 PM"],
-  "21": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Call Mom · 8 PM"],
-  "22": ["Montessori drop-off · 8 AM", "Weekly work review · 11 AM", "Family game night 🎲 · 7 PM"],
-  "23": ["Groceries 🛒 · 10 AM", "Arts and crafts with Sookyung 🎨 · 2 PM"],
-  "24": ["Laundry 🧺", "Cook Sooky's favorite pasta 🍝 · 6 PM"],
-  "25": ["Montessori drop-off · 8 AM", "Apartment maintenance fee due", "Pick up Sookyung · 3 PM"],
-  "26": ["Montessori drop-off · 8 AM", "Work meeting · 10 AM", "Read with Sookyung 📖 · 8 PM"],
-  "27": ["Montessori drop-off · 8 AM", "Work · 9 AM", "Buy school supplies ✏️ · 5 PM"],
-  "28": ["Montessori drop-off · 8 AM", "Work deadline · 2 PM", "Family dinner · 6 PM"],
-  "29": ["Montessori drop-off · 8 AM", "Month-end work review · 11 AM", "Movie night 🍿 · 7 PM"],
-  "30": ["Breakfast with Sookyung 🥞 · 9 AM", "Playground 🛝 · 3 PM"],
-  "31": ["Rest day", "Prepare February calendar 📅 · 4 PM", "Pack Monday lunchbox 🍱 · 7 PM"]
+  "1": ["New Year’s Day", "Breakfast with Sooky · 9 AM"],
+  "2": ["Rest day", "Park with Sooky · 3 PM"],
+  "3": ["Prepare school supplies and uniforms · 5 PM"],
+  "4": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Confirm Little Steps class resumption"],
+  "5": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "6": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "7": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "8": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "9": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "10": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "11": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "12": ["My birthday", "Birthday breakfast with Sooky · 8 AM", "Dinner with family · 7 PM"],
+  "13": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM"],
+  "14": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "15": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Review January portfolio positions · 2 PM"],
+  "16": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "17": ["Laundry and clean apartment · 10 AM", "Meal prep and school uniforms · 5 PM"],
+  "18": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "19": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM"],
+  "20": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM"],
+  "21": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM", "Check school parent portal · 7 PM"],
+  "22": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM"],
+  "23": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+  "24": ["Library or park with Sooky · 2 PM", "Laundry and clean apartment · 10 AM"],
+  "25": ["Little Steps drop-off · 7:40 AM", "Follow up on custodian statements · 11 AM", "Sooky pickup · 12 PM", "Apartment maintenance fee due"],
+  "26": ["Little Steps drop-off · 7:40 AM", "Review NAV exceptions · 10 AM", "Sooky pickup · 12 PM"],
+  "27": ["Little Steps drop-off · 7:40 AM", "Portfolio reporting check-in · 11 AM", "Sooky pickup · 12 PM", "Read with Sooky · 8 PM"],
+  "28": ["Little Steps drop-off · 7:40 AM", "Review portfolio valuation support · 10 AM", "Sooky pickup · 12 PM", "Check school parent portal · 7 PM"],
+  "29": ["Little Steps drop-off · 7:40 AM", "Investment reconciliation review · 10 AM", "Sooky pickup · 12 PM", "January month-end valuation review · 11 AM"],
+  "30": ["Meal prep and school uniforms · 5 PM", "Groceries and household errands · 10 AM"],
+  "31": ["Groceries and household errands · 10 AM", "Library or park with Sooky · 2 PM"],
+};
+
+/* Adds Mommy Do’s birthday once its actual date is provided. */
+if (MOMMY_DO_BIRTHDAY) {
+  const birthday = new Date(`${MOMMY_DO_BIRTHDAY}T12:00:00`);
+  const calendarByMonth = { 10: events, 11: novemberEvents, 12: decemberEvents, 1: januaryEvents };
+  const target = calendarByMonth[birthday.getMonth() + 1];
+  if (target && [2026, 2027].includes(birthday.getFullYear())) {
+    const day = String(birthday.getDate());
+    target[day] = [...(target[day] || []), "Mommy Do’s birthday", "Call or visit Mom · 6 PM"];
+  }
 };
 
 
@@ -2504,46 +2520,64 @@ const searches = [
   "how to delete individual searches on safari iphone"
 ];
 const emails = [
-  ["Little Steps Montessori School", "October Parent Bulletin 🎒", "Good morning, parents! Please check the updated October classroom activities, school reminders, and materials to bring this week.", "오늘"],
-  ["Shopee", "Your parcel is out for delivery! 📦", "Your order containing Sookyung's watercolor paints and animal stickers is out for delivery today. Please keep your phone available.", "오늘"],
-  ["Work - Project Team", "Re: Friday Deliverables", "Hi Kyungsoo, thanks for sending the revisions. Please review the remaining comments before our Friday check-in.", "어제"],
-  ["Little Steps Montessori School", "Reminder: Bring an Extra Set of Clothes", "Dear parents, please make sure your child has a labeled spare shirt, pants, and socks in their school bag.", "어제"],
-  ["Lazada", "Order Confirmed: Lunch Box & Water Bottle", "Thanks for shopping with Lazada! Your order for a leakproof lunch box and insulated water bottle has been placed successfully.", "10/22"],
-  ["Shopee", "Delivered: Children's Storybooks 📚", "Your package was delivered successfully. We hope Sookyung enjoys her new bedtime stories!", "10/21"],
-  ["Little Steps Montessori School", "Parent-Teacher Conference Sign-Up", "Conference slots are now open. Please select your preferred time to discuss your child's progress and classroom experience.", "10/20"],
-  ["Chanyeol", "Re: Saturday", "Soo, okay lang s'akin. Send mo na lang kung anong oras mo siya ihahatid. May snacks naman dito haha.", "10/19"],
-  ["Shopee", "Flash Sale: Kids' Art Supplies 🎨", "Your saved art kits, washable markers, and coloring books are included in today's deals.", "10/18"],
-  ["Lazada", "Your Order Has Shipped 🚚", "Your order for a children's raincoat and foldable umbrella is on the way. Track the delivery in your Lazada account.", "10/17"],
-  ["Little Steps Montessori School", "Show & Tell - My Favorite Thing", "Next week's Show & Tell theme is My Favorite Thing. Children may bring one small, safe item from home.", "10/16"],
-  ["Work - HR", "October Payslip Available", "Your electronic payslip is now available through the employee portal.", "10/15"],
-  ["Shopee", "Payment Successful", "Your payment for the star-shaped sandwich cutters and silicone food containers has been confirmed.", "10/14"],
-  ["Apple", "Your iCloud Storage Is Almost Full", "Your iCloud storage is running low. Manage photos and backups to keep your devices syncing.", "10/13"],
-  ["Little Steps Montessori School", "Autumn Nature Walk - Parent Notice 🍂", "Our class will have a supervised nature walk. Please send comfortable shoes, a hat, and a labeled water bottle.", "10/12"],
-  ["Lazada", "Your Package Has Been Delivered", "Your order for a bedside night-light and children's bedding set has been delivered.", "10/11"],
-  ["Seoul Children's Clinic", "Appointment Reminder - Sookyung", "This is a reminder of Sookyung's upcoming routine pediatric appointment. Please bring any relevant records.", "10/10"],
-  ["Shopee", "Order Confirmed: Hair Clips & Socks 🎀", "Your order is being prepared. Items include colorful hair clips, patterned socks, and a small accessory organizer.", "10/09"],
-  ["Little Steps Montessori School", "October Tuition Payment Receipt", "Thank you. Your tuition payment for October has been recorded. Keep this receipt for your reference.", "10/08"],
-  ["Lazada", "Rate Your Recent Purchase ⭐", "How was your experience with the children's bookshelf and storage baskets? Leave a review to help other shoppers.", "10/07"],
-  ["Building Management", "October Maintenance Fee Notice", "Dear resident, your monthly building maintenance statement is available. Please review the payment due date.", "10/06"],
-  ["Little Steps Montessori School", "Classroom Snack Guidelines", "Please avoid nuts and strongly scented foods. Pack easy-to-open containers and label all lunch items.", "10/05"],
-  ["Shopee", "Your Return/Refund Has Been Approved", "Your refund request for the incorrect-size children's shoes has been approved. The amount will be returned to your original payment method.", "10/04"],
-  ["Work - Project Team", "Monday Meeting Notes", "Hi everyone, attached are the action items and updated deadlines from today's team meeting.", "10/02"],
-  ["Little Steps Montessori School", "Welcome to October! 🌼", "This month we'll explore practical life skills, colors, nature, and collaborative play. Thank you for supporting learning at home.", "10/01"],
-  ["Shopee", "Delivered: Dinosaur Pajamas 🦕", "Your order was delivered. Thank you for shopping with Shopee!", "09/29"],
-  ["Lazada", "Order Confirmed: Kitchen Storage Containers", "Your order has been confirmed. We'll notify you when the seller ships your items.", "09/27"],
-  ["Little Steps Montessori School", "September Learning Highlights", "Please find the September classroom newsletter, including activities in sensorial learning, language, and practical life.", "09/25"],
-  ["Seoul Children's Clinic", "Routine Checkup Summary", "A summary of Sookyung's recent visit is available in the patient portal.", "09/23"],
-  ["Shopee", "Your Cart Is Waiting 🛒", "The children's craft paper, stickers, and mini storage drawers you saved are still in your cart.", "09/21"],
-  ["Lazada", "Your Order Has Been Delivered", "Your household cleaning supplies and laundry essentials were delivered successfully.", "09/18"],
-  ["Little Steps Montessori School", "Emergency Contact Information Review", "Please review and update your child's authorized pickup contacts and emergency information if needed.", "09/15"],
-  ["Apple", "Your Receipt From Apple", "Thank you for your purchase. Your receipt is available for your records.", "09/12"],
-  ["Shopee", "Order Confirmed: Birthday Party Decorations 🎈", "Your order for pastel balloons, paper plates, and a birthday banner has been placed successfully.", "09/08"],
-  ["Spotify", "Your August Listening Summary", "Your monthly listening highlights are ready. See which songs you've played the most.", "09/05"],
-  ["Little Steps Montessori School", "School Year Welcome Packet", "Welcome, families! Please review the school calendar, daily routine, classroom expectations, and supply checklist.", "08/28"],
+  ["Little Steps Kindergarten", "November Classroom Calendar and Reminders", "Dear parents, please review the November activities for Kinder Sunflowers, including classroom materials, important dates, and upcoming school events.", "Today"],
+  ["Shopee", "Your parcel is out for delivery", "Your order containing Sookyung's watercolor paints, penguin stickers, and washable markers is out for delivery today. Please keep your phone available.", "Today"],
+  ["Grindr", "Welcome to Grindr - Your Account Is Ready", "Hey Kyungsoo! Welcome to Grindr. Your account has been successfully created. Complete your profile, explore nearby profiles, and start connecting whenever you're ready.", "10/28"],
+  ["Grindr", "Verify Your Email Address", "Hi Kyungsoo, thanks for signing up for Grindr. Please verify your email address to finish setting up your account.", "10/28"],
+  ["Investment Accounting Team", "Re: October Month-End Valuation Review", "Hi Kyungsoo, please review the outstanding portfolio valuation comments and supporting schedules before tomorrow's review meeting.", "어제"],
+  ["Little Steps Kindergarten", "Aftercare Attendance Confirmation - October 27", "Dear Mr. Do, Sookyung's aftercare attendance on October 27 has been recorded. Thank you for coordinating her pickup with our staff.", "어제"],
+  ["Shopee", "Delivered: Children's Art Supplies", "Your order for colored paper, glue sticks, and animal stickers has been delivered successfully.", "10/27"],
+  ["Investment Accounting Team", "Urgent: Reconciliation Comments", "Hi Kyungsoo, please address the remaining cash reconciliation breaks and update the supporting documentation before the reporting deadline.", "10/27"],
+  ["Little Steps Kindergarten", "Aftercare Booking Confirmed - Sookyung Do", "Dear Mr. Do, your aftercare request for October 27 has been approved. Sookyung will remain under staff supervision until her authorized pickup.", "10/27"],
+  ["Converge ICT", "October Billing Statement Available", "Your monthly internet billing statement is ready. Please settle the amount due on or before the indicated payment date.", "10/26"],
+  ["Meralco", "Your October Electric Bill", "Your October electricity bill is now available. View your statement and payment options through your Meralco Online account.", "10/26"],
+  ["Investment Accounting Team", "October Portfolio Valuation - Outstanding Items", "Hi Kyungsoo, please review the outstanding pricing exceptions and confirm the valuation adjustments requiring supporting evidence.", "10/26"],
+  ["Building Administration", "Scheduled Water Interruption", "Dear residents, please be advised of a scheduled water supply interruption for maintenance. We recommend storing sufficient water beforehand.", "10/25"],
+  ["Lazada", "Order Confirmed: Lunch Box and Water Bottle", "Your order for a leakproof lunch box and insulated water bottle has been placed successfully.", "10/22"],
+  ["Shopee", "Delivered: Children's Storybooks", "Your package has been delivered. Thank you for shopping with Shopee!", "10/21"],
+  ["Little Steps Kindergarten", "Parent-Teacher Conference Registration", "Dear parents, conference registration is now open. Please select an available schedule to discuss your child's classroom progress and development.", "10/20"],
+  ["Chanyeol", "Re: Saturday", "Soo, okay lang sa akin. Send mo na lang kung anong oras mo ihahatid si Sooky. May snacks naman dito haha.", "10/19"],
+  ["Shopee", "Flash Sale: Kids' Art Supplies", "Your saved washable markers, coloring books, and craft kits are included in today's promotions.", "10/18"],
+  ["Lazada", "Your Order Has Shipped", "Your order for a children's raincoat and foldable umbrella is on its way. Track your delivery in the Lazada app.", "10/17"],
+  ["Little Steps Kindergarten", "Kinder Sunflowers - Show and Tell Reminder", "Next week's Show and Tell theme is My Favorite Thing. Children may bring one small, safe item from home.", "10/16"],
+  ["Human Resources", "October Payslip Available", "Hi Kyungsoo, your October electronic payslip is now available through the employee self-service portal.", "10/15"],
+  ["Investment Accounting Team", "Portfolio Reconciliation - Supporting Documents", "Hi Kyungsoo, kindly upload the updated reconciliation schedules and investigate the remaining unmatched transactions.", "10/15"],
+  ["Shopee", "Payment Successful", "Your payment for star-shaped sandwich cutters and silicone food containers has been confirmed.", "10/14"],
+  ["Apple", "Your iCloud Storage Is Almost Full", "Your iCloud storage is running low. Review your photos, device backups, and storage settings to avoid interruptions.", "10/13"],
+  ["Little Steps Kindergarten", "Kinder Sunflowers - Classroom Activity Reminder", "Dear parents, please send your child's labeled water bottle and an extra set of clothes for this week's classroom activities.", "10/12"],
+  ["Lazada", "Your Package Has Been Delivered", "Your order for a bedside night-light and children's bedding set has been delivered successfully.", "10/11"],
+  ["Dr. Lee's Clinic", "Appointment Reminder - Sookyung Do", "Good day, Mr. Do. This is a reminder regarding Sookyung's upcoming routine pediatric appointment. Please bring her health records if available.", "10/10"],
+  ["Little Steps Kindergarten", "Thank You for Joining Family Reading Morning", "Dear Mr. Do, thank you for participating in today's Family Reading Morning. Sookyung and her classmates enjoyed your storytelling session.", "10/09"],
+  ["Shopee", "Order Confirmed: Hair Clips and Socks", "Your order containing colorful hair clips, patterned socks, and a small accessory organizer is being prepared for shipment.", "10/09"],
+  ["Little Steps Kindergarten - Accounting Office", "October Tuition Payment Receipt", "Dear Mr. Do, your October tuition payment for Sookyung Do has been successfully recorded. Please retain this receipt for your reference.", "10/08"],
+  ["Investment Accounting Team", "Weekly Portfolio Reporting Checklist", "Hi team, please ensure all assigned portfolio reconciliations, NAV support files, and valuation review comments are updated before Friday.", "10/08"],
+  ["Lazada", "Rate Your Recent Purchase", "How was your experience with the children's bookshelf and storage baskets? Leave a review to help other shoppers.", "10/07"],
+  ["Building Administration", "October Association Dues Statement", "Dear resident, your October condominium association dues statement is available. Please review the payment deadline and billing details.", "10/06"],
+  ["Little Steps Kindergarten", "Kinder Sunflowers - Classroom Snack Guidelines", "Dear parents, please avoid nuts and strongly scented foods. Pack easy-to-open containers and label your child's belongings.", "10/05"],
+  ["Shopee", "Your Return and Refund Has Been Approved", "Your refund request for the incorrect-size children's shoes has been approved. The amount will be returned to your original payment method.", "10/04"],
+  ["Investment Accounting Team", "October Reporting Cycle - Action Items", "Hi Kyungsoo, attached are the updated action items for the October reporting cycle, including portfolio reconciliations and valuation deadlines.", "10/02"],
+  ["Little Steps Kindergarten", "Welcome to October, Kinder Sunflowers!", "Dear parents, October activities will focus on shapes, storytelling, creative expression, and collaborative play. Please review the classroom calendar.", "10/01"],
+  ["Shopee", "Delivered: Dinosaur Pajamas", "Your order for children's dinosaur pajamas has been delivered successfully. Thank you for shopping with Shopee!", "09/29"],
+  ["Lazada", "Order Confirmed: Kitchen Storage Containers", "Your order for kitchen storage containers has been confirmed. We will notify you when the seller ships your items.", "09/27"],
+  ["Little Steps Kindergarten", "September Learning Highlights - Kinder Sunflowers", "Dear parents, please find our September classroom newsletter featuring early literacy, creative activities, classroom routines, and social development.", "09/25"],
+  ["Dr. Lee's Clinic", "Routine Checkup Summary - Sookyung Do", "Good day, Mr. Do. A summary of Sookyung's recent pediatric consultation is available through the patient portal.", "09/23"],
+  ["Shopee", "Your Cart Is Waiting", "The children's craft paper, stickers, and mini storage drawers you saved are still waiting in your cart.", "09/21"],
+  ["BPI", "Credit Card Statement Available", "Your latest BPI credit card statement is now available. Please review your transactions and payment due date.", "09/20"],
+  ["Lazada", "Your Order Has Been Delivered", "Your household cleaning supplies and laundry essentials have been delivered successfully.", "09/18"],
+  ["Little Steps Kindergarten", "Emergency Contact and Authorized Pickup Review", "Dear Mr. Do, please verify Sookyung's emergency contact details and authorized pickup persons. Notify the school office of any changes.", "09/15"],
+  ["Investment Accounting Team", "September Portfolio Valuation Review", "Hi Kyungsoo, please confirm the remaining valuation adjustments and provide the supporting documentation for the assigned investment portfolios.", "09/14"],
+  ["Apple", "Your Receipt From Apple", "Thank you for your purchase. Your Apple receipt is available for your records.", "09/12"],
+  ["Little Steps Kindergarten", "Parent Orientation - Kinder Sunflowers", "Dear parents, this is a reminder of our September 11 parent orientation. Teacher Kim Jongin and Teacher Mina will discuss classroom routines and expectations.", "09/10"],
+  ["Shopee", "Order Confirmed: Party Decorations", "Your order for pastel balloons, paper plates, and a birthday banner has been placed successfully.", "09/08"],
+  ["Little Steps Kindergarten", "Welcome to Kinder Sunflowers, Sookyung!", "Dear Mr. Do, welcome to Little Steps Kindergarten! Sookyung is officially enrolled in Kinder Sunflowers under Teacher Kim Jongin. We look forward to seeing her on September 7.", "09/06"],
+  ["Spotify", "Your August Listening Summary", "Your monthly listening highlights are ready. Discover your most-played songs and favorite artists.", "09/05"],
+  ["Little Steps Kindergarten", "School Year Welcome Packet", "Welcome, families! Please review the school calendar, classroom expectations, daily schedule, authorized pickup procedures, and supply checklist.", "08/28"],
   ["Lazada", "Payment Confirmation", "Your payment for a compact vacuum cleaner has been processed successfully.", "08/20"],
-  ["Apple", "Your iCloud+ Subscription", "Your iCloud+ subscription has renewed successfully. Thank you for using iCloud.", "08/12"]
+  ["Apple", "Your iCloud+ Subscription", "Your iCloud+ subscription has renewed successfully. Thank you for using iCloud.", "08/12"],
+  ["BPI", "Funds Transfer Confirmation", "Your recent funds transfer was processed successfully. You may view the transaction details in your BPI online banking account.", "08/05"]
 ];
 const calls = [
+  ["Teacher Jongin", "오늘 22:12", "부재중"],
   ["Mom", "오늘 08:12", "수신"],
   ["Little Steps Montessori", "어제 16:38", "수신"],
   ["Channie", "어제 15:06", "발신"],
@@ -3836,7 +3870,7 @@ const STORY_SP_THREADS = [
     role: 'Kinder Sunflowers · Class Teacher',
     initials: 'KJ',
     messages: [
-      // TUESDAY, SEPTEMBER 8 — Sooky's adjustment
+      // TUESDAY, SEPTEMBER 8 - Sooky's adjustment
       {
         from: 'them',
         text: 'Good afternoon po, Mr. Do! Teacher Jongin here. Just wanted to let you know that Sookyung did really well today. She was a little quiet during our morning activity, pero she joined the other kids during free play. 😊',
@@ -3858,7 +3892,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 8 · 1:35 PM'
       },
 
-      // WEDNESDAY, SEPTEMBER 9 — Family photograph
+      // WEDNESDAY, SEPTEMBER 9 - Family photograph
       {
         from: 'me',
         text: 'Good evening, Teacher. Just confirming, is there a preferred size for the family photograph?',
@@ -3880,7 +3914,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 9 · 7:51 PM'
       },
 
-      // MONDAY, SEPTEMBER 14 — Sandwich permission
+      // MONDAY, SEPTEMBER 14 - Sandwich permission
       {
         from: 'me',
         text: 'Good morning, Teacher Jongin. Sooky prepared a sandwich for you and was hoping to give it to you today. I just wanted to ask if the school allows teachers to accept homemade food from students. Thank you.',
@@ -3902,7 +3936,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 14 · 8:12 AM'
       },
 
-      // WEDNESDAY, SEPTEMBER 16 — Sooky's progress
+      // WEDNESDAY, SEPTEMBER 16 - Sooky's progress
       {
         from: 'them',
         text: 'Good morning, Mr. Do! Just wanted to let you know that Sooky has been settling in really well. She’s been participating more during circle time and even volunteered to answer a question yesterday. 😊\n\nAlso, thank you again for Monday’s sandwich. It was really good! Please tell Sooky I appreciated her little note.',
@@ -3924,7 +3958,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 16 · 8:27 AM'
       },
 
-      // THURSDAY, SEPTEMBER 17 — Crayon distribution
+      // THURSDAY, SEPTEMBER 17 - Crayon distribution
       {
         from: 'them',
         text: 'Hi, Mr. Do! Just a quick update. Sookyung volunteered to help distribute crayons today. She was very serious about making sure everyone got the same number. 😅',
@@ -3961,7 +3995,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 17 · 1:17 PM'
       },
 
-      // WEDNESDAY, SEPTEMBER 23 — Forgotten water bottle
+      // WEDNESDAY, SEPTEMBER 23 - Forgotten water bottle
       {
         from: 'me',
         text: 'Good morning, Teacher. Sooky left her pink water bottle at home. Would it be alright if my mother drops it off at the office?',
@@ -3988,7 +4022,7 @@ const STORY_SP_THREADS = [
         time: 'Sep 23 · 8:16 AM'
       },
 
-      // TUESDAY, OCTOBER 6 — Health update
+      // TUESDAY, OCTOBER 6 - Health update
       {
         from: 'them',
         text: 'Good afternoon, Mr. Do! Just wanted to ask if Sookyung is feeling better? She mentioned having a little cough yesterday.',
@@ -4015,7 +4049,7 @@ const STORY_SP_THREADS = [
         time: 'Oct 6 · 2:36 PM'
       },
 
-      // FRIDAY, OCTOBER 9 — Family Reading Morning
+      // FRIDAY, OCTOBER 9 - Family Reading Morning
       {
         from: 'them',
         text: 'Mr. Do, thank you again for reading to the class this morning! The kids really enjoyed it.',
@@ -4057,7 +4091,7 @@ const STORY_SP_THREADS = [
         time: 'Oct 9 · 1:57 PM'
       },
 
-      // TUESDAY, OCTOBER 27 — Aftercare arrangement
+      // TUESDAY, OCTOBER 27 - Aftercare arrangement
       {
         from: 'me',
         text: 'Good morning, Teacher. Just wanted to confirm that Sooky’s aftercare arrangement for today has been approved by the office.',
@@ -4586,7 +4620,7 @@ Jongin: Teacher Mina and I will be working closely with your children throughout
 
 Teacher Mina: Good morning po! We're very happy to meet everyone.
 
-Jongin: We know starting kindergarten is a big adjustment—not just for the kids, but for parents as well.
+Jongin: We know starting kindergarten is a big adjustment-not just for the kids, but for parents as well.
 
 Jongin: Some of you probably had a very emotional first morning.
 
@@ -5173,7 +5207,7 @@ Jongin: Didn't expect to see you here.
 
 Kyungsoo: Likewise.
 
-Sehun: Jongin, ito ba yung—
+Sehun: Jongin, ito ba yung-
 
 Jongin: Sehun.
 
@@ -5466,7 +5500,7 @@ Now, I need everyone to help me with something.
 
 Children: WHAT?
 
-Kyungsoo: When I ask you to make a sound, you have to make it as loudly—or as quietly—as I tell you.
+Kyungsoo: When I ask you to make a sound, you have to make it as loudly-or as quietly-as I tell you.
 
 Jongin: Can we do that, Sunflowers?
 
@@ -5779,7 +5813,7 @@ Kyungsoo: Sweetheart, I still need that one.
 
 Sooky: But we have a car!
 
-Kyungsoo: Well, yes, but—
+Kyungsoo: Well, yes, but-
 Actually...
 
 Jongin: Hmm?
@@ -5956,7 +5990,7 @@ Kyungsoo: Baby, I'm driving.
 
 Sooky: You can sing!
 
-Kyungsoo: Alright. Mista Wova—
+Kyungsoo: Alright. Mista Wova-
 
 Sooky: NO, PAPA!
 
