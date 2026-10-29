@@ -1922,6 +1922,43 @@ const chatData={
 
 ["LOVE YOU TOO 😭", "them"],
 
+["10월 27일", "date"],
+["chan.", "me"],
+["free ka around 3:30?", "me"],
+
+["nasa batangas ako today 😭", "them"],
+["site visit", "them"],
+["bakit?", "them"],
+
+["may emergency meeting ako mamaya.", "me"],
+["baka hindi ako umabot sa pickup ni sooky.", "me"],
+
+["AY SHIT", "them"],
+["sorry soo 😭", "them"],
+["kung nasa makati lang ako, susunduin ko agad", "them"],
+
+["i know.", "me"],
+["don't worry. i'll arrange aftercare.", "me"],
+
+["may ganun pala sa school niya?", "them"],
+
+["yes. supervised until four, subject to availability.", "me"],
+["i'll request a slot now.", "me"],
+
+["ay good", "them"],
+["at least may option", "them"],
+["text mo ko if may problema ha", "them"],
+
+["thank you.", "me"],
+
+["good luck sa meeting", "them"],
+["sana hindi abutin ng pasko 😭", "them"],
+
+["very reassuring, chan.", "me"],
+
+["HAHAHAHA", "them"],
+
+
 
 
 
