@@ -369,6 +369,44 @@ const chatData={
 ],
 
 "Teacher Jongin": [
+  
+  ["10월 22일", "date"],
+  ["Good afternoon, Mr. Do! This is Teacher Jongin from Little Oaks.", "them"],
+  ["Sorry po, accidentally kong natawagan yung number niyo habang nag-a-update ng parent contact list. 😅", "them"],
+  ["Please disregard the missed call.", "them"],
+
+  ["Good afternoon, Teacher!", "me"],
+  ["No worries. Tatawag na rin sana ako pabalik.", "me"],
+  ["Akala ko kasi may nangyari kay Sooky.", "me"],
+
+  ["Ay, sorry po! Okay naman si Sooky, don't worry.", "them"],
+  ["Dapat nag-message ako agad. 😭", "them"],
+
+  ["It's alright, really.", "me"],
+  ["Medyo kinabahan lang ako. But I'm glad everything's okay.", "me"],
+
+  ["Sorry talaga. Napindot ko yung call button habang sine-save yung number niyo.", "them"],
+
+  ["Teacher, okay lang. 😂", "me"],
+  ["At least verified na gumagana yung number ko sa records niyo.", "me"],
+
+  ["HAHAHAHA. That's one way to look at it.", "them"],
+
+  ["Quite an effective verification method, actually.", "me"],
+
+  ["Medyo unconventional lang po.", "them"],
+
+  ["Just a little. 😂", "me"],
+
+  ["Promise, hindi ko na uulitin.", "them"],
+
+  ["I'll hold you to that, Teacher.", "me"],
+
+  ["HAHAHAHA.", "them"],
+  ["Have a good afternoon po!", "them"],
+
+  ["You too. Ingat!", "me"],
+
   ["10월 27일", "date"],
 
   ["Good evening, Teacher!", "me"],
